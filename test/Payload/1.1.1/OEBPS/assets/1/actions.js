@@ -2025,26 +2025,6 @@ obj21_onTap_actionGroup2 = function(){
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*
  *
  *   obj59: Event Touch Up
@@ -2333,8 +2313,6 @@ $(window).on(pubcoder.events.pagePlay, function() {
 	
 $("#obj7").trigger('SCEventShow');
 $("#obj9").trigger('SCEventShow');
-$("#obj11").trigger('SCEventShow');
-$("#obj13").trigger('SCEventShow');
 $("#obj17").trigger('SCEventShow');
 $("#obj69").trigger('SCEventShow');
 $("#obj59").trigger('SCEventShow');

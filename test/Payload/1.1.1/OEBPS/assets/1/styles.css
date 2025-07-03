@@ -18,54 +18,6 @@ div.SCContent {
 }
 
 
-div#obj11 {
-position: absolute;
-overflow: hidden;
-top: 9px;
-left: 531px;
-width: 347px;
-height: 238px;
-opacity: 1;
-z-index: 2;
-display:block;
-pointer-events: none;
-
-user-select: none;  
--moz-user-select: none;
--webkit-user-select: none;
--ms-user-select: none;
-}
-img#obj11_img {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	width: 347px;
-	height: 238px;
-}
-div#obj13 {
-position: absolute;
-overflow: hidden;
-top: 180px;
-left: 281px;
-width: 250px;
-height: 341px;
-opacity: 1;
-z-index: 3;
-display:block;
-pointer-events: none;
-
-user-select: none;  
--moz-user-select: none;
--webkit-user-select: none;
--ms-user-select: none;
-}
-img#obj13_img {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	width: 250px;
-	height: 341px;
-}
 div#obj59 {
 position: absolute;
 overflow: hidden;
@@ -307,7 +259,7 @@ left: 480px;
 width: 56px;
 height: 34px;
 opacity: 1;
-z-index: 4;
+z-index: 2;
 display:block;
 pointer-events: auto;
 user-select: text;  

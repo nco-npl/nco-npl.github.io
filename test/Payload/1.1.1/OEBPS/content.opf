@@ -6,7 +6,7 @@
 	<meta property="rendition:layout">pre-paginated</meta>	
 	<meta property="rendition:orientation">auto</meta>
 	<meta property="rendition:spread">none</meta>
-	<meta property="dcterms:modified">2025-07-03T11:09:01Z</meta>
+	<meta property="dcterms:modified">2025-07-03T11:17:03Z</meta>
 	<meta property="media:active-class">-epub-media-overlay-active</meta>
 	<meta property="media:duration">00:00:13</meta>
 	<meta property="media:duration" refines="#smil23">00:00:13</meta>
@@ -150,8 +150,6 @@
       href="assets/1/page.xhtml" media-type="application/xhtml+xml" media-overlay="smil23" properties="scripted"
       
       />
-<item id="obj11_image" href="assets/images/obj11_image.png" media-type="image/png" />
-<item id="obj13_image" href="assets/images/obj13_image.png" media-type="image/png" />
 <item id="obj59_image" href="assets/images/obj59_image.png" media-type="image/png" />
 <item id="switch15_to" href="assets/images/switch15_to.png" media-type="image/png" />
 <item id="obj52_image" href="assets/images/obj52_image.png" media-type="image/png" />
