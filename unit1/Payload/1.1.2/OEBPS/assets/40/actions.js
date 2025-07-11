@@ -22,9 +22,6 @@ var askAudioPermission = false;
 var obj2935_SCEventReadAloudStarted_activeActionGroupIndex = -1;
 var obj2935_SCEventReadAloudStarted_runningActionsCount = 0;
 var obj2935_SCEventReadAloudStarted_loopCount = 0;
-var obj2935_onTouchUp_activeActionGroupIndex = -1;
-var obj2935_onTouchUp_runningActionsCount = 0;
-var obj2935_onTouchUp_loopCount = 0;
 var obj2935_SCEventReadAloudStopped_activeActionGroupIndex = -1;
 var obj2935_SCEventReadAloudStopped_runningActionsCount = 0;
 var obj2935_SCEventReadAloudStopped_loopCount = 0;
@@ -296,134 +293,6 @@ obj2935_SCEventReadAloudStarted_actionGroup1 = function(){
 		return;
 	}
 	window.obj2935_SCEventReadAloudStarted_activeActionGroupIndex = 1;
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-};
-obj2935_onTouchUp_actionGroup0 = function(){
-	isLastActionGroup = false;
-	if (isLastActionGroup) {
-		window.obj2935_onTouchUp_activeActionGroupIndex = -1;
-		$("#obj2935").trigger("obj2935_onTouchUp_ended");
-		
-		for (var i = 0; i < pubcoder.queuedEvents.length; i++) {
-			const evt = pubcoder.queuedEvents[i];
-			if (evt.senderObjectId == 2935) {
-				console.warn("de-queueing event obj2935." + evt.eventName);
-				pubcoder.queuedEvents.splice(i, 1);
-				$("#obj2935").trigger(evt.eventName);
-				return;
-			}
-		}
-		return;
-	}
-	window.obj2935_onTouchUp_activeActionGroupIndex = 0;
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//	action: Run JavaScript
-runjs_2943();
-function runjs_2943() {
-	window.obj2935_onTouchUp_runningActionsCount = obj2935_onTouchUp_runningActionsCount + 1;
-
-	(function(){
-    // Ensure window.pubcoder and its globalvariables exist
-    if (typeof window.pubcoder === "undefined") {
-        window.pubcoder = {};
-    }
-    if (!window.pubcoder.globalvariables) {
-        window.pubcoder.globalvariables = {};
-    }
-    
-    // Toggle the videosDisabled state
-    var currentState = window.pubcoder.globalvariables.videosDisabled;
-    
-    var videos = document.querySelectorAll("video");
-    videos.forEach((video, index) => {
-        video.load();
-        video.play();
-        if (currentState) {
-            console.log("Toggle Button: Showing and playing video #" + (index + 1));
-            // video.style.display = "block"; // Adjust as needed for your layout
-            video.load();
-            video.play();
-        } else {
-            console.log("Toggle Button: Hiding and pausing video #" + (index + 1));
-            video.pause();
-            // video.style.display = "none";
-        }
-    });
-   
-    
-})();
-	
-	setTimeout(function() {
-		window.obj2935_onTouchUp_runningActionsCount = window.obj2935_onTouchUp_runningActionsCount - 1;
-if (window.obj2935_onTouchUp_runningActionsCount < 0) {
-	window.obj2935_onTouchUp_runningActionsCount = 0;
-} else if (window.obj2935_onTouchUp_runningActionsCount == 0) {
-	obj2935_onTouchUp_actionGroup1();
-}
-	}, 1);
-}
-
-
-
-
-
-
-
-};
-obj2935_onTouchUp_actionGroup1 = function(){
-	isLastActionGroup = true;
-	if (isLastActionGroup) {
-		window.obj2935_onTouchUp_activeActionGroupIndex = -1;
-		$("#obj2935").trigger("obj2935_onTouchUp_ended");
-		
-		for (var i = 0; i < pubcoder.queuedEvents.length; i++) {
-			const evt = pubcoder.queuedEvents[i];
-			if (evt.senderObjectId == 2935) {
-				console.warn("de-queueing event obj2935." + evt.eventName);
-				pubcoder.queuedEvents.splice(i, 1);
-				$("#obj2935").trigger(evt.eventName);
-				return;
-			}
-		}
-		return;
-	}
-	window.obj2935_onTouchUp_activeActionGroupIndex = 1;
 	
 
 
@@ -1541,32 +1410,6 @@ obj2907_onTouchUp_actionGroup1 = function(){
 
 
 
-/*
- *
- *   obj2935: Event Touch Up
- *
- */
-$("#obj2935").bind("touchdown touchmove", function(event) {
-	event.preventDefault(); // prevent readers from starting a page swipe on this element
-})
-$("#obj2935").bind(window.touchUpEvent, function(event) {
-	event.preventDefault();
-	var startActionList = function() {
-		$("#obj2935").unbind("obj2935_onTouchDown_ended", startActionList);
-	    if (window.obj2935_onTouchUp_activeActionGroupIndex != -1) {
-	console.warn("action list window.obj2935_onTouchUp is still running");
-	return;
-}
-var obj2935_onTouchUp_runningActionsCount = 0;
-var obj2935_onTouchUp_loopCount = 0;
-obj2935_onTouchUp_actionGroup0();
-	};
-	if ((window['obj2935_onTouchDown_activeActionGroupIndex'] == undefined) || window.obj2935_onTouchDown_activeActionGroupIndex == -1) {
-		startActionList();
-	} else {
-		$("#obj2935").bind("obj2935_onTouchDown_ended", startActionList);
-	}
-});
 
 
 
@@ -1845,22 +1688,25 @@ const audio_imgs = document.querySelectorAll('.aimg');
 document.querySelectorAll('video').forEach(dragElement);
 function dragElement(elmnt) {
   let pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
-  const header = elmnt.querySelector(".videoheader");
-  if (header) {
-    header.onmousedown = dragMouseDown;
-  } else {
-    elmnt.onmousedown = dragMouseDown;
-  }
+  elmnt.style.position = 'absolute'; // Ensure draggable behavior
+  elmnt.addEventListener('mousedown', dragMouseDown);
+  elmnt.addEventListener('touchstart', dragTouchStart, { passive: false });
   function dragMouseDown(e) {
-    e = e || window.event;
     e.preventDefault();
     pos3 = e.clientX;
     pos4 = e.clientY;
     document.onmouseup = closeDragElement;
-    document.onmousemove = elementDrag;
+    document.onmousemove = elementDragMouse;
   }
-  function elementDrag(e) {
-    e = e || window.event;
+  function dragTouchStart(e) {
+    e.preventDefault();
+    const touch = e.touches[0];
+    pos3 = touch.clientX;
+    pos4 = touch.clientY;
+    document.ontouchend = closeDragElement;
+    document.ontouchmove = elementDragTouch;
+  }
+  function elementDragMouse(e) {
     e.preventDefault();
     pos1 = pos3 - e.clientX;
     pos2 = pos4 - e.clientY;
@@ -1869,9 +1715,21 @@ function dragElement(elmnt) {
     elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
     elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
   }
+  function elementDragTouch(e) {
+    e.preventDefault();
+    const touch = e.touches[0];
+    pos1 = pos3 - touch.clientX;
+    pos2 = pos4 - touch.clientY;
+    pos3 = touch.clientX;
+    pos4 = touch.clientY;
+    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+  }
   function closeDragElement() {
     document.onmouseup = null;
     document.onmousemove = null;
+    document.ontouchend = null;
+    document.ontouchmove = null;
   }
 }
     

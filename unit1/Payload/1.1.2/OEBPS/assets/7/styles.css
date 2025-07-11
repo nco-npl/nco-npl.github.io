@@ -278,7 +278,7 @@ div#obj1365 {
 position: absolute;
 overflow: hidden;
 top: 532px;
-left: 484px;
+left: 481px;
 width: 56px;
 height: 37px;
 opacity: 1;
@@ -364,7 +364,6 @@ user-select: none;
 -moz-user-select: none;
 -webkit-user-select: none;
 -ms-user-select: none;
-mix-blend-mode: luminosity;
 background-color: #000000;
 }
 

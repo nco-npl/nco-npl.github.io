@@ -360,6 +360,25 @@ user-select: text;
 }
 div#obj2592_content {
 }
+div#obj4780 {
+position: absolute;
+overflow: hidden;
+top: 533px;
+left: 484px;
+width: 56px;
+height: 37px;
+opacity: 1;
+z-index: 10;
+display:block;
+pointer-events: auto;
+user-select: text;  
+-moz-user-select: text;
+-webkit-user-select: text;
+-ms-user-select: text;
+
+}
+div#obj4780_content {
+}
 
 
 
