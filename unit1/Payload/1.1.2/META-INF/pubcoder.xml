@@ -4,8 +4,8 @@
 	<restoreLatestPage>true</restoreLatestPage>
 	<onTouchSystemUI>true</onTouchSystemUI>
 	<enableThumbnails>true</enableThumbnails>
-	<enableSwipe>false</enableSwipe>
-	<enableSearch>false</enableSearch>
+	<enableSwipe>true</enableSwipe>
+	<enableSearch>true</enableSearch>
     <enableReadAloud>true</enableReadAloud>
     <enableBookmarks>true</enableBookmarks>
     <enableInfoCredits>true</enableInfoCredits>
