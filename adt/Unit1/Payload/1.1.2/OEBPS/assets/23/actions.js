@@ -1,0 +1,4895 @@
+pubcoder.projectID = pubcoder.projectID || "12E58D21CC5A4AEEB6229895ABF2FF22";
+pubcoder.project.id = pubcoder.project.id || "12E58D21CC5A4AEEB6229895ABF2FF22";
+pubcoder.project.title = pubcoder.project.title || "Hamro Serofero : Unit 1";
+pubcoder.page.id = pubcoder.page.id || 1491;
+pubcoder.page.title = pubcoder.page.title || "23";
+pubcoder.page.number = pubcoder.page.number || 23;
+pubcoder.page.alias = pubcoder.page.alias || "";
+
+var ua = navigator.userAgent.toLowerCase();
+var touchDownEvent;
+var touchUpEvent;
+var isMobile;
+var aigX = 0, aigY = 0;
+var askAudioPermission = false;
+
+/*
+ * 
+ * Init Action Lists
+ *
+ * 
+ */
+var obj2035_onTap_activeActionGroupIndex = -1;
+var obj2035_onTap_runningActionsCount = 0;
+var obj2035_onTap_loopCount = 0;
+var obj2037_onTap_activeActionGroupIndex = -1;
+var obj2037_onTap_runningActionsCount = 0;
+var obj2037_onTap_loopCount = 0;
+var obj2032_onTap_activeActionGroupIndex = -1;
+var obj2032_onTap_runningActionsCount = 0;
+var obj2032_onTap_loopCount = 0;
+var obj2014_onTap_activeActionGroupIndex = -1;
+var obj2014_onTap_runningActionsCount = 0;
+var obj2014_onTap_loopCount = 0;
+var obj2017_onTap_activeActionGroupIndex = -1;
+var obj2017_onTap_runningActionsCount = 0;
+var obj2017_onTap_loopCount = 0;
+var obj2020_onTap_activeActionGroupIndex = -1;
+var obj2020_onTap_runningActionsCount = 0;
+var obj2020_onTap_loopCount = 0;
+var obj2043_onTap_activeActionGroupIndex = -1;
+var obj2043_onTap_runningActionsCount = 0;
+var obj2043_onTap_loopCount = 0;
+var obj2039_onTap_activeActionGroupIndex = -1;
+var obj2039_onTap_runningActionsCount = 0;
+var obj2039_onTap_loopCount = 0;
+var obj2041_onTap_activeActionGroupIndex = -1;
+var obj2041_onTap_runningActionsCount = 0;
+var obj2041_onTap_loopCount = 0;
+var obj2026_onTap_activeActionGroupIndex = -1;
+var obj2026_onTap_runningActionsCount = 0;
+var obj2026_onTap_loopCount = 0;
+var obj2023_onTap_activeActionGroupIndex = -1;
+var obj2023_onTap_runningActionsCount = 0;
+var obj2023_onTap_loopCount = 0;
+var obj2029_onTap_activeActionGroupIndex = -1;
+var obj2029_onTap_runningActionsCount = 0;
+var obj2029_onTap_loopCount = 0;
+var obj8166_onTap_activeActionGroupIndex = -1;
+var obj8166_onTap_runningActionsCount = 0;
+var obj8166_onTap_loopCount = 0;
+var obj8185_SCEventReadAloudStarted_activeActionGroupIndex = -1;
+var obj8185_SCEventReadAloudStarted_runningActionsCount = 0;
+var obj8185_SCEventReadAloudStarted_loopCount = 0;
+var obj8185_SCEventReadAloudStopped_activeActionGroupIndex = -1;
+var obj8185_SCEventReadAloudStopped_runningActionsCount = 0;
+var obj8185_SCEventReadAloudStopped_loopCount = 0;
+var obj8156_onTap_activeActionGroupIndex = -1;
+var obj8156_onTap_runningActionsCount = 0;
+var obj8156_onTap_loopCount = 0;
+var obj8181_onTap_activeActionGroupIndex = -1;
+var obj8181_onTap_runningActionsCount = 0;
+var obj8181_onTap_loopCount = 0;
+var obj8178_onTap_activeActionGroupIndex = -1;
+var obj8178_onTap_runningActionsCount = 0;
+var obj8178_onTap_loopCount = 0;
+var obj8163_onTap_activeActionGroupIndex = -1;
+var obj8163_onTap_runningActionsCount = 0;
+var obj8163_onTap_loopCount = 0;
+var obj8147_onTap_activeActionGroupIndex = -1;
+var obj8147_onTap_runningActionsCount = 0;
+var obj8147_onTap_loopCount = 0;
+/*
+ * 
+ * Init SCCounter
+ *
+ * 
+ */
+ 
+ $(window).on(PubCoder.Events.PageLoad, function(){
+	window.eventObj = {};
+	/*
+	 * 
+	 * Init SCAnimation
+	 * 
+	 * 
+	 */
+	
+	/*
+	 *
+	 *   Init Shake
+	 *
+	 */
+	window.addEventListener('shake', function () {
+		
+	}, false);
+	
+	/*
+	 *
+	 *   Init Masked Images
+	 *
+	 */
+	 
+ 	/*
+	 * 
+	 * Init SCPhotogallery
+	 * 
+	 * 
+	 */
+	
+ 	/*
+	 * 
+	 * Init SCQuizMulti
+	 * 
+	 * 
+	 */
+	
+ 	/*
+	 * 
+	 * Init SCDrawer
+	 * 
+	 * 
+	 */
+	
+    
+ 	/*
+	 * 
+	 * Init SCWPanZoom
+	 * 
+	 * 
+	 */
+	
+    
+ 	/*
+	 * 
+	 * Init SCWMemoryGame
+	 * 
+	 * 
+	 */
+	
+	/*
+	 * 
+	 * Init SCCrosswords
+	 * 
+	 * 
+	 */
+	
+	/*
+	 * 
+	 * Init SCFillInTheGaps
+	 * 
+	 * 
+	 */
+	
+	/*
+	 * 
+	 * Init SCTrueFalse
+	 * 
+	 * 
+	 */
+	
+	
+	/*
+	 * 
+	 * Init SCMatchWordWithPicture
+	 * 
+	 * 
+	 */
+	
+    
+    
+	if(! navigator.userAgent.match(/PubCoderHelper/i)) {
+		/*
+		 *
+	 	 *   Action Groups
+	 	 *
+	 	 */
+		
+obj2035_onTap_actionGroup0 = function(){
+	isLastActionGroup = false;
+	if (isLastActionGroup) {
+		window.obj2035_onTap_activeActionGroupIndex = -1;
+		$("#obj2035").trigger("obj2035_onTap_ended");
+		
+		for (var i = 0; i < pubcoder.queuedEvents.length; i++) {
+			const evt = pubcoder.queuedEvents[i];
+			if (evt.senderObjectId == 2035) {
+				console.warn("de-queueing event obj2035." + evt.eventName);
+				pubcoder.queuedEvents.splice(i, 1);
+				$("#obj2035").trigger(evt.eventName);
+				return;
+			}
+		}
+		return;
+	}
+	window.obj2035_onTap_activeActionGroupIndex = 0;
+	
+
+
+
+//	action: switchImage 
+//	target: obj2017 
+switchImage_7027();
+function switchImage_7027() {
+	window.obj2035_onTap_runningActionsCount = obj2035_onTap_runningActionsCount + 1;
+
+	var targetObjectId = "#obj2017";
+	var targetObject = $(targetObjectId)[0];
+	var allowBackAndForth = true;
+	var imgObjId = "#obj2017_img";
+	var fromImagePath = "../images/obj2035_image.png";
+	var toImagePath = "../images/switch306_to.png";
+	var switchHelperId = "switchHelper306"
+	var switchHelperRef = "#switchHelper306"
+	var switchId = "306";
+	var toSwitchId = "306";
+	var fadeDuration = "0s";
+	var fromSoundObjectId = "#obj_audio_switchImage7027_from";
+	var toSoundObjectId = "#obj_audio_switchImage7027_to";
+	var audioFrom;
+	if (fromSoundObjectId != "#") audioFrom = $(fromSoundObjectId)[0];
+	var audioTo;
+	if (toSoundObjectId != "#") audioTo = $(toSoundObjectId)[0];
+	
+	var completionFunction = function () {
+		if ($(targetObjectId).attr("data-SCActionSwitchImage-applied") == toSwitchId) $(imgObjId).attr("src", toImagePath);
+		if (fadeDuration != "0s") {
+			setTimeout(function() {
+				$(imgObjId).show();
+				$(switchHelperRef).remove();
+				actionEndFunction();
+			}, 100);
+		} else {
+			actionEndFunction();
+		}
+	}
+	var actionEndFunction = function() {
+			setTimeout(function() {
+				window.obj2035_onTap_runningActionsCount = window.obj2035_onTap_runningActionsCount - 1;
+if (window.obj2035_onTap_runningActionsCount < 0) {
+	window.obj2035_onTap_runningActionsCount = 0;
+} else if (window.obj2035_onTap_runningActionsCount == 0) {
+	obj2035_onTap_actionGroup1();
+}
+			}, 1);
+	};
+	var originalImage = $(targetObjectId).attr("data-SCActionSwitchImage-originalImage");
+	if (!(typeof originalImage !== typeof undefined && originalImage !== false)) {
+		$(targetObjectId).attr("data-SCActionSwitchImage-originalImage", $(imgObjId).attr("src"));
+	}
+	var appliedSwitchImage = $(targetObjectId).attr("data-SCActionSwitchImage-applied");
+	if (!(typeof appliedSwitchImage !== typeof undefined && appliedSwitchImage !== false)) {
+		appliedSwitchImage = "";
+	}
+	if (appliedSwitchImage == switchId) {
+		if (allowBackAndForth) {
+			toImagePath = originalImage;
+			toSwitchId = "";
+			var audioSwapHelp = audioFrom;
+			audioFrom = audioTo;
+			audioTo = audioSwapHelp;
+		} else {
+			setTimeout(function() { actionEndFunction(); }, 1);
+			return;
+		}
+	}
+	setTimeout(function() {
+		$(targetObjectId).attr("data-SCActionSwitchImage-applied", toSwitchId);
+		if (audioFrom != null) { audioFrom.pause(); }
+		if (audioTo != null) { audioTo.currentTime = 0; audioTo.play(); }
+		if (fadeDuration == "0s") {
+			completionFunction()
+		} else {
+			if ($(targetObjectId + " .SCActionSwitchImageHelper").length == 0) {
+				$(targetObjectId).append('<img class="SCActionSwitchImageHelper" src="' + toImagePath + '" id="' + switchHelperId + '" style="height:' + $(targetObjectId).css('height') + '; width: ' + $(targetObjectId).css('width') + '; display: none; position: absolute; overflow:hidden; top: 0px; left: 0px; z-index: 999;"/>');
+			} else {
+				console.log("qui");
+				$(targetObjectId + " .SCActionSwitchImageHelper").each(function (i,o) {
+					console.log(o);
+					$(o).attr("id", switchHelperId);
+					$(o).attr("src", toImagePath);
+				});
+			}
+			$(imgObjId).fadeOut(parseFloat(fadeDuration)*1000);
+			$(switchHelperRef).fadeIn(parseFloat(fadeDuration)*1000, completionFunction);
+		}
+	}, 1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+};
+obj2035_onTap_actionGroup1 = function(){
+	isLastActionGroup = true;
+	if (isLastActionGroup) {
+		window.obj2035_onTap_activeActionGroupIndex = -1;
+		$("#obj2035").trigger("obj2035_onTap_ended");
+		
+		for (var i = 0; i < pubcoder.queuedEvents.length; i++) {
+			const evt = pubcoder.queuedEvents[i];
+			if (evt.senderObjectId == 2035) {
+				console.warn("de-queueing event obj2035." + evt.eventName);
+				pubcoder.queuedEvents.splice(i, 1);
+				$("#obj2035").trigger(evt.eventName);
+				return;
+			}
+		}
+		return;
+	}
+	window.obj2035_onTap_activeActionGroupIndex = 1;
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+};
+obj2037_onTap_actionGroup0 = function(){
+	isLastActionGroup = false;
+	if (isLastActionGroup) {
+		window.obj2037_onTap_activeActionGroupIndex = -1;
+		$("#obj2037").trigger("obj2037_onTap_ended");
+		
+		for (var i = 0; i < pubcoder.queuedEvents.length; i++) {
+			const evt = pubcoder.queuedEvents[i];
+			if (evt.senderObjectId == 2037) {
+				console.warn("de-queueing event obj2037." + evt.eventName);
+				pubcoder.queuedEvents.splice(i, 1);
+				$("#obj2037").trigger(evt.eventName);
+				return;
+			}
+		}
+		return;
+	}
+	window.obj2037_onTap_activeActionGroupIndex = 0;
+	
+
+
+
+//	action: switchImage 
+//	target: obj2020 
+switchImage_7028();
+function switchImage_7028() {
+	window.obj2037_onTap_runningActionsCount = obj2037_onTap_runningActionsCount + 1;
+
+	var targetObjectId = "#obj2020";
+	var targetObject = $(targetObjectId)[0];
+	var allowBackAndForth = true;
+	var imgObjId = "#obj2020_img";
+	var fromImagePath = "../images/obj2037_image.png";
+	var toImagePath = "../images/switch306_to.png";
+	var switchHelperId = "switchHelper309"
+	var switchHelperRef = "#switchHelper309"
+	var switchId = "309";
+	var toSwitchId = "309";
+	var fadeDuration = "0s";
+	var fromSoundObjectId = "#obj_audio_switchImage7028_from";
+	var toSoundObjectId = "#obj_audio_switchImage7028_to";
+	var audioFrom;
+	if (fromSoundObjectId != "#") audioFrom = $(fromSoundObjectId)[0];
+	var audioTo;
+	if (toSoundObjectId != "#") audioTo = $(toSoundObjectId)[0];
+	
+	var completionFunction = function () {
+		if ($(targetObjectId).attr("data-SCActionSwitchImage-applied") == toSwitchId) $(imgObjId).attr("src", toImagePath);
+		if (fadeDuration != "0s") {
+			setTimeout(function() {
+				$(imgObjId).show();
+				$(switchHelperRef).remove();
+				actionEndFunction();
+			}, 100);
+		} else {
+			actionEndFunction();
+		}
+	}
+	var actionEndFunction = function() {
+			setTimeout(function() {
+				window.obj2037_onTap_runningActionsCount = window.obj2037_onTap_runningActionsCount - 1;
+if (window.obj2037_onTap_runningActionsCount < 0) {
+	window.obj2037_onTap_runningActionsCount = 0;
+} else if (window.obj2037_onTap_runningActionsCount == 0) {
+	obj2037_onTap_actionGroup1();
+}
+			}, 1);
+	};
+	var originalImage = $(targetObjectId).attr("data-SCActionSwitchImage-originalImage");
+	if (!(typeof originalImage !== typeof undefined && originalImage !== false)) {
+		$(targetObjectId).attr("data-SCActionSwitchImage-originalImage", $(imgObjId).attr("src"));
+	}
+	var appliedSwitchImage = $(targetObjectId).attr("data-SCActionSwitchImage-applied");
+	if (!(typeof appliedSwitchImage !== typeof undefined && appliedSwitchImage !== false)) {
+		appliedSwitchImage = "";
+	}
+	if (appliedSwitchImage == switchId) {
+		if (allowBackAndForth) {
+			toImagePath = originalImage;
+			toSwitchId = "";
+			var audioSwapHelp = audioFrom;
+			audioFrom = audioTo;
+			audioTo = audioSwapHelp;
+		} else {
+			setTimeout(function() { actionEndFunction(); }, 1);
+			return;
+		}
+	}
+	setTimeout(function() {
+		$(targetObjectId).attr("data-SCActionSwitchImage-applied", toSwitchId);
+		if (audioFrom != null) { audioFrom.pause(); }
+		if (audioTo != null) { audioTo.currentTime = 0; audioTo.play(); }
+		if (fadeDuration == "0s") {
+			completionFunction()
+		} else {
+			if ($(targetObjectId + " .SCActionSwitchImageHelper").length == 0) {
+				$(targetObjectId).append('<img class="SCActionSwitchImageHelper" src="' + toImagePath + '" id="' + switchHelperId + '" style="height:' + $(targetObjectId).css('height') + '; width: ' + $(targetObjectId).css('width') + '; display: none; position: absolute; overflow:hidden; top: 0px; left: 0px; z-index: 999;"/>');
+			} else {
+				console.log("qui");
+				$(targetObjectId + " .SCActionSwitchImageHelper").each(function (i,o) {
+					console.log(o);
+					$(o).attr("id", switchHelperId);
+					$(o).attr("src", toImagePath);
+				});
+			}
+			$(imgObjId).fadeOut(parseFloat(fadeDuration)*1000);
+			$(switchHelperRef).fadeIn(parseFloat(fadeDuration)*1000, completionFunction);
+		}
+	}, 1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+};
+obj2037_onTap_actionGroup1 = function(){
+	isLastActionGroup = true;
+	if (isLastActionGroup) {
+		window.obj2037_onTap_activeActionGroupIndex = -1;
+		$("#obj2037").trigger("obj2037_onTap_ended");
+		
+		for (var i = 0; i < pubcoder.queuedEvents.length; i++) {
+			const evt = pubcoder.queuedEvents[i];
+			if (evt.senderObjectId == 2037) {
+				console.warn("de-queueing event obj2037." + evt.eventName);
+				pubcoder.queuedEvents.splice(i, 1);
+				$("#obj2037").trigger(evt.eventName);
+				return;
+			}
+		}
+		return;
+	}
+	window.obj2037_onTap_activeActionGroupIndex = 1;
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+};
+obj2032_onTap_actionGroup0 = function(){
+	isLastActionGroup = false;
+	if (isLastActionGroup) {
+		window.obj2032_onTap_activeActionGroupIndex = -1;
+		$("#obj2032").trigger("obj2032_onTap_ended");
+		
+		for (var i = 0; i < pubcoder.queuedEvents.length; i++) {
+			const evt = pubcoder.queuedEvents[i];
+			if (evt.senderObjectId == 2032) {
+				console.warn("de-queueing event obj2032." + evt.eventName);
+				pubcoder.queuedEvents.splice(i, 1);
+				$("#obj2032").trigger(evt.eventName);
+				return;
+			}
+		}
+		return;
+	}
+	window.obj2032_onTap_activeActionGroupIndex = 0;
+	
+
+
+
+//	action: switchImage 
+//	target: obj2014 
+switchImage_7026();
+function switchImage_7026() {
+	window.obj2032_onTap_runningActionsCount = obj2032_onTap_runningActionsCount + 1;
+
+	var targetObjectId = "#obj2014";
+	var targetObject = $(targetObjectId)[0];
+	var allowBackAndForth = true;
+	var imgObjId = "#obj2014_img";
+	var fromImagePath = "../images/obj2032_image.png";
+	var toImagePath = "../images/switch306_to.png";
+	var switchHelperId = "switchHelper312"
+	var switchHelperRef = "#switchHelper312"
+	var switchId = "312";
+	var toSwitchId = "312";
+	var fadeDuration = "0s";
+	var fromSoundObjectId = "#obj_audio_switchImage7026_from";
+	var toSoundObjectId = "#obj_audio_switchImage7026_to";
+	var audioFrom;
+	if (fromSoundObjectId != "#") audioFrom = $(fromSoundObjectId)[0];
+	var audioTo;
+	if (toSoundObjectId != "#") audioTo = $(toSoundObjectId)[0];
+	
+	var completionFunction = function () {
+		if ($(targetObjectId).attr("data-SCActionSwitchImage-applied") == toSwitchId) $(imgObjId).attr("src", toImagePath);
+		if (fadeDuration != "0s") {
+			setTimeout(function() {
+				$(imgObjId).show();
+				$(switchHelperRef).remove();
+				actionEndFunction();
+			}, 100);
+		} else {
+			actionEndFunction();
+		}
+	}
+	var actionEndFunction = function() {
+			setTimeout(function() {
+				window.obj2032_onTap_runningActionsCount = window.obj2032_onTap_runningActionsCount - 1;
+if (window.obj2032_onTap_runningActionsCount < 0) {
+	window.obj2032_onTap_runningActionsCount = 0;
+} else if (window.obj2032_onTap_runningActionsCount == 0) {
+	obj2032_onTap_actionGroup1();
+}
+			}, 1);
+	};
+	var originalImage = $(targetObjectId).attr("data-SCActionSwitchImage-originalImage");
+	if (!(typeof originalImage !== typeof undefined && originalImage !== false)) {
+		$(targetObjectId).attr("data-SCActionSwitchImage-originalImage", $(imgObjId).attr("src"));
+	}
+	var appliedSwitchImage = $(targetObjectId).attr("data-SCActionSwitchImage-applied");
+	if (!(typeof appliedSwitchImage !== typeof undefined && appliedSwitchImage !== false)) {
+		appliedSwitchImage = "";
+	}
+	if (appliedSwitchImage == switchId) {
+		if (allowBackAndForth) {
+			toImagePath = originalImage;
+			toSwitchId = "";
+			var audioSwapHelp = audioFrom;
+			audioFrom = audioTo;
+			audioTo = audioSwapHelp;
+		} else {
+			setTimeout(function() { actionEndFunction(); }, 1);
+			return;
+		}
+	}
+	setTimeout(function() {
+		$(targetObjectId).attr("data-SCActionSwitchImage-applied", toSwitchId);
+		if (audioFrom != null) { audioFrom.pause(); }
+		if (audioTo != null) { audioTo.currentTime = 0; audioTo.play(); }
+		if (fadeDuration == "0s") {
+			completionFunction()
+		} else {
+			if ($(targetObjectId + " .SCActionSwitchImageHelper").length == 0) {
+				$(targetObjectId).append('<img class="SCActionSwitchImageHelper" src="' + toImagePath + '" id="' + switchHelperId + '" style="height:' + $(targetObjectId).css('height') + '; width: ' + $(targetObjectId).css('width') + '; display: none; position: absolute; overflow:hidden; top: 0px; left: 0px; z-index: 999;"/>');
+			} else {
+				console.log("qui");
+				$(targetObjectId + " .SCActionSwitchImageHelper").each(function (i,o) {
+					console.log(o);
+					$(o).attr("id", switchHelperId);
+					$(o).attr("src", toImagePath);
+				});
+			}
+			$(imgObjId).fadeOut(parseFloat(fadeDuration)*1000);
+			$(switchHelperRef).fadeIn(parseFloat(fadeDuration)*1000, completionFunction);
+		}
+	}, 1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+};
+obj2032_onTap_actionGroup1 = function(){
+	isLastActionGroup = true;
+	if (isLastActionGroup) {
+		window.obj2032_onTap_activeActionGroupIndex = -1;
+		$("#obj2032").trigger("obj2032_onTap_ended");
+		
+		for (var i = 0; i < pubcoder.queuedEvents.length; i++) {
+			const evt = pubcoder.queuedEvents[i];
+			if (evt.senderObjectId == 2032) {
+				console.warn("de-queueing event obj2032." + evt.eventName);
+				pubcoder.queuedEvents.splice(i, 1);
+				$("#obj2032").trigger(evt.eventName);
+				return;
+			}
+		}
+		return;
+	}
+	window.obj2032_onTap_activeActionGroupIndex = 1;
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+};
+obj2014_onTap_actionGroup0 = function(){
+	isLastActionGroup = false;
+	if (isLastActionGroup) {
+		window.obj2014_onTap_activeActionGroupIndex = -1;
+		$("#obj2014").trigger("obj2014_onTap_ended");
+		
+		for (var i = 0; i < pubcoder.queuedEvents.length; i++) {
+			const evt = pubcoder.queuedEvents[i];
+			if (evt.senderObjectId == 2014) {
+				console.warn("de-queueing event obj2014." + evt.eventName);
+				pubcoder.queuedEvents.splice(i, 1);
+				$("#obj2014").trigger(evt.eventName);
+				return;
+			}
+		}
+		return;
+	}
+	window.obj2014_onTap_activeActionGroupIndex = 0;
+	
+
+
+
+//	action: switchImage 
+//	target: obj2014 
+switchImage_2016();
+function switchImage_2016() {
+	window.obj2014_onTap_runningActionsCount = obj2014_onTap_runningActionsCount + 1;
+
+	var targetObjectId = "#obj2014";
+	var targetObject = $(targetObjectId)[0];
+	var allowBackAndForth = true;
+	var imgObjId = "#obj2014_img";
+	var fromImagePath = "../images/obj2014_image.png";
+	var toImagePath = "../images/switch306_to.png";
+	var switchHelperId = "switchHelper316"
+	var switchHelperRef = "#switchHelper316"
+	var switchId = "316";
+	var toSwitchId = "316";
+	var fadeDuration = "0s";
+	var fromSoundObjectId = "#obj_audio_switchImage2016_from";
+	var toSoundObjectId = "#obj_audio_switchImage2016_to";
+	var audioFrom;
+	if (fromSoundObjectId != "#") audioFrom = $(fromSoundObjectId)[0];
+	var audioTo;
+	if (toSoundObjectId != "#") audioTo = $(toSoundObjectId)[0];
+	
+	var completionFunction = function () {
+		if ($(targetObjectId).attr("data-SCActionSwitchImage-applied") == toSwitchId) $(imgObjId).attr("src", toImagePath);
+		if (fadeDuration != "0s") {
+			setTimeout(function() {
+				$(imgObjId).show();
+				$(switchHelperRef).remove();
+				actionEndFunction();
+			}, 100);
+		} else {
+			actionEndFunction();
+		}
+	}
+	var actionEndFunction = function() {
+			setTimeout(function() {
+				window.obj2014_onTap_runningActionsCount = window.obj2014_onTap_runningActionsCount - 1;
+if (window.obj2014_onTap_runningActionsCount < 0) {
+	window.obj2014_onTap_runningActionsCount = 0;
+} else if (window.obj2014_onTap_runningActionsCount == 0) {
+	obj2014_onTap_actionGroup1();
+}
+			}, 1);
+	};
+	var originalImage = $(targetObjectId).attr("data-SCActionSwitchImage-originalImage");
+	if (!(typeof originalImage !== typeof undefined && originalImage !== false)) {
+		$(targetObjectId).attr("data-SCActionSwitchImage-originalImage", $(imgObjId).attr("src"));
+	}
+	var appliedSwitchImage = $(targetObjectId).attr("data-SCActionSwitchImage-applied");
+	if (!(typeof appliedSwitchImage !== typeof undefined && appliedSwitchImage !== false)) {
+		appliedSwitchImage = "";
+	}
+	if (appliedSwitchImage == switchId) {
+		if (allowBackAndForth) {
+			toImagePath = originalImage;
+			toSwitchId = "";
+			var audioSwapHelp = audioFrom;
+			audioFrom = audioTo;
+			audioTo = audioSwapHelp;
+		} else {
+			setTimeout(function() { actionEndFunction(); }, 1);
+			return;
+		}
+	}
+	setTimeout(function() {
+		$(targetObjectId).attr("data-SCActionSwitchImage-applied", toSwitchId);
+		if (audioFrom != null) { audioFrom.pause(); }
+		if (audioTo != null) { audioTo.currentTime = 0; audioTo.play(); }
+		if (fadeDuration == "0s") {
+			completionFunction()
+		} else {
+			if ($(targetObjectId + " .SCActionSwitchImageHelper").length == 0) {
+				$(targetObjectId).append('<img class="SCActionSwitchImageHelper" src="' + toImagePath + '" id="' + switchHelperId + '" style="height:' + $(targetObjectId).css('height') + '; width: ' + $(targetObjectId).css('width') + '; display: none; position: absolute; overflow:hidden; top: 0px; left: 0px; z-index: 999;"/>');
+			} else {
+				console.log("qui");
+				$(targetObjectId + " .SCActionSwitchImageHelper").each(function (i,o) {
+					console.log(o);
+					$(o).attr("id", switchHelperId);
+					$(o).attr("src", toImagePath);
+				});
+			}
+			$(imgObjId).fadeOut(parseFloat(fadeDuration)*1000);
+			$(switchHelperRef).fadeIn(parseFloat(fadeDuration)*1000, completionFunction);
+		}
+	}, 1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+};
+obj2014_onTap_actionGroup1 = function(){
+	isLastActionGroup = true;
+	if (isLastActionGroup) {
+		window.obj2014_onTap_activeActionGroupIndex = -1;
+		$("#obj2014").trigger("obj2014_onTap_ended");
+		
+		for (var i = 0; i < pubcoder.queuedEvents.length; i++) {
+			const evt = pubcoder.queuedEvents[i];
+			if (evt.senderObjectId == 2014) {
+				console.warn("de-queueing event obj2014." + evt.eventName);
+				pubcoder.queuedEvents.splice(i, 1);
+				$("#obj2014").trigger(evt.eventName);
+				return;
+			}
+		}
+		return;
+	}
+	window.obj2014_onTap_activeActionGroupIndex = 1;
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+};
+obj2017_onTap_actionGroup0 = function(){
+	isLastActionGroup = false;
+	if (isLastActionGroup) {
+		window.obj2017_onTap_activeActionGroupIndex = -1;
+		$("#obj2017").trigger("obj2017_onTap_ended");
+		
+		for (var i = 0; i < pubcoder.queuedEvents.length; i++) {
+			const evt = pubcoder.queuedEvents[i];
+			if (evt.senderObjectId == 2017) {
+				console.warn("de-queueing event obj2017." + evt.eventName);
+				pubcoder.queuedEvents.splice(i, 1);
+				$("#obj2017").trigger(evt.eventName);
+				return;
+			}
+		}
+		return;
+	}
+	window.obj2017_onTap_activeActionGroupIndex = 0;
+	
+
+
+
+//	action: switchImage 
+//	target: obj2017 
+switchImage_2019();
+function switchImage_2019() {
+	window.obj2017_onTap_runningActionsCount = obj2017_onTap_runningActionsCount + 1;
+
+	var targetObjectId = "#obj2017";
+	var targetObject = $(targetObjectId)[0];
+	var allowBackAndForth = true;
+	var imgObjId = "#obj2017_img";
+	var fromImagePath = "../images/obj2014_image.png";
+	var toImagePath = "../images/switch306_to.png";
+	var switchHelperId = "switchHelper319"
+	var switchHelperRef = "#switchHelper319"
+	var switchId = "319";
+	var toSwitchId = "319";
+	var fadeDuration = "0s";
+	var fromSoundObjectId = "#";
+	var toSoundObjectId = "#";
+	var audioFrom;
+	if (fromSoundObjectId != "#") audioFrom = $(fromSoundObjectId)[0];
+	var audioTo;
+	if (toSoundObjectId != "#") audioTo = $(toSoundObjectId)[0];
+	
+	var completionFunction = function () {
+		if ($(targetObjectId).attr("data-SCActionSwitchImage-applied") == toSwitchId) $(imgObjId).attr("src", toImagePath);
+		if (fadeDuration != "0s") {
+			setTimeout(function() {
+				$(imgObjId).show();
+				$(switchHelperRef).remove();
+				actionEndFunction();
+			}, 100);
+		} else {
+			actionEndFunction();
+		}
+	}
+	var actionEndFunction = function() {
+			setTimeout(function() {
+				window.obj2017_onTap_runningActionsCount = window.obj2017_onTap_runningActionsCount - 1;
+if (window.obj2017_onTap_runningActionsCount < 0) {
+	window.obj2017_onTap_runningActionsCount = 0;
+} else if (window.obj2017_onTap_runningActionsCount == 0) {
+	obj2017_onTap_actionGroup1();
+}
+			}, 1);
+	};
+	var originalImage = $(targetObjectId).attr("data-SCActionSwitchImage-originalImage");
+	if (!(typeof originalImage !== typeof undefined && originalImage !== false)) {
+		$(targetObjectId).attr("data-SCActionSwitchImage-originalImage", $(imgObjId).attr("src"));
+	}
+	var appliedSwitchImage = $(targetObjectId).attr("data-SCActionSwitchImage-applied");
+	if (!(typeof appliedSwitchImage !== typeof undefined && appliedSwitchImage !== false)) {
+		appliedSwitchImage = "";
+	}
+	if (appliedSwitchImage == switchId) {
+		if (allowBackAndForth) {
+			toImagePath = originalImage;
+			toSwitchId = "";
+			var audioSwapHelp = audioFrom;
+			audioFrom = audioTo;
+			audioTo = audioSwapHelp;
+		} else {
+			setTimeout(function() { actionEndFunction(); }, 1);
+			return;
+		}
+	}
+	setTimeout(function() {
+		$(targetObjectId).attr("data-SCActionSwitchImage-applied", toSwitchId);
+		if (audioFrom != null) { audioFrom.pause(); }
+		if (audioTo != null) { audioTo.currentTime = 0; audioTo.play(); }
+		if (fadeDuration == "0s") {
+			completionFunction()
+		} else {
+			if ($(targetObjectId + " .SCActionSwitchImageHelper").length == 0) {
+				$(targetObjectId).append('<img class="SCActionSwitchImageHelper" src="' + toImagePath + '" id="' + switchHelperId + '" style="height:' + $(targetObjectId).css('height') + '; width: ' + $(targetObjectId).css('width') + '; display: none; position: absolute; overflow:hidden; top: 0px; left: 0px; z-index: 999;"/>');
+			} else {
+				console.log("qui");
+				$(targetObjectId + " .SCActionSwitchImageHelper").each(function (i,o) {
+					console.log(o);
+					$(o).attr("id", switchHelperId);
+					$(o).attr("src", toImagePath);
+				});
+			}
+			$(imgObjId).fadeOut(parseFloat(fadeDuration)*1000);
+			$(switchHelperRef).fadeIn(parseFloat(fadeDuration)*1000, completionFunction);
+		}
+	}, 1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+};
+obj2017_onTap_actionGroup1 = function(){
+	isLastActionGroup = false;
+	if (isLastActionGroup) {
+		window.obj2017_onTap_activeActionGroupIndex = -1;
+		$("#obj2017").trigger("obj2017_onTap_ended");
+		
+		for (var i = 0; i < pubcoder.queuedEvents.length; i++) {
+			const evt = pubcoder.queuedEvents[i];
+			if (evt.senderObjectId == 2017) {
+				console.warn("de-queueing event obj2017." + evt.eventName);
+				pubcoder.queuedEvents.splice(i, 1);
+				$("#obj2017").trigger(evt.eventName);
+				return;
+			}
+		}
+		return;
+	}
+	window.obj2017_onTap_activeActionGroupIndex = 1;
+	
+
+
+
+
+
+
+//	action: playAudioFile
+playAudioFile_4704();
+function playAudioFile_4704() {
+	window.obj2017_onTap_runningActionsCount = obj2017_onTap_runningActionsCount + 1;
+	var myAudio = $("#obj_audio_playSoundFile4704")[0];
+	var playFromBeginning = true;
+	var waitForCompletion = true;
+	var useReader = typeof(window.XPUB.readerPrefersToHandleAudio) !== "undefined" ?
+		window.XPUB.readerPrefersToHandleAudio : (/iphone|ipad|ipod/i.test(navigator.userAgent.toLowerCase()));
+	if (useReader) {
+		if (waitForCompletion) {
+			XPUB.playAudio(myAudio.src, playFromBeginning, "obj_audio_playSoundFile4704");
+			$("#obj_audio_playSoundFile4704").one('ended', function() {
+				// this.removeEventListener('ended',arguments.callee,false);
+				window.obj2017_onTap_runningActionsCount = window.obj2017_onTap_runningActionsCount - 1;
+if (window.obj2017_onTap_runningActionsCount < 0) {
+	window.obj2017_onTap_runningActionsCount = 0;
+} else if (window.obj2017_onTap_runningActionsCount == 0) {
+	obj2017_onTap_actionGroup2();
+}
+			});
+		} else {
+			XPUB.playAudio(myAudio.src, playFromBeginning, null);
+			window.obj2017_onTap_runningActionsCount = window.obj2017_onTap_runningActionsCount - 1;
+if (window.obj2017_onTap_runningActionsCount < 0) {
+	window.obj2017_onTap_runningActionsCount = 0;
+} else if (window.obj2017_onTap_runningActionsCount == 0) {
+	obj2017_onTap_actionGroup2();
+}
+		}
+		
+	} else {
+		if (playFromBeginning) {
+			try {
+				myAudio.currentTime = 0;
+			} catch (err) {
+				console.log(err);
+				myAudio.src = myAudio.src;
+			}
+		}
+		myAudio.play();
+		if (waitForCompletion) {
+			myAudio.addEventListener('ended', function() {
+				this.removeEventListener('ended',arguments.callee,false);
+				window.obj2017_onTap_runningActionsCount = window.obj2017_onTap_runningActionsCount - 1;
+if (window.obj2017_onTap_runningActionsCount < 0) {
+	window.obj2017_onTap_runningActionsCount = 0;
+} else if (window.obj2017_onTap_runningActionsCount == 0) {
+	obj2017_onTap_actionGroup2();
+}
+			}, false);
+		} else {
+			window.obj2017_onTap_runningActionsCount = window.obj2017_onTap_runningActionsCount - 1;
+if (window.obj2017_onTap_runningActionsCount < 0) {
+	window.obj2017_onTap_runningActionsCount = 0;
+} else if (window.obj2017_onTap_runningActionsCount == 0) {
+	obj2017_onTap_actionGroup2();
+}
+		}
+	}
+	
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+};
+obj2017_onTap_actionGroup2 = function(){
+	isLastActionGroup = true;
+	if (isLastActionGroup) {
+		window.obj2017_onTap_activeActionGroupIndex = -1;
+		$("#obj2017").trigger("obj2017_onTap_ended");
+		
+		for (var i = 0; i < pubcoder.queuedEvents.length; i++) {
+			const evt = pubcoder.queuedEvents[i];
+			if (evt.senderObjectId == 2017) {
+				console.warn("de-queueing event obj2017." + evt.eventName);
+				pubcoder.queuedEvents.splice(i, 1);
+				$("#obj2017").trigger(evt.eventName);
+				return;
+			}
+		}
+		return;
+	}
+	window.obj2017_onTap_activeActionGroupIndex = 2;
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+};
+obj2020_onTap_actionGroup0 = function(){
+	isLastActionGroup = false;
+	if (isLastActionGroup) {
+		window.obj2020_onTap_activeActionGroupIndex = -1;
+		$("#obj2020").trigger("obj2020_onTap_ended");
+		
+		for (var i = 0; i < pubcoder.queuedEvents.length; i++) {
+			const evt = pubcoder.queuedEvents[i];
+			if (evt.senderObjectId == 2020) {
+				console.warn("de-queueing event obj2020." + evt.eventName);
+				pubcoder.queuedEvents.splice(i, 1);
+				$("#obj2020").trigger(evt.eventName);
+				return;
+			}
+		}
+		return;
+	}
+	window.obj2020_onTap_activeActionGroupIndex = 0;
+	
+
+
+
+//	action: switchImage 
+//	target: obj2020 
+switchImage_2022();
+function switchImage_2022() {
+	window.obj2020_onTap_runningActionsCount = obj2020_onTap_runningActionsCount + 1;
+
+	var targetObjectId = "#obj2020";
+	var targetObject = $(targetObjectId)[0];
+	var allowBackAndForth = true;
+	var imgObjId = "#obj2020_img";
+	var fromImagePath = "../images/obj2014_image.png";
+	var toImagePath = "../images/switch306_to.png";
+	var switchHelperId = "switchHelper321"
+	var switchHelperRef = "#switchHelper321"
+	var switchId = "321";
+	var toSwitchId = "321";
+	var fadeDuration = "0s";
+	var fromSoundObjectId = "#";
+	var toSoundObjectId = "#";
+	var audioFrom;
+	if (fromSoundObjectId != "#") audioFrom = $(fromSoundObjectId)[0];
+	var audioTo;
+	if (toSoundObjectId != "#") audioTo = $(toSoundObjectId)[0];
+	
+	var completionFunction = function () {
+		if ($(targetObjectId).attr("data-SCActionSwitchImage-applied") == toSwitchId) $(imgObjId).attr("src", toImagePath);
+		if (fadeDuration != "0s") {
+			setTimeout(function() {
+				$(imgObjId).show();
+				$(switchHelperRef).remove();
+				actionEndFunction();
+			}, 100);
+		} else {
+			actionEndFunction();
+		}
+	}
+	var actionEndFunction = function() {
+			setTimeout(function() {
+				window.obj2020_onTap_runningActionsCount = window.obj2020_onTap_runningActionsCount - 1;
+if (window.obj2020_onTap_runningActionsCount < 0) {
+	window.obj2020_onTap_runningActionsCount = 0;
+} else if (window.obj2020_onTap_runningActionsCount == 0) {
+	obj2020_onTap_actionGroup1();
+}
+			}, 1);
+	};
+	var originalImage = $(targetObjectId).attr("data-SCActionSwitchImage-originalImage");
+	if (!(typeof originalImage !== typeof undefined && originalImage !== false)) {
+		$(targetObjectId).attr("data-SCActionSwitchImage-originalImage", $(imgObjId).attr("src"));
+	}
+	var appliedSwitchImage = $(targetObjectId).attr("data-SCActionSwitchImage-applied");
+	if (!(typeof appliedSwitchImage !== typeof undefined && appliedSwitchImage !== false)) {
+		appliedSwitchImage = "";
+	}
+	if (appliedSwitchImage == switchId) {
+		if (allowBackAndForth) {
+			toImagePath = originalImage;
+			toSwitchId = "";
+			var audioSwapHelp = audioFrom;
+			audioFrom = audioTo;
+			audioTo = audioSwapHelp;
+		} else {
+			setTimeout(function() { actionEndFunction(); }, 1);
+			return;
+		}
+	}
+	setTimeout(function() {
+		$(targetObjectId).attr("data-SCActionSwitchImage-applied", toSwitchId);
+		if (audioFrom != null) { audioFrom.pause(); }
+		if (audioTo != null) { audioTo.currentTime = 0; audioTo.play(); }
+		if (fadeDuration == "0s") {
+			completionFunction()
+		} else {
+			if ($(targetObjectId + " .SCActionSwitchImageHelper").length == 0) {
+				$(targetObjectId).append('<img class="SCActionSwitchImageHelper" src="' + toImagePath + '" id="' + switchHelperId + '" style="height:' + $(targetObjectId).css('height') + '; width: ' + $(targetObjectId).css('width') + '; display: none; position: absolute; overflow:hidden; top: 0px; left: 0px; z-index: 999;"/>');
+			} else {
+				console.log("qui");
+				$(targetObjectId + " .SCActionSwitchImageHelper").each(function (i,o) {
+					console.log(o);
+					$(o).attr("id", switchHelperId);
+					$(o).attr("src", toImagePath);
+				});
+			}
+			$(imgObjId).fadeOut(parseFloat(fadeDuration)*1000);
+			$(switchHelperRef).fadeIn(parseFloat(fadeDuration)*1000, completionFunction);
+		}
+	}, 1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+};
+obj2020_onTap_actionGroup1 = function(){
+	isLastActionGroup = false;
+	if (isLastActionGroup) {
+		window.obj2020_onTap_activeActionGroupIndex = -1;
+		$("#obj2020").trigger("obj2020_onTap_ended");
+		
+		for (var i = 0; i < pubcoder.queuedEvents.length; i++) {
+			const evt = pubcoder.queuedEvents[i];
+			if (evt.senderObjectId == 2020) {
+				console.warn("de-queueing event obj2020." + evt.eventName);
+				pubcoder.queuedEvents.splice(i, 1);
+				$("#obj2020").trigger(evt.eventName);
+				return;
+			}
+		}
+		return;
+	}
+	window.obj2020_onTap_activeActionGroupIndex = 1;
+	
+
+
+
+
+
+
+//	action: playAudioFile
+playAudioFile_4705();
+function playAudioFile_4705() {
+	window.obj2020_onTap_runningActionsCount = obj2020_onTap_runningActionsCount + 1;
+	var myAudio = $("#obj_audio_playSoundFile4705")[0];
+	var playFromBeginning = true;
+	var waitForCompletion = true;
+	var useReader = typeof(window.XPUB.readerPrefersToHandleAudio) !== "undefined" ?
+		window.XPUB.readerPrefersToHandleAudio : (/iphone|ipad|ipod/i.test(navigator.userAgent.toLowerCase()));
+	if (useReader) {
+		if (waitForCompletion) {
+			XPUB.playAudio(myAudio.src, playFromBeginning, "obj_audio_playSoundFile4705");
+			$("#obj_audio_playSoundFile4705").one('ended', function() {
+				// this.removeEventListener('ended',arguments.callee,false);
+				window.obj2020_onTap_runningActionsCount = window.obj2020_onTap_runningActionsCount - 1;
+if (window.obj2020_onTap_runningActionsCount < 0) {
+	window.obj2020_onTap_runningActionsCount = 0;
+} else if (window.obj2020_onTap_runningActionsCount == 0) {
+	obj2020_onTap_actionGroup2();
+}
+			});
+		} else {
+			XPUB.playAudio(myAudio.src, playFromBeginning, null);
+			window.obj2020_onTap_runningActionsCount = window.obj2020_onTap_runningActionsCount - 1;
+if (window.obj2020_onTap_runningActionsCount < 0) {
+	window.obj2020_onTap_runningActionsCount = 0;
+} else if (window.obj2020_onTap_runningActionsCount == 0) {
+	obj2020_onTap_actionGroup2();
+}
+		}
+		
+	} else {
+		if (playFromBeginning) {
+			try {
+				myAudio.currentTime = 0;
+			} catch (err) {
+				console.log(err);
+				myAudio.src = myAudio.src;
+			}
+		}
+		myAudio.play();
+		if (waitForCompletion) {
+			myAudio.addEventListener('ended', function() {
+				this.removeEventListener('ended',arguments.callee,false);
+				window.obj2020_onTap_runningActionsCount = window.obj2020_onTap_runningActionsCount - 1;
+if (window.obj2020_onTap_runningActionsCount < 0) {
+	window.obj2020_onTap_runningActionsCount = 0;
+} else if (window.obj2020_onTap_runningActionsCount == 0) {
+	obj2020_onTap_actionGroup2();
+}
+			}, false);
+		} else {
+			window.obj2020_onTap_runningActionsCount = window.obj2020_onTap_runningActionsCount - 1;
+if (window.obj2020_onTap_runningActionsCount < 0) {
+	window.obj2020_onTap_runningActionsCount = 0;
+} else if (window.obj2020_onTap_runningActionsCount == 0) {
+	obj2020_onTap_actionGroup2();
+}
+		}
+	}
+	
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+};
+obj2020_onTap_actionGroup2 = function(){
+	isLastActionGroup = true;
+	if (isLastActionGroup) {
+		window.obj2020_onTap_activeActionGroupIndex = -1;
+		$("#obj2020").trigger("obj2020_onTap_ended");
+		
+		for (var i = 0; i < pubcoder.queuedEvents.length; i++) {
+			const evt = pubcoder.queuedEvents[i];
+			if (evt.senderObjectId == 2020) {
+				console.warn("de-queueing event obj2020." + evt.eventName);
+				pubcoder.queuedEvents.splice(i, 1);
+				$("#obj2020").trigger(evt.eventName);
+				return;
+			}
+		}
+		return;
+	}
+	window.obj2020_onTap_activeActionGroupIndex = 2;
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+};
+obj2043_onTap_actionGroup0 = function(){
+	isLastActionGroup = false;
+	if (isLastActionGroup) {
+		window.obj2043_onTap_activeActionGroupIndex = -1;
+		$("#obj2043").trigger("obj2043_onTap_ended");
+		
+		for (var i = 0; i < pubcoder.queuedEvents.length; i++) {
+			const evt = pubcoder.queuedEvents[i];
+			if (evt.senderObjectId == 2043) {
+				console.warn("de-queueing event obj2043." + evt.eventName);
+				pubcoder.queuedEvents.splice(i, 1);
+				$("#obj2043").trigger(evt.eventName);
+				return;
+			}
+		}
+		return;
+	}
+	window.obj2043_onTap_activeActionGroupIndex = 0;
+	
+
+
+
+//	action: switchImage 
+//	target: obj2023 
+switchImage_7031();
+function switchImage_7031() {
+	window.obj2043_onTap_runningActionsCount = obj2043_onTap_runningActionsCount + 1;
+
+	var targetObjectId = "#obj2023";
+	var targetObject = $(targetObjectId)[0];
+	var allowBackAndForth = true;
+	var imgObjId = "#obj2023_img";
+	var fromImagePath = "../images/obj2043_image.png";
+	var toImagePath = "../images/switch306_to.png";
+	var switchHelperId = "switchHelper323"
+	var switchHelperRef = "#switchHelper323"
+	var switchId = "323";
+	var toSwitchId = "323";
+	var fadeDuration = "0s";
+	var fromSoundObjectId = "#obj_audio_switchImage7031_from";
+	var toSoundObjectId = "#obj_audio_switchImage7031_to";
+	var audioFrom;
+	if (fromSoundObjectId != "#") audioFrom = $(fromSoundObjectId)[0];
+	var audioTo;
+	if (toSoundObjectId != "#") audioTo = $(toSoundObjectId)[0];
+	
+	var completionFunction = function () {
+		if ($(targetObjectId).attr("data-SCActionSwitchImage-applied") == toSwitchId) $(imgObjId).attr("src", toImagePath);
+		if (fadeDuration != "0s") {
+			setTimeout(function() {
+				$(imgObjId).show();
+				$(switchHelperRef).remove();
+				actionEndFunction();
+			}, 100);
+		} else {
+			actionEndFunction();
+		}
+	}
+	var actionEndFunction = function() {
+			setTimeout(function() {
+				window.obj2043_onTap_runningActionsCount = window.obj2043_onTap_runningActionsCount - 1;
+if (window.obj2043_onTap_runningActionsCount < 0) {
+	window.obj2043_onTap_runningActionsCount = 0;
+} else if (window.obj2043_onTap_runningActionsCount == 0) {
+	obj2043_onTap_actionGroup1();
+}
+			}, 1);
+	};
+	var originalImage = $(targetObjectId).attr("data-SCActionSwitchImage-originalImage");
+	if (!(typeof originalImage !== typeof undefined && originalImage !== false)) {
+		$(targetObjectId).attr("data-SCActionSwitchImage-originalImage", $(imgObjId).attr("src"));
+	}
+	var appliedSwitchImage = $(targetObjectId).attr("data-SCActionSwitchImage-applied");
+	if (!(typeof appliedSwitchImage !== typeof undefined && appliedSwitchImage !== false)) {
+		appliedSwitchImage = "";
+	}
+	if (appliedSwitchImage == switchId) {
+		if (allowBackAndForth) {
+			toImagePath = originalImage;
+			toSwitchId = "";
+			var audioSwapHelp = audioFrom;
+			audioFrom = audioTo;
+			audioTo = audioSwapHelp;
+		} else {
+			setTimeout(function() { actionEndFunction(); }, 1);
+			return;
+		}
+	}
+	setTimeout(function() {
+		$(targetObjectId).attr("data-SCActionSwitchImage-applied", toSwitchId);
+		if (audioFrom != null) { audioFrom.pause(); }
+		if (audioTo != null) { audioTo.currentTime = 0; audioTo.play(); }
+		if (fadeDuration == "0s") {
+			completionFunction()
+		} else {
+			if ($(targetObjectId + " .SCActionSwitchImageHelper").length == 0) {
+				$(targetObjectId).append('<img class="SCActionSwitchImageHelper" src="' + toImagePath + '" id="' + switchHelperId + '" style="height:' + $(targetObjectId).css('height') + '; width: ' + $(targetObjectId).css('width') + '; display: none; position: absolute; overflow:hidden; top: 0px; left: 0px; z-index: 999;"/>');
+			} else {
+				console.log("qui");
+				$(targetObjectId + " .SCActionSwitchImageHelper").each(function (i,o) {
+					console.log(o);
+					$(o).attr("id", switchHelperId);
+					$(o).attr("src", toImagePath);
+				});
+			}
+			$(imgObjId).fadeOut(parseFloat(fadeDuration)*1000);
+			$(switchHelperRef).fadeIn(parseFloat(fadeDuration)*1000, completionFunction);
+		}
+	}, 1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+};
+obj2043_onTap_actionGroup1 = function(){
+	isLastActionGroup = true;
+	if (isLastActionGroup) {
+		window.obj2043_onTap_activeActionGroupIndex = -1;
+		$("#obj2043").trigger("obj2043_onTap_ended");
+		
+		for (var i = 0; i < pubcoder.queuedEvents.length; i++) {
+			const evt = pubcoder.queuedEvents[i];
+			if (evt.senderObjectId == 2043) {
+				console.warn("de-queueing event obj2043." + evt.eventName);
+				pubcoder.queuedEvents.splice(i, 1);
+				$("#obj2043").trigger(evt.eventName);
+				return;
+			}
+		}
+		return;
+	}
+	window.obj2043_onTap_activeActionGroupIndex = 1;
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+};
+obj2039_onTap_actionGroup0 = function(){
+	isLastActionGroup = false;
+	if (isLastActionGroup) {
+		window.obj2039_onTap_activeActionGroupIndex = -1;
+		$("#obj2039").trigger("obj2039_onTap_ended");
+		
+		for (var i = 0; i < pubcoder.queuedEvents.length; i++) {
+			const evt = pubcoder.queuedEvents[i];
+			if (evt.senderObjectId == 2039) {
+				console.warn("de-queueing event obj2039." + evt.eventName);
+				pubcoder.queuedEvents.splice(i, 1);
+				$("#obj2039").trigger(evt.eventName);
+				return;
+			}
+		}
+		return;
+	}
+	window.obj2039_onTap_activeActionGroupIndex = 0;
+	
+
+
+
+//	action: switchImage 
+//	target: obj2026 
+switchImage_7030();
+function switchImage_7030() {
+	window.obj2039_onTap_runningActionsCount = obj2039_onTap_runningActionsCount + 1;
+
+	var targetObjectId = "#obj2026";
+	var targetObject = $(targetObjectId)[0];
+	var allowBackAndForth = true;
+	var imgObjId = "#obj2026_img";
+	var fromImagePath = "../images/obj2039_image.png";
+	var toImagePath = "../images/switch306_to.png";
+	var switchHelperId = "switchHelper326"
+	var switchHelperRef = "#switchHelper326"
+	var switchId = "326";
+	var toSwitchId = "326";
+	var fadeDuration = "0s";
+	var fromSoundObjectId = "#obj_audio_switchImage7030_from";
+	var toSoundObjectId = "#obj_audio_switchImage7030_to";
+	var audioFrom;
+	if (fromSoundObjectId != "#") audioFrom = $(fromSoundObjectId)[0];
+	var audioTo;
+	if (toSoundObjectId != "#") audioTo = $(toSoundObjectId)[0];
+	
+	var completionFunction = function () {
+		if ($(targetObjectId).attr("data-SCActionSwitchImage-applied") == toSwitchId) $(imgObjId).attr("src", toImagePath);
+		if (fadeDuration != "0s") {
+			setTimeout(function() {
+				$(imgObjId).show();
+				$(switchHelperRef).remove();
+				actionEndFunction();
+			}, 100);
+		} else {
+			actionEndFunction();
+		}
+	}
+	var actionEndFunction = function() {
+			setTimeout(function() {
+				window.obj2039_onTap_runningActionsCount = window.obj2039_onTap_runningActionsCount - 1;
+if (window.obj2039_onTap_runningActionsCount < 0) {
+	window.obj2039_onTap_runningActionsCount = 0;
+} else if (window.obj2039_onTap_runningActionsCount == 0) {
+	obj2039_onTap_actionGroup1();
+}
+			}, 1);
+	};
+	var originalImage = $(targetObjectId).attr("data-SCActionSwitchImage-originalImage");
+	if (!(typeof originalImage !== typeof undefined && originalImage !== false)) {
+		$(targetObjectId).attr("data-SCActionSwitchImage-originalImage", $(imgObjId).attr("src"));
+	}
+	var appliedSwitchImage = $(targetObjectId).attr("data-SCActionSwitchImage-applied");
+	if (!(typeof appliedSwitchImage !== typeof undefined && appliedSwitchImage !== false)) {
+		appliedSwitchImage = "";
+	}
+	if (appliedSwitchImage == switchId) {
+		if (allowBackAndForth) {
+			toImagePath = originalImage;
+			toSwitchId = "";
+			var audioSwapHelp = audioFrom;
+			audioFrom = audioTo;
+			audioTo = audioSwapHelp;
+		} else {
+			setTimeout(function() { actionEndFunction(); }, 1);
+			return;
+		}
+	}
+	setTimeout(function() {
+		$(targetObjectId).attr("data-SCActionSwitchImage-applied", toSwitchId);
+		if (audioFrom != null) { audioFrom.pause(); }
+		if (audioTo != null) { audioTo.currentTime = 0; audioTo.play(); }
+		if (fadeDuration == "0s") {
+			completionFunction()
+		} else {
+			if ($(targetObjectId + " .SCActionSwitchImageHelper").length == 0) {
+				$(targetObjectId).append('<img class="SCActionSwitchImageHelper" src="' + toImagePath + '" id="' + switchHelperId + '" style="height:' + $(targetObjectId).css('height') + '; width: ' + $(targetObjectId).css('width') + '; display: none; position: absolute; overflow:hidden; top: 0px; left: 0px; z-index: 999;"/>');
+			} else {
+				console.log("qui");
+				$(targetObjectId + " .SCActionSwitchImageHelper").each(function (i,o) {
+					console.log(o);
+					$(o).attr("id", switchHelperId);
+					$(o).attr("src", toImagePath);
+				});
+			}
+			$(imgObjId).fadeOut(parseFloat(fadeDuration)*1000);
+			$(switchHelperRef).fadeIn(parseFloat(fadeDuration)*1000, completionFunction);
+		}
+	}, 1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+};
+obj2039_onTap_actionGroup1 = function(){
+	isLastActionGroup = true;
+	if (isLastActionGroup) {
+		window.obj2039_onTap_activeActionGroupIndex = -1;
+		$("#obj2039").trigger("obj2039_onTap_ended");
+		
+		for (var i = 0; i < pubcoder.queuedEvents.length; i++) {
+			const evt = pubcoder.queuedEvents[i];
+			if (evt.senderObjectId == 2039) {
+				console.warn("de-queueing event obj2039." + evt.eventName);
+				pubcoder.queuedEvents.splice(i, 1);
+				$("#obj2039").trigger(evt.eventName);
+				return;
+			}
+		}
+		return;
+	}
+	window.obj2039_onTap_activeActionGroupIndex = 1;
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+};
+obj2041_onTap_actionGroup0 = function(){
+	isLastActionGroup = false;
+	if (isLastActionGroup) {
+		window.obj2041_onTap_activeActionGroupIndex = -1;
+		$("#obj2041").trigger("obj2041_onTap_ended");
+		
+		for (var i = 0; i < pubcoder.queuedEvents.length; i++) {
+			const evt = pubcoder.queuedEvents[i];
+			if (evt.senderObjectId == 2041) {
+				console.warn("de-queueing event obj2041." + evt.eventName);
+				pubcoder.queuedEvents.splice(i, 1);
+				$("#obj2041").trigger(evt.eventName);
+				return;
+			}
+		}
+		return;
+	}
+	window.obj2041_onTap_activeActionGroupIndex = 0;
+	
+
+
+
+//	action: switchImage 
+//	target: obj2029 
+switchImage_7029();
+function switchImage_7029() {
+	window.obj2041_onTap_runningActionsCount = obj2041_onTap_runningActionsCount + 1;
+
+	var targetObjectId = "#obj2029";
+	var targetObject = $(targetObjectId)[0];
+	var allowBackAndForth = true;
+	var imgObjId = "#obj2029_img";
+	var fromImagePath = "../images/obj2041_image.png";
+	var toImagePath = "../images/switch306_to.png";
+	var switchHelperId = "switchHelper329"
+	var switchHelperRef = "#switchHelper329"
+	var switchId = "329";
+	var toSwitchId = "329";
+	var fadeDuration = "0s";
+	var fromSoundObjectId = "#obj_audio_switchImage7029_from";
+	var toSoundObjectId = "#obj_audio_switchImage7029_to";
+	var audioFrom;
+	if (fromSoundObjectId != "#") audioFrom = $(fromSoundObjectId)[0];
+	var audioTo;
+	if (toSoundObjectId != "#") audioTo = $(toSoundObjectId)[0];
+	
+	var completionFunction = function () {
+		if ($(targetObjectId).attr("data-SCActionSwitchImage-applied") == toSwitchId) $(imgObjId).attr("src", toImagePath);
+		if (fadeDuration != "0s") {
+			setTimeout(function() {
+				$(imgObjId).show();
+				$(switchHelperRef).remove();
+				actionEndFunction();
+			}, 100);
+		} else {
+			actionEndFunction();
+		}
+	}
+	var actionEndFunction = function() {
+			setTimeout(function() {
+				window.obj2041_onTap_runningActionsCount = window.obj2041_onTap_runningActionsCount - 1;
+if (window.obj2041_onTap_runningActionsCount < 0) {
+	window.obj2041_onTap_runningActionsCount = 0;
+} else if (window.obj2041_onTap_runningActionsCount == 0) {
+	obj2041_onTap_actionGroup1();
+}
+			}, 1);
+	};
+	var originalImage = $(targetObjectId).attr("data-SCActionSwitchImage-originalImage");
+	if (!(typeof originalImage !== typeof undefined && originalImage !== false)) {
+		$(targetObjectId).attr("data-SCActionSwitchImage-originalImage", $(imgObjId).attr("src"));
+	}
+	var appliedSwitchImage = $(targetObjectId).attr("data-SCActionSwitchImage-applied");
+	if (!(typeof appliedSwitchImage !== typeof undefined && appliedSwitchImage !== false)) {
+		appliedSwitchImage = "";
+	}
+	if (appliedSwitchImage == switchId) {
+		if (allowBackAndForth) {
+			toImagePath = originalImage;
+			toSwitchId = "";
+			var audioSwapHelp = audioFrom;
+			audioFrom = audioTo;
+			audioTo = audioSwapHelp;
+		} else {
+			setTimeout(function() { actionEndFunction(); }, 1);
+			return;
+		}
+	}
+	setTimeout(function() {
+		$(targetObjectId).attr("data-SCActionSwitchImage-applied", toSwitchId);
+		if (audioFrom != null) { audioFrom.pause(); }
+		if (audioTo != null) { audioTo.currentTime = 0; audioTo.play(); }
+		if (fadeDuration == "0s") {
+			completionFunction()
+		} else {
+			if ($(targetObjectId + " .SCActionSwitchImageHelper").length == 0) {
+				$(targetObjectId).append('<img class="SCActionSwitchImageHelper" src="' + toImagePath + '" id="' + switchHelperId + '" style="height:' + $(targetObjectId).css('height') + '; width: ' + $(targetObjectId).css('width') + '; display: none; position: absolute; overflow:hidden; top: 0px; left: 0px; z-index: 999;"/>');
+			} else {
+				console.log("qui");
+				$(targetObjectId + " .SCActionSwitchImageHelper").each(function (i,o) {
+					console.log(o);
+					$(o).attr("id", switchHelperId);
+					$(o).attr("src", toImagePath);
+				});
+			}
+			$(imgObjId).fadeOut(parseFloat(fadeDuration)*1000);
+			$(switchHelperRef).fadeIn(parseFloat(fadeDuration)*1000, completionFunction);
+		}
+	}, 1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+};
+obj2041_onTap_actionGroup1 = function(){
+	isLastActionGroup = true;
+	if (isLastActionGroup) {
+		window.obj2041_onTap_activeActionGroupIndex = -1;
+		$("#obj2041").trigger("obj2041_onTap_ended");
+		
+		for (var i = 0; i < pubcoder.queuedEvents.length; i++) {
+			const evt = pubcoder.queuedEvents[i];
+			if (evt.senderObjectId == 2041) {
+				console.warn("de-queueing event obj2041." + evt.eventName);
+				pubcoder.queuedEvents.splice(i, 1);
+				$("#obj2041").trigger(evt.eventName);
+				return;
+			}
+		}
+		return;
+	}
+	window.obj2041_onTap_activeActionGroupIndex = 1;
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+};
+obj2026_onTap_actionGroup0 = function(){
+	isLastActionGroup = false;
+	if (isLastActionGroup) {
+		window.obj2026_onTap_activeActionGroupIndex = -1;
+		$("#obj2026").trigger("obj2026_onTap_ended");
+		
+		for (var i = 0; i < pubcoder.queuedEvents.length; i++) {
+			const evt = pubcoder.queuedEvents[i];
+			if (evt.senderObjectId == 2026) {
+				console.warn("de-queueing event obj2026." + evt.eventName);
+				pubcoder.queuedEvents.splice(i, 1);
+				$("#obj2026").trigger(evt.eventName);
+				return;
+			}
+		}
+		return;
+	}
+	window.obj2026_onTap_activeActionGroupIndex = 0;
+	
+
+
+
+//	action: switchImage 
+//	target: obj2026 
+switchImage_2028();
+function switchImage_2028() {
+	window.obj2026_onTap_runningActionsCount = obj2026_onTap_runningActionsCount + 1;
+
+	var targetObjectId = "#obj2026";
+	var targetObject = $(targetObjectId)[0];
+	var allowBackAndForth = true;
+	var imgObjId = "#obj2026_img";
+	var fromImagePath = "../images/obj2014_image.png";
+	var toImagePath = "../images/switch306_to.png";
+	var switchHelperId = "switchHelper332"
+	var switchHelperRef = "#switchHelper332"
+	var switchId = "332";
+	var toSwitchId = "332";
+	var fadeDuration = "0s";
+	var fromSoundObjectId = "#";
+	var toSoundObjectId = "#";
+	var audioFrom;
+	if (fromSoundObjectId != "#") audioFrom = $(fromSoundObjectId)[0];
+	var audioTo;
+	if (toSoundObjectId != "#") audioTo = $(toSoundObjectId)[0];
+	
+	var completionFunction = function () {
+		if ($(targetObjectId).attr("data-SCActionSwitchImage-applied") == toSwitchId) $(imgObjId).attr("src", toImagePath);
+		if (fadeDuration != "0s") {
+			setTimeout(function() {
+				$(imgObjId).show();
+				$(switchHelperRef).remove();
+				actionEndFunction();
+			}, 100);
+		} else {
+			actionEndFunction();
+		}
+	}
+	var actionEndFunction = function() {
+			setTimeout(function() {
+				window.obj2026_onTap_runningActionsCount = window.obj2026_onTap_runningActionsCount - 1;
+if (window.obj2026_onTap_runningActionsCount < 0) {
+	window.obj2026_onTap_runningActionsCount = 0;
+} else if (window.obj2026_onTap_runningActionsCount == 0) {
+	obj2026_onTap_actionGroup1();
+}
+			}, 1);
+	};
+	var originalImage = $(targetObjectId).attr("data-SCActionSwitchImage-originalImage");
+	if (!(typeof originalImage !== typeof undefined && originalImage !== false)) {
+		$(targetObjectId).attr("data-SCActionSwitchImage-originalImage", $(imgObjId).attr("src"));
+	}
+	var appliedSwitchImage = $(targetObjectId).attr("data-SCActionSwitchImage-applied");
+	if (!(typeof appliedSwitchImage !== typeof undefined && appliedSwitchImage !== false)) {
+		appliedSwitchImage = "";
+	}
+	if (appliedSwitchImage == switchId) {
+		if (allowBackAndForth) {
+			toImagePath = originalImage;
+			toSwitchId = "";
+			var audioSwapHelp = audioFrom;
+			audioFrom = audioTo;
+			audioTo = audioSwapHelp;
+		} else {
+			setTimeout(function() { actionEndFunction(); }, 1);
+			return;
+		}
+	}
+	setTimeout(function() {
+		$(targetObjectId).attr("data-SCActionSwitchImage-applied", toSwitchId);
+		if (audioFrom != null) { audioFrom.pause(); }
+		if (audioTo != null) { audioTo.currentTime = 0; audioTo.play(); }
+		if (fadeDuration == "0s") {
+			completionFunction()
+		} else {
+			if ($(targetObjectId + " .SCActionSwitchImageHelper").length == 0) {
+				$(targetObjectId).append('<img class="SCActionSwitchImageHelper" src="' + toImagePath + '" id="' + switchHelperId + '" style="height:' + $(targetObjectId).css('height') + '; width: ' + $(targetObjectId).css('width') + '; display: none; position: absolute; overflow:hidden; top: 0px; left: 0px; z-index: 999;"/>');
+			} else {
+				console.log("qui");
+				$(targetObjectId + " .SCActionSwitchImageHelper").each(function (i,o) {
+					console.log(o);
+					$(o).attr("id", switchHelperId);
+					$(o).attr("src", toImagePath);
+				});
+			}
+			$(imgObjId).fadeOut(parseFloat(fadeDuration)*1000);
+			$(switchHelperRef).fadeIn(parseFloat(fadeDuration)*1000, completionFunction);
+		}
+	}, 1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+};
+obj2026_onTap_actionGroup1 = function(){
+	isLastActionGroup = false;
+	if (isLastActionGroup) {
+		window.obj2026_onTap_activeActionGroupIndex = -1;
+		$("#obj2026").trigger("obj2026_onTap_ended");
+		
+		for (var i = 0; i < pubcoder.queuedEvents.length; i++) {
+			const evt = pubcoder.queuedEvents[i];
+			if (evt.senderObjectId == 2026) {
+				console.warn("de-queueing event obj2026." + evt.eventName);
+				pubcoder.queuedEvents.splice(i, 1);
+				$("#obj2026").trigger(evt.eventName);
+				return;
+			}
+		}
+		return;
+	}
+	window.obj2026_onTap_activeActionGroupIndex = 1;
+	
+
+
+
+
+
+
+//	action: playAudioFile
+playAudioFile_4707();
+function playAudioFile_4707() {
+	window.obj2026_onTap_runningActionsCount = obj2026_onTap_runningActionsCount + 1;
+	var myAudio = $("#obj_audio_playSoundFile4707")[0];
+	var playFromBeginning = true;
+	var waitForCompletion = true;
+	var useReader = typeof(window.XPUB.readerPrefersToHandleAudio) !== "undefined" ?
+		window.XPUB.readerPrefersToHandleAudio : (/iphone|ipad|ipod/i.test(navigator.userAgent.toLowerCase()));
+	if (useReader) {
+		if (waitForCompletion) {
+			XPUB.playAudio(myAudio.src, playFromBeginning, "obj_audio_playSoundFile4707");
+			$("#obj_audio_playSoundFile4707").one('ended', function() {
+				// this.removeEventListener('ended',arguments.callee,false);
+				window.obj2026_onTap_runningActionsCount = window.obj2026_onTap_runningActionsCount - 1;
+if (window.obj2026_onTap_runningActionsCount < 0) {
+	window.obj2026_onTap_runningActionsCount = 0;
+} else if (window.obj2026_onTap_runningActionsCount == 0) {
+	obj2026_onTap_actionGroup2();
+}
+			});
+		} else {
+			XPUB.playAudio(myAudio.src, playFromBeginning, null);
+			window.obj2026_onTap_runningActionsCount = window.obj2026_onTap_runningActionsCount - 1;
+if (window.obj2026_onTap_runningActionsCount < 0) {
+	window.obj2026_onTap_runningActionsCount = 0;
+} else if (window.obj2026_onTap_runningActionsCount == 0) {
+	obj2026_onTap_actionGroup2();
+}
+		}
+		
+	} else {
+		if (playFromBeginning) {
+			try {
+				myAudio.currentTime = 0;
+			} catch (err) {
+				console.log(err);
+				myAudio.src = myAudio.src;
+			}
+		}
+		myAudio.play();
+		if (waitForCompletion) {
+			myAudio.addEventListener('ended', function() {
+				this.removeEventListener('ended',arguments.callee,false);
+				window.obj2026_onTap_runningActionsCount = window.obj2026_onTap_runningActionsCount - 1;
+if (window.obj2026_onTap_runningActionsCount < 0) {
+	window.obj2026_onTap_runningActionsCount = 0;
+} else if (window.obj2026_onTap_runningActionsCount == 0) {
+	obj2026_onTap_actionGroup2();
+}
+			}, false);
+		} else {
+			window.obj2026_onTap_runningActionsCount = window.obj2026_onTap_runningActionsCount - 1;
+if (window.obj2026_onTap_runningActionsCount < 0) {
+	window.obj2026_onTap_runningActionsCount = 0;
+} else if (window.obj2026_onTap_runningActionsCount == 0) {
+	obj2026_onTap_actionGroup2();
+}
+		}
+	}
+	
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+};
+obj2026_onTap_actionGroup2 = function(){
+	isLastActionGroup = true;
+	if (isLastActionGroup) {
+		window.obj2026_onTap_activeActionGroupIndex = -1;
+		$("#obj2026").trigger("obj2026_onTap_ended");
+		
+		for (var i = 0; i < pubcoder.queuedEvents.length; i++) {
+			const evt = pubcoder.queuedEvents[i];
+			if (evt.senderObjectId == 2026) {
+				console.warn("de-queueing event obj2026." + evt.eventName);
+				pubcoder.queuedEvents.splice(i, 1);
+				$("#obj2026").trigger(evt.eventName);
+				return;
+			}
+		}
+		return;
+	}
+	window.obj2026_onTap_activeActionGroupIndex = 2;
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+};
+obj2023_onTap_actionGroup0 = function(){
+	isLastActionGroup = false;
+	if (isLastActionGroup) {
+		window.obj2023_onTap_activeActionGroupIndex = -1;
+		$("#obj2023").trigger("obj2023_onTap_ended");
+		
+		for (var i = 0; i < pubcoder.queuedEvents.length; i++) {
+			const evt = pubcoder.queuedEvents[i];
+			if (evt.senderObjectId == 2023) {
+				console.warn("de-queueing event obj2023." + evt.eventName);
+				pubcoder.queuedEvents.splice(i, 1);
+				$("#obj2023").trigger(evt.eventName);
+				return;
+			}
+		}
+		return;
+	}
+	window.obj2023_onTap_activeActionGroupIndex = 0;
+	
+
+
+
+//	action: switchImage 
+//	target: obj2023 
+switchImage_2025();
+function switchImage_2025() {
+	window.obj2023_onTap_runningActionsCount = obj2023_onTap_runningActionsCount + 1;
+
+	var targetObjectId = "#obj2023";
+	var targetObject = $(targetObjectId)[0];
+	var allowBackAndForth = true;
+	var imgObjId = "#obj2023_img";
+	var fromImagePath = "../images/obj2014_image.png";
+	var toImagePath = "../images/switch306_to.png";
+	var switchHelperId = "switchHelper334"
+	var switchHelperRef = "#switchHelper334"
+	var switchId = "334";
+	var toSwitchId = "334";
+	var fadeDuration = "0s";
+	var fromSoundObjectId = "#";
+	var toSoundObjectId = "#";
+	var audioFrom;
+	if (fromSoundObjectId != "#") audioFrom = $(fromSoundObjectId)[0];
+	var audioTo;
+	if (toSoundObjectId != "#") audioTo = $(toSoundObjectId)[0];
+	
+	var completionFunction = function () {
+		if ($(targetObjectId).attr("data-SCActionSwitchImage-applied") == toSwitchId) $(imgObjId).attr("src", toImagePath);
+		if (fadeDuration != "0s") {
+			setTimeout(function() {
+				$(imgObjId).show();
+				$(switchHelperRef).remove();
+				actionEndFunction();
+			}, 100);
+		} else {
+			actionEndFunction();
+		}
+	}
+	var actionEndFunction = function() {
+			setTimeout(function() {
+				window.obj2023_onTap_runningActionsCount = window.obj2023_onTap_runningActionsCount - 1;
+if (window.obj2023_onTap_runningActionsCount < 0) {
+	window.obj2023_onTap_runningActionsCount = 0;
+} else if (window.obj2023_onTap_runningActionsCount == 0) {
+	obj2023_onTap_actionGroup1();
+}
+			}, 1);
+	};
+	var originalImage = $(targetObjectId).attr("data-SCActionSwitchImage-originalImage");
+	if (!(typeof originalImage !== typeof undefined && originalImage !== false)) {
+		$(targetObjectId).attr("data-SCActionSwitchImage-originalImage", $(imgObjId).attr("src"));
+	}
+	var appliedSwitchImage = $(targetObjectId).attr("data-SCActionSwitchImage-applied");
+	if (!(typeof appliedSwitchImage !== typeof undefined && appliedSwitchImage !== false)) {
+		appliedSwitchImage = "";
+	}
+	if (appliedSwitchImage == switchId) {
+		if (allowBackAndForth) {
+			toImagePath = originalImage;
+			toSwitchId = "";
+			var audioSwapHelp = audioFrom;
+			audioFrom = audioTo;
+			audioTo = audioSwapHelp;
+		} else {
+			setTimeout(function() { actionEndFunction(); }, 1);
+			return;
+		}
+	}
+	setTimeout(function() {
+		$(targetObjectId).attr("data-SCActionSwitchImage-applied", toSwitchId);
+		if (audioFrom != null) { audioFrom.pause(); }
+		if (audioTo != null) { audioTo.currentTime = 0; audioTo.play(); }
+		if (fadeDuration == "0s") {
+			completionFunction()
+		} else {
+			if ($(targetObjectId + " .SCActionSwitchImageHelper").length == 0) {
+				$(targetObjectId).append('<img class="SCActionSwitchImageHelper" src="' + toImagePath + '" id="' + switchHelperId + '" style="height:' + $(targetObjectId).css('height') + '; width: ' + $(targetObjectId).css('width') + '; display: none; position: absolute; overflow:hidden; top: 0px; left: 0px; z-index: 999;"/>');
+			} else {
+				console.log("qui");
+				$(targetObjectId + " .SCActionSwitchImageHelper").each(function (i,o) {
+					console.log(o);
+					$(o).attr("id", switchHelperId);
+					$(o).attr("src", toImagePath);
+				});
+			}
+			$(imgObjId).fadeOut(parseFloat(fadeDuration)*1000);
+			$(switchHelperRef).fadeIn(parseFloat(fadeDuration)*1000, completionFunction);
+		}
+	}, 1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+};
+obj2023_onTap_actionGroup1 = function(){
+	isLastActionGroup = false;
+	if (isLastActionGroup) {
+		window.obj2023_onTap_activeActionGroupIndex = -1;
+		$("#obj2023").trigger("obj2023_onTap_ended");
+		
+		for (var i = 0; i < pubcoder.queuedEvents.length; i++) {
+			const evt = pubcoder.queuedEvents[i];
+			if (evt.senderObjectId == 2023) {
+				console.warn("de-queueing event obj2023." + evt.eventName);
+				pubcoder.queuedEvents.splice(i, 1);
+				$("#obj2023").trigger(evt.eventName);
+				return;
+			}
+		}
+		return;
+	}
+	window.obj2023_onTap_activeActionGroupIndex = 1;
+	
+
+
+
+
+
+
+//	action: playAudioFile
+playAudioFile_4706();
+function playAudioFile_4706() {
+	window.obj2023_onTap_runningActionsCount = obj2023_onTap_runningActionsCount + 1;
+	var myAudio = $("#obj_audio_playSoundFile4706")[0];
+	var playFromBeginning = true;
+	var waitForCompletion = true;
+	var useReader = typeof(window.XPUB.readerPrefersToHandleAudio) !== "undefined" ?
+		window.XPUB.readerPrefersToHandleAudio : (/iphone|ipad|ipod/i.test(navigator.userAgent.toLowerCase()));
+	if (useReader) {
+		if (waitForCompletion) {
+			XPUB.playAudio(myAudio.src, playFromBeginning, "obj_audio_playSoundFile4706");
+			$("#obj_audio_playSoundFile4706").one('ended', function() {
+				// this.removeEventListener('ended',arguments.callee,false);
+				window.obj2023_onTap_runningActionsCount = window.obj2023_onTap_runningActionsCount - 1;
+if (window.obj2023_onTap_runningActionsCount < 0) {
+	window.obj2023_onTap_runningActionsCount = 0;
+} else if (window.obj2023_onTap_runningActionsCount == 0) {
+	obj2023_onTap_actionGroup2();
+}
+			});
+		} else {
+			XPUB.playAudio(myAudio.src, playFromBeginning, null);
+			window.obj2023_onTap_runningActionsCount = window.obj2023_onTap_runningActionsCount - 1;
+if (window.obj2023_onTap_runningActionsCount < 0) {
+	window.obj2023_onTap_runningActionsCount = 0;
+} else if (window.obj2023_onTap_runningActionsCount == 0) {
+	obj2023_onTap_actionGroup2();
+}
+		}
+		
+	} else {
+		if (playFromBeginning) {
+			try {
+				myAudio.currentTime = 0;
+			} catch (err) {
+				console.log(err);
+				myAudio.src = myAudio.src;
+			}
+		}
+		myAudio.play();
+		if (waitForCompletion) {
+			myAudio.addEventListener('ended', function() {
+				this.removeEventListener('ended',arguments.callee,false);
+				window.obj2023_onTap_runningActionsCount = window.obj2023_onTap_runningActionsCount - 1;
+if (window.obj2023_onTap_runningActionsCount < 0) {
+	window.obj2023_onTap_runningActionsCount = 0;
+} else if (window.obj2023_onTap_runningActionsCount == 0) {
+	obj2023_onTap_actionGroup2();
+}
+			}, false);
+		} else {
+			window.obj2023_onTap_runningActionsCount = window.obj2023_onTap_runningActionsCount - 1;
+if (window.obj2023_onTap_runningActionsCount < 0) {
+	window.obj2023_onTap_runningActionsCount = 0;
+} else if (window.obj2023_onTap_runningActionsCount == 0) {
+	obj2023_onTap_actionGroup2();
+}
+		}
+	}
+	
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+};
+obj2023_onTap_actionGroup2 = function(){
+	isLastActionGroup = true;
+	if (isLastActionGroup) {
+		window.obj2023_onTap_activeActionGroupIndex = -1;
+		$("#obj2023").trigger("obj2023_onTap_ended");
+		
+		for (var i = 0; i < pubcoder.queuedEvents.length; i++) {
+			const evt = pubcoder.queuedEvents[i];
+			if (evt.senderObjectId == 2023) {
+				console.warn("de-queueing event obj2023." + evt.eventName);
+				pubcoder.queuedEvents.splice(i, 1);
+				$("#obj2023").trigger(evt.eventName);
+				return;
+			}
+		}
+		return;
+	}
+	window.obj2023_onTap_activeActionGroupIndex = 2;
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+};
+obj2029_onTap_actionGroup0 = function(){
+	isLastActionGroup = false;
+	if (isLastActionGroup) {
+		window.obj2029_onTap_activeActionGroupIndex = -1;
+		$("#obj2029").trigger("obj2029_onTap_ended");
+		
+		for (var i = 0; i < pubcoder.queuedEvents.length; i++) {
+			const evt = pubcoder.queuedEvents[i];
+			if (evt.senderObjectId == 2029) {
+				console.warn("de-queueing event obj2029." + evt.eventName);
+				pubcoder.queuedEvents.splice(i, 1);
+				$("#obj2029").trigger(evt.eventName);
+				return;
+			}
+		}
+		return;
+	}
+	window.obj2029_onTap_activeActionGroupIndex = 0;
+	
+
+
+
+//	action: switchImage 
+//	target: obj2029 
+switchImage_2031();
+function switchImage_2031() {
+	window.obj2029_onTap_runningActionsCount = obj2029_onTap_runningActionsCount + 1;
+
+	var targetObjectId = "#obj2029";
+	var targetObject = $(targetObjectId)[0];
+	var allowBackAndForth = true;
+	var imgObjId = "#obj2029_img";
+	var fromImagePath = "../images/obj2014_image.png";
+	var toImagePath = "../images/switch306_to.png";
+	var switchHelperId = "switchHelper336"
+	var switchHelperRef = "#switchHelper336"
+	var switchId = "336";
+	var toSwitchId = "336";
+	var fadeDuration = "0s";
+	var fromSoundObjectId = "#";
+	var toSoundObjectId = "#";
+	var audioFrom;
+	if (fromSoundObjectId != "#") audioFrom = $(fromSoundObjectId)[0];
+	var audioTo;
+	if (toSoundObjectId != "#") audioTo = $(toSoundObjectId)[0];
+	
+	var completionFunction = function () {
+		if ($(targetObjectId).attr("data-SCActionSwitchImage-applied") == toSwitchId) $(imgObjId).attr("src", toImagePath);
+		if (fadeDuration != "0s") {
+			setTimeout(function() {
+				$(imgObjId).show();
+				$(switchHelperRef).remove();
+				actionEndFunction();
+			}, 100);
+		} else {
+			actionEndFunction();
+		}
+	}
+	var actionEndFunction = function() {
+			setTimeout(function() {
+				window.obj2029_onTap_runningActionsCount = window.obj2029_onTap_runningActionsCount - 1;
+if (window.obj2029_onTap_runningActionsCount < 0) {
+	window.obj2029_onTap_runningActionsCount = 0;
+} else if (window.obj2029_onTap_runningActionsCount == 0) {
+	obj2029_onTap_actionGroup1();
+}
+			}, 1);
+	};
+	var originalImage = $(targetObjectId).attr("data-SCActionSwitchImage-originalImage");
+	if (!(typeof originalImage !== typeof undefined && originalImage !== false)) {
+		$(targetObjectId).attr("data-SCActionSwitchImage-originalImage", $(imgObjId).attr("src"));
+	}
+	var appliedSwitchImage = $(targetObjectId).attr("data-SCActionSwitchImage-applied");
+	if (!(typeof appliedSwitchImage !== typeof undefined && appliedSwitchImage !== false)) {
+		appliedSwitchImage = "";
+	}
+	if (appliedSwitchImage == switchId) {
+		if (allowBackAndForth) {
+			toImagePath = originalImage;
+			toSwitchId = "";
+			var audioSwapHelp = audioFrom;
+			audioFrom = audioTo;
+			audioTo = audioSwapHelp;
+		} else {
+			setTimeout(function() { actionEndFunction(); }, 1);
+			return;
+		}
+	}
+	setTimeout(function() {
+		$(targetObjectId).attr("data-SCActionSwitchImage-applied", toSwitchId);
+		if (audioFrom != null) { audioFrom.pause(); }
+		if (audioTo != null) { audioTo.currentTime = 0; audioTo.play(); }
+		if (fadeDuration == "0s") {
+			completionFunction()
+		} else {
+			if ($(targetObjectId + " .SCActionSwitchImageHelper").length == 0) {
+				$(targetObjectId).append('<img class="SCActionSwitchImageHelper" src="' + toImagePath + '" id="' + switchHelperId + '" style="height:' + $(targetObjectId).css('height') + '; width: ' + $(targetObjectId).css('width') + '; display: none; position: absolute; overflow:hidden; top: 0px; left: 0px; z-index: 999;"/>');
+			} else {
+				console.log("qui");
+				$(targetObjectId + " .SCActionSwitchImageHelper").each(function (i,o) {
+					console.log(o);
+					$(o).attr("id", switchHelperId);
+					$(o).attr("src", toImagePath);
+				});
+			}
+			$(imgObjId).fadeOut(parseFloat(fadeDuration)*1000);
+			$(switchHelperRef).fadeIn(parseFloat(fadeDuration)*1000, completionFunction);
+		}
+	}, 1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+};
+obj2029_onTap_actionGroup1 = function(){
+	isLastActionGroup = false;
+	if (isLastActionGroup) {
+		window.obj2029_onTap_activeActionGroupIndex = -1;
+		$("#obj2029").trigger("obj2029_onTap_ended");
+		
+		for (var i = 0; i < pubcoder.queuedEvents.length; i++) {
+			const evt = pubcoder.queuedEvents[i];
+			if (evt.senderObjectId == 2029) {
+				console.warn("de-queueing event obj2029." + evt.eventName);
+				pubcoder.queuedEvents.splice(i, 1);
+				$("#obj2029").trigger(evt.eventName);
+				return;
+			}
+		}
+		return;
+	}
+	window.obj2029_onTap_activeActionGroupIndex = 1;
+	
+
+
+
+
+
+
+//	action: playAudioFile
+playAudioFile_4708();
+function playAudioFile_4708() {
+	window.obj2029_onTap_runningActionsCount = obj2029_onTap_runningActionsCount + 1;
+	var myAudio = $("#obj_audio_playSoundFile4708")[0];
+	var playFromBeginning = true;
+	var waitForCompletion = true;
+	var useReader = typeof(window.XPUB.readerPrefersToHandleAudio) !== "undefined" ?
+		window.XPUB.readerPrefersToHandleAudio : (/iphone|ipad|ipod/i.test(navigator.userAgent.toLowerCase()));
+	if (useReader) {
+		if (waitForCompletion) {
+			XPUB.playAudio(myAudio.src, playFromBeginning, "obj_audio_playSoundFile4708");
+			$("#obj_audio_playSoundFile4708").one('ended', function() {
+				// this.removeEventListener('ended',arguments.callee,false);
+				window.obj2029_onTap_runningActionsCount = window.obj2029_onTap_runningActionsCount - 1;
+if (window.obj2029_onTap_runningActionsCount < 0) {
+	window.obj2029_onTap_runningActionsCount = 0;
+} else if (window.obj2029_onTap_runningActionsCount == 0) {
+	obj2029_onTap_actionGroup2();
+}
+			});
+		} else {
+			XPUB.playAudio(myAudio.src, playFromBeginning, null);
+			window.obj2029_onTap_runningActionsCount = window.obj2029_onTap_runningActionsCount - 1;
+if (window.obj2029_onTap_runningActionsCount < 0) {
+	window.obj2029_onTap_runningActionsCount = 0;
+} else if (window.obj2029_onTap_runningActionsCount == 0) {
+	obj2029_onTap_actionGroup2();
+}
+		}
+		
+	} else {
+		if (playFromBeginning) {
+			try {
+				myAudio.currentTime = 0;
+			} catch (err) {
+				console.log(err);
+				myAudio.src = myAudio.src;
+			}
+		}
+		myAudio.play();
+		if (waitForCompletion) {
+			myAudio.addEventListener('ended', function() {
+				this.removeEventListener('ended',arguments.callee,false);
+				window.obj2029_onTap_runningActionsCount = window.obj2029_onTap_runningActionsCount - 1;
+if (window.obj2029_onTap_runningActionsCount < 0) {
+	window.obj2029_onTap_runningActionsCount = 0;
+} else if (window.obj2029_onTap_runningActionsCount == 0) {
+	obj2029_onTap_actionGroup2();
+}
+			}, false);
+		} else {
+			window.obj2029_onTap_runningActionsCount = window.obj2029_onTap_runningActionsCount - 1;
+if (window.obj2029_onTap_runningActionsCount < 0) {
+	window.obj2029_onTap_runningActionsCount = 0;
+} else if (window.obj2029_onTap_runningActionsCount == 0) {
+	obj2029_onTap_actionGroup2();
+}
+		}
+	}
+	
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+};
+obj2029_onTap_actionGroup2 = function(){
+	isLastActionGroup = true;
+	if (isLastActionGroup) {
+		window.obj2029_onTap_activeActionGroupIndex = -1;
+		$("#obj2029").trigger("obj2029_onTap_ended");
+		
+		for (var i = 0; i < pubcoder.queuedEvents.length; i++) {
+			const evt = pubcoder.queuedEvents[i];
+			if (evt.senderObjectId == 2029) {
+				console.warn("de-queueing event obj2029." + evt.eventName);
+				pubcoder.queuedEvents.splice(i, 1);
+				$("#obj2029").trigger(evt.eventName);
+				return;
+			}
+		}
+		return;
+	}
+	window.obj2029_onTap_activeActionGroupIndex = 2;
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+};
+obj8166_onTap_actionGroup0 = function(){
+	isLastActionGroup = false;
+	if (isLastActionGroup) {
+		window.obj8166_onTap_activeActionGroupIndex = -1;
+		$("#obj8166").trigger("obj8166_onTap_ended");
+		
+		for (var i = 0; i < pubcoder.queuedEvents.length; i++) {
+			const evt = pubcoder.queuedEvents[i];
+			if (evt.senderObjectId == 8166) {
+				console.warn("de-queueing event obj8166." + evt.eventName);
+				pubcoder.queuedEvents.splice(i, 1);
+				$("#obj8166").trigger(evt.eventName);
+				return;
+			}
+		}
+		return;
+	}
+	window.obj8166_onTap_activeActionGroupIndex = 0;
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//	action: Run JavaScript
+runjs_8170();
+function runjs_8170() {
+	window.obj8166_onTap_runningActionsCount = obj8166_onTap_runningActionsCount + 1;
+
+	(function(){
+    // Ensure window.pubcoder and its globalvariables exist
+    if (typeof window.pubcoder === "undefined") {
+        window.pubcoder = {};
+    }
+    if (!window.pubcoder.globalvariables) {
+        window.pubcoder.globalvariables = {};
+    }
+    
+    
+    // Toggle the menu state
+    var menuState = window.pubcoder.globalvariables.menuState;
+    var newMenuState = !menuState;
+    window.pubcoder.globalvariables.menuState = newMenuState;
+    
+    localStorage.setItem('menuState', newMenuState.toString());
+    var items = document.getElementsByClassName("menu");
+    for (var i = 0; i < items.length; i++) {
+      item = items[i];
+      if (newMenuState) {
+            item.style.display = "block"; 
+        } else {
+            item.style.display = "none";
+        }
+    }
+    
+})();
+	
+	setTimeout(function() {
+		window.obj8166_onTap_runningActionsCount = window.obj8166_onTap_runningActionsCount - 1;
+if (window.obj8166_onTap_runningActionsCount < 0) {
+	window.obj8166_onTap_runningActionsCount = 0;
+} else if (window.obj8166_onTap_runningActionsCount == 0) {
+	obj8166_onTap_actionGroup1();
+}
+	}, 1);
+}
+
+
+
+
+
+
+
+};
+obj8166_onTap_actionGroup1 = function(){
+	isLastActionGroup = true;
+	if (isLastActionGroup) {
+		window.obj8166_onTap_activeActionGroupIndex = -1;
+		$("#obj8166").trigger("obj8166_onTap_ended");
+		
+		for (var i = 0; i < pubcoder.queuedEvents.length; i++) {
+			const evt = pubcoder.queuedEvents[i];
+			if (evt.senderObjectId == 8166) {
+				console.warn("de-queueing event obj8166." + evt.eventName);
+				pubcoder.queuedEvents.splice(i, 1);
+				$("#obj8166").trigger(evt.eventName);
+				return;
+			}
+		}
+		return;
+	}
+	window.obj8166_onTap_activeActionGroupIndex = 1;
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+};
+obj8185_SCEventReadAloudStarted_actionGroup0 = function(){
+	isLastActionGroup = false;
+	if (isLastActionGroup) {
+		window.obj8185_SCEventReadAloudStarted_activeActionGroupIndex = -1;
+		$("#obj8185").trigger("obj8185_SCEventReadAloudStarted_ended");
+		
+		for (var i = 0; i < pubcoder.queuedEvents.length; i++) {
+			const evt = pubcoder.queuedEvents[i];
+			if (evt.senderObjectId == 8185) {
+				console.warn("de-queueing event obj8185." + evt.eventName);
+				pubcoder.queuedEvents.splice(i, 1);
+				$("#obj8185").trigger(evt.eventName);
+				return;
+			}
+		}
+		return;
+	}
+	window.obj8185_SCEventReadAloudStarted_activeActionGroupIndex = 0;
+	
+
+
+
+//	action: switchImage 
+//	target: obj8185 
+switchImage_8189();
+function switchImage_8189() {
+	window.obj8185_SCEventReadAloudStarted_runningActionsCount = obj8185_SCEventReadAloudStarted_runningActionsCount + 1;
+
+	var targetObjectId = "#obj8185";
+	var targetObject = $(targetObjectId)[0];
+	var allowBackAndForth = false;
+	var imgObjId = "#obj8185_img";
+	var fromImagePath = "../images/obj8185_image.png";
+	var toImagePath = "../images/switch50_to.png";
+	var switchHelperId = "switchHelper338"
+	var switchHelperRef = "#switchHelper338"
+	var switchId = "338";
+	var toSwitchId = "338";
+	var fadeDuration = "0s";
+	var fromSoundObjectId = "#";
+	var toSoundObjectId = "#";
+	var audioFrom;
+	if (fromSoundObjectId != "#") audioFrom = $(fromSoundObjectId)[0];
+	var audioTo;
+	if (toSoundObjectId != "#") audioTo = $(toSoundObjectId)[0];
+	
+	var completionFunction = function () {
+		if ($(targetObjectId).attr("data-SCActionSwitchImage-applied") == toSwitchId) $(imgObjId).attr("src", toImagePath);
+		if (fadeDuration != "0s") {
+			setTimeout(function() {
+				$(imgObjId).show();
+				$(switchHelperRef).remove();
+				actionEndFunction();
+			}, 100);
+		} else {
+			actionEndFunction();
+		}
+	}
+	var actionEndFunction = function() {
+			setTimeout(function() {
+				window.obj8185_SCEventReadAloudStarted_runningActionsCount = window.obj8185_SCEventReadAloudStarted_runningActionsCount - 1;
+if (window.obj8185_SCEventReadAloudStarted_runningActionsCount < 0) {
+	window.obj8185_SCEventReadAloudStarted_runningActionsCount = 0;
+} else if (window.obj8185_SCEventReadAloudStarted_runningActionsCount == 0) {
+	obj8185_SCEventReadAloudStarted_actionGroup1();
+}
+			}, 1);
+	};
+	var originalImage = $(targetObjectId).attr("data-SCActionSwitchImage-originalImage");
+	if (!(typeof originalImage !== typeof undefined && originalImage !== false)) {
+		$(targetObjectId).attr("data-SCActionSwitchImage-originalImage", $(imgObjId).attr("src"));
+	}
+	var appliedSwitchImage = $(targetObjectId).attr("data-SCActionSwitchImage-applied");
+	if (!(typeof appliedSwitchImage !== typeof undefined && appliedSwitchImage !== false)) {
+		appliedSwitchImage = "";
+	}
+	if (appliedSwitchImage == switchId) {
+		if (allowBackAndForth) {
+			toImagePath = originalImage;
+			toSwitchId = "";
+			var audioSwapHelp = audioFrom;
+			audioFrom = audioTo;
+			audioTo = audioSwapHelp;
+		} else {
+			setTimeout(function() { actionEndFunction(); }, 1);
+			return;
+		}
+	}
+	setTimeout(function() {
+		$(targetObjectId).attr("data-SCActionSwitchImage-applied", toSwitchId);
+		if (audioFrom != null) { audioFrom.pause(); }
+		if (audioTo != null) { audioTo.currentTime = 0; audioTo.play(); }
+		if (fadeDuration == "0s") {
+			completionFunction()
+		} else {
+			if ($(targetObjectId + " .SCActionSwitchImageHelper").length == 0) {
+				$(targetObjectId).append('<img class="SCActionSwitchImageHelper" src="' + toImagePath + '" id="' + switchHelperId + '" style="height:' + $(targetObjectId).css('height') + '; width: ' + $(targetObjectId).css('width') + '; display: none; position: absolute; overflow:hidden; top: 0px; left: 0px; z-index: 999;"/>');
+			} else {
+				console.log("qui");
+				$(targetObjectId + " .SCActionSwitchImageHelper").each(function (i,o) {
+					console.log(o);
+					$(o).attr("id", switchHelperId);
+					$(o).attr("src", toImagePath);
+				});
+			}
+			$(imgObjId).fadeOut(parseFloat(fadeDuration)*1000);
+			$(switchHelperRef).fadeIn(parseFloat(fadeDuration)*1000, completionFunction);
+		}
+	}, 1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+};
+obj8185_SCEventReadAloudStarted_actionGroup1 = function(){
+	isLastActionGroup = false;
+	if (isLastActionGroup) {
+		window.obj8185_SCEventReadAloudStarted_activeActionGroupIndex = -1;
+		$("#obj8185").trigger("obj8185_SCEventReadAloudStarted_ended");
+		
+		for (var i = 0; i < pubcoder.queuedEvents.length; i++) {
+			const evt = pubcoder.queuedEvents[i];
+			if (evt.senderObjectId == 8185) {
+				console.warn("de-queueing event obj8185." + evt.eventName);
+				pubcoder.queuedEvents.splice(i, 1);
+				$("#obj8185").trigger(evt.eventName);
+				return;
+			}
+		}
+		return;
+	}
+	window.obj8185_SCEventReadAloudStarted_activeActionGroupIndex = 1;
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//	action: Run JavaScript
+runjs_8190();
+function runjs_8190() {
+	window.obj8185_SCEventReadAloudStarted_runningActionsCount = obj8185_SCEventReadAloudStarted_runningActionsCount + 1;
+
+	const button = document.querySelector('.vo-btn');
+if (button) {
+    button.setAttribute('aria-label', 'Voice Over Pressed');
+}
+	
+	setTimeout(function() {
+		window.obj8185_SCEventReadAloudStarted_runningActionsCount = window.obj8185_SCEventReadAloudStarted_runningActionsCount - 1;
+if (window.obj8185_SCEventReadAloudStarted_runningActionsCount < 0) {
+	window.obj8185_SCEventReadAloudStarted_runningActionsCount = 0;
+} else if (window.obj8185_SCEventReadAloudStarted_runningActionsCount == 0) {
+	obj8185_SCEventReadAloudStarted_actionGroup2();
+}
+	}, 1);
+}
+
+
+
+
+
+
+
+};
+obj8185_SCEventReadAloudStarted_actionGroup2 = function(){
+	isLastActionGroup = true;
+	if (isLastActionGroup) {
+		window.obj8185_SCEventReadAloudStarted_activeActionGroupIndex = -1;
+		$("#obj8185").trigger("obj8185_SCEventReadAloudStarted_ended");
+		
+		for (var i = 0; i < pubcoder.queuedEvents.length; i++) {
+			const evt = pubcoder.queuedEvents[i];
+			if (evt.senderObjectId == 8185) {
+				console.warn("de-queueing event obj8185." + evt.eventName);
+				pubcoder.queuedEvents.splice(i, 1);
+				$("#obj8185").trigger(evt.eventName);
+				return;
+			}
+		}
+		return;
+	}
+	window.obj8185_SCEventReadAloudStarted_activeActionGroupIndex = 2;
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+};
+obj8185_SCEventReadAloudStopped_actionGroup0 = function(){
+	isLastActionGroup = false;
+	if (isLastActionGroup) {
+		window.obj8185_SCEventReadAloudStopped_activeActionGroupIndex = -1;
+		$("#obj8185").trigger("obj8185_SCEventReadAloudStopped_ended");
+		
+		for (var i = 0; i < pubcoder.queuedEvents.length; i++) {
+			const evt = pubcoder.queuedEvents[i];
+			if (evt.senderObjectId == 8185) {
+				console.warn("de-queueing event obj8185." + evt.eventName);
+				pubcoder.queuedEvents.splice(i, 1);
+				$("#obj8185").trigger(evt.eventName);
+				return;
+			}
+		}
+		return;
+	}
+	window.obj8185_SCEventReadAloudStopped_activeActionGroupIndex = 0;
+	
+
+
+
+//	action: switchImage 
+//	target: obj8185 
+switchImage_8195();
+function switchImage_8195() {
+	window.obj8185_SCEventReadAloudStopped_runningActionsCount = obj8185_SCEventReadAloudStopped_runningActionsCount + 1;
+
+	var targetObjectId = "#obj8185";
+	var targetObject = $(targetObjectId)[0];
+	var allowBackAndForth = false;
+	var imgObjId = "#obj8185_img";
+	var fromImagePath = "../images/obj8185_image.png";
+	var toImagePath = "../images/obj8185_image.png";
+	var switchHelperId = "switchHelper339"
+	var switchHelperRef = "#switchHelper339"
+	var switchId = "339";
+	var toSwitchId = "339";
+	var fadeDuration = "0s";
+	var fromSoundObjectId = "#";
+	var toSoundObjectId = "#";
+	var audioFrom;
+	if (fromSoundObjectId != "#") audioFrom = $(fromSoundObjectId)[0];
+	var audioTo;
+	if (toSoundObjectId != "#") audioTo = $(toSoundObjectId)[0];
+	
+	var completionFunction = function () {
+		if ($(targetObjectId).attr("data-SCActionSwitchImage-applied") == toSwitchId) $(imgObjId).attr("src", toImagePath);
+		if (fadeDuration != "0s") {
+			setTimeout(function() {
+				$(imgObjId).show();
+				$(switchHelperRef).remove();
+				actionEndFunction();
+			}, 100);
+		} else {
+			actionEndFunction();
+		}
+	}
+	var actionEndFunction = function() {
+			setTimeout(function() {
+				window.obj8185_SCEventReadAloudStopped_runningActionsCount = window.obj8185_SCEventReadAloudStopped_runningActionsCount - 1;
+if (window.obj8185_SCEventReadAloudStopped_runningActionsCount < 0) {
+	window.obj8185_SCEventReadAloudStopped_runningActionsCount = 0;
+} else if (window.obj8185_SCEventReadAloudStopped_runningActionsCount == 0) {
+	obj8185_SCEventReadAloudStopped_actionGroup1();
+}
+			}, 1);
+	};
+	var originalImage = $(targetObjectId).attr("data-SCActionSwitchImage-originalImage");
+	if (!(typeof originalImage !== typeof undefined && originalImage !== false)) {
+		$(targetObjectId).attr("data-SCActionSwitchImage-originalImage", $(imgObjId).attr("src"));
+	}
+	var appliedSwitchImage = $(targetObjectId).attr("data-SCActionSwitchImage-applied");
+	if (!(typeof appliedSwitchImage !== typeof undefined && appliedSwitchImage !== false)) {
+		appliedSwitchImage = "";
+	}
+	if (appliedSwitchImage == switchId) {
+		if (allowBackAndForth) {
+			toImagePath = originalImage;
+			toSwitchId = "";
+			var audioSwapHelp = audioFrom;
+			audioFrom = audioTo;
+			audioTo = audioSwapHelp;
+		} else {
+			setTimeout(function() { actionEndFunction(); }, 1);
+			return;
+		}
+	}
+	setTimeout(function() {
+		$(targetObjectId).attr("data-SCActionSwitchImage-applied", toSwitchId);
+		if (audioFrom != null) { audioFrom.pause(); }
+		if (audioTo != null) { audioTo.currentTime = 0; audioTo.play(); }
+		if (fadeDuration == "0s") {
+			completionFunction()
+		} else {
+			if ($(targetObjectId + " .SCActionSwitchImageHelper").length == 0) {
+				$(targetObjectId).append('<img class="SCActionSwitchImageHelper" src="' + toImagePath + '" id="' + switchHelperId + '" style="height:' + $(targetObjectId).css('height') + '; width: ' + $(targetObjectId).css('width') + '; display: none; position: absolute; overflow:hidden; top: 0px; left: 0px; z-index: 999;"/>');
+			} else {
+				console.log("qui");
+				$(targetObjectId + " .SCActionSwitchImageHelper").each(function (i,o) {
+					console.log(o);
+					$(o).attr("id", switchHelperId);
+					$(o).attr("src", toImagePath);
+				});
+			}
+			$(imgObjId).fadeOut(parseFloat(fadeDuration)*1000);
+			$(switchHelperRef).fadeIn(parseFloat(fadeDuration)*1000, completionFunction);
+		}
+	}, 1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+};
+obj8185_SCEventReadAloudStopped_actionGroup1 = function(){
+	isLastActionGroup = false;
+	if (isLastActionGroup) {
+		window.obj8185_SCEventReadAloudStopped_activeActionGroupIndex = -1;
+		$("#obj8185").trigger("obj8185_SCEventReadAloudStopped_ended");
+		
+		for (var i = 0; i < pubcoder.queuedEvents.length; i++) {
+			const evt = pubcoder.queuedEvents[i];
+			if (evt.senderObjectId == 8185) {
+				console.warn("de-queueing event obj8185." + evt.eventName);
+				pubcoder.queuedEvents.splice(i, 1);
+				$("#obj8185").trigger(evt.eventName);
+				return;
+			}
+		}
+		return;
+	}
+	window.obj8185_SCEventReadAloudStopped_activeActionGroupIndex = 1;
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//	action: Run JavaScript
+runjs_8196();
+function runjs_8196() {
+	window.obj8185_SCEventReadAloudStopped_runningActionsCount = obj8185_SCEventReadAloudStopped_runningActionsCount + 1;
+
+	const button = document.querySelector('.vo-btn');
+if (button) {
+    button.setAttribute('aria-label', 'Voice Over');
+}
+	
+	setTimeout(function() {
+		window.obj8185_SCEventReadAloudStopped_runningActionsCount = window.obj8185_SCEventReadAloudStopped_runningActionsCount - 1;
+if (window.obj8185_SCEventReadAloudStopped_runningActionsCount < 0) {
+	window.obj8185_SCEventReadAloudStopped_runningActionsCount = 0;
+} else if (window.obj8185_SCEventReadAloudStopped_runningActionsCount == 0) {
+	obj8185_SCEventReadAloudStopped_actionGroup2();
+}
+	}, 1);
+}
+
+
+
+
+
+
+
+};
+obj8185_SCEventReadAloudStopped_actionGroup2 = function(){
+	isLastActionGroup = true;
+	if (isLastActionGroup) {
+		window.obj8185_SCEventReadAloudStopped_activeActionGroupIndex = -1;
+		$("#obj8185").trigger("obj8185_SCEventReadAloudStopped_ended");
+		
+		for (var i = 0; i < pubcoder.queuedEvents.length; i++) {
+			const evt = pubcoder.queuedEvents[i];
+			if (evt.senderObjectId == 8185) {
+				console.warn("de-queueing event obj8185." + evt.eventName);
+				pubcoder.queuedEvents.splice(i, 1);
+				$("#obj8185").trigger(evt.eventName);
+				return;
+			}
+		}
+		return;
+	}
+	window.obj8185_SCEventReadAloudStopped_activeActionGroupIndex = 2;
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+};
+obj8156_onTap_actionGroup0 = function(){
+	isLastActionGroup = false;
+	if (isLastActionGroup) {
+		window.obj8156_onTap_activeActionGroupIndex = -1;
+		$("#obj8156").trigger("obj8156_onTap_ended");
+		
+		for (var i = 0; i < pubcoder.queuedEvents.length; i++) {
+			const evt = pubcoder.queuedEvents[i];
+			if (evt.senderObjectId == 8156) {
+				console.warn("de-queueing event obj8156." + evt.eventName);
+				pubcoder.queuedEvents.splice(i, 1);
+				$("#obj8156").trigger(evt.eventName);
+				return;
+			}
+		}
+		return;
+	}
+	window.obj8156_onTap_activeActionGroupIndex = 0;
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//	action: Run JavaScript
+runjs_8158();
+function runjs_8158() {
+	window.obj8156_onTap_runningActionsCount = obj8156_onTap_runningActionsCount + 1;
+
+	(function(){
+    // Ensure window.pubcoder and its globalvariables exist
+    if (typeof window.pubcoder === "undefined") {
+        window.pubcoder = {};
+    }
+    if (!window.pubcoder.globalvariables) {
+        window.pubcoder.globalvariables = {};
+    }
+    
+    // Toggle the videosDisabled state
+    var currentState = window.pubcoder.globalvariables.videosDisabled;
+    var newState = !currentState;
+    console.log(newState);
+    window.pubcoder.globalvariables.videosDisabled = newState;
+    
+    // Persist the new state in localStorage
+    localStorage.setItem('videosDisabled', newState.toString());
+    console.log("Toggle Button: Toggled videosDisabled state to:", newState);
+    
+    //Update the video elements on the current page based on the newState.
+    var videos = document.querySelectorAll("video");
+    const container1 = document.querySelector('.nsl-btn');
+    if(newState){
+        container1.setAttribute("aria-label", "Sign Language Pressed");
+    } else {
+        container1.setAttribute("aria-label", "Sign Language");
+    }
+    
+    videos.forEach((video, index) => {
+        if (newState) {
+            console.log("Toggle Button: Showing and playing video #" + (index + 1));
+            video.style.display = "block"; // Adjust as needed for your layout
+            video.play();
+            
+            if (container1) {
+              const img = container1.querySelector('img');
+              if (img) {
+                img.src = '../images/signLangEnabled.png';
+              }  
+            }
+        } else {
+            console.log("Toggle Button: Hiding and pausing video #" + (index + 1));
+            video.pause();
+            video.style.display = "none";
+            if (container1) {
+              const img = container1.querySelector('img');
+              if (img) {
+                img.src = '../images/sign_language.png';
+              }
+              
+            }
+        }
+    });
+   
+})();
+	
+	setTimeout(function() {
+		window.obj8156_onTap_runningActionsCount = window.obj8156_onTap_runningActionsCount - 1;
+if (window.obj8156_onTap_runningActionsCount < 0) {
+	window.obj8156_onTap_runningActionsCount = 0;
+} else if (window.obj8156_onTap_runningActionsCount == 0) {
+	obj8156_onTap_actionGroup1();
+}
+	}, 1);
+}
+
+
+
+
+
+
+
+};
+obj8156_onTap_actionGroup1 = function(){
+	isLastActionGroup = true;
+	if (isLastActionGroup) {
+		window.obj8156_onTap_activeActionGroupIndex = -1;
+		$("#obj8156").trigger("obj8156_onTap_ended");
+		
+		for (var i = 0; i < pubcoder.queuedEvents.length; i++) {
+			const evt = pubcoder.queuedEvents[i];
+			if (evt.senderObjectId == 8156) {
+				console.warn("de-queueing event obj8156." + evt.eventName);
+				pubcoder.queuedEvents.splice(i, 1);
+				$("#obj8156").trigger(evt.eventName);
+				return;
+			}
+		}
+		return;
+	}
+	window.obj8156_onTap_activeActionGroupIndex = 1;
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+};
+obj8181_onTap_actionGroup0 = function(){
+	isLastActionGroup = false;
+	if (isLastActionGroup) {
+		window.obj8181_onTap_activeActionGroupIndex = -1;
+		$("#obj8181").trigger("obj8181_onTap_ended");
+		
+		for (var i = 0; i < pubcoder.queuedEvents.length; i++) {
+			const evt = pubcoder.queuedEvents[i];
+			if (evt.senderObjectId == 8181) {
+				console.warn("de-queueing event obj8181." + evt.eventName);
+				pubcoder.queuedEvents.splice(i, 1);
+				$("#obj8181").trigger(evt.eventName);
+				return;
+			}
+		}
+		return;
+	}
+	window.obj8181_onTap_activeActionGroupIndex = 0;
+	
+
+
+
+//	action: switchImage 
+//	target: obj8181 
+switchImage_8183();
+function switchImage_8183() {
+	window.obj8181_onTap_runningActionsCount = obj8181_onTap_runningActionsCount + 1;
+
+	var targetObjectId = "#obj8181";
+	var targetObject = $(targetObjectId)[0];
+	var allowBackAndForth = true;
+	var imgObjId = "#obj8181_img";
+	var fromImagePath = "../images/obj8181_image.png";
+	var toImagePath = "../images/switch52_to.png";
+	var switchHelperId = "switchHelper340"
+	var switchHelperRef = "#switchHelper340"
+	var switchId = "340";
+	var toSwitchId = "340";
+	var fadeDuration = "0s";
+	var fromSoundObjectId = "#";
+	var toSoundObjectId = "#";
+	var audioFrom;
+	if (fromSoundObjectId != "#") audioFrom = $(fromSoundObjectId)[0];
+	var audioTo;
+	if (toSoundObjectId != "#") audioTo = $(toSoundObjectId)[0];
+	
+	var completionFunction = function () {
+		if ($(targetObjectId).attr("data-SCActionSwitchImage-applied") == toSwitchId) $(imgObjId).attr("src", toImagePath);
+		if (fadeDuration != "0s") {
+			setTimeout(function() {
+				$(imgObjId).show();
+				$(switchHelperRef).remove();
+				actionEndFunction();
+			}, 100);
+		} else {
+			actionEndFunction();
+		}
+	}
+	var actionEndFunction = function() {
+			setTimeout(function() {
+				window.obj8181_onTap_runningActionsCount = window.obj8181_onTap_runningActionsCount - 1;
+if (window.obj8181_onTap_runningActionsCount < 0) {
+	window.obj8181_onTap_runningActionsCount = 0;
+} else if (window.obj8181_onTap_runningActionsCount == 0) {
+	obj8181_onTap_actionGroup1();
+}
+			}, 1);
+	};
+	var originalImage = $(targetObjectId).attr("data-SCActionSwitchImage-originalImage");
+	if (!(typeof originalImage !== typeof undefined && originalImage !== false)) {
+		$(targetObjectId).attr("data-SCActionSwitchImage-originalImage", $(imgObjId).attr("src"));
+	}
+	var appliedSwitchImage = $(targetObjectId).attr("data-SCActionSwitchImage-applied");
+	if (!(typeof appliedSwitchImage !== typeof undefined && appliedSwitchImage !== false)) {
+		appliedSwitchImage = "";
+	}
+	if (appliedSwitchImage == switchId) {
+		if (allowBackAndForth) {
+			toImagePath = originalImage;
+			toSwitchId = "";
+			var audioSwapHelp = audioFrom;
+			audioFrom = audioTo;
+			audioTo = audioSwapHelp;
+		} else {
+			setTimeout(function() { actionEndFunction(); }, 1);
+			return;
+		}
+	}
+	setTimeout(function() {
+		$(targetObjectId).attr("data-SCActionSwitchImage-applied", toSwitchId);
+		if (audioFrom != null) { audioFrom.pause(); }
+		if (audioTo != null) { audioTo.currentTime = 0; audioTo.play(); }
+		if (fadeDuration == "0s") {
+			completionFunction()
+		} else {
+			if ($(targetObjectId + " .SCActionSwitchImageHelper").length == 0) {
+				$(targetObjectId).append('<img class="SCActionSwitchImageHelper" src="' + toImagePath + '" id="' + switchHelperId + '" style="height:' + $(targetObjectId).css('height') + '; width: ' + $(targetObjectId).css('width') + '; display: none; position: absolute; overflow:hidden; top: 0px; left: 0px; z-index: 999;"/>');
+			} else {
+				console.log("qui");
+				$(targetObjectId + " .SCActionSwitchImageHelper").each(function (i,o) {
+					console.log(o);
+					$(o).attr("id", switchHelperId);
+					$(o).attr("src", toImagePath);
+				});
+			}
+			$(imgObjId).fadeOut(parseFloat(fadeDuration)*1000);
+			$(switchHelperRef).fadeIn(parseFloat(fadeDuration)*1000, completionFunction);
+		}
+	}, 1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+};
+obj8181_onTap_actionGroup1 = function(){
+	isLastActionGroup = false;
+	if (isLastActionGroup) {
+		window.obj8181_onTap_activeActionGroupIndex = -1;
+		$("#obj8181").trigger("obj8181_onTap_ended");
+		
+		for (var i = 0; i < pubcoder.queuedEvents.length; i++) {
+			const evt = pubcoder.queuedEvents[i];
+			if (evt.senderObjectId == 8181) {
+				console.warn("de-queueing event obj8181." + evt.eventName);
+				pubcoder.queuedEvents.splice(i, 1);
+				$("#obj8181").trigger(evt.eventName);
+				return;
+			}
+		}
+		return;
+	}
+	window.obj8181_onTap_activeActionGroupIndex = 1;
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//	action: Run JavaScript
+runjs_8184();
+function runjs_8184() {
+	window.obj8181_onTap_runningActionsCount = obj8181_onTap_runningActionsCount + 1;
+
+	(function(){
+    // Ensure window.pubcoder and its globalvariables exist
+    if (typeof window.pubcoder === "undefined") {
+        window.pubcoder = {};
+    }
+    if (!window.pubcoder.globalvariables) {
+        window.pubcoder.globalvariables = {};
+    }
+    
+    
+    // Toggle the menu state
+    var pic_audio_state = window.pubcoder.globalvariables.pic_audio_state;
+    var new_pic_audio_state = !pic_audio_state;
+    window.pubcoder.globalvariables.pic_audio_state = new_pic_audio_state;
+    
+    localStorage.setItem('pic_audio_state', new_pic_audio_state.toString());
+    // var items = document.getElementsByClassName("pic-audio");
+    // for (var i = 0; i < items.length; i++) {
+    //   item = items[i];
+    //   if (new_pic_audio_state) {
+    //         item.style.display = "block"; 
+    //     } else {
+    //         item.style.display = "none";
+    //     }
+        
+    // }
+    
+    
+})();
+	
+	setTimeout(function() {
+		window.obj8181_onTap_runningActionsCount = window.obj8181_onTap_runningActionsCount - 1;
+if (window.obj8181_onTap_runningActionsCount < 0) {
+	window.obj8181_onTap_runningActionsCount = 0;
+} else if (window.obj8181_onTap_runningActionsCount == 0) {
+	obj8181_onTap_actionGroup2();
+}
+	}, 1);
+}
+
+
+
+
+
+
+
+};
+obj8181_onTap_actionGroup2 = function(){
+	isLastActionGroup = true;
+	if (isLastActionGroup) {
+		window.obj8181_onTap_activeActionGroupIndex = -1;
+		$("#obj8181").trigger("obj8181_onTap_ended");
+		
+		for (var i = 0; i < pubcoder.queuedEvents.length; i++) {
+			const evt = pubcoder.queuedEvents[i];
+			if (evt.senderObjectId == 8181) {
+				console.warn("de-queueing event obj8181." + evt.eventName);
+				pubcoder.queuedEvents.splice(i, 1);
+				$("#obj8181").trigger(evt.eventName);
+				return;
+			}
+		}
+		return;
+	}
+	window.obj8181_onTap_activeActionGroupIndex = 2;
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+};
+obj8178_onTap_actionGroup0 = function(){
+	isLastActionGroup = false;
+	if (isLastActionGroup) {
+		window.obj8178_onTap_activeActionGroupIndex = -1;
+		$("#obj8178").trigger("obj8178_onTap_ended");
+		
+		for (var i = 0; i < pubcoder.queuedEvents.length; i++) {
+			const evt = pubcoder.queuedEvents[i];
+			if (evt.senderObjectId == 8178) {
+				console.warn("de-queueing event obj8178." + evt.eventName);
+				pubcoder.queuedEvents.splice(i, 1);
+				$("#obj8178").trigger(evt.eventName);
+				return;
+			}
+		}
+		return;
+	}
+	window.obj8178_onTap_activeActionGroupIndex = 0;
+	
+//	action: goToPage
+goToPage_8180();
+function goToPage_8180() {
+	window.obj8178_onTap_runningActionsCount = obj8178_onTap_runningActionsCount + 1;
+	$("#anchor341")[0].click();
+	window.obj8178_onTap_runningActionsCount = window.obj8178_onTap_runningActionsCount - 1;
+if (window.obj8178_onTap_runningActionsCount < 0) {
+	window.obj8178_onTap_runningActionsCount = 0;
+} else if (window.obj8178_onTap_runningActionsCount == 0) {
+	obj8178_onTap_actionGroup1();
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+};
+obj8178_onTap_actionGroup1 = function(){
+	isLastActionGroup = true;
+	if (isLastActionGroup) {
+		window.obj8178_onTap_activeActionGroupIndex = -1;
+		$("#obj8178").trigger("obj8178_onTap_ended");
+		
+		for (var i = 0; i < pubcoder.queuedEvents.length; i++) {
+			const evt = pubcoder.queuedEvents[i];
+			if (evt.senderObjectId == 8178) {
+				console.warn("de-queueing event obj8178." + evt.eventName);
+				pubcoder.queuedEvents.splice(i, 1);
+				$("#obj8178").trigger(evt.eventName);
+				return;
+			}
+		}
+		return;
+	}
+	window.obj8178_onTap_activeActionGroupIndex = 1;
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+};
+obj8163_onTap_actionGroup0 = function(){
+	isLastActionGroup = false;
+	if (isLastActionGroup) {
+		window.obj8163_onTap_activeActionGroupIndex = -1;
+		$("#obj8163").trigger("obj8163_onTap_ended");
+		
+		for (var i = 0; i < pubcoder.queuedEvents.length; i++) {
+			const evt = pubcoder.queuedEvents[i];
+			if (evt.senderObjectId == 8163) {
+				console.warn("de-queueing event obj8163." + evt.eventName);
+				pubcoder.queuedEvents.splice(i, 1);
+				$("#obj8163").trigger(evt.eventName);
+				return;
+			}
+		}
+		return;
+	}
+	window.obj8163_onTap_activeActionGroupIndex = 0;
+	
+//	action: goToPage
+goToPage_8165();
+function goToPage_8165() {
+	window.obj8163_onTap_runningActionsCount = obj8163_onTap_runningActionsCount + 1;
+	$("#anchor342")[0].click();
+	window.obj8163_onTap_runningActionsCount = window.obj8163_onTap_runningActionsCount - 1;
+if (window.obj8163_onTap_runningActionsCount < 0) {
+	window.obj8163_onTap_runningActionsCount = 0;
+} else if (window.obj8163_onTap_runningActionsCount == 0) {
+	obj8163_onTap_actionGroup1();
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+};
+obj8163_onTap_actionGroup1 = function(){
+	isLastActionGroup = true;
+	if (isLastActionGroup) {
+		window.obj8163_onTap_activeActionGroupIndex = -1;
+		$("#obj8163").trigger("obj8163_onTap_ended");
+		
+		for (var i = 0; i < pubcoder.queuedEvents.length; i++) {
+			const evt = pubcoder.queuedEvents[i];
+			if (evt.senderObjectId == 8163) {
+				console.warn("de-queueing event obj8163." + evt.eventName);
+				pubcoder.queuedEvents.splice(i, 1);
+				$("#obj8163").trigger(evt.eventName);
+				return;
+			}
+		}
+		return;
+	}
+	window.obj8163_onTap_activeActionGroupIndex = 1;
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+};
+obj8147_onTap_actionGroup0 = function(){
+	isLastActionGroup = false;
+	if (isLastActionGroup) {
+		window.obj8147_onTap_activeActionGroupIndex = -1;
+		$("#obj8147").trigger("obj8147_onTap_ended");
+		
+		for (var i = 0; i < pubcoder.queuedEvents.length; i++) {
+			const evt = pubcoder.queuedEvents[i];
+			if (evt.senderObjectId == 8147) {
+				console.warn("de-queueing event obj8147." + evt.eventName);
+				pubcoder.queuedEvents.splice(i, 1);
+				$("#obj8147").trigger(evt.eventName);
+				return;
+			}
+		}
+		return;
+	}
+	window.obj8147_onTap_activeActionGroupIndex = 0;
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//	action: Run JavaScript
+runjs_8150();
+function runjs_8150() {
+	window.obj8147_onTap_runningActionsCount = obj8147_onTap_runningActionsCount + 1;
+
+	(function(){
+    if (typeof window.pubcoder === "undefined") {
+        window.pubcoder = {};
+    }
+    if (!window.pubcoder.globalvariables) {
+        window.pubcoder.globalvariables = {};
+    }
+    var menuState = window.pubcoder.globalvariables.menuState;
+    var newMenuState = !menuState;
+    window.pubcoder.globalvariables.menuState = newMenuState;
+    
+    localStorage.setItem('tocState', newMenuState.toString());
+    var items = document.getElementsByClassName("tocmenu");
+    
+    var tocBtn = document.querySelector(".toc-btn");
+    if(newMenuState){
+        tocBtn.setAttribute("aria-label", "Table of Content Pressed");
+    } else {
+        tocBtn.setAttribute("aria-label", "Table of Content");
+    }
+    for (var i = 0; i < items.length; i++) {
+      item = items[i];
+      if (newMenuState) {
+            item.style.display = "block"; 
+        } else {
+            item.style.display = "none";
+        }
+    }
+})();
+	
+	setTimeout(function() {
+		window.obj8147_onTap_runningActionsCount = window.obj8147_onTap_runningActionsCount - 1;
+if (window.obj8147_onTap_runningActionsCount < 0) {
+	window.obj8147_onTap_runningActionsCount = 0;
+} else if (window.obj8147_onTap_runningActionsCount == 0) {
+	obj8147_onTap_actionGroup1();
+}
+	}, 1);
+}
+
+
+
+
+
+
+
+};
+obj8147_onTap_actionGroup1 = function(){
+	isLastActionGroup = true;
+	if (isLastActionGroup) {
+		window.obj8147_onTap_activeActionGroupIndex = -1;
+		$("#obj8147").trigger("obj8147_onTap_ended");
+		
+		for (var i = 0; i < pubcoder.queuedEvents.length; i++) {
+			const evt = pubcoder.queuedEvents[i];
+			if (evt.senderObjectId == 8147) {
+				console.warn("de-queueing event obj8147." + evt.eventName);
+				pubcoder.queuedEvents.splice(i, 1);
+				$("#obj8147").trigger(evt.eventName);
+				return;
+			}
+		}
+		return;
+	}
+	window.obj8147_onTap_activeActionGroupIndex = 1;
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+};
+		
+		/*
+		 *
+	 	 *  Events
+	 	 *
+	 	 */
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+ *
+ *   obj2035: Event Touch Down
+ *
+ */
+$("#obj2035").bind(PubCoder.Events.Tap + " keydown", function(event) {
+	if (event.type === "keydown" && event.key !== "Enter") return;
+	event.preventDefault();
+	if (window.obj2035_onTap_activeActionGroupIndex != -1) {
+	console.warn("action list window.obj2035_onTap is still running");
+	return;
+}
+var obj2035_onTap_runningActionsCount = 0;
+var obj2035_onTap_loopCount = 0;
+obj2035_onTap_actionGroup0();
+});
+
+
+
+
+
+
+
+
+
+
+/*
+ *
+ *   obj2037: Event Touch Down
+ *
+ */
+$("#obj2037").bind(PubCoder.Events.Tap + " keydown", function(event) {
+	if (event.type === "keydown" && event.key !== "Enter") return;
+	event.preventDefault();
+	if (window.obj2037_onTap_activeActionGroupIndex != -1) {
+	console.warn("action list window.obj2037_onTap is still running");
+	return;
+}
+var obj2037_onTap_runningActionsCount = 0;
+var obj2037_onTap_loopCount = 0;
+obj2037_onTap_actionGroup0();
+});
+
+
+
+
+
+
+
+
+
+
+/*
+ *
+ *   obj2032: Event Touch Down
+ *
+ */
+$("#obj2032").bind(PubCoder.Events.Tap + " keydown", function(event) {
+	if (event.type === "keydown" && event.key !== "Enter") return;
+	event.preventDefault();
+	if (window.obj2032_onTap_activeActionGroupIndex != -1) {
+	console.warn("action list window.obj2032_onTap is still running");
+	return;
+}
+var obj2032_onTap_runningActionsCount = 0;
+var obj2032_onTap_loopCount = 0;
+obj2032_onTap_actionGroup0();
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+ *
+ *   obj2014: Event Touch Down
+ *
+ */
+$("#obj2014").bind(PubCoder.Events.Tap + " keydown", function(event) {
+	if (event.type === "keydown" && event.key !== "Enter") return;
+	event.preventDefault();
+	if (window.obj2014_onTap_activeActionGroupIndex != -1) {
+	console.warn("action list window.obj2014_onTap is still running");
+	return;
+}
+var obj2014_onTap_runningActionsCount = 0;
+var obj2014_onTap_loopCount = 0;
+obj2014_onTap_actionGroup0();
+});
+
+
+
+
+
+
+
+
+
+
+/*
+ *
+ *   obj2017: Event Touch Down
+ *
+ */
+$("#obj2017").bind(PubCoder.Events.Tap + " keydown", function(event) {
+	if (event.type === "keydown" && event.key !== "Enter") return;
+	event.preventDefault();
+	if (window.obj2017_onTap_activeActionGroupIndex != -1) {
+	console.warn("action list window.obj2017_onTap is still running");
+	return;
+}
+var obj2017_onTap_runningActionsCount = 0;
+var obj2017_onTap_loopCount = 0;
+obj2017_onTap_actionGroup0();
+});
+
+
+
+
+
+
+
+
+
+
+/*
+ *
+ *   obj2020: Event Touch Down
+ *
+ */
+$("#obj2020").bind(PubCoder.Events.Tap + " keydown", function(event) {
+	if (event.type === "keydown" && event.key !== "Enter") return;
+	event.preventDefault();
+	if (window.obj2020_onTap_activeActionGroupIndex != -1) {
+	console.warn("action list window.obj2020_onTap is still running");
+	return;
+}
+var obj2020_onTap_runningActionsCount = 0;
+var obj2020_onTap_loopCount = 0;
+obj2020_onTap_actionGroup0();
+});
+
+
+
+
+
+
+
+
+
+
+/*
+ *
+ *   obj2043: Event Touch Down
+ *
+ */
+$("#obj2043").bind(PubCoder.Events.Tap + " keydown", function(event) {
+	if (event.type === "keydown" && event.key !== "Enter") return;
+	event.preventDefault();
+	if (window.obj2043_onTap_activeActionGroupIndex != -1) {
+	console.warn("action list window.obj2043_onTap is still running");
+	return;
+}
+var obj2043_onTap_runningActionsCount = 0;
+var obj2043_onTap_loopCount = 0;
+obj2043_onTap_actionGroup0();
+});
+
+
+
+
+
+
+
+
+
+
+/*
+ *
+ *   obj2039: Event Touch Down
+ *
+ */
+$("#obj2039").bind(PubCoder.Events.Tap + " keydown", function(event) {
+	if (event.type === "keydown" && event.key !== "Enter") return;
+	event.preventDefault();
+	if (window.obj2039_onTap_activeActionGroupIndex != -1) {
+	console.warn("action list window.obj2039_onTap is still running");
+	return;
+}
+var obj2039_onTap_runningActionsCount = 0;
+var obj2039_onTap_loopCount = 0;
+obj2039_onTap_actionGroup0();
+});
+
+
+
+
+
+
+
+
+
+
+/*
+ *
+ *   obj2041: Event Touch Down
+ *
+ */
+$("#obj2041").bind(PubCoder.Events.Tap + " keydown", function(event) {
+	if (event.type === "keydown" && event.key !== "Enter") return;
+	event.preventDefault();
+	if (window.obj2041_onTap_activeActionGroupIndex != -1) {
+	console.warn("action list window.obj2041_onTap is still running");
+	return;
+}
+var obj2041_onTap_runningActionsCount = 0;
+var obj2041_onTap_loopCount = 0;
+obj2041_onTap_actionGroup0();
+});
+
+
+
+
+
+
+
+
+
+
+/*
+ *
+ *   obj2026: Event Touch Down
+ *
+ */
+$("#obj2026").bind(PubCoder.Events.Tap + " keydown", function(event) {
+	if (event.type === "keydown" && event.key !== "Enter") return;
+	event.preventDefault();
+	if (window.obj2026_onTap_activeActionGroupIndex != -1) {
+	console.warn("action list window.obj2026_onTap is still running");
+	return;
+}
+var obj2026_onTap_runningActionsCount = 0;
+var obj2026_onTap_loopCount = 0;
+obj2026_onTap_actionGroup0();
+});
+
+
+
+
+
+
+
+
+
+
+/*
+ *
+ *   obj2023: Event Touch Down
+ *
+ */
+$("#obj2023").bind(PubCoder.Events.Tap + " keydown", function(event) {
+	if (event.type === "keydown" && event.key !== "Enter") return;
+	event.preventDefault();
+	if (window.obj2023_onTap_activeActionGroupIndex != -1) {
+	console.warn("action list window.obj2023_onTap is still running");
+	return;
+}
+var obj2023_onTap_runningActionsCount = 0;
+var obj2023_onTap_loopCount = 0;
+obj2023_onTap_actionGroup0();
+});
+
+
+
+
+
+
+
+
+
+
+/*
+ *
+ *   obj2029: Event Touch Down
+ *
+ */
+$("#obj2029").bind(PubCoder.Events.Tap + " keydown", function(event) {
+	if (event.type === "keydown" && event.key !== "Enter") return;
+	event.preventDefault();
+	if (window.obj2029_onTap_activeActionGroupIndex != -1) {
+	console.warn("action list window.obj2029_onTap is still running");
+	return;
+}
+var obj2029_onTap_runningActionsCount = 0;
+var obj2029_onTap_loopCount = 0;
+obj2029_onTap_actionGroup0();
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+ *
+ *   obj8166: Event Touch Down
+ *
+ */
+$("#obj8166").bind(PubCoder.Events.Tap + " keydown", function(event) {
+	if (event.type === "keydown" && event.key !== "Enter") return;
+	event.preventDefault();
+	if (window.obj8166_onTap_activeActionGroupIndex != -1) {
+	console.warn("action list window.obj8166_onTap is still running");
+	return;
+}
+var obj8166_onTap_runningActionsCount = 0;
+var obj8166_onTap_loopCount = 0;
+obj8166_onTap_actionGroup0();
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+ *
+ *   obj8185: Event SCEventReadAloudStarted
+ *
+ */
+$("#obj8185").bind("SCEventReadAloudStarted", function(event) {
+	if (window.obj8185_SCEventReadAloudStarted_activeActionGroupIndex != -1) {
+	console.warn("action list window.obj8185_SCEventReadAloudStarted is still running");
+	return;
+}
+var obj8185_SCEventReadAloudStarted_runningActionsCount = 0;
+var obj8185_SCEventReadAloudStarted_loopCount = 0;
+obj8185_SCEventReadAloudStarted_actionGroup0();
+});
+/*
+ *
+ *   obj8185: Event SCEventReadAloudStopped
+ *
+ */
+$("#obj8185").bind("SCEventReadAloudStopped", function(event) {
+	if (window.obj8185_SCEventReadAloudStopped_activeActionGroupIndex != -1) {
+	console.warn("action list window.obj8185_SCEventReadAloudStopped is still running");
+	return;
+}
+var obj8185_SCEventReadAloudStopped_runningActionsCount = 0;
+var obj8185_SCEventReadAloudStopped_loopCount = 0;
+obj8185_SCEventReadAloudStopped_actionGroup0();
+});
+
+
+
+
+
+/*
+ *
+ *   obj8156: Event Touch Down
+ *
+ */
+$("#obj8156").bind(PubCoder.Events.Tap + " keydown", function(event) {
+	if (event.type === "keydown" && event.key !== "Enter") return;
+	event.preventDefault();
+	if (window.obj8156_onTap_activeActionGroupIndex != -1) {
+	console.warn("action list window.obj8156_onTap is still running");
+	return;
+}
+var obj8156_onTap_runningActionsCount = 0;
+var obj8156_onTap_loopCount = 0;
+obj8156_onTap_actionGroup0();
+});
+
+
+
+
+
+
+
+
+
+
+/*
+ *
+ *   obj8181: Event Touch Down
+ *
+ */
+$("#obj8181").bind(PubCoder.Events.Tap + " keydown", function(event) {
+	if (event.type === "keydown" && event.key !== "Enter") return;
+	event.preventDefault();
+	if (window.obj8181_onTap_activeActionGroupIndex != -1) {
+	console.warn("action list window.obj8181_onTap is still running");
+	return;
+}
+var obj8181_onTap_runningActionsCount = 0;
+var obj8181_onTap_loopCount = 0;
+obj8181_onTap_actionGroup0();
+});
+
+
+
+
+
+
+
+
+
+
+/*
+ *
+ *   obj8178: Event Touch Down
+ *
+ */
+$("#obj8178").bind(PubCoder.Events.Tap + " keydown", function(event) {
+	if (event.type === "keydown" && event.key !== "Enter") return;
+	event.preventDefault();
+	if (window.obj8178_onTap_activeActionGroupIndex != -1) {
+	console.warn("action list window.obj8178_onTap is still running");
+	return;
+}
+var obj8178_onTap_runningActionsCount = 0;
+var obj8178_onTap_loopCount = 0;
+obj8178_onTap_actionGroup0();
+});
+
+
+
+
+
+
+
+
+
+
+/*
+ *
+ *   obj8163: Event Touch Down
+ *
+ */
+$("#obj8163").bind(PubCoder.Events.Tap + " keydown", function(event) {
+	if (event.type === "keydown" && event.key !== "Enter") return;
+	event.preventDefault();
+	if (window.obj8163_onTap_activeActionGroupIndex != -1) {
+	console.warn("action list window.obj8163_onTap is still running");
+	return;
+}
+var obj8163_onTap_runningActionsCount = 0;
+var obj8163_onTap_loopCount = 0;
+obj8163_onTap_actionGroup0();
+});
+
+
+
+
+
+
+
+
+
+
+/*
+ *
+ *   obj8147: Event Touch Down
+ *
+ */
+$("#obj8147").bind(PubCoder.Events.Tap + " keydown", function(event) {
+	if (event.type === "keydown" && event.key !== "Enter") return;
+	event.preventDefault();
+	if (window.obj8147_onTap_activeActionGroupIndex != -1) {
+	console.warn("action list window.obj8147_onTap is still running");
+	return;
+}
+var obj8147_onTap_runningActionsCount = 0;
+var obj8147_onTap_loopCount = 0;
+obj8147_onTap_actionGroup0();
+});
+
+
+
+
+
+
+
+		
+		
+		/*
+		 *
+	 	 *  Page is ready to be played
+	 	 *
+	 	 */
+		XPUB.ready();
+	 }
+});
+$(window).on(pubcoder.events.pagePlay, function() {
+	$(window).trigger(pubcoder.events.pageReady);
+	if (pubcoder.isInteractionObserverSupported) {
+		var ob = new IntersectionObserver(function(entries) {
+			$(entries).each(function (index, entry) {
+				if (entry.isIntersecting) {
+					$(entry.target).trigger(pubcoder.events.appear);
+				} else {
+					$(entry.target).trigger(pubcoder.events.disappear);
+				}
+			});
+		}, {
+			root: null,
+			rootMargin: "0px",
+			threshold: 0
+		});
+		$(".SCView").each(function (i, el) {
+			ob.observe(el);
+		});	
+	}
+	
+$("#obj1566").trigger('SCEventShow');
+$("#obj2503").trigger('SCEventShow');
+$("#obj2035").trigger('SCEventShow');
+$("#obj2037").trigger('SCEventShow');
+$("#obj2032").trigger('SCEventShow');
+$("#obj2014").trigger('SCEventShow');
+$("#obj2017").trigger('SCEventShow');
+$("#obj2020").trigger('SCEventShow');
+$("#obj2043").trigger('SCEventShow');
+$("#obj2039").trigger('SCEventShow');
+$("#obj2041").trigger('SCEventShow');
+$("#obj2026").trigger('SCEventShow');
+$("#obj2023").trigger('SCEventShow');
+$("#obj2029").trigger('SCEventShow');
+$("#obj4506").trigger('SCEventShow');
+$("#obj4562").trigger('SCEventShow');
+$("#obj8185").trigger('SCEventShow');
+$("#obj8156").trigger('SCEventShow');
+$("#obj8178").trigger('SCEventShow');
+$("#obj8163").trigger('SCEventShow');
+$("#obj8147").trigger('SCEventShow');
+	const divs = document.querySelectorAll('.focusable');
+    divs.forEach(div => {
+      div.setAttribute('tabindex', '0');
+      div.addEventListener('keydown', (event) => {
+        if (event.key === 'Enter' || event.key === ' ') {
+          event.preventDefault(); 
+          const clickEvent = new MouseEvent('click', {
+            bubbles: true,
+            cancelable: true,
+            view: window
+          });
+          event.target.dispatchEvent(clickEvent);
+        }
+      });
+    });
+    
+const audio_imgs = document.querySelectorAll('.aimg');
+    audio_imgs.forEach(div => {
+        div.setAttribute('tabindex', '0');
+        div.addEventListener("focus", () => {
+            
+    if (typeof window.pubcoder === "undefined") {
+        window.pubcoder = {};
+    }
+    if (!window.pubcoder.globalvariables) {
+        window.pubcoder.globalvariables = {};
+    }
+    
+    // Toggle the menu state
+    var pic_audio_state = window.pubcoder.globalvariables.pic_audio_state;
+     if(pic_audio_state){
+          const clickEvent = new MouseEvent('click', {
+            bubbles: true,
+            cancelable: true,
+            view: window
+          });
+          div.dispatchEvent(clickEvent);
+     }
+        });
+        
+});
+
+document.querySelectorAll('[class*="t"]').forEach(el => {
+  el.classList.forEach(cls => {
+    const match = cls.match(/^t(\d{1,2})$/); // Match classes like "t1" to "t20"
+    if (match) {
+      const index = parseInt(match[1]);
+      if (index >= 1 && index <= 40) {
+        el.setAttribute('tabindex', index);
+      }
+    }
+  });
+});
+document.querySelectorAll('video').forEach(dragElement);
+function dragElement(elmnt) {
+    
+  elmnt.setAttribute("controls","controls");
+    
+  let pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+  elmnt.style.position = 'absolute'; // Ensure draggable behavior
+  elmnt.addEventListener('mousedown', dragMouseDown);
+  elmnt.addEventListener('touchstart', dragTouchStart, { passive: false });
+  function dragMouseDown(e) {
+    e.preventDefault();
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    document.onmouseup = closeDragElement;
+    document.onmousemove = elementDragMouse;
+  }
+  function dragTouchStart(e) {
+    e.preventDefault();
+    const touch = e.touches[0];
+    pos3 = touch.clientX;
+    pos4 = touch.clientY;
+    document.ontouchend = closeDragElement;
+    document.ontouchmove = elementDragTouch;
+  }
+  function elementDragMouse(e) {
+    e.preventDefault();
+    pos1 = pos3 - e.clientX;
+    pos2 = pos4 - e.clientY;
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+  }
+  function elementDragTouch(e) {
+    e.preventDefault();
+    const touch = e.touches[0];
+    pos1 = pos3 - touch.clientX;
+    pos2 = pos4 - touch.clientY;
+    pos3 = touch.clientX;
+    pos4 = touch.clientY;
+    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+  }
+  function closeDragElement() {
+    document.onmouseup = null;
+    document.onmousemove = null;
+    document.ontouchend = null;
+    document.ontouchmove = null;
+  }
+}
+(function(){
+    if (typeof window.pubcoder === "undefined") {
+        window.pubcoder = {};
+    }
+    if (!window.pubcoder.globalvariables) {
+        window.pubcoder.globalvariables = {};
+    }
+    var storedState = localStorage.getItem("videosDisabled");
+    var currentState = storedState === "true"; 
+    window.pubcoder.globalvariables.videosDisabled = currentState;
+    console.log("videosDisabled from localStorage:", currentState);
+    const container1 = document.querySelector('.nsl-btn');
+    if(currentState){
+        container1.setAttribute("aria-label", "Sign Language Pressed");
+    } else {
+        container1.setAttribute("aria-label", "Sign Language");
+    }
+    var videos = document.querySelectorAll("video");
+    videos.forEach((video, index) => {
+        if (currentState) {
+            console.log("Toggle Button: Showing and playing video #" + (index + 1));
+            video.style.display = "block";
+            video.play();
+            const container = document.querySelector('.nsl-btn');
+            if (container) {
+              const img = container.querySelector('img');
+              if (img) {
+                img.src = '../images/signLangEnabled.png';
+              }
+            }
+        } else {
+            console.log("Toggle Button: Hiding and pausing video #" + (index + 1));
+            video.pause();
+            video.style.display = "none";
+            const container1 = document.querySelector('.nsl-btn');
+            if (container1) {
+              const img = container1.querySelector('img');
+              if (img) {
+                img.src = '../images/sign_language.png';
+              }
+            }
+        }
+    });
+})();
+});

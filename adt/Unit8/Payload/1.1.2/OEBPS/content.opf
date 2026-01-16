@@ -1,0 +1,537 @@
+<?xml version="1.0"?>
+<package xmlns="http://www.idpf.org/2007/opf" unique-identifier="BookID" version="3.0" prefix="rendition: http://www.idpf.org/vocab/rendition/# ibooks: http://vocabulary.itunes.apple.com/rdf/ibooks/vocabulary-extensions-1.0/" xml:lang="ne" >
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
+<!-- METADATA -->
+	<meta name="generator" content="PubCoder for Mac OS X"/>
+	<meta property="rendition:layout">pre-paginated</meta>	
+	<meta property="rendition:orientation">auto</meta>
+	<meta property="rendition:spread">none</meta>
+	<meta property="dcterms:modified">2025-12-24T09:17:06Z</meta>
+	<meta property="media:active-class">-epub-media-overlay-active</meta>
+	<meta property="media:duration">00:05:33</meta>
+	<meta property="media:duration" refines="#smil29">00:00:04</meta>
+<meta property="media:duration" refines="#smil37">00:00:38</meta>
+<meta property="media:duration" refines="#smil45">00:00:24</meta>
+<meta property="media:duration" refines="#smil53">00:00:16</meta>
+<meta property="media:duration" refines="#smil62">00:00:03</meta>
+<meta property="media:duration" refines="#smil70">00:00:07</meta>
+<meta property="media:duration" refines="#smil90">00:00:28</meta>
+<meta property="media:duration" refines="#smil98">00:00:04</meta>
+<meta property="media:duration" refines="#smil106">00:00:19</meta>
+<meta property="media:duration" refines="#smil114">00:00:03</meta>
+<meta property="media:duration" refines="#smil122">00:00:05</meta>
+<meta property="media:duration" refines="#smil130">00:00:16</meta>
+<meta property="media:duration" refines="#smil138">00:00:16</meta>
+<meta property="media:duration" refines="#smil146">00:00:29</meta>
+<meta property="media:duration" refines="#smil154">00:00:11</meta>
+<meta property="media:duration" refines="#smil162">00:00:21</meta>
+<meta property="media:duration" refines="#smil170">00:00:18</meta>
+<meta property="media:duration" refines="#smil178">00:00:33</meta>
+<meta property="media:duration" refines="#smil186">00:00:26</meta>
+<meta property="media:duration" refines="#smil194">00:00:02</meta>
+	<dc:title>Hamro Serofero - Unit 8</dc:title>
+	<dc:creator>CDC</dc:creator>
+	<dc:description>Powered by PubCoder</dc:description>
+	<dc:publisher>CDC</dc:publisher>
+	<dc:date>2025-12-24</dc:date>
+	<dc:rights>© 2025 CDC</dc:rights>
+	<dc:language>ne</dc:language>
+	<dc:identifier id="BookID">12E58D21CC5A4AEEB6229895ABF2FF22</dc:identifier>
+	<meta name="cover" content="cover-image" />
+	
+</metadata>	
+<!-- MANIFEST -->
+	<manifest>
+<!-- GENERAL ASSETS  -->
+		<item id="toc" href="toc.xhtml" media-type="application/xhtml+xml" properties="nav"/>
+		<item id="cssContent" href="css/general.styles.css" media-type="text/css"/>
+		<item id="animateCss" href="css/animate.css" media-type="text/css"/>
+		<item id="jqueryUI" href="css/jquery-ui.min.css" media-type="text/css"/>
+		<item id="jqueryUI-structure" href="css/jquery-ui.structure.min.css" media-type="text/css"/>
+		<item id="jqueryUI-theme" href="css/jquery-ui.theme.min.css" media-type="text/css"/>
+		<item id="cover-image" properties="cover-image" href="assets/images/pubcoder_book_cover.jpg" media-type="image/jpeg"/>
+		
+		<item id="SCNavigationLeft-image" href="images/scnavigation-prev-btn.png" media-type="image/png"/>
+		<item id="SCNavigationLeft-image-active" href="images/scnavigation-prev-btn-active.png" media-type="image/png"/>
+		<item id="SCNavigationLeft-image-hover" href="images/scnavigation-prev-btn-hover.png" media-type="image/png"/>
+		<item id="SCNavigationRight-image" href="images/scnavigation-next-btn.png" media-type="image/png"/>
+		<item id="SCNavigationRight-image-active" href="images/scnavigation-next-btn-active.png" media-type="image/png"/>
+		<item id="SCNavigationRight-image-hover" href="images/scnavigation-next-btn-hover.png" media-type="image/png"/>
+		<item id="SCPhotoGallery-fullscreen-close-image" href="images/scphotogallery-fullscreen-close.png" media-type="image/png"/>
+		<item id="SCPhotoGallery-fullscreen-open-image" href="images/scphotogallery-fullscreen-open.png" media-type="image/png"/>
+		<item id="SCPhotoGallery-index-close-image" href="images/scphotogallery-index-close.png" media-type="image/png"/>
+		<item id="SCPhotoGallery-index-open-image" href="images/scphotogallery-index-open.png" media-type="image/png"/>
+		<item id="SCPhotoGallery-next-image" href="images/scphotogallery-next.png" media-type="image/png"/>
+		<item id="SCPhotoGallery-prev-image" href="images/scphotogallery-prev.png" media-type="image/png"/>
+		<item id="SCPhotoGallery-thumb-next-image" href="images/scphotogallery-thumb-next.png" media-type="image/png"/>
+		<item id="SCPhotoGallery-thumb-prev-image" href="images/scphotogallery-thumb-prev.png" media-type="image/png"/>
+		
+		<item id="SCQuiz-check-off" href="images/scquiz-check-off.png" media-type="image/png"/>
+		<item id="SCQuiz-check-on" href="images/scquiz-check-on.png" media-type="image/png"/>
+		<item id="SCQuiz-check-right" href="images/scquiz-check-right.png" media-type="image/png"/>
+		<item id="SCQuiz-check-wrong" href="images/scquiz-check-wrong.png" media-type="image/png"/>
+		<item id="SCQuiz-radio-off" href="images/scquiz-radio-off.png" media-type="image/png"/>
+		<item id="SCQuiz-radio-on" href="images/scquiz-radio-on.png" media-type="image/png"/>
+		<item id="SCQuiz-radio-right" href="images/scquiz-radio-right.png" media-type="image/png"/>
+		<item id="SCQuiz-radio-wrong" href="images/scquiz-radio-wrong.png" media-type="image/png"/>
+		<item id="SCQuiz-next" href="images/scquiz-next.png" media-type="image/png"/>
+		<item id="SCQuiz-prev" href="images/scquiz-prev.png" media-type="image/png"/>
+		<item id="SCQuiz-radio-missed" href="images/scquiz-radio-missed.png" media-type="image/png"/>
+		<item id="SCQuiz-check-missed" href="images/scquiz-check-missed.png" media-type="image/png"/>
+		<item id="SCDrawer-trash" href="images/scdrawer-trash.png" media-type="image/png"/>
+        <item id="SCDrawer-transparent" href="images/scdrawer-transparent_color.png" media-type="image/png"/>
+        <item id="SCDrawer-tool-drawer" href="images/scdrawer-draw_tool_icon.png" media-type="image/png"/>
+        <item id="SCDrawer-tool-eraser" href="images/scdrawer-erase_tool_icon.png" media-type="image/png"/>
+        <item id="SCDrawer-tool-filler" href="images/scdrawer-fill_tool_icon.png" media-type="image/png"/>
+        <item id="SCDrawer-tool-crayon" href="images/scdrawer-crayon_tool_icon.png" media-type="image/png"/>
+		
+		<item id="scdrawer-brush_svg" href="images/scdrawer-brush.svg" media-type="image/svg+xml"/>
+		<item id="scdrawer-close_svg" href="images/scdrawer-close.svg" media-type="image/svg+xml"/>
+		<item id="scdrawer-eraser_svg" href="images/scdrawer-eraser.svg" media-type="image/svg+xml"/>
+		<item id="scdrawer-fill_svg" href="images/scdrawer-fill.svg" media-type="image/svg+xml"/>
+		<item id="scdrawer-highlighter_svg" href="images/scdrawer-highlighter.svg" media-type="image/svg+xml"/>
+		<item id="scdrawer-note_svg" href="images/scdrawer-note.svg" media-type="image/svg+xml"/>
+		<item id="scdrawer-pencil_svg" href="images/scdrawer-pencil.svg" media-type="image/svg+xml"/>
+		<item id="scdrawer-redo_svg" href="images/scdrawer-redo.svg" media-type="image/svg+xml"/>
+		<item id="scdrawer-trash_svg" href="images/scdrawer-trash.svg" media-type="image/svg+xml"/>
+		<item id="scdrawer-undo_svg" href="images/scdrawer-undo.svg" media-type="image/svg+xml"/>
+		<item id="sctruefalse-down" href="images/sctruefalse-down.png" media-type="image/png"/>
+		<item id="sctruefalse-radio-missed" href="images/sctruefalse-radio-missed.png" media-type="image/png"/>
+		<item id="sctruefalse-radio-off" href="images/sctruefalse-radio-off.png" media-type="image/png"/>
+		<item id="sctruefalse-radio-on" href="images/sctruefalse-radio-on.png" media-type="image/png"/>
+		<item id="sctruefalse-radio-right" href="images/sctruefalse-radio-right.png" media-type="image/png"/>
+		<item id="sctruefalse-radio-wrong" href="images/sctruefalse-radio-wrong.png" media-type="image/png"/>
+		<item id="sctruefalse-up" href="images/sctruefalse-up.png" media-type="image/png"/>
+		<item id="ui-icons_444444_256x240" href="images/ui-icons_444444_256x240.png" media-type="image/png"/>
+		<item id="ui-icons_555555_256x240" href="images/ui-icons_555555_256x240.png" media-type="image/png"/>
+		<item id="ui-icons_777620_256x240" href="images/ui-icons_777620_256x240.png" media-type="image/png"/>
+		<item id="ui-icons_777777_256x240" href="images/ui-icons_777777_256x240.png" media-type="image/png"/>
+		<item id="ui-icons_cc0000_256x240" href="images/ui-icons_cc0000_256x240.png" media-type="image/png"/>
+		<item id="ui-icons_ffffff_256x240" href="images/ui-icons_ffffff_256x240.png" media-type="image/png"/>
+<!-- FONTS -->		
+		
+<item id="font1" href="fonts/OpenDyslexic3.ttf" media-type="application/x-font-truetype"/>
+<item id="font2" href="fonts/Anonymous-Pro.ttf" media-type="application/x-font-truetype"/>
+<item id="font3" href="fonts/Droid-Sans.ttf" media-type="application/x-font-truetype"/>
+<item id="font4" href="fonts/Tinos.ttf" media-type="application/x-font-truetype"/>
+<item id="font5" href="fonts/Didot.ttf" media-type="application/x-font-truetype"/>
+<item id="font6" href="fonts/Roboto-Mono.ttf" media-type="application/x-font-truetype"/>
+<item id="font7" href="fonts/Roboto-Slab.ttf" media-type="application/x-font-truetype"/>
+<item id="font8" href="fonts/Open-Sans.ttf" media-type="application/x-font-truetype"/>
+<item id="font9" href="fonts/Roboto.ttf" media-type="application/x-font-truetype"/>
+<item id="font10" href="fonts/Source-Sans-Pro.ttf" media-type="application/x-font-truetype"/>
+<item id="font11" href="fonts/Kokila_2.ttf" media-type="application/x-font-truetype"/>
+<item id="font12" href="fonts/Source-Code-Pro.ttf" media-type="application/x-font-truetype"/>
+<item id="font13" href="fonts/Droid-Serif.ttf" media-type="application/x-font-truetype"/>
+<item id="font14" href="fonts/Droid-Sans-Mono.ttf" media-type="application/x-font-truetype"/>
+<item id="font15" href="fonts/Lato.ttf" media-type="application/x-font-truetype"/>
+<!-- JAVASCRIPT -->
+				<item id="jquery" href="js/jquery.js" media-type="text/javascript" />
+		<item id="jquery_ui" href="js/jquery-ui.min.js" media-type="text/javascript" />
+        <item id="spritespin_api" href="js/spritespin.api.js" media-type="text/javascript" />
+        <item id="spritespin" href="js/spritespin.js" media-type="text/javascript" />
+		<item id="spritespin_mod_360" href="js/spritespin.mod-360.js" media-type="text/javascript" />
+		<item id="jquery_scrollTo" href="js/jquery.scrollTo.min.js" media-type="text/javascript" />
+		<item id="jquery_easie" href="js/jquery.easie-min.js" media-type="text/javascript" />
+		<item id="jquery_move" href='js/jquery.move.js' media-type="text/javascript" />
+		<item id="jquery_SCswipe" href='js/jquery.SCswipe.js' media-type="text/javascript" />
+		<item id="jquery-css-transform" href='js/jquery-css-transform.js' media-type="text/javascript" />
+		<item id="jquery-animate-css-rotate-scale" href='js/jquery-animate-css-rotate-scale.js' media-type="text/javascript" />
+		<item id="jquery-animate-shadow" href='js/jquery.animate-shadow-min.js' media-type="text/javascript" />
+		<item id="jquery-animate-dropshadow" href='js/jquery.animate-dropshadow.js' media-type="text/javascript" />
+        <item id="jquery_panzoom_js" href='js/jquery.panzoom.min.js' media-type="text/javascript" />
+        <item id="underscore_js" href='js/underscore-min.js' media-type="text/javascript" />
+		<item id="remodal_js" href='js/remodal.js' media-type="text/javascript" />
+		<item id="pubcoder_js" href='js/pubcoder.js' media-type="text/javascript" />
+		<item id="pubcoder_devicemotion_js" href='js/pubcoder.devicemotion.js' media-type="text/javascript" />
+		<item id="pubcoder_general_functions" href='js/general.functions.js' media-type="text/javascript" />
+		<item id="unmask_js" href='js/unmask.js' media-type="text/javascript" />
+		<item id="swiper_js" href='js/idangerous.swiper-2.3.js' media-type="text/javascript" />
+		<item id="photogallery_js" href='js/photogallery.js' media-type="text/javascript" />
+		<item id="quiz_multi_js" href='js/quiz-multi.js' media-type="text/javascript" />
+		<item id="drawer_js" href='js/drawer.js' media-type="text/javascript" />
+		<item id="drawer_flood_fill_js" href='js/flood_fill.js' media-type="text/javascript" />
+        <item id="scw_widgets_js" href='js/scw_widgets.js' media-type="text/javascript" />
+        <item id="scw_panzoom_js" href='js/scw_panzoom.js' media-type="text/javascript" />
+        <item id="scw_memory_game_js" href='js/scw_memory_game.js' media-type="text/javascript" />
+		<item id="hammer_min_js" href='js/hammer.min.js' media-type="text/javascript" />
+		<item id="crossword_js" href="js/crossword.js" media-type="text/javascript" />
+		<item id="fill_in_js" href="js/fill-in.js" media-type="text/javascript" />
+		<item id="jquery_ui_touch-punch_js" href="js/jquery.ui.touch-punch.js" media-type="text/javascript" />
+		<item id="matchWordWithPicture_js" href="js/matchWordWithPicture.js" media-type="text/javascript" />
+		<item id="trueFalse_js" href="js/trueFalse.js" media-type="text/javascript" />
+		
+<!-- SHARED ASSETS -->
+		<item id="image16" href="assets/images/sign_language.png" media-type="image/png" />
+<item id="image17" href="assets/images/signLangEnabled.png" media-type="image/png" />
+<item id="image18" href="assets/images/trans.png" media-type="image/png" />
+<item id="image19" href="assets/images/tick.png" media-type="image/png" />
+<item id="application20" href="assets/uncategorized/leader-line.min.js" media-type="application/javascript" />
+<item id="text21" href="assets/uncategorized/glossary.css" media-type="text/css" />
+<item id="application22" href="assets/uncategorized/glossary.js" media-type="application/javascript" />
+<!-- PAGES ASSETS -->
+		<!--page 1-->
+<item id="js1" href="assets/1/actions.js" media-type="text/javascript" />
+<item id="css1" href="assets/1/styles.css" media-type="text/css"/>
+<item id="page1" pageid="2"
+      href="assets/1/page.xhtml" media-type="application/xhtml+xml" media-overlay="smil29" properties="scripted"
+      
+      />
+<item id="obj3967_image" href="assets/images/obj3967_image.jpeg" media-type="image/jpeg" />
+<item id="obj4148_image" href="assets/images/obj4148_image.jpeg" media-type="image/jpeg" />
+<item id="obj3958_image" href="assets/images/obj3958_image.jpeg" media-type="image/jpeg" />
+<item id="obj4165_image" href="assets/images/obj4165_image.png" media-type="image/png" />
+<item id="obj4153_image" href="assets/images/obj4153_image.png" media-type="image/png" />
+<item id="obj4163_image" href="assets/images/obj4163_image.png" media-type="image/png" />
+<item id="video23" href="assets/video/1016-1.mp4" media-type="video/mp4" />
+<item id="obj4151_image" href="assets/images/obj4151_image.jpeg" media-type="image/jpeg" />
+<item id="obj4161_image" href="assets/images/obj4161_image.png" media-type="image/png" />
+<item id="obj4159_image" href="assets/images/obj4159_image.png" media-type="image/png" />
+<item id="obj9834_image" href="assets/images/obj9834_image.png" media-type="image/png" />
+<item id="obj12416_image" href="assets/images/obj12416_image.png" media-type="image/png" />
+<item id="obj12430_image" href="assets/images/obj12430_image.png" media-type="image/png" />
+<item id="switch24_to" href="assets/images/switch24_to.png" media-type="image/png" />
+<item id="obj12401_image" href="assets/images/obj12401_image.png" media-type="image/png" />
+<item id="obj12426_image" href="assets/images/obj12426_image.png" media-type="image/png" />
+<item id="switch26_to" href="assets/images/switch26_to.png" media-type="image/png" />
+<item id="obj12423_image" href="assets/images/obj12423_image.png" media-type="image/png" />
+<item id="obj12408_image" href="assets/images/obj12408_image.png" media-type="image/png" />
+<item id="obj12392_image" href="assets/images/obj12392_image.png" media-type="image/png" />
+<item id="thumbnail1" href="assets/1/thumbnail.png" media-type="image/png" />
+<item id="loading1" href="assets/1/loading.jpg" media-type="image/jpeg" />
+<item id="audio30" href="assets/1/audio/spe.mp3" media-type="audio/mpeg" />
+<item id="smil29" href="assets/1/spe.smil" media-type="application/smil+xml"/>
+<!--page 1: end-->
+<!--page 2-->
+<item id="js2" href="assets/2/actions.js" media-type="text/javascript" />
+<item id="css2" href="assets/2/styles.css" media-type="text/css"/>
+<item id="page2" pageid="3799"
+      href="assets/2/page.xhtml" media-type="application/xhtml+xml" media-overlay="smil37" properties="scripted"
+      
+      />
+<item id="obj3970_image" href="assets/images/obj3970_image.jpeg" media-type="image/jpeg" />
+<item id="obj4181_image" href="assets/images/obj4181_image.png" media-type="image/png" />
+<item id="obj4185_image" href="assets/images/obj4185_image.png" media-type="image/png" />
+<item id="video31" href="assets/video/1016-2.mp4" media-type="video/mp4" />
+<item id="obj4183_image" href="assets/images/obj4183_image.png" media-type="image/png" />
+<item id="thumbnail2" href="assets/2/thumbnail.png" media-type="image/png" />
+<item id="loading2" href="assets/2/loading.jpg" media-type="image/jpeg" />
+<item id="audio38" href="assets/2/audio/spe.mp3" media-type="audio/mpeg" />
+<item id="smil37" href="assets/2/spe.smil" media-type="application/smil+xml"/>
+<!--page 2: end-->
+<!--page 3-->
+<item id="js3" href="assets/3/actions.js" media-type="text/javascript" />
+<item id="css3" href="assets/3/styles.css" media-type="text/css"/>
+<item id="page3" pageid="3800"
+      href="assets/3/page.xhtml" media-type="application/xhtml+xml" media-overlay="smil45" properties="scripted"
+      
+      />
+<item id="obj3973_image" href="assets/images/obj3973_image.jpeg" media-type="image/jpeg" />
+<item id="video39" href="assets/video/1016-3.mp4" media-type="video/mp4" />
+<item id="thumbnail3" href="assets/3/thumbnail.png" media-type="image/png" />
+<item id="loading3" href="assets/3/loading.jpg" media-type="image/jpeg" />
+<item id="audio46" href="assets/3/audio/spe.mp3" media-type="audio/mpeg" />
+<item id="smil45" href="assets/3/spe.smil" media-type="application/smil+xml"/>
+<!--page 3: end-->
+<!--page 4-->
+<item id="js4" href="assets/4/actions.js" media-type="text/javascript" />
+<item id="css4" href="assets/4/styles.css" media-type="text/css"/>
+<item id="page4" pageid="3801"
+      href="assets/4/page.xhtml" media-type="application/xhtml+xml" media-overlay="smil53" properties="scripted"
+      
+      />
+<item id="obj3976_image" href="assets/images/obj3976_image.jpeg" media-type="image/jpeg" />
+<item id="video47" href="assets/video/1016-4-1.mp4" media-type="video/mp4" />
+<item id="thumbnail4" href="assets/4/thumbnail.png" media-type="image/png" />
+<item id="loading4" href="assets/4/loading.jpg" media-type="image/jpeg" />
+<item id="audio54" href="assets/4/audio/spe.mp3" media-type="audio/mpeg" />
+<item id="smil53" href="assets/4/spe.smil" media-type="application/smil+xml"/>
+<!--page 4: end-->
+<!--page 5-->
+<item id="js5" href="assets/5/actions.js" media-type="text/javascript" />
+<item id="css5" href="assets/5/styles.css" media-type="text/css"/>
+<item id="page5" pageid="8483"
+      href="assets/5/page.xhtml" media-type="application/xhtml+xml" media-overlay="smil62" properties="scripted svg"
+      
+      />
+<item id="obj8505_image" href="assets/images/obj8505_image.jpeg" media-type="image/jpeg" />
+<item id="image55" href="assets/images/rohodondron_outline.png" media-type="image/png" />
+<item id="video56" href="assets/video/1016-4-2.mp4" media-type="video/mp4" />
+<item id="thumbnail5" href="assets/5/thumbnail.png" media-type="image/png" />
+<item id="loading5" href="assets/5/loading.jpg" media-type="image/jpeg" />
+<item id="audio63" href="assets/5/audio/spe.mp3" media-type="audio/mpeg" />
+<item id="smil62" href="assets/5/spe.smil" media-type="application/smil+xml"/>
+<!--page 5: end-->
+<!--page 6-->
+<item id="js6" href="assets/6/actions.js" media-type="text/javascript" />
+<item id="css6" href="assets/6/styles.css" media-type="text/css"/>
+<item id="page6" pageid="3802"
+      href="assets/6/page.xhtml" media-type="application/xhtml+xml" media-overlay="smil70" properties="scripted"
+      
+      />
+<item id="obj4560_image" href="assets/images/obj4560_image.jpeg" media-type="image/jpeg" />
+<item id="obj3979_image" href="assets/images/obj3979_image.jpeg" media-type="image/jpeg" />
+<item id="obj3982_image" href="assets/images/obj3982_image.jpeg" media-type="image/jpeg" />
+<item id="obj4233_image" href="assets/images/obj4233_image.png" media-type="image/png" />
+<item id="obj4223_image" href="assets/images/obj4223_image.png" media-type="image/png" />
+<item id="obj4235_image" href="assets/images/obj4235_image.png" media-type="image/png" />
+<item id="video64" href="assets/video/1016-5.mp4" media-type="video/mp4" />
+<item id="obj4229_image" href="assets/images/obj4229_image.png" media-type="image/png" />
+<item id="obj3985_image" href="assets/images/obj3985_image.jpeg" media-type="image/jpeg" />
+<item id="obj4225_image" href="assets/images/obj4225_image.png" media-type="image/png" />
+<item id="obj4227_image" href="assets/images/obj4227_image.png" media-type="image/png" />
+<item id="thumbnail6" href="assets/6/thumbnail.png" media-type="image/png" />
+<item id="loading6" href="assets/6/loading.jpg" media-type="image/jpeg" />
+<item id="audio71" href="assets/6/audio/spe.mp3" media-type="audio/mpeg" />
+<item id="smil70" href="assets/6/spe.smil" media-type="application/smil+xml"/>
+<!--page 6: end-->
+<!--page 7-->
+<item id="js7" href="assets/7/actions.js" media-type="text/javascript" />
+<item id="css7" href="assets/7/styles.css" media-type="text/css"/>
+<item id="page7" pageid="3803"
+      href="assets/7/page.xhtml" media-type="application/xhtml+xml" media-overlay="smil90" properties="scripted"
+      
+      />
+<item id="obj3988_image" href="assets/images/obj3988_image.jpeg" media-type="image/jpeg" />
+<item id="obj8550_image" href="assets/images/obj8550_image.png" media-type="image/png" />
+<item id="audio72" href="assets/audio/correct.mp3" media-type="audio/mpeg" />
+<item id="obj8535_image" href="assets/images/obj8535_image.png" media-type="image/png" />
+<item id="audio73" href="assets/audio/incorrect.mp3" media-type="audio/mpeg" />
+<item id="obj8580_image" href="assets/images/obj8580_image.png" media-type="image/png" />
+<item id="obj8577_image" href="assets/images/obj8577_image.png" media-type="image/png" />
+<item id="video76" href="assets/video/1016-6.mp4" media-type="video/mp4" />
+<item id="thumbnail7" href="assets/7/thumbnail.png" media-type="image/png" />
+<item id="loading7" href="assets/7/loading.jpg" media-type="image/jpeg" />
+<item id="audio91" href="assets/7/audio/spe.mp3" media-type="audio/mpeg" />
+<item id="smil90" href="assets/7/spe.smil" media-type="application/smil+xml"/>
+<!--page 7: end-->
+<!--page 8-->
+<item id="js8" href="assets/8/actions.js" media-type="text/javascript" />
+<item id="css8" href="assets/8/styles.css" media-type="text/css"/>
+<item id="page8" pageid="8649"
+      href="assets/8/page.xhtml" media-type="application/xhtml+xml" media-overlay="smil98" properties="scripted"
+      
+      />
+<item id="obj8650_image" href="assets/images/obj8650_image.jpeg" media-type="image/jpeg" />
+<item id="video92" href="assets/video/1016-7-1.mp4" media-type="video/mp4" />
+<item id="thumbnail8" href="assets/8/thumbnail.png" media-type="image/png" />
+<item id="loading8" href="assets/8/loading.jpg" media-type="image/jpeg" />
+<item id="audio99" href="assets/8/audio/spe.mp3" media-type="audio/mpeg" />
+<item id="smil98" href="assets/8/spe.smil" media-type="application/smil+xml"/>
+<!--page 8: end-->
+<!--page 9-->
+<item id="js9" href="assets/9/actions.js" media-type="text/javascript" />
+<item id="css9" href="assets/9/styles.css" media-type="text/css"/>
+<item id="page9" pageid="3805"
+      href="assets/9/page.xhtml" media-type="application/xhtml+xml" media-overlay="smil106" properties="scripted"
+      
+      />
+<item id="obj3997_image" href="assets/images/obj3997_image.jpeg" media-type="image/jpeg" />
+<item id="obj4454_image" href="assets/images/obj4454_image.png" media-type="image/png" />
+<item id="obj4000_image" href="assets/images/obj4000_image.png" media-type="image/png" />
+<item id="video100" href="assets/video/1016-8.mp4" media-type="video/mp4" />
+<item id="obj4003_image" href="assets/images/obj4003_image.jpeg" media-type="image/jpeg" />
+<item id="obj4452_image" href="assets/images/obj4452_image.png" media-type="image/png" />
+<item id="obj4450_image" href="assets/images/obj4450_image.png" media-type="image/png" />
+<item id="thumbnail9" href="assets/9/thumbnail.png" media-type="image/png" />
+<item id="loading9" href="assets/9/loading.jpg" media-type="image/jpeg" />
+<item id="audio107" href="assets/9/audio/spe.mp3" media-type="audio/mpeg" />
+<item id="smil106" href="assets/9/spe.smil" media-type="application/smil+xml"/>
+<!--page 9: end-->
+<!--page 10-->
+<item id="js10" href="assets/10/actions.js" media-type="text/javascript" />
+<item id="css10" href="assets/10/styles.css" media-type="text/css"/>
+<item id="page10" pageid="3806"
+      href="assets/10/page.xhtml" media-type="application/xhtml+xml" media-overlay="smil114" properties="scripted"
+      
+      />
+<item id="obj4006_image" href="assets/images/obj4006_image.jpeg" media-type="image/jpeg" />
+<item id="obj4456_image" href="assets/images/obj4456_image.png" media-type="image/png" />
+<item id="video108" href="assets/video/1016-9.mp4" media-type="video/mp4" />
+<item id="thumbnail10" href="assets/10/thumbnail.png" media-type="image/png" />
+<item id="loading10" href="assets/10/loading.jpg" media-type="image/jpeg" />
+<item id="audio115" href="assets/10/audio/spe.mp3" media-type="audio/mpeg" />
+<item id="smil114" href="assets/10/spe.smil" media-type="application/smil+xml"/>
+<!--page 10: end-->
+<!--page 11-->
+<item id="js11" href="assets/11/actions.js" media-type="text/javascript" />
+<item id="css11" href="assets/11/styles.css" media-type="text/css"/>
+<item id="page11" pageid="8684"
+      href="assets/11/page.xhtml" media-type="application/xhtml+xml" media-overlay="smil122" properties="scripted"
+      
+      />
+<item id="obj8722_image" href="assets/images/obj8722_image.jpeg" media-type="image/jpeg" />
+<item id="video116" href="assets/video/27-nsl-10.mp4" media-type="video/mp4" />
+<item id="thumbnail11" href="assets/11/thumbnail.png" media-type="image/png" />
+<item id="loading11" href="assets/11/loading.jpg" media-type="image/jpeg" />
+<item id="audio123" href="assets/11/audio/spe.mp3" media-type="audio/mpeg" />
+<item id="smil122" href="assets/11/spe.smil" media-type="application/smil+xml"/>
+<!--page 11: end-->
+<!--page 12-->
+<item id="js12" href="assets/12/actions.js" media-type="text/javascript" />
+<item id="css12" href="assets/12/styles.css" media-type="text/css"/>
+<item id="page12" pageid="3808"
+      href="assets/12/page.xhtml" media-type="application/xhtml+xml" media-overlay="smil130" properties="scripted"
+      
+      />
+<item id="obj8770_image" href="assets/images/obj8770_image.jpeg" media-type="image/jpeg" />
+<item id="obj4458_image" href="assets/images/obj4458_image.png" media-type="image/png" />
+<item id="video124" href="assets/video/1016-11-1.mp4" media-type="video/mp4" />
+<item id="thumbnail12" href="assets/12/thumbnail.png" media-type="image/png" />
+<item id="loading12" href="assets/12/loading.jpg" media-type="image/jpeg" />
+<item id="audio131" href="assets/12/audio/spe.mp3" media-type="audio/mpeg" />
+<item id="smil130" href="assets/12/spe.smil" media-type="application/smil+xml"/>
+<!--page 12: end-->
+<!--page 13-->
+<item id="js13" href="assets/13/actions.js" media-type="text/javascript" />
+<item id="css13" href="assets/13/styles.css" media-type="text/css"/>
+<item id="page13" pageid="8732"
+      href="assets/13/page.xhtml" media-type="application/xhtml+xml" media-overlay="smil138" properties="scripted"
+      
+      />
+<item id="obj8766_image" href="assets/images/obj8766_image.jpeg" media-type="image/jpeg" />
+<item id="obj8755_image" href="assets/images/obj8755_image.png" media-type="image/png" />
+<item id="video132" href="assets/video/1016-11-2.mp4" media-type="video/mp4" />
+<item id="obj8757_image" href="assets/images/obj8757_image.png" media-type="image/png" />
+<item id="obj8753_image" href="assets/images/obj8753_image.png" media-type="image/png" />
+<item id="thumbnail13" href="assets/13/thumbnail.png" media-type="image/png" />
+<item id="loading13" href="assets/13/loading.jpg" media-type="image/jpeg" />
+<item id="audio139" href="assets/13/audio/spe.mp3" media-type="audio/mpeg" />
+<item id="smil138" href="assets/13/spe.smil" media-type="application/smil+xml"/>
+<!--page 13: end-->
+<!--page 14-->
+<item id="js14" href="assets/14/actions.js" media-type="text/javascript" />
+<item id="css14" href="assets/14/styles.css" media-type="text/css"/>
+<item id="page14" pageid="3809"
+      href="assets/14/page.xhtml" media-type="application/xhtml+xml" media-overlay="smil146" properties="scripted"
+      
+      />
+<item id="obj4021_image" href="assets/images/obj4021_image.jpeg" media-type="image/jpeg" />
+<item id="video140" href="assets/video/1016-12.mp4" media-type="video/mp4" />
+<item id="thumbnail14" href="assets/14/thumbnail.png" media-type="image/png" />
+<item id="loading14" href="assets/14/loading.jpg" media-type="image/jpeg" />
+<item id="audio147" href="assets/14/audio/spe.mp3" media-type="audio/mpeg" />
+<item id="smil146" href="assets/14/spe.smil" media-type="application/smil+xml"/>
+<!--page 14: end-->
+<!--page 15-->
+<item id="js15" href="assets/15/actions.js" media-type="text/javascript" />
+<item id="css15" href="assets/15/styles.css" media-type="text/css"/>
+<item id="page15" pageid="8793"
+      href="assets/15/page.xhtml" media-type="application/xhtml+xml" media-overlay="smil154" properties="scripted"
+      
+      />
+<item id="obj8796_image" href="assets/images/obj8796_image.jpeg" media-type="image/jpeg" />
+<item id="video148" href="assets/video/1016-13.mp4" media-type="video/mp4" />
+<item id="thumbnail15" href="assets/15/thumbnail.png" media-type="image/png" />
+<item id="loading15" href="assets/15/loading.jpg" media-type="image/jpeg" />
+<item id="audio155" href="assets/15/audio/spe.mp3" media-type="audio/mpeg" />
+<item id="smil154" href="assets/15/spe.smil" media-type="application/smil+xml"/>
+<!--page 15: end-->
+<!--page 16-->
+<item id="js16" href="assets/16/actions.js" media-type="text/javascript" />
+<item id="css16" href="assets/16/styles.css" media-type="text/css"/>
+<item id="page16" pageid="3810"
+      href="assets/16/page.xhtml" media-type="application/xhtml+xml" media-overlay="smil162" properties="scripted"
+      
+      />
+<item id="obj4030_image" href="assets/images/obj4030_image.jpeg" media-type="image/jpeg" />
+<item id="obj4468_image" href="assets/images/obj4468_image.png" media-type="image/png" />
+<item id="thumbnail16" href="assets/16/thumbnail.png" media-type="image/png" />
+<item id="loading16" href="assets/16/loading.jpg" media-type="image/jpeg" />
+<item id="audio163" href="assets/16/audio/spe.mp3" media-type="audio/mpeg" />
+<item id="smil162" href="assets/16/spe.smil" media-type="application/smil+xml"/>
+<!--page 16: end-->
+<!--page 17-->
+<item id="js17" href="assets/17/actions.js" media-type="text/javascript" />
+<item id="css17" href="assets/17/styles.css" media-type="text/css"/>
+<item id="page17" pageid="3811"
+      href="assets/17/page.xhtml" media-type="application/xhtml+xml" media-overlay="smil170" properties="scripted"
+      
+      />
+<item id="obj4033_image" href="assets/images/obj4033_image.jpeg" media-type="image/jpeg" />
+<item id="video164" href="assets/video/1016-14.mp4" media-type="video/mp4" />
+<item id="thumbnail17" href="assets/17/thumbnail.png" media-type="image/png" />
+<item id="loading17" href="assets/17/loading.jpg" media-type="image/jpeg" />
+<item id="audio171" href="assets/17/audio/spe.mp3" media-type="audio/mpeg" />
+<item id="smil170" href="assets/17/spe.smil" media-type="application/smil+xml"/>
+<!--page 17: end-->
+<!--page 18-->
+<item id="js18" href="assets/18/actions.js" media-type="text/javascript" />
+<item id="css18" href="assets/18/styles.css" media-type="text/css"/>
+<item id="page18" pageid="3812"
+      href="assets/18/page.xhtml" media-type="application/xhtml+xml" media-overlay="smil178" properties="scripted"
+      
+      />
+<item id="obj4045_image" href="assets/images/obj4045_image.jpeg" media-type="image/jpeg" />
+<item id="video172" href="assets/video/1016-15-1-1.mp4" media-type="video/mp4" />
+<item id="obj4470_image" href="assets/images/obj4470_image.png" media-type="image/png" />
+<item id="thumbnail18" href="assets/18/thumbnail.png" media-type="image/png" />
+<item id="loading18" href="assets/18/loading.jpg" media-type="image/jpeg" />
+<item id="audio179" href="assets/18/audio/spe.mp3" media-type="audio/mpeg" />
+<item id="smil178" href="assets/18/spe.smil" media-type="application/smil+xml"/>
+<!--page 18: end-->
+<!--page 19-->
+<item id="js19" href="assets/19/actions.js" media-type="text/javascript" />
+<item id="css19" href="assets/19/styles.css" media-type="text/css"/>
+<item id="page19" pageid="3813"
+      href="assets/19/page.xhtml" media-type="application/xhtml+xml" media-overlay="smil186" properties="scripted"
+      
+      />
+<item id="obj4048_image" href="assets/images/obj4048_image.jpeg" media-type="image/jpeg" />
+<item id="video180" href="assets/video/1016-16-2.mp4" media-type="video/mp4" />
+<item id="thumbnail19" href="assets/19/thumbnail.png" media-type="image/png" />
+<item id="loading19" href="assets/19/loading.jpg" media-type="image/jpeg" />
+<item id="audio187" href="assets/19/audio/spe.mp3" media-type="audio/mpeg" />
+<item id="smil186" href="assets/19/spe.smil" media-type="application/smil+xml"/>
+<!--page 19: end-->
+<!--page 20-->
+<item id="js20" href="assets/20/actions.js" media-type="text/javascript" />
+<item id="css20" href="assets/20/styles.css" media-type="text/css"/>
+<item id="page20" pageid="3814"
+      href="assets/20/page.xhtml" media-type="application/xhtml+xml" media-overlay="smil194" properties="scripted"
+      
+      />
+<item id="obj4057_image" href="assets/images/obj4057_image.jpeg" media-type="image/jpeg" />
+<item id="obj4054_image" href="assets/images/obj4054_image.jpeg" media-type="image/jpeg" />
+<item id="obj4442_image" href="assets/images/obj4442_image.png" media-type="image/png" />
+<item id="obj4436_image" href="assets/images/obj4436_image.png" media-type="image/png" />
+<item id="obj4446_image" href="assets/images/obj4446_image.png" media-type="image/png" />
+<item id="video188" href="assets/video/1016-17.mp4" media-type="video/mp4" />
+<item id="obj4438_image" href="assets/images/obj4438_image.png" media-type="image/png" />
+<item id="obj4444_image" href="assets/images/obj4444_image.png" media-type="image/png" />
+<item id="obj4060_image" href="assets/images/obj4060_image.jpeg" media-type="image/jpeg" />
+<item id="thumbnail20" href="assets/20/thumbnail.png" media-type="image/png" />
+<item id="loading20" href="assets/20/loading.jpg" media-type="image/jpeg" />
+<item id="audio195" href="assets/20/audio/spe.mp3" media-type="audio/mpeg" />
+<item id="smil194" href="assets/20/spe.smil" media-type="application/smil+xml"/>
+<!--page 20: end-->
+	</manifest>
+	
+	<spine page-progression-direction="ltr">
+		<itemref idref="page1" />
+<itemref idref="page2" />
+<itemref idref="page3" />
+<itemref idref="page4" />
+<itemref idref="page5" />
+<itemref idref="page6" />
+<itemref idref="page7" />
+<itemref idref="page8" />
+<itemref idref="page9" />
+<itemref idref="page10" />
+<itemref idref="page11" />
+<itemref idref="page12" />
+<itemref idref="page13" />
+<itemref idref="page14" />
+<itemref idref="page15" />
+<itemref idref="page16" />
+<itemref idref="page17" />
+<itemref idref="page18" />
+<itemref idref="page19" />
+<itemref idref="page20" />
+	</spine>
+	
+	<guide> 
+      <reference type="cover" title="Cover" href="assets/1/page.xhtml"/>
+      <reference type="text" title="Story start" href="assets/2/page.xhtml"/>
+  </guide>	
+</package>
