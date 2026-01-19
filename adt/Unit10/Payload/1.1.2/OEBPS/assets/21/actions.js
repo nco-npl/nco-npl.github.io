@@ -1870,10 +1870,10 @@ $(window).on(pubcoder.events.pagePlay, function() {
 	}
 	
 $("#obj4062").trigger('SCEventShow');
-$("#obj4300").trigger('SCEventShow');
 $("#obj4298").trigger('SCEventShow');
-$("#obj10901").trigger('SCEventShow');
+$("#obj4300").trigger('SCEventShow');
 $("#obj10895").trigger('SCEventShow');
+$("#obj10901").trigger('SCEventShow');
 $("#obj10887").trigger('SCEventShow');
 $("#obj10889").trigger('SCEventShow');
 $("#obj10897").trigger('SCEventShow');

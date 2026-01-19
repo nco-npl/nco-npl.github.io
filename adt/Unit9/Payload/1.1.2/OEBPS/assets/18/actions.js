@@ -1820,8 +1820,8 @@ $(window).on(pubcoder.events.pagePlay, function() {
 	}
 	
 $("#obj3990").trigger('SCEventShow');
-$("#obj4384").trigger('SCEventShow');
 $("#obj4382").trigger('SCEventShow');
+$("#obj4384").trigger('SCEventShow');
 $("#obj3992").trigger('SCEventShow');
 $("#obj4386").trigger('SCEventShow');
 $("#obj3994").trigger('SCEventShow');

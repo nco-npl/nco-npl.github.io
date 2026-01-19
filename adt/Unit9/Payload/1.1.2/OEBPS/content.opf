@@ -6,7 +6,7 @@
 	<meta property="rendition:layout">pre-paginated</meta>	
 	<meta property="rendition:orientation">auto</meta>
 	<meta property="rendition:spread">none</meta>
-	<meta property="dcterms:modified">2025-12-24T09:17:52Z</meta>
+	<meta property="dcterms:modified">2026-01-19T16:06:29Z</meta>
 	<meta property="media:active-class">-epub-media-overlay-active</meta>
 	<meta property="media:duration">00:05:49</meta>
 	<meta property="media:duration" refines="#smil37">00:00:05</meta>
@@ -43,7 +43,7 @@
 	<dc:creator>Bishnu</dc:creator>
 	<dc:description>Powered by PubCoder</dc:description>
 	<dc:publisher>Bishnu</dc:publisher>
-	<dc:date>2025-12-24</dc:date>
+	<dc:date>2026-01-19</dc:date>
 	<dc:rights>© 2025 Bishnu</dc:rights>
 	<dc:language>ne</dc:language>
 	<dc:identifier id="BookID">12E58D21CC5A4AEEB6229895ABF2FF22</dc:identifier>
@@ -197,6 +197,7 @@
       />
 <item id="obj9393_image" href="assets/images/obj9393_image.jpeg" media-type="image/jpeg" />
 <item id="obj9400_image" href="assets/images/obj9400_image.png" media-type="image/png" />
+<item id="obj9402_image" href="assets/images/obj9402_image.png" media-type="image/png" />
 <item id="obj9404_image" href="assets/images/obj9404_image.png" media-type="image/png" />
 <item id="video31" href="assets/video/1019-2.mp4" media-type="video/mp4" />
 <item id="obj9406_image" href="assets/images/obj9406_image.png" media-type="image/png" />
@@ -297,8 +298,8 @@
       
       />
 <item id="obj4329_image" href="assets/images/obj4329_image.jpeg" media-type="image/jpeg" />
-<item id="video79" href="assets/video/1019-5.mp4" media-type="video/mp4" />
 <item id="obj9502_image" href="assets/images/obj9502_image.png" media-type="image/png" />
+<item id="video79" href="assets/video/1019-5.mp4" media-type="video/mp4" />
 <item id="obj9500_image" href="assets/images/obj9500_image.png" media-type="image/png" />
 <item id="thumbnail7" href="assets/7/thumbnail.png" media-type="image/png" />
 <item id="loading7" href="assets/7/loading.jpg" media-type="image/jpeg" />
@@ -427,8 +428,8 @@
       href="assets/15/page.xhtml" media-type="application/xhtml+xml" media-overlay="smil159" properties="scripted"
       
       />
-<item id="obj4358_image" href="assets/images/obj4358_image.png" media-type="image/png" />
 <item id="obj3981_image" href="assets/images/obj3981_image.png" media-type="image/png" />
+<item id="obj4358_image" href="assets/images/obj4358_image.png" media-type="image/png" />
 <item id="video153" href="assets/video/1019-13.mp4" media-type="video/mp4" />
 <item id="obj4360_image" href="assets/images/obj4360_image.png" media-type="image/png" />
 <item id="thumbnail15" href="assets/15/thumbnail.png" media-type="image/png" />
@@ -452,9 +453,9 @@
 <item id="obj9309_image" href="assets/images/obj9309_image.png" media-type="image/png" />
 <item id="obj9311_image" href="assets/images/obj9311_image.png" media-type="image/png" />
 <item id="obj9306_image" href="assets/images/obj9306_image.png" media-type="image/png" />
+<item id="obj4372_image" href="assets/images/obj4372_image.png" media-type="image/png" />
 <item id="obj4370_image" href="assets/images/obj4370_image.png" media-type="image/png" />
 <item id="obj4368_image" href="assets/images/obj4368_image.png" media-type="image/png" />
-<item id="obj4372_image" href="assets/images/obj4372_image.png" media-type="image/png" />
 <item id="thumbnail16" href="assets/16/thumbnail.png" media-type="image/png" />
 <item id="loading16" href="assets/16/loading.jpg" media-type="image/jpeg" />
 <item id="audio174" href="assets/16/audio/spe.mp3" media-type="audio/mpeg" />
@@ -499,15 +500,15 @@
       
       />
 <item id="obj4015_image" href="assets/images/obj4015_image.jpeg" media-type="image/jpeg" />
-<item id="obj4414_image" href="assets/images/obj4414_image.jpeg" media-type="image/jpeg" />
 <item id="obj4408_image" href="assets/images/obj4408_image.jpeg" media-type="image/jpeg" />
-<item id="obj4410_image" href="assets/images/obj4410_image.jpeg" media-type="image/jpeg" />
 <item id="obj4398_image" href="assets/images/obj4398_image.jpeg" media-type="image/jpeg" />
+<item id="obj4410_image" href="assets/images/obj4410_image.jpeg" media-type="image/jpeg" />
+<item id="obj4414_image" href="assets/images/obj4414_image.jpeg" media-type="image/jpeg" />
+<item id="video191" href="assets/video/1019-17.mp4" media-type="video/mp4" />
 <item id="obj4404_image" href="assets/images/obj4404_image.jpeg" media-type="image/jpeg" />
 <item id="obj4412_image" href="assets/images/obj4412_image.jpeg" media-type="image/jpeg" />
-<item id="obj4402_image" href="assets/images/obj4402_image.jpeg" media-type="image/jpeg" />
-<item id="video191" href="assets/video/1019-17.mp4" media-type="video/mp4" />
 <item id="obj4406_image" href="assets/images/obj4406_image.jpeg" media-type="image/jpeg" />
+<item id="obj4402_image" href="assets/images/obj4402_image.jpeg" media-type="image/jpeg" />
 <item id="obj4400_image" href="assets/images/obj4400_image.jpeg" media-type="image/jpeg" />
 <item id="thumbnail19" href="assets/19/thumbnail.png" media-type="image/png" />
 <item id="loading19" href="assets/19/loading.jpg" media-type="image/jpeg" />
@@ -523,8 +524,8 @@
       />
 <item id="obj9523_image" href="assets/images/obj9523_image.jpeg" media-type="image/jpeg" />
 <item id="obj4422_image" href="assets/images/obj4422_image.jpeg" media-type="image/jpeg" />
-<item id="obj4428_image" href="assets/images/obj4428_image.jpeg" media-type="image/jpeg" />
 <item id="obj4434_image" href="assets/images/obj4434_image.jpeg" media-type="image/jpeg" />
+<item id="obj4428_image" href="assets/images/obj4428_image.jpeg" media-type="image/jpeg" />
 <item id="video199" href="assets/video/1019-18.mp4" media-type="video/mp4" />
 <item id="obj4432_image" href="assets/images/obj4432_image.jpeg" media-type="image/jpeg" />
 <item id="obj4426_image" href="assets/images/obj4426_image.jpeg" media-type="image/jpeg" />
@@ -592,6 +593,7 @@
       
       />
 <item id="obj4045_image" href="assets/images/obj4045_image.jpeg" media-type="image/jpeg" />
+<item id="obj4518_image" href="assets/images/obj4518_image.png" media-type="image/png" />
 <item id="obj4528_image" href="assets/images/obj4528_image.png" media-type="image/png" />
 <item id="video243" href="assets/video/1019-22.mp4" media-type="video/mp4" />
 <item id="thumbnail24" href="assets/24/thumbnail.png" media-type="image/png" />
@@ -625,7 +627,7 @@
 <item id="obj4054_image" href="assets/images/obj4054_image.jpeg" media-type="image/jpeg" />
 <item id="obj9771_image" href="assets/images/obj9771_image.jpeg" media-type="image/jpeg" />
 <item id="obj4546_image" href="assets/images/obj4546_image.png" media-type="image/png" />
-<item id="obj4548_image" href="assets/images/obj4548_image.png" media-type="image/png" />
+<item id="obj4544_image" href="assets/images/obj4544_image.png" media-type="image/png" />
 <item id="video259" href="assets/video/1019-24.mp4" media-type="video/mp4" />
 <item id="thumbnail26" href="assets/26/thumbnail.png" media-type="image/png" />
 <item id="loading26" href="assets/26/loading.jpg" media-type="image/jpeg" />

@@ -17,6 +17,23 @@ div.SCContent {
 	pointer-events: none;
 }
 
+div#obj9240 {
+position: absolute;
+overflow: hidden;
+top: 222px;
+left: 239px;
+width: 225px;
+height: 49px;
+opacity: 1;
+z-index: 15;
+display:block;
+pointer-events: auto;
+
+user-select: none;  
+-moz-user-select: none;
+-webkit-user-select: none;
+-ms-user-select: none;
+}
 div#obj9250 {
 position: absolute;
 overflow: hidden;
@@ -34,27 +51,10 @@ user-select: none;
 -webkit-user-select: none;
 -ms-user-select: none;
 }
-div#obj9240 {
-position: absolute;
-overflow: hidden;
-top: 230px;
-left: 239px;
-width: 225px;
-height: 49px;
-opacity: 1;
-z-index: 15;
-display:block;
-pointer-events: auto;
-
-user-select: none;  
--moz-user-select: none;
--webkit-user-select: none;
--ms-user-select: none;
-}
 div#obj9242 {
 position: absolute;
 overflow: hidden;
-top: 310px;
+top: 302px;
 left: 239px;
 width: 225px;
 height: 49px;
@@ -71,7 +71,7 @@ user-select: none;
 div#obj9248 {
 position: absolute;
 overflow: hidden;
-top: 310px;
+top: 302px;
 left: 669px;
 width: 225px;
 height: 49px;
@@ -88,7 +88,7 @@ user-select: none;
 div#obj9244 {
 position: absolute;
 overflow: hidden;
-top: 389px;
+top: 381px;
 left: 239px;
 width: 225px;
 height: 49px;
@@ -105,7 +105,7 @@ user-select: none;
 div#obj9246 {
 position: absolute;
 overflow: hidden;
-top: 389px;
+top: 381px;
 left: 669px;
 width: 225px;
 height: 49px;
@@ -184,34 +184,10 @@ img#obj4422_img {
 	width: 136px;
 	height: 67px;
 }
-div#obj4428 {
-position: absolute;
-overflow: hidden;
-top: 221px;
-left: 511px;
-width: 136px;
-height: 67px;
-opacity: 1;
-z-index: 10;
-display:block;
-pointer-events: none;
-
-user-select: none;  
--moz-user-select: none;
--webkit-user-select: none;
--ms-user-select: none;
-}
-img#obj4428_img {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	width: 136px;
-	height: 67px;
-}
 div#obj4434 {
 position: absolute;
 overflow: hidden;
-top: 226px;
+top: 222px;
 left: 56px;
 width: 136px;
 height: 67px;
@@ -232,10 +208,34 @@ img#obj4434_img {
 	width: 136px;
 	height: 67px;
 }
+div#obj4428 {
+position: absolute;
+overflow: hidden;
+top: 222px;
+left: 511px;
+width: 136px;
+height: 67px;
+opacity: 1;
+z-index: 10;
+display:block;
+pointer-events: none;
+
+user-select: none;  
+-moz-user-select: none;
+-webkit-user-select: none;
+-ms-user-select: none;
+}
+img#obj4428_img {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 136px;
+	height: 67px;
+}
 div#obj4432 {
 position: absolute;
 overflow: hidden;
-top: 301px;
+top: 302px;
 left: 56px;
 width: 136px;
 height: 67px;
@@ -259,7 +259,7 @@ img#obj4432_img {
 div#obj4426 {
 position: absolute;
 overflow: hidden;
-top: 305px;
+top: 302px;
 left: 506px;
 width: 136px;
 height: 67px;
@@ -283,7 +283,7 @@ img#obj4426_img {
 div#obj4430 {
 position: absolute;
 overflow: hidden;
-top: 380px;
+top: 381px;
 left: 56px;
 width: 136px;
 height: 67px;
@@ -307,7 +307,7 @@ img#obj4430_img {
 div#obj4424 {
 position: absolute;
 overflow: hidden;
-top: 384px;
+top: 381px;
 left: 511px;
 width: 137px;
 height: 58px;

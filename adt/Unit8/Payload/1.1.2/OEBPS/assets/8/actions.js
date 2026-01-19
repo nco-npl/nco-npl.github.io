@@ -1800,8 +1800,8 @@ $(window).on(pubcoder.events.pagePlay, function() {
 	}
 	
 $("#obj8650").trigger('SCEventShow');
-$("#obj8654").trigger('SCEventShow');
 $("#obj8652").trigger('SCEventShow');
+$("#obj8654").trigger('SCEventShow');
 $("#obj8730").trigger('SCEventShow');
 $("#obj8678").trigger('SCEventShow');
 $("#obj8680").trigger('SCEventShow');

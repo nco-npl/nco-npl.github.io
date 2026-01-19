@@ -1839,10 +1839,10 @@ $(window).on(pubcoder.events.pagePlay, function() {
 		});	
 	}
 	
-$("#obj4543").trigger('SCEventShow');
 $("#obj6333").trigger('SCEventShow');
 $("#obj4020").trigger('SCEventShow');
 $("#obj4220").trigger('SCEventShow');
+$("#obj4543").trigger('SCEventShow');
 $("#obj4539").trigger('SCEventShow');
 $("#obj4222").trigger('SCEventShow');
 $("#obj4541").trigger('SCEventShow');

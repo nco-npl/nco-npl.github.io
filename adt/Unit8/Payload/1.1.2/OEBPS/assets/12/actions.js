@@ -1986,8 +1986,8 @@ $(window).on(pubcoder.events.pagePlay, function() {
 	
 $("#obj8770").trigger('SCEventShow');
 $("#obj4356").trigger('SCEventShow');
-$("#obj4362").trigger('SCEventShow');
 $("#obj4360").trigger('SCEventShow');
+$("#obj4362").trigger('SCEventShow');
 $("#obj4458").trigger('SCEventShow');
 $("#obj4364").trigger('SCEventShow');
 $("#obj4484").trigger('SCEventShow');

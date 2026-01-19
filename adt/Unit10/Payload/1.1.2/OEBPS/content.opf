@@ -6,7 +6,7 @@
 	<meta property="rendition:layout">pre-paginated</meta>	
 	<meta property="rendition:orientation">auto</meta>
 	<meta property="rendition:spread">none</meta>
-	<meta property="dcterms:modified">2025-12-24T09:18:45Z</meta>
+	<meta property="dcterms:modified">2026-01-19T16:05:06Z</meta>
 	<meta property="media:active-class">-epub-media-overlay-active</meta>
 	<meta property="media:duration">00:08:22</meta>
 	<meta property="media:duration" refines="#smil40">00:00:05</meta>
@@ -52,7 +52,7 @@
 	<dc:creator>CDC</dc:creator>
 	<dc:description>Powered by PubCoder</dc:description>
 	<dc:publisher>CDC</dc:publisher>
-	<dc:date>2025-12-24</dc:date>
+	<dc:date>2026-01-19</dc:date>
 	<dc:rights>© 2025 CDC</dc:rights>
 	<dc:language>ne</dc:language>
 	<dc:identifier id="BookID">12E58D21CC5A4AEEB6229895ABF2FF22</dc:identifier>
@@ -424,8 +424,8 @@
       href="assets/14/page.xhtml" media-type="application/xhtml+xml" media-overlay="smil148" properties="scripted"
       
       />
-<item id="obj4543_image" href="assets/images/obj4543_image.jpeg" media-type="image/jpeg" />
 <item id="obj4020_image" href="assets/images/obj4020_image.jpeg" media-type="image/jpeg" />
+<item id="obj4543_image" href="assets/images/obj4543_image.jpeg" media-type="image/jpeg" />
 <item id="obj4539_image" href="assets/images/obj4539_image.jpeg" media-type="image/jpeg" />
 <item id="obj4541_image" href="assets/images/obj4541_image.jpeg" media-type="image/jpeg" />
 <item id="video142" href="assets/video/1019--1--15.mp4" media-type="video/mp4" />
@@ -552,6 +552,7 @@
 <item id="obj4059_image" href="assets/images/obj4059_image.jpeg" media-type="image/jpeg" />
 <item id="obj4637_image" href="assets/images/obj4637_image.png" media-type="image/png" />
 <item id="obj10773_image" href="assets/images/obj10773_image.png" media-type="image/png" />
+<item id="obj4623_image" href="assets/images/obj4623_image.png" media-type="image/png" />
 <item id="obj10787_image" href="assets/images/obj10787_image.png" media-type="image/png" />
 <item id="obj10785_image" href="assets/images/obj10785_image.png" media-type="image/png" />
 <item id="obj10771_image" href="assets/images/obj10771_image.png" media-type="image/png" />
@@ -817,8 +818,8 @@
       
       />
 <item id="obj10293_image" href="assets/images/obj10293_image.jpeg" media-type="image/jpeg" />
-<item id="obj4705_image" href="assets/images/obj4705_image.png" media-type="image/png" />
 <item id="obj4695_image" href="assets/images/obj4695_image.png" media-type="image/png" />
+<item id="obj4705_image" href="assets/images/obj4705_image.png" media-type="image/png" />
 <item id="video346" href="assets/video/1019-38-1.mp4" media-type="video/mp4" />
 <item id="obj4701_image" href="assets/images/obj4701_image.png" media-type="image/png" />
 <item id="obj4703_image" href="assets/images/obj4703_image.png" media-type="image/png" />
@@ -865,8 +866,8 @@
       
       />
 <item id="obj4131_image" href="assets/images/obj4131_image.jpeg" media-type="image/jpeg" />
-<item id="obj4725_image" href="assets/images/obj4725_image.png" media-type="image/png" />
 <item id="obj4723_image" href="assets/images/obj4723_image.png" media-type="image/png" />
+<item id="obj4725_image" href="assets/images/obj4725_image.png" media-type="image/png" />
 <item id="video370" href="assets/video/27-nsl-11.mp4" media-type="video/mp4" />
 <item id="thumbnail39" href="assets/39/thumbnail.png" media-type="image/png" />
 <item id="loading39" href="assets/39/loading.jpg" media-type="image/jpeg" />

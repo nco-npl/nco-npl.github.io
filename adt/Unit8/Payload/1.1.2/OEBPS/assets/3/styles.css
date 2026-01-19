@@ -251,6 +251,25 @@ img#obj12392_img {
 	height: 40px;
 }
 
+div#obj4179 {
+position: absolute;
+overflow: hidden;
+top: 138px;
+left: 283px;
+width: 46px;
+height: 42px;
+opacity: 1;
+z-index: 3;
+display:block;
+pointer-events: auto;
+user-select: text;  
+-moz-user-select: text;
+-webkit-user-select: text;
+-ms-user-select: text;
+
+}
+div#obj4179_content {
+}
 div#obj4187 {
 position: absolute;
 overflow: hidden;
@@ -269,25 +288,6 @@ user-select: text;
 
 }
 div#obj4187_content {
-}
-div#obj4179 {
-position: absolute;
-overflow: hidden;
-top: 143px;
-left: 283px;
-width: 46px;
-height: 42px;
-opacity: 1;
-z-index: 3;
-display:block;
-pointer-events: auto;
-user-select: text;  
--moz-user-select: text;
--webkit-user-select: text;
--ms-user-select: text;
-
-}
-div#obj4179_content {
 }
 div#obj4199 {
 position: absolute;
@@ -311,7 +311,7 @@ div#obj4199_content {
 div#obj4189 {
 position: absolute;
 overflow: hidden;
-top: 211px;
+top: 209px;
 left: 265px;
 width: 432px;
 height: 44px;
@@ -327,29 +327,10 @@ user-select: text;
 }
 div#obj4189_content {
 }
-div#obj4197 {
-position: absolute;
-overflow: hidden;
-top: 257px;
-left: 265px;
-width: 541px;
-height: 43px;
-opacity: 1;
-z-index: 9;
-display:block;
-pointer-events: auto;
-user-select: text;  
--moz-user-select: text;
--webkit-user-select: text;
--ms-user-select: text;
-
-}
-div#obj4197_content {
-}
 div#obj4207 {
 position: absolute;
 overflow: hidden;
-top: 262px;
+top: 258px;
 left: 181px;
 width: 58px;
 height: 45px;
@@ -364,6 +345,25 @@ user-select: text;
 
 }
 div#obj4207_content {
+}
+div#obj4197 {
+position: absolute;
+overflow: hidden;
+top: 258px;
+left: 265px;
+width: 541px;
+height: 43px;
+opacity: 1;
+z-index: 9;
+display:block;
+pointer-events: auto;
+user-select: text;  
+-moz-user-select: text;
+-webkit-user-select: text;
+-ms-user-select: text;
+
+}
+div#obj4197_content {
 }
 div#obj4205 {
 position: absolute;
@@ -444,8 +444,8 @@ div#obj4193_content {
 div#obj4201 {
 position: absolute;
 overflow: hidden;
-top: 404px;
-left: 189px;
+top: 411px;
+left: 185px;
 width: 41px;
 height: 49px;
 opacity: 1;
@@ -463,8 +463,8 @@ div#obj4201_content {
 div#obj4191 {
 position: absolute;
 overflow: hidden;
-top: 412px;
-left: 269px;
+top: 411px;
+left: 265px;
 width: 593px;
 height: 48px;
 opacity: 1;

@@ -19,21 +19,21 @@ var askAudioPermission = false;
  *
  * 
  */
-var obj4115_onTap_activeActionGroupIndex = -1;
-var obj4115_onTap_runningActionsCount = 0;
-var obj4115_onTap_loopCount = 0;
-var obj4117_onTap_activeActionGroupIndex = -1;
-var obj4117_onTap_runningActionsCount = 0;
-var obj4117_onTap_loopCount = 0;
-var obj4119_onTap_activeActionGroupIndex = -1;
-var obj4119_onTap_runningActionsCount = 0;
-var obj4119_onTap_loopCount = 0;
-var obj4121_onTap_activeActionGroupIndex = -1;
-var obj4121_onTap_runningActionsCount = 0;
-var obj4121_onTap_loopCount = 0;
-var obj4123_onTap_activeActionGroupIndex = -1;
-var obj4123_onTap_runningActionsCount = 0;
-var obj4123_onTap_loopCount = 0;
+var obj14202_onTap_activeActionGroupIndex = -1;
+var obj14202_onTap_runningActionsCount = 0;
+var obj14202_onTap_loopCount = 0;
+var obj14199_onTap_activeActionGroupIndex = -1;
+var obj14199_onTap_runningActionsCount = 0;
+var obj14199_onTap_loopCount = 0;
+var obj14196_onTap_activeActionGroupIndex = -1;
+var obj14196_onTap_runningActionsCount = 0;
+var obj14196_onTap_loopCount = 0;
+var obj14193_onTap_activeActionGroupIndex = -1;
+var obj14193_onTap_runningActionsCount = 0;
+var obj14193_onTap_loopCount = 0;
+var obj14190_onTap_activeActionGroupIndex = -1;
+var obj14190_onTap_runningActionsCount = 0;
+var obj14190_onTap_loopCount = 0;
 var obj14034_onTap_activeActionGroupIndex = -1;
 var obj14034_onTap_runningActionsCount = 0;
 var obj14034_onTap_loopCount = 0;
@@ -164,38 +164,38 @@ var obj14015_onTap_loopCount = 0;
 	 	 *
 	 	 */
 		
-obj4115_onTap_actionGroup0 = function(){
+obj14202_onTap_actionGroup0 = function(){
 	isLastActionGroup = false;
 	if (isLastActionGroup) {
-		window.obj4115_onTap_activeActionGroupIndex = -1;
-		$("#obj4115").trigger("obj4115_onTap_ended");
+		window.obj14202_onTap_activeActionGroupIndex = -1;
+		$("#obj14202").trigger("obj14202_onTap_ended");
 		
 		for (var i = 0; i < pubcoder.queuedEvents.length; i++) {
 			const evt = pubcoder.queuedEvents[i];
-			if (evt.senderObjectId == 4115) {
-				console.warn("de-queueing event obj4115." + evt.eventName);
+			if (evt.senderObjectId == 14202) {
+				console.warn("de-queueing event obj14202." + evt.eventName);
 				pubcoder.queuedEvents.splice(i, 1);
-				$("#obj4115").trigger(evt.eventName);
+				$("#obj14202").trigger(evt.eventName);
 				return;
 			}
 		}
 		return;
 	}
-	window.obj4115_onTap_activeActionGroupIndex = 0;
+	window.obj14202_onTap_activeActionGroupIndex = 0;
 	
 
 
 
 //	action: switchImage 
-//	target: obj10749 
-switchImage_10748();
-function switchImage_10748() {
-	window.obj4115_onTap_runningActionsCount = obj4115_onTap_runningActionsCount + 1;
+//	target: obj14186 
+switchImage_14204();
+function switchImage_14204() {
+	window.obj14202_onTap_runningActionsCount = obj14202_onTap_runningActionsCount + 1;
 
-	var targetObjectId = "#obj10749";
+	var targetObjectId = "#obj14186";
 	var targetObject = $(targetObjectId)[0];
 	var allowBackAndForth = true;
-	var imgObjId = "#obj10749_img";
+	var imgObjId = "#obj14186_img";
 	var fromImagePath = "../../..";
 	var toImagePath = "../images/switch101_to.png";
 	var switchHelperId = "switchHelper101"
@@ -203,8 +203,8 @@ function switchImage_10748() {
 	var switchId = "101";
 	var toSwitchId = "101";
 	var fadeDuration = "0s";
-	var fromSoundObjectId = "#obj_audio_switchImage10748_from";
-	var toSoundObjectId = "#obj_audio_switchImage10748_to";
+	var fromSoundObjectId = "#obj_audio_switchImage14204_from";
+	var toSoundObjectId = "#obj_audio_switchImage14204_to";
 	var audioFrom;
 	if (fromSoundObjectId != "#") audioFrom = $(fromSoundObjectId)[0];
 	var audioTo;
@@ -224,11 +224,11 @@ function switchImage_10748() {
 	}
 	var actionEndFunction = function() {
 			setTimeout(function() {
-				window.obj4115_onTap_runningActionsCount = window.obj4115_onTap_runningActionsCount - 1;
-if (window.obj4115_onTap_runningActionsCount < 0) {
-	window.obj4115_onTap_runningActionsCount = 0;
-} else if (window.obj4115_onTap_runningActionsCount == 0) {
-	obj4115_onTap_actionGroup1();
+				window.obj14202_onTap_runningActionsCount = window.obj14202_onTap_runningActionsCount - 1;
+if (window.obj14202_onTap_runningActionsCount < 0) {
+	window.obj14202_onTap_runningActionsCount = 0;
+} else if (window.obj14202_onTap_runningActionsCount == 0) {
+	obj14202_onTap_actionGroup1();
 }
 			}, 1);
 	};
@@ -293,24 +293,24 @@ if (window.obj4115_onTap_runningActionsCount < 0) {
 
 
 };
-obj4115_onTap_actionGroup1 = function(){
+obj14202_onTap_actionGroup1 = function(){
 	isLastActionGroup = true;
 	if (isLastActionGroup) {
-		window.obj4115_onTap_activeActionGroupIndex = -1;
-		$("#obj4115").trigger("obj4115_onTap_ended");
+		window.obj14202_onTap_activeActionGroupIndex = -1;
+		$("#obj14202").trigger("obj14202_onTap_ended");
 		
 		for (var i = 0; i < pubcoder.queuedEvents.length; i++) {
 			const evt = pubcoder.queuedEvents[i];
-			if (evt.senderObjectId == 4115) {
-				console.warn("de-queueing event obj4115." + evt.eventName);
+			if (evt.senderObjectId == 14202) {
+				console.warn("de-queueing event obj14202." + evt.eventName);
 				pubcoder.queuedEvents.splice(i, 1);
-				$("#obj4115").trigger(evt.eventName);
+				$("#obj14202").trigger(evt.eventName);
 				return;
 			}
 		}
 		return;
 	}
-	window.obj4115_onTap_activeActionGroupIndex = 1;
+	window.obj14202_onTap_activeActionGroupIndex = 1;
 	
 
 
@@ -335,38 +335,38 @@ obj4115_onTap_actionGroup1 = function(){
 
 
 };
-obj4117_onTap_actionGroup0 = function(){
+obj14199_onTap_actionGroup0 = function(){
 	isLastActionGroup = false;
 	if (isLastActionGroup) {
-		window.obj4117_onTap_activeActionGroupIndex = -1;
-		$("#obj4117").trigger("obj4117_onTap_ended");
+		window.obj14199_onTap_activeActionGroupIndex = -1;
+		$("#obj14199").trigger("obj14199_onTap_ended");
 		
 		for (var i = 0; i < pubcoder.queuedEvents.length; i++) {
 			const evt = pubcoder.queuedEvents[i];
-			if (evt.senderObjectId == 4117) {
-				console.warn("de-queueing event obj4117." + evt.eventName);
+			if (evt.senderObjectId == 14199) {
+				console.warn("de-queueing event obj14199." + evt.eventName);
 				pubcoder.queuedEvents.splice(i, 1);
-				$("#obj4117").trigger(evt.eventName);
+				$("#obj14199").trigger(evt.eventName);
 				return;
 			}
 		}
 		return;
 	}
-	window.obj4117_onTap_activeActionGroupIndex = 0;
+	window.obj14199_onTap_activeActionGroupIndex = 0;
 	
 
 
 
 //	action: switchImage 
-//	target: obj11342 
-switchImage_11350();
-function switchImage_11350() {
-	window.obj4117_onTap_runningActionsCount = obj4117_onTap_runningActionsCount + 1;
+//	target: obj14184 
+switchImage_14201();
+function switchImage_14201() {
+	window.obj14199_onTap_runningActionsCount = obj14199_onTap_runningActionsCount + 1;
 
-	var targetObjectId = "#obj11342";
+	var targetObjectId = "#obj14184";
 	var targetObject = $(targetObjectId)[0];
 	var allowBackAndForth = true;
-	var imgObjId = "#obj11342_img";
+	var imgObjId = "#obj14184_img";
 	var fromImagePath = "../../..";
 	var toImagePath = "../images/switch101_to.png";
 	var switchHelperId = "switchHelper104"
@@ -374,8 +374,8 @@ function switchImage_11350() {
 	var switchId = "104";
 	var toSwitchId = "104";
 	var fadeDuration = "0s";
-	var fromSoundObjectId = "#obj_audio_switchImage11350_from";
-	var toSoundObjectId = "#obj_audio_switchImage11350_to";
+	var fromSoundObjectId = "#obj_audio_switchImage14201_from";
+	var toSoundObjectId = "#obj_audio_switchImage14201_to";
 	var audioFrom;
 	if (fromSoundObjectId != "#") audioFrom = $(fromSoundObjectId)[0];
 	var audioTo;
@@ -395,11 +395,11 @@ function switchImage_11350() {
 	}
 	var actionEndFunction = function() {
 			setTimeout(function() {
-				window.obj4117_onTap_runningActionsCount = window.obj4117_onTap_runningActionsCount - 1;
-if (window.obj4117_onTap_runningActionsCount < 0) {
-	window.obj4117_onTap_runningActionsCount = 0;
-} else if (window.obj4117_onTap_runningActionsCount == 0) {
-	obj4117_onTap_actionGroup1();
+				window.obj14199_onTap_runningActionsCount = window.obj14199_onTap_runningActionsCount - 1;
+if (window.obj14199_onTap_runningActionsCount < 0) {
+	window.obj14199_onTap_runningActionsCount = 0;
+} else if (window.obj14199_onTap_runningActionsCount == 0) {
+	obj14199_onTap_actionGroup1();
 }
 			}, 1);
 	};
@@ -464,24 +464,24 @@ if (window.obj4117_onTap_runningActionsCount < 0) {
 
 
 };
-obj4117_onTap_actionGroup1 = function(){
+obj14199_onTap_actionGroup1 = function(){
 	isLastActionGroup = true;
 	if (isLastActionGroup) {
-		window.obj4117_onTap_activeActionGroupIndex = -1;
-		$("#obj4117").trigger("obj4117_onTap_ended");
+		window.obj14199_onTap_activeActionGroupIndex = -1;
+		$("#obj14199").trigger("obj14199_onTap_ended");
 		
 		for (var i = 0; i < pubcoder.queuedEvents.length; i++) {
 			const evt = pubcoder.queuedEvents[i];
-			if (evt.senderObjectId == 4117) {
-				console.warn("de-queueing event obj4117." + evt.eventName);
+			if (evt.senderObjectId == 14199) {
+				console.warn("de-queueing event obj14199." + evt.eventName);
 				pubcoder.queuedEvents.splice(i, 1);
-				$("#obj4117").trigger(evt.eventName);
+				$("#obj14199").trigger(evt.eventName);
 				return;
 			}
 		}
 		return;
 	}
-	window.obj4117_onTap_activeActionGroupIndex = 1;
+	window.obj14199_onTap_activeActionGroupIndex = 1;
 	
 
 
@@ -506,38 +506,38 @@ obj4117_onTap_actionGroup1 = function(){
 
 
 };
-obj4119_onTap_actionGroup0 = function(){
+obj14196_onTap_actionGroup0 = function(){
 	isLastActionGroup = false;
 	if (isLastActionGroup) {
-		window.obj4119_onTap_activeActionGroupIndex = -1;
-		$("#obj4119").trigger("obj4119_onTap_ended");
+		window.obj14196_onTap_activeActionGroupIndex = -1;
+		$("#obj14196").trigger("obj14196_onTap_ended");
 		
 		for (var i = 0; i < pubcoder.queuedEvents.length; i++) {
 			const evt = pubcoder.queuedEvents[i];
-			if (evt.senderObjectId == 4119) {
-				console.warn("de-queueing event obj4119." + evt.eventName);
+			if (evt.senderObjectId == 14196) {
+				console.warn("de-queueing event obj14196." + evt.eventName);
 				pubcoder.queuedEvents.splice(i, 1);
-				$("#obj4119").trigger(evt.eventName);
+				$("#obj14196").trigger(evt.eventName);
 				return;
 			}
 		}
 		return;
 	}
-	window.obj4119_onTap_activeActionGroupIndex = 0;
+	window.obj14196_onTap_activeActionGroupIndex = 0;
 	
 
 
 
 //	action: switchImage 
-//	target: obj11344 
-switchImage_11351();
-function switchImage_11351() {
-	window.obj4119_onTap_runningActionsCount = obj4119_onTap_runningActionsCount + 1;
+//	target: obj14182 
+switchImage_14198();
+function switchImage_14198() {
+	window.obj14196_onTap_runningActionsCount = obj14196_onTap_runningActionsCount + 1;
 
-	var targetObjectId = "#obj11344";
+	var targetObjectId = "#obj14182";
 	var targetObject = $(targetObjectId)[0];
 	var allowBackAndForth = true;
-	var imgObjId = "#obj11344_img";
+	var imgObjId = "#obj14182_img";
 	var fromImagePath = "../../..";
 	var toImagePath = "../images/switch101_to.png";
 	var switchHelperId = "switchHelper107"
@@ -545,8 +545,8 @@ function switchImage_11351() {
 	var switchId = "107";
 	var toSwitchId = "107";
 	var fadeDuration = "0s";
-	var fromSoundObjectId = "#obj_audio_switchImage11351_from";
-	var toSoundObjectId = "#obj_audio_switchImage11351_to";
+	var fromSoundObjectId = "#obj_audio_switchImage14198_from";
+	var toSoundObjectId = "#obj_audio_switchImage14198_to";
 	var audioFrom;
 	if (fromSoundObjectId != "#") audioFrom = $(fromSoundObjectId)[0];
 	var audioTo;
@@ -566,11 +566,11 @@ function switchImage_11351() {
 	}
 	var actionEndFunction = function() {
 			setTimeout(function() {
-				window.obj4119_onTap_runningActionsCount = window.obj4119_onTap_runningActionsCount - 1;
-if (window.obj4119_onTap_runningActionsCount < 0) {
-	window.obj4119_onTap_runningActionsCount = 0;
-} else if (window.obj4119_onTap_runningActionsCount == 0) {
-	obj4119_onTap_actionGroup1();
+				window.obj14196_onTap_runningActionsCount = window.obj14196_onTap_runningActionsCount - 1;
+if (window.obj14196_onTap_runningActionsCount < 0) {
+	window.obj14196_onTap_runningActionsCount = 0;
+} else if (window.obj14196_onTap_runningActionsCount == 0) {
+	obj14196_onTap_actionGroup1();
 }
 			}, 1);
 	};
@@ -635,24 +635,24 @@ if (window.obj4119_onTap_runningActionsCount < 0) {
 
 
 };
-obj4119_onTap_actionGroup1 = function(){
+obj14196_onTap_actionGroup1 = function(){
 	isLastActionGroup = true;
 	if (isLastActionGroup) {
-		window.obj4119_onTap_activeActionGroupIndex = -1;
-		$("#obj4119").trigger("obj4119_onTap_ended");
+		window.obj14196_onTap_activeActionGroupIndex = -1;
+		$("#obj14196").trigger("obj14196_onTap_ended");
 		
 		for (var i = 0; i < pubcoder.queuedEvents.length; i++) {
 			const evt = pubcoder.queuedEvents[i];
-			if (evt.senderObjectId == 4119) {
-				console.warn("de-queueing event obj4119." + evt.eventName);
+			if (evt.senderObjectId == 14196) {
+				console.warn("de-queueing event obj14196." + evt.eventName);
 				pubcoder.queuedEvents.splice(i, 1);
-				$("#obj4119").trigger(evt.eventName);
+				$("#obj14196").trigger(evt.eventName);
 				return;
 			}
 		}
 		return;
 	}
-	window.obj4119_onTap_activeActionGroupIndex = 1;
+	window.obj14196_onTap_activeActionGroupIndex = 1;
 	
 
 
@@ -677,38 +677,38 @@ obj4119_onTap_actionGroup1 = function(){
 
 
 };
-obj4121_onTap_actionGroup0 = function(){
+obj14193_onTap_actionGroup0 = function(){
 	isLastActionGroup = false;
 	if (isLastActionGroup) {
-		window.obj4121_onTap_activeActionGroupIndex = -1;
-		$("#obj4121").trigger("obj4121_onTap_ended");
+		window.obj14193_onTap_activeActionGroupIndex = -1;
+		$("#obj14193").trigger("obj14193_onTap_ended");
 		
 		for (var i = 0; i < pubcoder.queuedEvents.length; i++) {
 			const evt = pubcoder.queuedEvents[i];
-			if (evt.senderObjectId == 4121) {
-				console.warn("de-queueing event obj4121." + evt.eventName);
+			if (evt.senderObjectId == 14193) {
+				console.warn("de-queueing event obj14193." + evt.eventName);
 				pubcoder.queuedEvents.splice(i, 1);
-				$("#obj4121").trigger(evt.eventName);
+				$("#obj14193").trigger(evt.eventName);
 				return;
 			}
 		}
 		return;
 	}
-	window.obj4121_onTap_activeActionGroupIndex = 0;
+	window.obj14193_onTap_activeActionGroupIndex = 0;
 	
 
 
 
 //	action: switchImage 
-//	target: obj11346 
-switchImage_11352();
-function switchImage_11352() {
-	window.obj4121_onTap_runningActionsCount = obj4121_onTap_runningActionsCount + 1;
+//	target: obj14180 
+switchImage_14195();
+function switchImage_14195() {
+	window.obj14193_onTap_runningActionsCount = obj14193_onTap_runningActionsCount + 1;
 
-	var targetObjectId = "#obj11346";
+	var targetObjectId = "#obj14180";
 	var targetObject = $(targetObjectId)[0];
 	var allowBackAndForth = true;
-	var imgObjId = "#obj11346_img";
+	var imgObjId = "#obj14180_img";
 	var fromImagePath = "../../..";
 	var toImagePath = "../images/switch101_to.png";
 	var switchHelperId = "switchHelper110"
@@ -716,8 +716,8 @@ function switchImage_11352() {
 	var switchId = "110";
 	var toSwitchId = "110";
 	var fadeDuration = "0s";
-	var fromSoundObjectId = "#obj_audio_switchImage11352_from";
-	var toSoundObjectId = "#obj_audio_switchImage11352_to";
+	var fromSoundObjectId = "#obj_audio_switchImage14195_from";
+	var toSoundObjectId = "#obj_audio_switchImage14195_to";
 	var audioFrom;
 	if (fromSoundObjectId != "#") audioFrom = $(fromSoundObjectId)[0];
 	var audioTo;
@@ -737,11 +737,11 @@ function switchImage_11352() {
 	}
 	var actionEndFunction = function() {
 			setTimeout(function() {
-				window.obj4121_onTap_runningActionsCount = window.obj4121_onTap_runningActionsCount - 1;
-if (window.obj4121_onTap_runningActionsCount < 0) {
-	window.obj4121_onTap_runningActionsCount = 0;
-} else if (window.obj4121_onTap_runningActionsCount == 0) {
-	obj4121_onTap_actionGroup1();
+				window.obj14193_onTap_runningActionsCount = window.obj14193_onTap_runningActionsCount - 1;
+if (window.obj14193_onTap_runningActionsCount < 0) {
+	window.obj14193_onTap_runningActionsCount = 0;
+} else if (window.obj14193_onTap_runningActionsCount == 0) {
+	obj14193_onTap_actionGroup1();
 }
 			}, 1);
 	};
@@ -806,24 +806,24 @@ if (window.obj4121_onTap_runningActionsCount < 0) {
 
 
 };
-obj4121_onTap_actionGroup1 = function(){
+obj14193_onTap_actionGroup1 = function(){
 	isLastActionGroup = true;
 	if (isLastActionGroup) {
-		window.obj4121_onTap_activeActionGroupIndex = -1;
-		$("#obj4121").trigger("obj4121_onTap_ended");
+		window.obj14193_onTap_activeActionGroupIndex = -1;
+		$("#obj14193").trigger("obj14193_onTap_ended");
 		
 		for (var i = 0; i < pubcoder.queuedEvents.length; i++) {
 			const evt = pubcoder.queuedEvents[i];
-			if (evt.senderObjectId == 4121) {
-				console.warn("de-queueing event obj4121." + evt.eventName);
+			if (evt.senderObjectId == 14193) {
+				console.warn("de-queueing event obj14193." + evt.eventName);
 				pubcoder.queuedEvents.splice(i, 1);
-				$("#obj4121").trigger(evt.eventName);
+				$("#obj14193").trigger(evt.eventName);
 				return;
 			}
 		}
 		return;
 	}
-	window.obj4121_onTap_activeActionGroupIndex = 1;
+	window.obj14193_onTap_activeActionGroupIndex = 1;
 	
 
 
@@ -848,38 +848,38 @@ obj4121_onTap_actionGroup1 = function(){
 
 
 };
-obj4123_onTap_actionGroup0 = function(){
+obj14190_onTap_actionGroup0 = function(){
 	isLastActionGroup = false;
 	if (isLastActionGroup) {
-		window.obj4123_onTap_activeActionGroupIndex = -1;
-		$("#obj4123").trigger("obj4123_onTap_ended");
+		window.obj14190_onTap_activeActionGroupIndex = -1;
+		$("#obj14190").trigger("obj14190_onTap_ended");
 		
 		for (var i = 0; i < pubcoder.queuedEvents.length; i++) {
 			const evt = pubcoder.queuedEvents[i];
-			if (evt.senderObjectId == 4123) {
-				console.warn("de-queueing event obj4123." + evt.eventName);
+			if (evt.senderObjectId == 14190) {
+				console.warn("de-queueing event obj14190." + evt.eventName);
 				pubcoder.queuedEvents.splice(i, 1);
-				$("#obj4123").trigger(evt.eventName);
+				$("#obj14190").trigger(evt.eventName);
 				return;
 			}
 		}
 		return;
 	}
-	window.obj4123_onTap_activeActionGroupIndex = 0;
+	window.obj14190_onTap_activeActionGroupIndex = 0;
 	
 
 
 
 //	action: switchImage 
-//	target: obj11348 
-switchImage_11353();
-function switchImage_11353() {
-	window.obj4123_onTap_runningActionsCount = obj4123_onTap_runningActionsCount + 1;
+//	target: obj14178 
+switchImage_14192();
+function switchImage_14192() {
+	window.obj14190_onTap_runningActionsCount = obj14190_onTap_runningActionsCount + 1;
 
-	var targetObjectId = "#obj11348";
+	var targetObjectId = "#obj14178";
 	var targetObject = $(targetObjectId)[0];
 	var allowBackAndForth = true;
-	var imgObjId = "#obj11348_img";
+	var imgObjId = "#obj14178_img";
 	var fromImagePath = "../../..";
 	var toImagePath = "../images/switch101_to.png";
 	var switchHelperId = "switchHelper113"
@@ -887,8 +887,8 @@ function switchImage_11353() {
 	var switchId = "113";
 	var toSwitchId = "113";
 	var fadeDuration = "0s";
-	var fromSoundObjectId = "#obj_audio_switchImage11353_from";
-	var toSoundObjectId = "#obj_audio_switchImage11353_to";
+	var fromSoundObjectId = "#obj_audio_switchImage14192_from";
+	var toSoundObjectId = "#obj_audio_switchImage14192_to";
 	var audioFrom;
 	if (fromSoundObjectId != "#") audioFrom = $(fromSoundObjectId)[0];
 	var audioTo;
@@ -908,11 +908,11 @@ function switchImage_11353() {
 	}
 	var actionEndFunction = function() {
 			setTimeout(function() {
-				window.obj4123_onTap_runningActionsCount = window.obj4123_onTap_runningActionsCount - 1;
-if (window.obj4123_onTap_runningActionsCount < 0) {
-	window.obj4123_onTap_runningActionsCount = 0;
-} else if (window.obj4123_onTap_runningActionsCount == 0) {
-	obj4123_onTap_actionGroup1();
+				window.obj14190_onTap_runningActionsCount = window.obj14190_onTap_runningActionsCount - 1;
+if (window.obj14190_onTap_runningActionsCount < 0) {
+	window.obj14190_onTap_runningActionsCount = 0;
+} else if (window.obj14190_onTap_runningActionsCount == 0) {
+	obj14190_onTap_actionGroup1();
 }
 			}, 1);
 	};
@@ -977,24 +977,24 @@ if (window.obj4123_onTap_runningActionsCount < 0) {
 
 
 };
-obj4123_onTap_actionGroup1 = function(){
+obj14190_onTap_actionGroup1 = function(){
 	isLastActionGroup = true;
 	if (isLastActionGroup) {
-		window.obj4123_onTap_activeActionGroupIndex = -1;
-		$("#obj4123").trigger("obj4123_onTap_ended");
+		window.obj14190_onTap_activeActionGroupIndex = -1;
+		$("#obj14190").trigger("obj14190_onTap_ended");
 		
 		for (var i = 0; i < pubcoder.queuedEvents.length; i++) {
 			const evt = pubcoder.queuedEvents[i];
-			if (evt.senderObjectId == 4123) {
-				console.warn("de-queueing event obj4123." + evt.eventName);
+			if (evt.senderObjectId == 14190) {
+				console.warn("de-queueing event obj14190." + evt.eventName);
 				pubcoder.queuedEvents.splice(i, 1);
-				$("#obj4123").trigger(evt.eventName);
+				$("#obj14190").trigger(evt.eventName);
 				return;
 			}
 		}
 		return;
 	}
-	window.obj4123_onTap_activeActionGroupIndex = 1;
+	window.obj14190_onTap_activeActionGroupIndex = 1;
 	
 
 
@@ -2400,45 +2400,19 @@ obj14015_onTap_actionGroup1 = function(){
 
 /*
  *
- *   obj4115: Event Touch Down
+ *   obj14202: Event Touch Down
  *
  */
-$("#obj4115").bind(PubCoder.Events.Tap + " keydown", function(event) {
+$("#obj14202").bind(PubCoder.Events.Tap + " keydown", function(event) {
 	if (event.type === "keydown" && event.key !== "Enter") return;
 	event.preventDefault();
-	if (window.obj4115_onTap_activeActionGroupIndex != -1) {
-	console.warn("action list window.obj4115_onTap is still running");
+	if (window.obj14202_onTap_activeActionGroupIndex != -1) {
+	console.warn("action list window.obj14202_onTap is still running");
 	return;
 }
-var obj4115_onTap_runningActionsCount = 0;
-var obj4115_onTap_loopCount = 0;
-obj4115_onTap_actionGroup0();
-});
-
-
-
-
-
-
-
-
-
-
-/*
- *
- *   obj4117: Event Touch Down
- *
- */
-$("#obj4117").bind(PubCoder.Events.Tap + " keydown", function(event) {
-	if (event.type === "keydown" && event.key !== "Enter") return;
-	event.preventDefault();
-	if (window.obj4117_onTap_activeActionGroupIndex != -1) {
-	console.warn("action list window.obj4117_onTap is still running");
-	return;
-}
-var obj4117_onTap_runningActionsCount = 0;
-var obj4117_onTap_loopCount = 0;
-obj4117_onTap_actionGroup0();
+var obj14202_onTap_runningActionsCount = 0;
+var obj14202_onTap_loopCount = 0;
+obj14202_onTap_actionGroup0();
 });
 
 
@@ -2462,19 +2436,19 @@ obj4117_onTap_actionGroup0();
 
 /*
  *
- *   obj4119: Event Touch Down
+ *   obj14199: Event Touch Down
  *
  */
-$("#obj4119").bind(PubCoder.Events.Tap + " keydown", function(event) {
+$("#obj14199").bind(PubCoder.Events.Tap + " keydown", function(event) {
 	if (event.type === "keydown" && event.key !== "Enter") return;
 	event.preventDefault();
-	if (window.obj4119_onTap_activeActionGroupIndex != -1) {
-	console.warn("action list window.obj4119_onTap is still running");
+	if (window.obj14199_onTap_activeActionGroupIndex != -1) {
+	console.warn("action list window.obj14199_onTap is still running");
 	return;
 }
-var obj4119_onTap_runningActionsCount = 0;
-var obj4119_onTap_loopCount = 0;
-obj4119_onTap_actionGroup0();
+var obj14199_onTap_runningActionsCount = 0;
+var obj14199_onTap_loopCount = 0;
+obj14199_onTap_actionGroup0();
 });
 
 
@@ -2498,20 +2472,30 @@ obj4119_onTap_actionGroup0();
 
 /*
  *
- *   obj4121: Event Touch Down
+ *   obj14196: Event Touch Down
  *
  */
-$("#obj4121").bind(PubCoder.Events.Tap + " keydown", function(event) {
+$("#obj14196").bind(PubCoder.Events.Tap + " keydown", function(event) {
 	if (event.type === "keydown" && event.key !== "Enter") return;
 	event.preventDefault();
-	if (window.obj4121_onTap_activeActionGroupIndex != -1) {
-	console.warn("action list window.obj4121_onTap is still running");
+	if (window.obj14196_onTap_activeActionGroupIndex != -1) {
+	console.warn("action list window.obj14196_onTap is still running");
 	return;
 }
-var obj4121_onTap_runningActionsCount = 0;
-var obj4121_onTap_loopCount = 0;
-obj4121_onTap_actionGroup0();
+var obj14196_onTap_runningActionsCount = 0;
+var obj14196_onTap_loopCount = 0;
+obj14196_onTap_actionGroup0();
 });
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2534,19 +2518,45 @@ obj4121_onTap_actionGroup0();
 
 /*
  *
- *   obj4123: Event Touch Down
+ *   obj14193: Event Touch Down
  *
  */
-$("#obj4123").bind(PubCoder.Events.Tap + " keydown", function(event) {
+$("#obj14193").bind(PubCoder.Events.Tap + " keydown", function(event) {
 	if (event.type === "keydown" && event.key !== "Enter") return;
 	event.preventDefault();
-	if (window.obj4123_onTap_activeActionGroupIndex != -1) {
-	console.warn("action list window.obj4123_onTap is still running");
+	if (window.obj14193_onTap_activeActionGroupIndex != -1) {
+	console.warn("action list window.obj14193_onTap is still running");
 	return;
 }
-var obj4123_onTap_runningActionsCount = 0;
-var obj4123_onTap_loopCount = 0;
-obj4123_onTap_actionGroup0();
+var obj14193_onTap_runningActionsCount = 0;
+var obj14193_onTap_loopCount = 0;
+obj14193_onTap_actionGroup0();
+});
+
+
+
+
+
+
+
+
+
+
+/*
+ *
+ *   obj14190: Event Touch Down
+ *
+ */
+$("#obj14190").bind(PubCoder.Events.Tap + " keydown", function(event) {
+	if (event.type === "keydown" && event.key !== "Enter") return;
+	event.preventDefault();
+	if (window.obj14190_onTap_activeActionGroupIndex != -1) {
+	console.warn("action list window.obj14190_onTap is still running");
+	return;
+}
+var obj14190_onTap_runningActionsCount = 0;
+var obj14190_onTap_loopCount = 0;
+obj14190_onTap_actionGroup0();
 });
 
 
@@ -2840,18 +2850,19 @@ $(window).on(pubcoder.events.pagePlay, function() {
 	}
 	
 $("#obj4101").trigger('SCEventShow');
-$("#obj4099").trigger('SCEventShow');
-$("#obj4125").trigger('SCEventShow');
-$("#obj10749").trigger('SCEventShow');
-$("#obj4115").trigger('SCEventShow');
-$("#obj4117").trigger('SCEventShow');
-$("#obj11342").trigger('SCEventShow');
-$("#obj4119").trigger('SCEventShow');
-$("#obj11344").trigger('SCEventShow');
-$("#obj4121").trigger('SCEventShow');
-$("#obj11346").trigger('SCEventShow');
-$("#obj4123").trigger('SCEventShow');
-$("#obj11348").trigger('SCEventShow');
+$("#obj14207").trigger('SCEventShow');
+$("#obj14205").trigger('SCEventShow');
+$("#obj14188").trigger('SCEventShow');
+$("#obj14202").trigger('SCEventShow');
+$("#obj14186").trigger('SCEventShow');
+$("#obj14199").trigger('SCEventShow');
+$("#obj14184").trigger('SCEventShow');
+$("#obj14196").trigger('SCEventShow');
+$("#obj14182").trigger('SCEventShow');
+$("#obj14180").trigger('SCEventShow');
+$("#obj14193").trigger('SCEventShow');
+$("#obj14190").trigger('SCEventShow');
+$("#obj14178").trigger('SCEventShow');
 $("#obj4016").trigger('SCEventShow');
 $("#obj4018").trigger('SCEventShow');
 $("#obj14053").trigger('SCEventShow');

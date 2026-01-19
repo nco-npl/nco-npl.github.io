@@ -1841,8 +1841,8 @@ $(window).on(pubcoder.events.pagePlay, function() {
 	
 $("#obj8766").trigger('SCEventShow');
 $("#obj8755").trigger('SCEventShow');
-$("#obj8745").trigger('SCEventShow');
 $("#obj8743").trigger('SCEventShow');
+$("#obj8745").trigger('SCEventShow');
 $("#obj8747").trigger('SCEventShow');
 $("#obj8757").trigger('SCEventShow');
 $("#obj8749").trigger('SCEventShow');

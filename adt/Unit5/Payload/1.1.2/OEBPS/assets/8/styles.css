@@ -25,7 +25,7 @@ left: 615px;
 width: 336px;
 height: 427px;
 opacity: 1;
-z-index: 11;
+z-index: 10;
 display:none;
 pointer-events: auto;
 
@@ -59,7 +59,7 @@ left: 79px;
 width: 250px;
 height: 49px;
 opacity: 1;
-z-index: 2;
+z-index: 1;
 display:block;
 pointer-events: none;
 
@@ -83,7 +83,7 @@ left: 334px;
 width: 358px;
 height: 467px;
 opacity: 1;
-z-index: 7;
+z-index: 6;
 display:block;
 pointer-events: none;
 
@@ -107,7 +107,7 @@ left: 897px;
 width: 40px;
 height: 40px;
 opacity: 1;
-z-index: 9;
+z-index: 8;
 display:block;
 pointer-events: auto;
 
@@ -324,7 +324,7 @@ left: 203px;
 width: 107px;
 height: 32px;
 opacity: 1;
-z-index: 4;
+z-index: 3;
 display:block;
 pointer-events: auto;
 user-select: text;  
@@ -343,7 +343,7 @@ left: 161px;
 width: 21px;
 height: 32px;
 opacity: 1;
-z-index: 6;
+z-index: 5;
 display:block;
 pointer-events: auto;
 user-select: text;  
@@ -362,7 +362,7 @@ left: 100px;
 width: 214px;
 height: 305px;
 opacity: 1;
-z-index: 5;
+z-index: 4;
 display:block;
 pointer-events: auto;
 user-select: text;  
@@ -381,7 +381,7 @@ left: 712px;
 width: 230px;
 height: 305px;
 opacity: 1;
-z-index: 8;
+z-index: 7;
 display:block;
 pointer-events: auto;
 user-select: text;  
@@ -400,7 +400,7 @@ left: 477px;
 width: 73px;
 height: 37px;
 opacity: 1;
-z-index: 3;
+z-index: 2;
 display:block;
 pointer-events: auto;
 user-select: text;  
@@ -414,32 +414,6 @@ div#obj8427_content {
 
 
 
-div#obj8421 {
-position: absolute;
-overflow: hidden;
-top: 523px;
-left: 0px;
-width: 1024px;
-height: 53px;
-opacity: 1;
-z-index: 0;
-display:block;
-pointer-events: none;
-
-user-select: none;  
--moz-user-select: none;
--webkit-user-select: none;
--ms-user-select: none;
-background-image: none;
-border-color: rgba(0,0,0,0);
-border-width: 0px;
-border-style: solid;
-border-radius: 0px;
--moz-border-radius: 0px;
--webkit-border-radius: 0px;
-background-color: #A3D6E2;
-background-repeat: repeat;
-}
 div#obj8423 {
 position: absolute;
 overflow: hidden;
@@ -448,7 +422,7 @@ left: 0px;
 width: 1024px;
 height: 53px;
 opacity: 1;
-z-index: 1;
+z-index: 0;
 display:block;
 pointer-events: none;
 
@@ -500,7 +474,7 @@ left: 785px;
 width: 240px;
 height: 300px;
 opacity: 1;
-z-index: 10;
+z-index: 9;
 display:none;
 pointer-events: auto;
 

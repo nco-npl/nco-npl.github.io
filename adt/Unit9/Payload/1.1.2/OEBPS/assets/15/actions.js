@@ -1809,11 +1809,11 @@ $(window).on(pubcoder.events.pagePlay, function() {
 		});	
 	}
 	
-$("#obj4358").trigger('SCEventShow');
 $("#obj3981").trigger('SCEventShow');
 $("#obj4354").trigger('SCEventShow');
-$("#obj4356").trigger('SCEventShow');
+$("#obj4358").trigger('SCEventShow');
 $("#obj4360").trigger('SCEventShow');
+$("#obj4356").trigger('SCEventShow');
 $("#obj4091").trigger('SCEventShow');
 $("#obj9034").trigger('SCEventShow');
 $("#obj11688").trigger('SCEventShow');

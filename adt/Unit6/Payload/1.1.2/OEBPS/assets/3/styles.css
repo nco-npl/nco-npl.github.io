@@ -251,6 +251,25 @@ img#obj14015_img {
 	height: 40px;
 }
 
+div#obj3971 {
+position: absolute;
+overflow: hidden;
+top: 163px;
+left: 293px;
+width: 48px;
+height: 53px;
+opacity: 1;
+z-index: 4;
+display:block;
+pointer-events: auto;
+user-select: text;  
+-moz-user-select: text;
+-webkit-user-select: text;
+-ms-user-select: text;
+
+}
+div#obj3971_content {
+}
 div#obj3969 {
 position: absolute;
 overflow: hidden;
@@ -269,25 +288,6 @@ user-select: text;
 
 }
 div#obj3969_content {
-}
-div#obj3971 {
-position: absolute;
-overflow: hidden;
-top: 164px;
-left: 300px;
-width: 59px;
-height: 53px;
-opacity: 1;
-z-index: 4;
-display:block;
-pointer-events: auto;
-user-select: text;  
--moz-user-select: text;
--webkit-user-select: text;
--ms-user-select: text;
-
-}
-div#obj3971_content {
 }
 div#obj4342 {
 position: absolute;
@@ -330,7 +330,7 @@ div#obj3973_content {
 div#obj4344 {
 position: absolute;
 overflow: hidden;
-top: 270px;
+top: 271px;
 left: 258px;
 width: 70px;
 height: 53px;
@@ -368,7 +368,7 @@ div#obj3975_content {
 div#obj4350 {
 position: absolute;
 overflow: hidden;
-top: 319px;
+top: 320px;
 left: 252px;
 width: 60px;
 height: 57px;
@@ -387,7 +387,7 @@ div#obj4350_content {
 div#obj3977 {
 position: absolute;
 overflow: hidden;
-top: 319px;
+top: 320px;
 left: 340px;
 width: 616px;
 height: 57px;
@@ -406,7 +406,7 @@ div#obj3977_content {
 div#obj4348 {
 position: absolute;
 overflow: hidden;
-top: 366px;
+top: 367px;
 left: 253px;
 width: 60px;
 height: 57px;
@@ -425,7 +425,7 @@ div#obj4348_content {
 div#obj3981 {
 position: absolute;
 overflow: hidden;
-top: 371px;
+top: 367px;
 left: 340px;
 width: 607px;
 height: 41px;
@@ -444,10 +444,10 @@ div#obj3981_content {
 div#obj4346 {
 position: absolute;
 overflow: hidden;
-top: 407px;
-left: 253px;
-width: 81px;
-height: 69px;
+top: 416px;
+left: 249px;
+width: 70px;
+height: 51px;
 opacity: 1;
 z-index: 12;
 display:block;
@@ -464,7 +464,7 @@ div#obj3979 {
 position: absolute;
 overflow: hidden;
 top: 416px;
-left: 340px;
+left: 336px;
 width: 661px;
 height: 46px;
 opacity: 1;

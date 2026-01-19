@@ -308,11 +308,11 @@ function switchImage_10368() {
 	var allowBackAndForth = false;
 	var imgObjId = "#obj10364_img";
 	var fromImagePath = "../images/obj10364_image.png";
-	var toImagePath = "../images/switch26_to.png";
-	var switchHelperId = "switchHelper163"
-	var switchHelperRef = "#switchHelper163"
-	var switchId = "163";
-	var toSwitchId = "163";
+	var toImagePath = "../images/switch28_to.png";
+	var switchHelperId = "switchHelper165"
+	var switchHelperRef = "#switchHelper165"
+	var switchId = "165";
+	var toSwitchId = "165";
 	var fadeDuration = "0s";
 	var fromSoundObjectId = "#";
 	var toSoundObjectId = "#";
@@ -541,10 +541,10 @@ function switchImage_10374() {
 	var imgObjId = "#obj10364_img";
 	var fromImagePath = "../images/obj10364_image.png";
 	var toImagePath = "../images/obj10364_image.png";
-	var switchHelperId = "switchHelper164"
-	var switchHelperRef = "#switchHelper164"
-	var switchId = "164";
-	var toSwitchId = "164";
+	var switchHelperId = "switchHelper166"
+	var switchHelperRef = "#switchHelper166"
+	var switchId = "166";
+	var toSwitchId = "166";
 	var fadeDuration = "0s";
 	var fromSoundObjectId = "#";
 	var toSoundObjectId = "#";
@@ -926,11 +926,11 @@ function switchImage_10362() {
 	var allowBackAndForth = true;
 	var imgObjId = "#obj10360_img";
 	var fromImagePath = "../images/obj10360_image.png";
-	var toImagePath = "../images/switch28_to.png";
-	var switchHelperId = "switchHelper165"
-	var switchHelperRef = "#switchHelper165"
-	var switchId = "165";
-	var toSwitchId = "165";
+	var toImagePath = "../images/switch30_to.png";
+	var switchHelperId = "switchHelper167"
+	var switchHelperRef = "#switchHelper167"
+	var switchId = "167";
+	var toSwitchId = "167";
 	var fadeDuration = "0s";
 	var fromSoundObjectId = "#";
 	var toSoundObjectId = "#";
@@ -1173,7 +1173,7 @@ obj10357_onTap_actionGroup0 = function(){
 goToPage_10359();
 function goToPage_10359() {
 	window.obj10357_onTap_runningActionsCount = obj10357_onTap_runningActionsCount + 1;
-	$("#anchor166")[0].click();
+	$("#anchor168")[0].click();
 	window.obj10357_onTap_runningActionsCount = window.obj10357_onTap_runningActionsCount - 1;
 if (window.obj10357_onTap_runningActionsCount < 0) {
 	window.obj10357_onTap_runningActionsCount = 0;
@@ -1268,7 +1268,7 @@ obj10342_onTap_actionGroup0 = function(){
 goToPage_10344();
 function goToPage_10344() {
 	window.obj10342_onTap_runningActionsCount = obj10342_onTap_runningActionsCount + 1;
-	$("#anchor167")[0].click();
+	$("#anchor169")[0].click();
 	window.obj10342_onTap_runningActionsCount = window.obj10342_onTap_runningActionsCount - 1;
 if (window.obj10342_onTap_runningActionsCount < 0) {
 	window.obj10342_onTap_runningActionsCount = 0;

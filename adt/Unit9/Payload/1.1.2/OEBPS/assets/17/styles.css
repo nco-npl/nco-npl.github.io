@@ -20,7 +20,7 @@ div.SCContent {
 div#obj9228 {
 position: absolute;
 overflow: hidden;
-top: 205px;
+top: 207px;
 left: 167px;
 width: 250px;
 height: 49px;
@@ -353,10 +353,29 @@ img#obj11650_img {
 	height: 40px;
 }
 
-div#obj4380 {
+div#obj4378 {
 position: absolute;
 overflow: hidden;
 top: 104px;
+left: 227px;
+width: 51px;
+height: 64px;
+opacity: 1;
+z-index: 2;
+display:block;
+pointer-events: auto;
+user-select: text;  
+-moz-user-select: text;
+-webkit-user-select: text;
+-ms-user-select: text;
+
+}
+div#obj4378_content {
+}
+div#obj4380 {
+position: absolute;
+overflow: hidden;
+top: 105px;
 left: 282px;
 width: 643px;
 height: 79px;
@@ -371,25 +390,6 @@ user-select: text;
 
 }
 div#obj4380_content {
-}
-div#obj4378 {
-position: absolute;
-overflow: hidden;
-top: 119px;
-left: 238px;
-width: 39px;
-height: 49px;
-opacity: 1;
-z-index: 2;
-display:block;
-pointer-events: auto;
-user-select: text;  
--moz-user-select: text;
--webkit-user-select: text;
--ms-user-select: text;
-
-}
-div#obj4378_content {
 }
 div#obj9038 {
 position: absolute;

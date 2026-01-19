@@ -34,30 +34,6 @@ user-select: none;
 -webkit-user-select: none;
 -ms-user-select: none;
 }
-div#obj4358 {
-position: absolute;
-overflow: hidden;
-top: 36px;
-left: 541px;
-width: 367px;
-height: 231px;
-opacity: 1;
-z-index: 4;
-display:block;
-pointer-events: none;
-
-user-select: none;  
--moz-user-select: none;
--webkit-user-select: none;
--ms-user-select: none;
-}
-img#obj4358_img {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	width: 367px;
-	height: 231px;
-}
 div#obj3981 {
 position: absolute;
 overflow: hidden;
@@ -82,13 +58,37 @@ img#obj3981_img {
 	width: 730px;
 	height: 447px;
 }
+div#obj4358 {
+position: absolute;
+overflow: hidden;
+top: 59px;
+left: 527px;
+width: 331px;
+height: 209px;
+opacity: 1;
+z-index: 4;
+display:block;
+pointer-events: none;
+
+user-select: none;  
+-moz-user-select: none;
+-webkit-user-select: none;
+-ms-user-select: none;
+}
+img#obj4358_img {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 331px;
+	height: 209px;
+}
 div#obj4360 {
 position: absolute;
 overflow: hidden;
-top: 265px;
+top: 245px;
 left: 432px;
-width: 407px;
-height: 257px;
+width: 289px;
+height: 277px;
 opacity: 1;
 z-index: 5;
 display:block;
@@ -103,8 +103,8 @@ img#obj4360_img {
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	width: 407px;
-	height: 257px;
+	width: 289px;
+	height: 277px;
 }
 div#obj11669 {
 position: absolute;

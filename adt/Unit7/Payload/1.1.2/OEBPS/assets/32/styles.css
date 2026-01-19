@@ -268,6 +268,25 @@ img#obj13573_img {
 	height: 40px;
 }
 
+div#obj12437 {
+position: absolute;
+overflow: hidden;
+top: 22px;
+left: 128px;
+width: 40px;
+height: 45px;
+opacity: 1;
+z-index: 6;
+display:block;
+pointer-events: auto;
+user-select: text;  
+-moz-user-select: text;
+-webkit-user-select: text;
+-ms-user-select: text;
+
+}
+div#obj12437_content {
+}
 div#obj9500 {
 position: absolute;
 overflow: hidden;
@@ -286,25 +305,6 @@ user-select: text;
 font-family: "Kokila_2";
 }
 div#obj9500_content {
-}
-div#obj12437 {
-position: absolute;
-overflow: hidden;
-top: 23px;
-left: 128px;
-width: 55px;
-height: 63px;
-opacity: 1;
-z-index: 6;
-display:block;
-pointer-events: auto;
-user-select: text;  
--moz-user-select: text;
--webkit-user-select: text;
--ms-user-select: text;
-
-}
-div#obj12437_content {
 }
 div#obj9518 {
 position: absolute;

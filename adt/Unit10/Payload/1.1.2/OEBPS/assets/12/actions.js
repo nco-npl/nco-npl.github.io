@@ -1890,8 +1890,8 @@ $(window).on(pubcoder.events.pagePlay, function() {
 	}
 	
 $("#obj4006").trigger('SCEventShow');
-$("#obj4212").trigger('SCEventShow');
 $("#obj4210").trigger('SCEventShow');
+$("#obj4212").trigger('SCEventShow');
 $("#obj4529").trigger('SCEventShow');
 $("#obj4537").trigger('SCEventShow');
 $("#obj4535").trigger('SCEventShow');
@@ -1899,9 +1899,9 @@ $("#obj4533").trigger('SCEventShow');
 $("#obj4531").trigger('SCEventShow');
 $("#obj10594").trigger('SCEventShow');
 $("#obj10596").trigger('SCEventShow');
+$("#obj10598").trigger('SCEventShow');
 $("#obj10600").trigger('SCEventShow');
 $("#obj10602").trigger('SCEventShow');
-$("#obj10598").trigger('SCEventShow');
 $("#obj10091").trigger('SCEventShow');
 $("#obj10169").trigger('SCEventShow');
 $("#obj13887").trigger('SCEventShow');

@@ -254,10 +254,10 @@ img#obj13573_img {
 div#obj4328 {
 position: absolute;
 overflow: hidden;
-top: 134px;
+top: 142px;
 left: 369px;
 width: 231px;
-height: 72px;
+height: 55px;
 opacity: 1;
 z-index: 2;
 display:block;
@@ -273,10 +273,10 @@ div#obj4328_content {
 div#obj4326 {
 position: absolute;
 overflow: hidden;
-top: 142px;
+top: 143px;
 left: 320px;
-width: 60px;
-height: 55px;
+width: 50px;
+height: 49px;
 opacity: 1;
 z-index: 1;
 display:block;
@@ -292,8 +292,8 @@ div#obj4326_content {
 div#obj4330 {
 position: absolute;
 overflow: hidden;
-top: 196px;
-left: 225px;
+top: 210px;
+left: 224px;
 width: 62px;
 height: 52px;
 opacity: 1;
@@ -311,8 +311,8 @@ div#obj4330_content {
 div#obj4338 {
 position: absolute;
 overflow: hidden;
-top: 214px;
-left: 306px;
+top: 210px;
+left: 305px;
 width: 380px;
 height: 50px;
 opacity: 1;
@@ -327,30 +327,11 @@ user-select: text;
 }
 div#obj4338_content {
 }
-div#obj4336 {
-position: absolute;
-overflow: hidden;
-top: 264px;
-left: 225px;
-width: 70px;
-height: 49px;
-opacity: 1;
-z-index: 6;
-display:block;
-pointer-events: auto;
-user-select: text;  
--moz-user-select: text;
--webkit-user-select: text;
--ms-user-select: text;
-
-}
-div#obj4336_content {
-}
 div#obj4344 {
 position: absolute;
 overflow: hidden;
 top: 268px;
-left: 310px;
+left: 305px;
 width: 616px;
 height: 52px;
 opacity: 1;
@@ -365,11 +346,30 @@ user-select: text;
 }
 div#obj4344_content {
 }
+div#obj4336 {
+position: absolute;
+overflow: hidden;
+top: 269px;
+left: 220px;
+width: 70px;
+height: 49px;
+opacity: 1;
+z-index: 6;
+display:block;
+pointer-events: auto;
+user-select: text;  
+-moz-user-select: text;
+-webkit-user-select: text;
+-ms-user-select: text;
+
+}
+div#obj4336_content {
+}
 div#obj4334 {
 position: absolute;
 overflow: hidden;
-top: 312px;
-left: 226px;
+top: 328px;
+left: 221px;
 width: 60px;
 height: 49px;
 opacity: 1;
@@ -387,8 +387,8 @@ div#obj4334_content {
 div#obj4342 {
 position: absolute;
 overflow: hidden;
-top: 330px;
-left: 310px;
+top: 328px;
+left: 305px;
 width: 532px;
 height: 60px;
 opacity: 1;
@@ -406,8 +406,8 @@ div#obj4342_content {
 div#obj4332 {
 position: absolute;
 overflow: hidden;
-top: 378px;
-left: 220px;
+top: 386px;
+left: 215px;
 width: 60px;
 height: 60px;
 opacity: 1;
@@ -426,7 +426,7 @@ div#obj4340 {
 position: absolute;
 overflow: hidden;
 top: 387px;
-left: 310px;
+left: 305px;
 width: 701px;
 height: 53px;
 opacity: 1;

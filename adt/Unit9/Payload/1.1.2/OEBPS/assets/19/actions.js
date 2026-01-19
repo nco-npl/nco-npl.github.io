@@ -2067,14 +2067,14 @@ $(window).on(pubcoder.events.pagePlay, function() {
 $("#obj4015").trigger('SCEventShow');
 $("#obj4388").trigger('SCEventShow');
 $("#obj4390").trigger('SCEventShow');
-$("#obj4414").trigger('SCEventShow');
 $("#obj4408").trigger('SCEventShow');
-$("#obj4410").trigger('SCEventShow');
 $("#obj4398").trigger('SCEventShow');
+$("#obj4410").trigger('SCEventShow');
+$("#obj4414").trigger('SCEventShow');
 $("#obj4404").trigger('SCEventShow');
 $("#obj4412").trigger('SCEventShow');
-$("#obj4402").trigger('SCEventShow');
 $("#obj4406").trigger('SCEventShow');
+$("#obj4402").trigger('SCEventShow');
 $("#obj4400").trigger('SCEventShow');
 $("#obj4396").trigger('SCEventShow');
 $("#obj3929").trigger('SCEventShow');

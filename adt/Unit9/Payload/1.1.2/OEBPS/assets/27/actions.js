@@ -1890,18 +1890,18 @@ $(window).on(pubcoder.events.pagePlay, function() {
 	}
 	
 $("#obj4060").trigger('SCEventShow');
-$("#obj4554").trigger('SCEventShow');
 $("#obj4552").trigger('SCEventShow');
+$("#obj4554").trigger('SCEventShow');
 $("#obj4556").trigger('SCEventShow');
 $("#obj4566").trigger('SCEventShow');
-$("#obj4574").trigger('SCEventShow');
 $("#obj4564").trigger('SCEventShow');
-$("#obj4572").trigger('SCEventShow');
+$("#obj4574").trigger('SCEventShow');
 $("#obj4560").trigger('SCEventShow');
-$("#obj4570").trigger('SCEventShow');
+$("#obj4572").trigger('SCEventShow');
 $("#obj4562").trigger('SCEventShow');
-$("#obj4568").trigger('SCEventShow');
+$("#obj4570").trigger('SCEventShow');
 $("#obj4558").trigger('SCEventShow');
+$("#obj4568").trigger('SCEventShow');
 $("#obj4115").trigger('SCEventShow');
 $("#obj9058").trigger('SCEventShow');
 $("#obj11688").trigger('SCEventShow');

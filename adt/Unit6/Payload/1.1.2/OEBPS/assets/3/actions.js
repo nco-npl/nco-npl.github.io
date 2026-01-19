@@ -1890,8 +1890,8 @@ $(window).on(pubcoder.events.pagePlay, function() {
 	}
 	
 $("#obj3967").trigger('SCEventShow');
-$("#obj3969").trigger('SCEventShow');
 $("#obj3971").trigger('SCEventShow');
+$("#obj3969").trigger('SCEventShow');
 $("#obj4342").trigger('SCEventShow');
 $("#obj3973").trigger('SCEventShow');
 $("#obj4344").trigger('SCEventShow');

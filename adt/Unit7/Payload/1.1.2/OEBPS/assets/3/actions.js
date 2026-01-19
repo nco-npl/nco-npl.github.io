@@ -1921,20 +1921,20 @@ $(window).on(pubcoder.events.pagePlay, function() {
 	}
 	
 $("#obj9556").trigger('SCEventShow');
-$("#obj9558").trigger('SCEventShow');
 $("#obj9560").trigger('SCEventShow');
+$("#obj9558").trigger('SCEventShow');
 $("#obj9586").trigger('SCEventShow');
 $("#obj9574").trigger('SCEventShow');
 $("#obj9562").trigger('SCEventShow');
 $("#obj9576").trigger('SCEventShow');
-$("#obj9584").trigger('SCEventShow');
 $("#obj9570").trigger('SCEventShow');
+$("#obj9584").trigger('SCEventShow');
 $("#obj9568").trigger('SCEventShow');
 $("#obj9582").trigger('SCEventShow');
 $("#obj9566").trigger('SCEventShow');
 $("#obj9580").trigger('SCEventShow');
-$("#obj9578").trigger('SCEventShow');
 $("#obj9564").trigger('SCEventShow');
+$("#obj9578").trigger('SCEventShow');
 $("#obj9552").trigger('SCEventShow');
 $("#obj9554").trigger('SCEventShow');
 $("#obj13611").trigger('SCEventShow');

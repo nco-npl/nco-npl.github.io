@@ -426,8 +426,8 @@ position: absolute;
 overflow: hidden;
 top: 55px;
 left: 287px;
-width: 53px;
-height: 61px;
+width: 38px;
+height: 47px;
 opacity: 1;
 z-index: 2;
 display:block;
@@ -459,6 +459,25 @@ user-select: text;
 }
 div#obj4494_content {
 }
+div#obj4496 {
+position: absolute;
+overflow: hidden;
+top: 115px;
+left: 211px;
+width: 52px;
+height: 51px;
+opacity: 1;
+z-index: 4;
+display:block;
+pointer-events: auto;
+user-select: text;  
+-moz-user-select: text;
+-webkit-user-select: text;
+-ms-user-select: text;
+
+}
+div#obj4496_content {
+}
 div#obj4504 {
 position: absolute;
 overflow: hidden;
@@ -478,15 +497,15 @@ user-select: text;
 }
 div#obj4504_content {
 }
-div#obj4496 {
+div#obj4502 {
 position: absolute;
 overflow: hidden;
-top: 120px;
-left: 218px;
-width: 63px;
-height: 67px;
+top: 253px;
+left: 217px;
+width: 46px;
+height: 48px;
 opacity: 1;
-z-index: 4;
+z-index: 7;
 display:block;
 pointer-events: auto;
 user-select: text;  
@@ -495,7 +514,7 @@ user-select: text;
 -ms-user-select: text;
 
 }
-div#obj4496_content {
+div#obj4502_content {
 }
 div#obj4510 {
 position: absolute;
@@ -516,32 +535,13 @@ user-select: text;
 }
 div#obj4510_content {
 }
-div#obj4502 {
-position: absolute;
-overflow: hidden;
-top: 255px;
-left: 217px;
-width: 63px;
-height: 67px;
-opacity: 1;
-z-index: 7;
-display:block;
-pointer-events: auto;
-user-select: text;  
--moz-user-select: text;
--webkit-user-select: text;
--ms-user-select: text;
-
-}
-div#obj4502_content {
-}
 div#obj4500 {
 position: absolute;
 overflow: hidden;
 top: 343px;
 left: 217px;
-width: 63px;
-height: 67px;
+width: 41px;
+height: 47px;
 opacity: 1;
 z-index: 6;
 display:block;
@@ -573,6 +573,25 @@ user-select: text;
 }
 div#obj4508_content {
 }
+div#obj4498 {
+position: absolute;
+overflow: hidden;
+top: 429px;
+left: 213px;
+width: 47px;
+height: 44px;
+opacity: 1;
+z-index: 5;
+display:block;
+pointer-events: auto;
+user-select: text;  
+-moz-user-select: text;
+-webkit-user-select: text;
+-ms-user-select: text;
+
+}
+div#obj4498_content {
+}
 div#obj9286 {
 position: absolute;
 overflow: hidden;
@@ -591,25 +610,6 @@ user-select: text;
 
 }
 div#obj9286_content {
-}
-div#obj4498 {
-position: absolute;
-overflow: hidden;
-top: 436px;
-left: 217px;
-width: 63px;
-height: 67px;
-opacity: 1;
-z-index: 5;
-display:block;
-pointer-events: auto;
-user-select: text;  
--moz-user-select: text;
--webkit-user-select: text;
--ms-user-select: text;
-
-}
-div#obj4498_content {
 }
 div#obj9050 {
 position: absolute;

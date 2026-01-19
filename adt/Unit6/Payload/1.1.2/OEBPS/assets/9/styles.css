@@ -17,62 +17,11 @@ div.SCContent {
 	pointer-events: none;
 }
 
-div#obj11356 {
+div#obj14211 {
 position: absolute;
 overflow: hidden;
 top: 421px;
 left: 728px;
-width: 241px;
-height: 42px;
-opacity: 1;
-z-index: 7;
-display:block;
-pointer-events: auto;
-
-user-select: none;  
--moz-user-select: none;
--webkit-user-select: none;
--ms-user-select: none;
-}
-div#obj11354 {
-position: absolute;
-overflow: hidden;
-top: 422px;
-left: 431px;
-width: 241px;
-height: 42px;
-opacity: 1;
-z-index: 6;
-display:block;
-pointer-events: auto;
-
-user-select: none;  
--moz-user-select: none;
--webkit-user-select: none;
--ms-user-select: none;
-}
-div#obj11362 {
-position: absolute;
-overflow: hidden;
-top: 474px;
-left: 728px;
-width: 241px;
-height: 42px;
-opacity: 1;
-z-index: 10;
-display:block;
-pointer-events: auto;
-
-user-select: none;  
--moz-user-select: none;
--webkit-user-select: none;
--ms-user-select: none;
-}
-div#obj11358 {
-position: absolute;
-overflow: hidden;
-top: 475px;
-left: 145px;
 width: 241px;
 height: 42px;
 opacity: 1;
@@ -85,7 +34,58 @@ user-select: none;
 -webkit-user-select: none;
 -ms-user-select: none;
 }
-div#obj11360 {
+div#obj14209 {
+position: absolute;
+overflow: hidden;
+top: 422px;
+left: 431px;
+width: 241px;
+height: 42px;
+opacity: 1;
+z-index: 7;
+display:block;
+pointer-events: auto;
+
+user-select: none;  
+-moz-user-select: none;
+-webkit-user-select: none;
+-ms-user-select: none;
+}
+div#obj14213 {
+position: absolute;
+overflow: hidden;
+top: 474px;
+left: 728px;
+width: 241px;
+height: 42px;
+opacity: 1;
+z-index: 11;
+display:block;
+pointer-events: auto;
+
+user-select: none;  
+-moz-user-select: none;
+-webkit-user-select: none;
+-ms-user-select: none;
+}
+div#obj14217 {
+position: absolute;
+overflow: hidden;
+top: 475px;
+left: 145px;
+width: 241px;
+height: 42px;
+opacity: 1;
+z-index: 9;
+display:block;
+pointer-events: auto;
+
+user-select: none;  
+-moz-user-select: none;
+-webkit-user-select: none;
+-ms-user-select: none;
+}
+div#obj14215 {
 position: absolute;
 overflow: hidden;
 top: 475px;
@@ -93,7 +93,7 @@ left: 431px;
 width: 241px;
 height: 42px;
 opacity: 1;
-z-index: 9;
+z-index: 10;
 display:block;
 pointer-events: auto;
 
@@ -382,7 +382,7 @@ left: 101px;
 width: 88px;
 height: 39px;
 opacity: 1;
-z-index: 11;
+z-index: 6;
 display:block;
 pointer-events: auto;
 user-select: text;  
@@ -398,8 +398,8 @@ position: absolute;
 overflow: hidden;
 top: 432px;
 left: 214px;
-width: 102px;
-height: 65px;
+width: 106px;
+height: 44px;
 opacity: 1;
 z-index: 5;
 display:block;

@@ -2016,9 +2016,9 @@ $(window).on(pubcoder.events.pagePlay, function() {
 	
 $("#obj4329").trigger('SCEventShow');
 $("#obj10562").trigger('SCEventShow');
-$("#obj10057").trigger('SCEventShow');
-$("#obj4673").trigger('SCEventShow');
 $("#obj4671").trigger('SCEventShow');
+$("#obj4673").trigger('SCEventShow');
+$("#obj10057").trigger('SCEventShow');
 $("#obj4675").trigger('SCEventShow');
 $("#obj10061").trigger('SCEventShow');
 $("#obj10059").trigger('SCEventShow');

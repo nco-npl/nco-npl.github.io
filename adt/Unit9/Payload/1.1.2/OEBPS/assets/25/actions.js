@@ -1975,8 +1975,8 @@ $(window).on(pubcoder.events.pagePlay, function() {
 	}
 	
 $("#obj4048").trigger('SCEventShow');
-$("#obj4534").trigger('SCEventShow');
 $("#obj4532").trigger('SCEventShow');
+$("#obj4534").trigger('SCEventShow');
 $("#obj4530").trigger('SCEventShow');
 $("#obj4536").trigger('SCEventShow');
 $("#obj4111").trigger('SCEventShow');

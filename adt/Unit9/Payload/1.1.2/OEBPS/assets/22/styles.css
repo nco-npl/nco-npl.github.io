@@ -20,7 +20,7 @@ div.SCContent {
 div#obj9298 {
 position: absolute;
 overflow: hidden;
-top: 177px;
+top: 189px;
 left: 360px;
 width: 363px;
 height: 49px;
@@ -37,7 +37,7 @@ user-select: none;
 div#obj9300 {
 position: absolute;
 overflow: hidden;
-top: 303px;
+top: 315px;
 left: 360px;
 width: 363px;
 height: 49px;
@@ -54,7 +54,7 @@ user-select: none;
 div#obj9302 {
 position: absolute;
 overflow: hidden;
-top: 371px;
+top: 381px;
 left: 360px;
 width: 363px;
 height: 49px;
@@ -71,8 +71,8 @@ user-select: none;
 div#obj9304 {
 position: absolute;
 overflow: hidden;
-top: 428px;
-left: 360px;
+top: 446px;
+left: 355px;
 width: 363px;
 height: 49px;
 opacity: 1;
@@ -319,10 +319,29 @@ img#obj11650_img {
 	height: 40px;
 }
 
+div#obj4464 {
+position: absolute;
+overflow: hidden;
+top: 103px;
+left: 251px;
+width: 45px;
+height: 57px;
+opacity: 1;
+z-index: 2;
+display:block;
+pointer-events: auto;
+user-select: text;  
+-moz-user-select: text;
+-webkit-user-select: text;
+-ms-user-select: text;
+
+}
+div#obj4464_content {
+}
 div#obj4466 {
 position: absolute;
 overflow: hidden;
-top: 96px;
+top: 104px;
 left: 295px;
 width: 680px;
 height: 58px;
@@ -338,32 +357,13 @@ font-family: "Kokila_2";
 }
 div#obj4466_content {
 }
-div#obj4464 {
-position: absolute;
-overflow: hidden;
-top: 106px;
-left: 251px;
-width: 72px;
-height: 83px;
-opacity: 1;
-z-index: 2;
-display:block;
-pointer-events: auto;
-user-select: text;  
--moz-user-select: text;
--webkit-user-select: text;
--ms-user-select: text;
-
-}
-div#obj4464_content {
-}
 div#obj4480 {
 position: absolute;
 overflow: hidden;
-top: 194px;
+top: 187px;
 left: 150px;
 width: 137px;
-height: 66px;
+height: 54px;
 opacity: 1;
 z-index: 4;
 display:block;
@@ -376,32 +376,13 @@ user-select: text;
 }
 div#obj4480_content {
 }
-div#obj4482 {
-position: absolute;
-overflow: hidden;
-top: 218px;
-left: 359px;
-width: 178px;
-height: 92px;
-opacity: 1;
-z-index: 5;
-display:block;
-pointer-events: auto;
-user-select: text;  
--moz-user-select: text;
--webkit-user-select: text;
--ms-user-select: text;
-
-}
-div#obj4482_content {
-}
 div#obj4490 {
 position: absolute;
 overflow: hidden;
 top: 255px;
 left: 150px;
 width: 137px;
-height: 66px;
+height: 45px;
 opacity: 1;
 z-index: 9;
 display:block;
@@ -414,13 +395,32 @@ user-select: text;
 }
 div#obj4490_content {
 }
+div#obj4482 {
+position: absolute;
+overflow: hidden;
+top: 255px;
+left: 359px;
+width: 178px;
+height: 40px;
+opacity: 1;
+z-index: 5;
+display:block;
+pointer-events: auto;
+user-select: text;  
+-moz-user-select: text;
+-webkit-user-select: text;
+-ms-user-select: text;
+
+}
+div#obj4482_content {
+}
 div#obj4488 {
 position: absolute;
 overflow: hidden;
-top: 320px;
+top: 315px;
 left: 150px;
 width: 164px;
-height: 66px;
+height: 47px;
 opacity: 1;
 z-index: 8;
 display:block;
@@ -436,10 +436,10 @@ div#obj4488_content {
 div#obj4486 {
 position: absolute;
 overflow: hidden;
-top: 380px;
+top: 379px;
 left: 144px;
 width: 137px;
-height: 66px;
+height: 51px;
 opacity: 1;
 z-index: 7;
 display:block;
@@ -455,10 +455,10 @@ div#obj4486_content {
 div#obj4484 {
 position: absolute;
 overflow: hidden;
-top: 445px;
+top: 444px;
 left: 150px;
 width: 137px;
-height: 66px;
+height: 46px;
 opacity: 1;
 z-index: 6;
 display:block;

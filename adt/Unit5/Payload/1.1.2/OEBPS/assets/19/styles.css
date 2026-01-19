@@ -275,6 +275,25 @@ img#obj10326_img {
 	height: 40px;
 }
 
+div#obj4682 {
+position: absolute;
+overflow: hidden;
+top: 16px;
+left: 118px;
+width: 46px;
+height: 40px;
+opacity: 1;
+z-index: 4;
+display:block;
+pointer-events: auto;
+user-select: text;  
+-moz-user-select: text;
+-webkit-user-select: text;
+-ms-user-select: text;
+
+}
+div#obj4682_content {
+}
 div#obj10069 {
 position: absolute;
 overflow: hidden;
@@ -294,30 +313,11 @@ font-family: "Kokila_2";
 }
 div#obj10069_content {
 }
-div#obj4682 {
-position: absolute;
-overflow: hidden;
-top: 19px;
-left: 118px;
-width: 46px;
-height: 40px;
-opacity: 1;
-z-index: 4;
-display:block;
-pointer-events: auto;
-user-select: text;  
--moz-user-select: text;
--webkit-user-select: text;
--ms-user-select: text;
-
-}
-div#obj4682_content {
-}
 div#obj7736 {
 position: absolute;
 overflow: hidden;
-top: 110px;
-left: 354px;
+top: 114px;
+left: 351px;
 width: 377px;
 height: 148px;
 opacity: 1;

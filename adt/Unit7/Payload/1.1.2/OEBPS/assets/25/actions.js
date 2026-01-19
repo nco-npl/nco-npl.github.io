@@ -1869,13 +1869,13 @@ $(window).on(pubcoder.events.pagePlay, function() {
 		});	
 	}
 	
-$("#obj4328").trigger('SCEventShow');
 $("#obj4079").trigger('SCEventShow');
+$("#obj4328").trigger('SCEventShow');
 $("#obj4326").trigger('SCEventShow');
 $("#obj4330").trigger('SCEventShow');
 $("#obj4338").trigger('SCEventShow');
-$("#obj4336").trigger('SCEventShow');
 $("#obj4344").trigger('SCEventShow');
+$("#obj4336").trigger('SCEventShow');
 $("#obj4334").trigger('SCEventShow');
 $("#obj4342").trigger('SCEventShow');
 $("#obj4332").trigger('SCEventShow');

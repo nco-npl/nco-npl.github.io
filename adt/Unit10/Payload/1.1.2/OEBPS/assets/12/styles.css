@@ -371,6 +371,25 @@ img#obj13849_img {
 	height: 40px;
 }
 
+div#obj4210 {
+position: absolute;
+overflow: hidden;
+top: 75px;
+left: 233px;
+width: 47px;
+height: 59px;
+opacity: 1;
+z-index: 1;
+display:block;
+pointer-events: auto;
+user-select: text;  
+-moz-user-select: text;
+-webkit-user-select: text;
+-ms-user-select: text;
+
+}
+div#obj4210_content {
+}
 div#obj4212 {
 position: absolute;
 overflow: hidden;
@@ -389,25 +408,6 @@ user-select: text;
 font-family: "Kokila_2";
 }
 div#obj4212_content {
-}
-div#obj4210 {
-position: absolute;
-overflow: hidden;
-top: 80px;
-left: 233px;
-width: 47px;
-height: 59px;
-opacity: 1;
-z-index: 1;
-display:block;
-pointer-events: auto;
-user-select: text;  
--moz-user-select: text;
--webkit-user-select: text;
--ms-user-select: text;
-
-}
-div#obj4210_content {
 }
 div#obj10594 {
 position: absolute;
@@ -447,6 +447,25 @@ user-select: text;
 }
 div#obj10596_content {
 }
+div#obj10598 {
+position: absolute;
+overflow: hidden;
+top: 293px;
+left: 436px;
+width: 198px;
+height: 53px;
+opacity: 1;
+z-index: 12;
+display:block;
+pointer-events: auto;
+user-select: text;  
+-moz-user-select: text;
+-webkit-user-select: text;
+-ms-user-select: text;
+
+}
+div#obj10598_content {
+}
 div#obj10600 {
 position: absolute;
 overflow: hidden;
@@ -484,25 +503,6 @@ user-select: text;
 
 }
 div#obj10602_content {
-}
-div#obj10598 {
-position: absolute;
-overflow: hidden;
-top: 298px;
-left: 436px;
-width: 198px;
-height: 53px;
-opacity: 1;
-z-index: 12;
-display:block;
-pointer-events: auto;
-user-select: text;  
--moz-user-select: text;
--webkit-user-select: text;
--ms-user-select: text;
-
-}
-div#obj10598_content {
 }
 div#obj10169 {
 position: absolute;
@@ -581,8 +581,8 @@ background-repeat: repeat;
 #obj4808 {
 position: absolute;
 overflow: hidden;
-top: 223px;
-left: 783px;
+top: 226px;
+left: 781px;
 width: 240px;
 height: 300px;
 opacity: 1;

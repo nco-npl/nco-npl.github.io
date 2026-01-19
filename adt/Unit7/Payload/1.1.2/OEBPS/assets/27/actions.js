@@ -1892,11 +1892,11 @@ $(window).on(pubcoder.events.pagePlay, function() {
 $("#obj4094").trigger('SCEventShow');
 $("#obj4356").trigger('SCEventShow');
 $("#obj10442").trigger('SCEventShow');
-$("#obj4360").trigger('SCEventShow');
 $("#obj4358").trigger('SCEventShow');
-$("#obj10445").trigger('SCEventShow');
+$("#obj4360").trigger('SCEventShow');
 $("#obj10451").trigger('SCEventShow');
 $("#obj4384").trigger('SCEventShow');
+$("#obj10445").trigger('SCEventShow');
 $("#obj4364").trigger('SCEventShow');
 $("#obj10435").trigger('SCEventShow');
 $("#obj10454").trigger('SCEventShow');

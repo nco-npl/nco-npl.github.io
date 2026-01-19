@@ -28,15 +28,15 @@ var obj4376_onTap_loopCount = 0;
 var obj4374_onTap_activeActionGroupIndex = -1;
 var obj4374_onTap_runningActionsCount = 0;
 var obj4374_onTap_loopCount = 0;
+var obj4372_onTap_activeActionGroupIndex = -1;
+var obj4372_onTap_runningActionsCount = 0;
+var obj4372_onTap_loopCount = 0;
 var obj4370_onTap_activeActionGroupIndex = -1;
 var obj4370_onTap_runningActionsCount = 0;
 var obj4370_onTap_loopCount = 0;
 var obj4368_onTap_activeActionGroupIndex = -1;
 var obj4368_onTap_runningActionsCount = 0;
 var obj4368_onTap_loopCount = 0;
-var obj4372_onTap_activeActionGroupIndex = -1;
-var obj4372_onTap_runningActionsCount = 0;
-var obj4372_onTap_loopCount = 0;
 var obj11669_onTap_activeActionGroupIndex = -1;
 var obj11669_onTap_runningActionsCount = 0;
 var obj11669_onTap_loopCount = 0;
@@ -962,6 +962,271 @@ obj4374_onTap_actionGroup2 = function(){
 
 
 };
+obj4372_onTap_actionGroup0 = function(){
+	isLastActionGroup = false;
+	if (isLastActionGroup) {
+		window.obj4372_onTap_activeActionGroupIndex = -1;
+		$("#obj4372").trigger("obj4372_onTap_ended");
+		
+		for (var i = 0; i < pubcoder.queuedEvents.length; i++) {
+			const evt = pubcoder.queuedEvents[i];
+			if (evt.senderObjectId == 4372) {
+				console.warn("de-queueing event obj4372." + evt.eventName);
+				pubcoder.queuedEvents.splice(i, 1);
+				$("#obj4372").trigger(evt.eventName);
+				return;
+			}
+		}
+		return;
+	}
+	window.obj4372_onTap_activeActionGroupIndex = 0;
+	
+
+//	action: show 
+//	selector: #obj9319
+(function(){
+	window.obj4372_onTap_runningActionsCount = obj4372_onTap_runningActionsCount + 1;
+
+	var selector = "#obj9319";
+	if ($(selector).hasClass("SCImage")) {
+		var lastIndex = $(selector).length-1;
+		$(selector).each(function (index, element) {
+			if ($(element).hasClass("SCImage")) {
+				try {
+					const img = $("img", element)[0];
+					img.decode()
+						.then(function() { showObject(element, index == lastIndex); })
+						.catch(function(encodingError) {
+							console.error(encodingError);
+							showObject(element, index == lastIndex);
+						});
+				} catch (err) {
+					showObject(element, index == lastIndex);
+				}
+			} else {
+				showObject(element, index == lastIndex);
+			}
+		});
+	} else {
+		showObject(selector, true);
+	}
+	
+	function showObject(element, isLast) {
+		$(element).removeClass("animated bounce flash pulse rubberBand shake headShake swing tada wobble jello bounceIn bounceInDown bounceInLeft bounceInRight bounceInUp bounceOut bounceOutDown bounceOutLeft bounceOutRight bounceOutUp fadeIn fadeInDown fadeInDownBig fadeInLeft fadeInLeftBig fadeInRight fadeInRightBig fadeInUp fadeInUpBig fadeOut fadeOutDown fadeOutDownBig fadeOutLeft fadeOutLeftBig fadeOutRight fadeOutRightBig fadeOutUp fadeOutUpBig flipInX flipInY flipOutX flipOutY lightSpeedIn lightSpeedOut rotateIn rotateInDownLeft rotateInDownRight rotateInUpLeft rotateInUpRight rotateOut rotateOutDownLeft rotateOutDownRight rotateOutUpLeft rotateOutUpRight hinge jackInTheBox rollIn rollOut zoomIn zoomInDown zoomInLeft zoomInRight zoomInUp zoomOut zoomOutDown zoomOutLeft zoomOutRight zoomOutUp slideInDown slideInLeft slideInRight slideInUp slideOutDown slideOutLeft slideOutRight slideOutUp heartBeat");
+	
+		var animationType = "fadeIn";
+		var animationDurationMs = 0;
+		var animationIterationCount = "1";
+	
+		if ($(element).css("display") == "block" || animationType == "" || animationDurationMs == 0) {
+			setTimeout(function() {
+				$(element).css("display", "block");
+				if (isLast) {
+					window.obj4372_onTap_runningActionsCount = window.obj4372_onTap_runningActionsCount - 1;
+if (window.obj4372_onTap_runningActionsCount < 0) {
+	window.obj4372_onTap_runningActionsCount = 0;
+} else if (window.obj4372_onTap_runningActionsCount == 0) {
+	obj4372_onTap_actionGroup1();
+}
+				}
+				$(element).trigger('SCEventShow');
+			}, 1);
+			return;
+		};
+	
+		$(element).css("animation-duration", animationDurationMs + "ms");
+		$(element).css("animation-iteration-count", animationIterationCount);
+	
+		setTimeout(function() {
+			$(element).css("display", "block");
+			$(element).removeClass("animated " + animationType);
+			if (isLast) {
+				window.obj4372_onTap_runningActionsCount = window.obj4372_onTap_runningActionsCount - 1;
+if (window.obj4372_onTap_runningActionsCount < 0) {
+	window.obj4372_onTap_runningActionsCount = 0;
+} else if (window.obj4372_onTap_runningActionsCount == 0) {
+	obj4372_onTap_actionGroup1();
+}
+			}
+			$(element).trigger('SCEventShow');
+		}, animationDurationMs);
+	
+		$(element).addClass("animated " + animationType);
+		$(element).css("display", "block");
+	}
+})();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+};
+obj4372_onTap_actionGroup1 = function(){
+	isLastActionGroup = false;
+	if (isLastActionGroup) {
+		window.obj4372_onTap_activeActionGroupIndex = -1;
+		$("#obj4372").trigger("obj4372_onTap_ended");
+		
+		for (var i = 0; i < pubcoder.queuedEvents.length; i++) {
+			const evt = pubcoder.queuedEvents[i];
+			if (evt.senderObjectId == 4372) {
+				console.warn("de-queueing event obj4372." + evt.eventName);
+				pubcoder.queuedEvents.splice(i, 1);
+				$("#obj4372").trigger(evt.eventName);
+				return;
+			}
+		}
+		return;
+	}
+	window.obj4372_onTap_activeActionGroupIndex = 1;
+	
+
+
+
+
+
+
+//	action: playAudioFile
+playAudioFile_9333();
+function playAudioFile_9333() {
+	window.obj4372_onTap_runningActionsCount = obj4372_onTap_runningActionsCount + 1;
+	var myAudio = $("#obj_audio_playSoundFile9333")[0];
+	var playFromBeginning = true;
+	var waitForCompletion = true;
+	var useReader = typeof(window.XPUB.readerPrefersToHandleAudio) !== "undefined" ?
+		window.XPUB.readerPrefersToHandleAudio : (/iphone|ipad|ipod/i.test(navigator.userAgent.toLowerCase()));
+	if (useReader) {
+		if (waitForCompletion) {
+			XPUB.playAudio(myAudio.src, playFromBeginning, "obj_audio_playSoundFile9333");
+			$("#obj_audio_playSoundFile9333").one('ended', function() {
+				// this.removeEventListener('ended',arguments.callee,false);
+				window.obj4372_onTap_runningActionsCount = window.obj4372_onTap_runningActionsCount - 1;
+if (window.obj4372_onTap_runningActionsCount < 0) {
+	window.obj4372_onTap_runningActionsCount = 0;
+} else if (window.obj4372_onTap_runningActionsCount == 0) {
+	obj4372_onTap_actionGroup2();
+}
+			});
+		} else {
+			XPUB.playAudio(myAudio.src, playFromBeginning, null);
+			window.obj4372_onTap_runningActionsCount = window.obj4372_onTap_runningActionsCount - 1;
+if (window.obj4372_onTap_runningActionsCount < 0) {
+	window.obj4372_onTap_runningActionsCount = 0;
+} else if (window.obj4372_onTap_runningActionsCount == 0) {
+	obj4372_onTap_actionGroup2();
+}
+		}
+		
+	} else {
+		if (playFromBeginning) {
+			try {
+				myAudio.currentTime = 0;
+			} catch (err) {
+				console.log(err);
+				myAudio.src = myAudio.src;
+			}
+		}
+		myAudio.play();
+		if (waitForCompletion) {
+			myAudio.addEventListener('ended', function() {
+				this.removeEventListener('ended',arguments.callee,false);
+				window.obj4372_onTap_runningActionsCount = window.obj4372_onTap_runningActionsCount - 1;
+if (window.obj4372_onTap_runningActionsCount < 0) {
+	window.obj4372_onTap_runningActionsCount = 0;
+} else if (window.obj4372_onTap_runningActionsCount == 0) {
+	obj4372_onTap_actionGroup2();
+}
+			}, false);
+		} else {
+			window.obj4372_onTap_runningActionsCount = window.obj4372_onTap_runningActionsCount - 1;
+if (window.obj4372_onTap_runningActionsCount < 0) {
+	window.obj4372_onTap_runningActionsCount = 0;
+} else if (window.obj4372_onTap_runningActionsCount == 0) {
+	obj4372_onTap_actionGroup2();
+}
+		}
+	}
+	
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+};
+obj4372_onTap_actionGroup2 = function(){
+	isLastActionGroup = true;
+	if (isLastActionGroup) {
+		window.obj4372_onTap_activeActionGroupIndex = -1;
+		$("#obj4372").trigger("obj4372_onTap_ended");
+		
+		for (var i = 0; i < pubcoder.queuedEvents.length; i++) {
+			const evt = pubcoder.queuedEvents[i];
+			if (evt.senderObjectId == 4372) {
+				console.warn("de-queueing event obj4372." + evt.eventName);
+				pubcoder.queuedEvents.splice(i, 1);
+				$("#obj4372").trigger(evt.eventName);
+				return;
+			}
+		}
+		return;
+	}
+	window.obj4372_onTap_activeActionGroupIndex = 2;
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+};
 obj4370_onTap_actionGroup0 = function(){
 	isLastActionGroup = false;
 	if (isLastActionGroup) {
@@ -1468,271 +1733,6 @@ obj4368_onTap_actionGroup2 = function(){
 		return;
 	}
 	window.obj4368_onTap_activeActionGroupIndex = 2;
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-};
-obj4372_onTap_actionGroup0 = function(){
-	isLastActionGroup = false;
-	if (isLastActionGroup) {
-		window.obj4372_onTap_activeActionGroupIndex = -1;
-		$("#obj4372").trigger("obj4372_onTap_ended");
-		
-		for (var i = 0; i < pubcoder.queuedEvents.length; i++) {
-			const evt = pubcoder.queuedEvents[i];
-			if (evt.senderObjectId == 4372) {
-				console.warn("de-queueing event obj4372." + evt.eventName);
-				pubcoder.queuedEvents.splice(i, 1);
-				$("#obj4372").trigger(evt.eventName);
-				return;
-			}
-		}
-		return;
-	}
-	window.obj4372_onTap_activeActionGroupIndex = 0;
-	
-
-//	action: show 
-//	selector: #obj9319
-(function(){
-	window.obj4372_onTap_runningActionsCount = obj4372_onTap_runningActionsCount + 1;
-
-	var selector = "#obj9319";
-	if ($(selector).hasClass("SCImage")) {
-		var lastIndex = $(selector).length-1;
-		$(selector).each(function (index, element) {
-			if ($(element).hasClass("SCImage")) {
-				try {
-					const img = $("img", element)[0];
-					img.decode()
-						.then(function() { showObject(element, index == lastIndex); })
-						.catch(function(encodingError) {
-							console.error(encodingError);
-							showObject(element, index == lastIndex);
-						});
-				} catch (err) {
-					showObject(element, index == lastIndex);
-				}
-			} else {
-				showObject(element, index == lastIndex);
-			}
-		});
-	} else {
-		showObject(selector, true);
-	}
-	
-	function showObject(element, isLast) {
-		$(element).removeClass("animated bounce flash pulse rubberBand shake headShake swing tada wobble jello bounceIn bounceInDown bounceInLeft bounceInRight bounceInUp bounceOut bounceOutDown bounceOutLeft bounceOutRight bounceOutUp fadeIn fadeInDown fadeInDownBig fadeInLeft fadeInLeftBig fadeInRight fadeInRightBig fadeInUp fadeInUpBig fadeOut fadeOutDown fadeOutDownBig fadeOutLeft fadeOutLeftBig fadeOutRight fadeOutRightBig fadeOutUp fadeOutUpBig flipInX flipInY flipOutX flipOutY lightSpeedIn lightSpeedOut rotateIn rotateInDownLeft rotateInDownRight rotateInUpLeft rotateInUpRight rotateOut rotateOutDownLeft rotateOutDownRight rotateOutUpLeft rotateOutUpRight hinge jackInTheBox rollIn rollOut zoomIn zoomInDown zoomInLeft zoomInRight zoomInUp zoomOut zoomOutDown zoomOutLeft zoomOutRight zoomOutUp slideInDown slideInLeft slideInRight slideInUp slideOutDown slideOutLeft slideOutRight slideOutUp heartBeat");
-	
-		var animationType = "fadeIn";
-		var animationDurationMs = 0;
-		var animationIterationCount = "1";
-	
-		if ($(element).css("display") == "block" || animationType == "" || animationDurationMs == 0) {
-			setTimeout(function() {
-				$(element).css("display", "block");
-				if (isLast) {
-					window.obj4372_onTap_runningActionsCount = window.obj4372_onTap_runningActionsCount - 1;
-if (window.obj4372_onTap_runningActionsCount < 0) {
-	window.obj4372_onTap_runningActionsCount = 0;
-} else if (window.obj4372_onTap_runningActionsCount == 0) {
-	obj4372_onTap_actionGroup1();
-}
-				}
-				$(element).trigger('SCEventShow');
-			}, 1);
-			return;
-		};
-	
-		$(element).css("animation-duration", animationDurationMs + "ms");
-		$(element).css("animation-iteration-count", animationIterationCount);
-	
-		setTimeout(function() {
-			$(element).css("display", "block");
-			$(element).removeClass("animated " + animationType);
-			if (isLast) {
-				window.obj4372_onTap_runningActionsCount = window.obj4372_onTap_runningActionsCount - 1;
-if (window.obj4372_onTap_runningActionsCount < 0) {
-	window.obj4372_onTap_runningActionsCount = 0;
-} else if (window.obj4372_onTap_runningActionsCount == 0) {
-	obj4372_onTap_actionGroup1();
-}
-			}
-			$(element).trigger('SCEventShow');
-		}, animationDurationMs);
-	
-		$(element).addClass("animated " + animationType);
-		$(element).css("display", "block");
-	}
-})();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-};
-obj4372_onTap_actionGroup1 = function(){
-	isLastActionGroup = false;
-	if (isLastActionGroup) {
-		window.obj4372_onTap_activeActionGroupIndex = -1;
-		$("#obj4372").trigger("obj4372_onTap_ended");
-		
-		for (var i = 0; i < pubcoder.queuedEvents.length; i++) {
-			const evt = pubcoder.queuedEvents[i];
-			if (evt.senderObjectId == 4372) {
-				console.warn("de-queueing event obj4372." + evt.eventName);
-				pubcoder.queuedEvents.splice(i, 1);
-				$("#obj4372").trigger(evt.eventName);
-				return;
-			}
-		}
-		return;
-	}
-	window.obj4372_onTap_activeActionGroupIndex = 1;
-	
-
-
-
-
-
-
-//	action: playAudioFile
-playAudioFile_9333();
-function playAudioFile_9333() {
-	window.obj4372_onTap_runningActionsCount = obj4372_onTap_runningActionsCount + 1;
-	var myAudio = $("#obj_audio_playSoundFile9333")[0];
-	var playFromBeginning = true;
-	var waitForCompletion = true;
-	var useReader = typeof(window.XPUB.readerPrefersToHandleAudio) !== "undefined" ?
-		window.XPUB.readerPrefersToHandleAudio : (/iphone|ipad|ipod/i.test(navigator.userAgent.toLowerCase()));
-	if (useReader) {
-		if (waitForCompletion) {
-			XPUB.playAudio(myAudio.src, playFromBeginning, "obj_audio_playSoundFile9333");
-			$("#obj_audio_playSoundFile9333").one('ended', function() {
-				// this.removeEventListener('ended',arguments.callee,false);
-				window.obj4372_onTap_runningActionsCount = window.obj4372_onTap_runningActionsCount - 1;
-if (window.obj4372_onTap_runningActionsCount < 0) {
-	window.obj4372_onTap_runningActionsCount = 0;
-} else if (window.obj4372_onTap_runningActionsCount == 0) {
-	obj4372_onTap_actionGroup2();
-}
-			});
-		} else {
-			XPUB.playAudio(myAudio.src, playFromBeginning, null);
-			window.obj4372_onTap_runningActionsCount = window.obj4372_onTap_runningActionsCount - 1;
-if (window.obj4372_onTap_runningActionsCount < 0) {
-	window.obj4372_onTap_runningActionsCount = 0;
-} else if (window.obj4372_onTap_runningActionsCount == 0) {
-	obj4372_onTap_actionGroup2();
-}
-		}
-		
-	} else {
-		if (playFromBeginning) {
-			try {
-				myAudio.currentTime = 0;
-			} catch (err) {
-				console.log(err);
-				myAudio.src = myAudio.src;
-			}
-		}
-		myAudio.play();
-		if (waitForCompletion) {
-			myAudio.addEventListener('ended', function() {
-				this.removeEventListener('ended',arguments.callee,false);
-				window.obj4372_onTap_runningActionsCount = window.obj4372_onTap_runningActionsCount - 1;
-if (window.obj4372_onTap_runningActionsCount < 0) {
-	window.obj4372_onTap_runningActionsCount = 0;
-} else if (window.obj4372_onTap_runningActionsCount == 0) {
-	obj4372_onTap_actionGroup2();
-}
-			}, false);
-		} else {
-			window.obj4372_onTap_runningActionsCount = window.obj4372_onTap_runningActionsCount - 1;
-if (window.obj4372_onTap_runningActionsCount < 0) {
-	window.obj4372_onTap_runningActionsCount = 0;
-} else if (window.obj4372_onTap_runningActionsCount == 0) {
-	obj4372_onTap_actionGroup2();
-}
-		}
-	}
-	
-	
-	
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-};
-obj4372_onTap_actionGroup2 = function(){
-	isLastActionGroup = true;
-	if (isLastActionGroup) {
-		window.obj4372_onTap_activeActionGroupIndex = -1;
-		$("#obj4372").trigger("obj4372_onTap_ended");
-		
-		for (var i = 0; i < pubcoder.queuedEvents.length; i++) {
-			const evt = pubcoder.queuedEvents[i];
-			if (evt.senderObjectId == 4372) {
-				console.warn("de-queueing event obj4372." + evt.eventName);
-				pubcoder.queuedEvents.splice(i, 1);
-				$("#obj4372").trigger(evt.eventName);
-				return;
-			}
-		}
-		return;
-	}
-	window.obj4372_onTap_activeActionGroupIndex = 2;
 	
 
 
@@ -3246,6 +3246,32 @@ obj4374_onTap_actionGroup0();
 
 /*
  *
+ *   obj4372: Event Touch Down
+ *
+ */
+$("#obj4372").bind(PubCoder.Events.Tap + " keydown", function(event) {
+	if (event.type === "keydown" && event.key !== "Enter") return;
+	event.preventDefault();
+	if (window.obj4372_onTap_activeActionGroupIndex != -1) {
+	console.warn("action list window.obj4372_onTap is still running");
+	return;
+}
+var obj4372_onTap_runningActionsCount = 0;
+var obj4372_onTap_loopCount = 0;
+obj4372_onTap_actionGroup0();
+});
+
+
+
+
+
+
+
+
+
+
+/*
+ *
  *   obj4370: Event Touch Down
  *
  */
@@ -3285,32 +3311,6 @@ $("#obj4368").bind(PubCoder.Events.Tap + " keydown", function(event) {
 var obj4368_onTap_runningActionsCount = 0;
 var obj4368_onTap_loopCount = 0;
 obj4368_onTap_actionGroup0();
-});
-
-
-
-
-
-
-
-
-
-
-/*
- *
- *   obj4372: Event Touch Down
- *
- */
-$("#obj4372").bind(PubCoder.Events.Tap + " keydown", function(event) {
-	if (event.type === "keydown" && event.key !== "Enter") return;
-	event.preventDefault();
-	if (window.obj4372_onTap_activeActionGroupIndex != -1) {
-	console.warn("action list window.obj4372_onTap is still running");
-	return;
-}
-var obj4372_onTap_runningActionsCount = 0;
-var obj4372_onTap_loopCount = 0;
-obj4372_onTap_actionGroup0();
 });
 
 
@@ -3630,9 +3630,9 @@ $("#obj4366").trigger('SCEventShow');
 $("#obj4376").trigger('SCEventShow');
 $("#obj4374").trigger('SCEventShow');
 $("#obj9306").trigger('SCEventShow');
+$("#obj4372").trigger('SCEventShow');
 $("#obj4370").trigger('SCEventShow');
 $("#obj4368").trigger('SCEventShow');
-$("#obj4372").trigger('SCEventShow');
 $("#obj4093").trigger('SCEventShow');
 $("#obj9036").trigger('SCEventShow');
 $("#obj11688").trigger('SCEventShow');

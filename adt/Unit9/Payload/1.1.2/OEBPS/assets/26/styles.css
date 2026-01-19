@@ -78,10 +78,10 @@ img#obj9768_img {
 div#obj4054 {
 position: absolute;
 overflow: hidden;
-top: 74px;
+top: 88px;
 left: 508px;
-width: 495px;
-height: 352px;
+width: 496px;
+height: 339px;
 opacity: 1;
 z-index: 1;
 display:block;
@@ -98,8 +98,8 @@ img#obj4054_img {
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	width: 495px;
-	height: 352px;
+	width: 496px;
+	height: 339px;
 }
 div#obj9771 {
 position: absolute;
@@ -130,8 +130,8 @@ position: absolute;
 overflow: hidden;
 top: 117px;
 left: 365px;
-width: 143px;
-height: 118px;
+width: 142px;
+height: 130px;
 opacity: 1;
 z-index: 8;
 display:block;
@@ -146,40 +146,16 @@ img#obj4546_img {
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	width: 143px;
-	height: 118px;
-}
-div#obj4548 {
-position: absolute;
-overflow: hidden;
-top: 127px;
-left: 220px;
-width: 135px;
-height: 97px;
-opacity: 1;
-z-index: 9;
-display:block;
-pointer-events: none;
-
-user-select: none;  
--moz-user-select: none;
--webkit-user-select: none;
--ms-user-select: none;
-}
-img#obj4548_img {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	width: 135px;
-	height: 97px;
+	width: 142px;
+	height: 130px;
 }
 div#obj4544 {
 position: absolute;
 overflow: hidden;
-top: 143px;
+top: 118px;
 left: 42px;
-width: 135px;
-height: 97px;
+width: 134px;
+height: 109px;
 opacity: 1;
 z-index: 7;
 display:block;
@@ -194,8 +170,32 @@ img#obj4544_img {
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	width: 135px;
-	height: 97px;
+	width: 134px;
+	height: 109px;
+}
+div#obj4548 {
+position: absolute;
+overflow: hidden;
+top: 118px;
+left: 220px;
+width: 134px;
+height: 109px;
+opacity: 1;
+z-index: 9;
+display:block;
+pointer-events: none;
+
+user-select: none;  
+-moz-user-select: none;
+-webkit-user-select: none;
+-ms-user-select: none;
+}
+img#obj4548_img {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 134px;
+	height: 109px;
 }
 div#obj9920 {
 position: absolute;
@@ -455,7 +455,7 @@ div#obj4540_content {
 div#obj4542 {
 position: absolute;
 overflow: hidden;
-top: 333px;
+top: 343px;
 left: 42px;
 width: 455px;
 height: 123px;

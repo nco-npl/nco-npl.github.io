@@ -1965,8 +1965,8 @@ $(window).on(pubcoder.events.pagePlay, function() {
 	}
 	
 $("#obj4063").trigger('SCEventShow');
-$("#obj4578").trigger('SCEventShow');
 $("#obj4576").trigger('SCEventShow');
+$("#obj4578").trigger('SCEventShow');
 $("#obj4580").trigger('SCEventShow');
 $("#obj4117").trigger('SCEventShow');
 $("#obj9927").trigger('SCEventShow');

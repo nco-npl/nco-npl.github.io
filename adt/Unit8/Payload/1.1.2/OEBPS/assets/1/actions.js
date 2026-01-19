@@ -2037,10 +2037,10 @@ $(window).on(pubcoder.events.pagePlay, function() {
 $("#obj4143").trigger('SCEventShow');
 $("#obj3967").trigger('SCEventShow');
 $("#obj4145").trigger('SCEventShow');
-$("#obj4148").trigger('SCEventShow');
 $("#obj3958").trigger('SCEventShow');
-$("#obj4165").trigger('SCEventShow');
 $("#obj4153").trigger('SCEventShow');
+$("#obj4148").trigger('SCEventShow');
+$("#obj4165").trigger('SCEventShow');
 $("#obj4163").trigger('SCEventShow');
 $("#obj4151").trigger('SCEventShow');
 $("#obj4161").trigger('SCEventShow');

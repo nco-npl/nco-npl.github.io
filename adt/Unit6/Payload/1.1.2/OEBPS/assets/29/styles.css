@@ -102,10 +102,10 @@ img#obj10562_img {
 div#obj10057 {
 position: absolute;
 overflow: hidden;
-top: 34px;
+top: 59px;
 left: 529px;
 width: 328px;
-height: 223px;
+height: 198px;
 opacity: 1;
 z-index: 8;
 display:block;
@@ -121,7 +121,7 @@ img#obj10057_img {
 	left: 0px;
 	top: 0px;
 	width: 328px;
-	height: 223px;
+	height: 198px;
 }
 div#obj10061 {
 position: absolute;
@@ -388,6 +388,25 @@ img#obj14015_img {
 	height: 40px;
 }
 
+div#obj4671 {
+position: absolute;
+overflow: hidden;
+top: 40px;
+left: 163px;
+width: 41px;
+height: 41px;
+opacity: 1;
+z-index: 2;
+display:block;
+pointer-events: auto;
+user-select: text;  
+-moz-user-select: text;
+-webkit-user-select: text;
+-ms-user-select: text;
+
+}
+div#obj4671_content {
+}
 div#obj4673 {
 position: absolute;
 overflow: hidden;
@@ -406,25 +425,6 @@ user-select: text;
 
 }
 div#obj4673_content {
-}
-div#obj4671 {
-position: absolute;
-overflow: hidden;
-top: 45px;
-left: 172px;
-width: 32px;
-height: 37px;
-opacity: 1;
-z-index: 2;
-display:block;
-pointer-events: auto;
-user-select: text;  
--moz-user-select: text;
--webkit-user-select: text;
--ms-user-select: text;
-
-}
-div#obj4671_content {
 }
 div#obj4675 {
 position: absolute;

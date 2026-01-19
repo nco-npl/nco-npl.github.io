@@ -61,7 +61,7 @@ img#obj4121_img {
 div#obj4424 {
 position: absolute;
 overflow: hidden;
-top: 137px;
+top: 158px;
 left: 524px;
 width: 169px;
 height: 150px;
@@ -81,6 +81,30 @@ img#obj4424_img {
 	top: 0px;
 	width: 169px;
 	height: 150px;
+}
+div#obj4428 {
+position: absolute;
+overflow: hidden;
+top: 159px;
+left: 134px;
+width: 208px;
+height: 127px;
+opacity: 1;
+z-index: 10;
+display:block;
+pointer-events: none;
+
+user-select: none;  
+-moz-user-select: none;
+-webkit-user-select: none;
+-ms-user-select: none;
+}
+img#obj4428_img {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 208px;
+	height: 127px;
 }
 div#obj4426 {
 position: absolute;
@@ -130,37 +154,13 @@ img#obj4422_img {
 	width: 200px;
 	height: 118px;
 }
-div#obj4428 {
-position: absolute;
-overflow: hidden;
-top: 167px;
-left: 134px;
-width: 208px;
-height: 127px;
-opacity: 1;
-z-index: 10;
-display:block;
-pointer-events: none;
-
-user-select: none;  
--moz-user-select: none;
--webkit-user-select: none;
--ms-user-select: none;
-}
-img#obj4428_img {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	width: 208px;
-	height: 127px;
-}
 div#obj4420 {
 position: absolute;
 overflow: hidden;
-top: 274px;
+top: 285px;
 left: 73px;
 width: 235px;
-height: 128px;
+height: 117px;
 opacity: 1;
 z-index: 6;
 display:block;
@@ -176,15 +176,15 @@ img#obj4420_img {
 	left: 0px;
 	top: 0px;
 	width: 235px;
-	height: 128px;
+	height: 117px;
 }
 div#obj4414 {
 position: absolute;
 overflow: hidden;
-top: 288px;
-left: 641px;
-width: 227px;
-height: 183px;
+top: 285px;
+left: 627px;
+width: 216px;
+height: 180px;
 opacity: 1;
 z-index: 3;
 display:block;
@@ -199,15 +199,15 @@ img#obj4414_img {
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	width: 227px;
-	height: 183px;
+	width: 216px;
+	height: 180px;
 }
 div#obj4416 {
 position: absolute;
 overflow: hidden;
 top: 326px;
 left: 406px;
-width: 236px;
+width: 212px;
 height: 151px;
 opacity: 1;
 z-index: 4;
@@ -223,7 +223,7 @@ img#obj4416_img {
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	width: 236px;
+	width: 212px;
 	height: 151px;
 }
 div#obj4418 {
@@ -443,29 +443,10 @@ img#obj13573_img {
 	height: 40px;
 }
 
-div#obj4412 {
-position: absolute;
-overflow: hidden;
-top: 101px;
-left: 268px;
-width: 360px;
-height: 58px;
-opacity: 1;
-z-index: 2;
-display:block;
-pointer-events: auto;
-user-select: text;  
--moz-user-select: text;
--webkit-user-select: text;
--ms-user-select: text;
-
-}
-div#obj4412_content {
-}
 div#obj4410 {
 position: absolute;
 overflow: hidden;
-top: 106px;
+top: 102px;
 left: 225px;
 width: 48px;
 height: 45px;
@@ -480,6 +461,25 @@ user-select: text;
 
 }
 div#obj4410_content {
+}
+div#obj4412 {
+position: absolute;
+overflow: hidden;
+top: 102px;
+left: 268px;
+width: 360px;
+height: 58px;
+opacity: 1;
+z-index: 2;
+display:block;
+pointer-events: auto;
+user-select: text;  
+-moz-user-select: text;
+-webkit-user-select: text;
+-ms-user-select: text;
+
+}
+div#obj4412_content {
 }
 div#obj4659 {
 position: absolute;
