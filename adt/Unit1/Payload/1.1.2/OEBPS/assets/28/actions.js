@@ -1,7 +1,7 @@
 pubcoder.projectID = pubcoder.projectID || "12E58D21CC5A4AEEB6229895ABF2FF22";
 pubcoder.project.id = pubcoder.project.id || "12E58D21CC5A4AEEB6229895ABF2FF22";
 pubcoder.project.title = pubcoder.project.title || "Hamro Serofero : Unit 1";
-pubcoder.page.id = pubcoder.page.id || 1484;
+pubcoder.page.id = pubcoder.page.id || 8376;
 pubcoder.page.title = pubcoder.page.title || "28";
 pubcoder.page.number = pubcoder.page.number || 28;
 pubcoder.page.alias = pubcoder.page.alias || "";
@@ -1789,11 +1789,11 @@ $(window).on(pubcoder.events.pagePlay, function() {
 		});	
 	}
 	
-$("#obj1584").trigger('SCEventShow');
-$("#obj2533").trigger('SCEventShow');
-$("#obj2080").trigger('SCEventShow');
-$("#obj4516").trigger('SCEventShow');
-$("#obj1810").trigger('SCEventShow');
+$("#obj8377").trigger('SCEventShow');
+$("#obj8385").trigger('SCEventShow');
+$("#obj8383").trigger('SCEventShow');
+$("#obj8379").trigger('SCEventShow');
+$("#obj8381").trigger('SCEventShow');
 $("#obj8185").trigger('SCEventShow');
 $("#obj8156").trigger('SCEventShow');
 $("#obj8178").trigger('SCEventShow');
