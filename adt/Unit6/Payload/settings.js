@@ -1,0 +1,1 @@
+PubViewer.Document.Settings = {"appIdentifier":"B1985B9B37984B96B472327C3ED1C8BB","appName":"Hamro Serofero - Unit 6","backgroundColor":"#EFEEE8","facingPagesInLandscape":false,"lockOrientation":false,"restoreLatestPage":true};

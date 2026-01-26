@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table of Contents</title>
+    <style>
+        :root {
+            --primary-color: #4a90e2;
+            --text-color: #2c3e50;
+            --radius-md: 12px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        body {
+            font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: white;
+            color: var(--text-color);
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .menu-container {
+            padding: 4px;
+            /* Space for focus outlines */
+            height: 100vh;
+            overflow-y: auto;
+        }
+
+        .menu-list {
+            padding-bottom: 20px;
+        }
+
+        .menu-item {
+            margin-bottom: 8px;
+            /* Reduced from 12px */
+        }
+
+        .toc-head {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .menu-link {
+            display: flex;
+            align-items: center;
+            background: white;
+            border: 1px solid #edf2f7;
+            border-radius: var(--radius-md);
+            text-decoration: none;
+            color: var(--text-color);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+        }
+
+        .menu-link:hover {
+            transform: translateX(4px);
+            border-color: var(--primary-color);
+            box-shadow: 0 4px 12px rgba(74, 144, 226, 0.15);
+        }
+
+        .menu-link.expanded {
+            border-color: var(--primary-color);
+            background: #eef2f7;
+        }
+
+        .menu-link.split {
+            padding: 0;
+            display: flex;
+            align-items: stretch;
+        }
+
+        .menu-main-action {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 8px;
+            /* Reduced vertical padding */
+            text-decoration: none;
+            color: inherit;
+            cursor: pointer;
+        }
+
+        .menu-toggle-action {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 16px;
+            border-right: 1px solid #edf2f7;
+            cursor: pointer;
+            background: none;
+            border-top: none;
+            border-left: none;
+            border-bottom: none;
+            font-size: 1.1em;
+            color: var(--primary-color);
+            min-width: 50px;
+        }
+
+        .menu-toggle-action:hover {
+            background-color: #f8f9fa;
+        }
+
+        .menu-link.expanded .menu-toggle-action .toggle-icon {
+            transform: rotate(90deg);
+        }
+
+        .toggle-icon {
+            display: inline-block;
+        }
+
+        .nav-icon {
+            font-size: 1.2em;
+            color: #bdc3c7;
+        }
+
+        .menu-main-action:hover .nav-icon,
+        .menu-link:hover .nav-icon {
+            color: var(--primary-color);
+            transform: translate(2px, -2px);
+        }
+
+        .menu-number {
+            width: 28px;
+            height: 28px;
+            background: #eef2f7;
+            color: var(--primary-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.9rem;
+            font-weight: bold;
+            margin-right: 16px;
+        }
+
+        .menu-text {
+            flex: 1;
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+
+        /* Sub Menu Styles */
+        .sub-menu-list {
+            list-style: none;
+            overflow: hidden;
+            max-height: 0;
+            opacity: 0;
+            visibility: hidden;
+            transition: max-height 0.4s ease-out, opacity 0.4s ease-out, visibility 0s 0.4s;
+            padding-left: 20px;
+            border-left: 2px solid #edf2f7;
+            margin-left: 30px;
+        }
+
+        .sub-menu-list.open {
+            max-height: 500px;
+            opacity: 1;
+            visibility: visible;
+            transition: max-height 0.4s ease-in, opacity 0.4s ease-in, visibility 0s 0s;
+            margin-top: 5px;
+            margin-bottom: 15px;
+        }
+
+        .sub-menu-item {
+            margin-bottom: 2px;
+            /* Reduced from 5px */
+        }
+
+        .sub-menu-link {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px 12px;
+            /* Reduced padding */
+            color: var(--text-color);
+            text-decoration: none;
+            font-size: 0.95rem;
+            /* Slightly smaller text */
+            border-radius: var(--radius-md);
+            transition: all 0.2s;
+            position: relative;
+            background: rgba(255, 255, 255, 0.5);
+            border: 1px solid transparent;
+        }
+
+        .sub-menu-link:hover {
+            background-color: white;
+            border-color: #edf2f7;
+            color: var(--primary-color);
+            padding-left: 12px;
+            /* No extra shift usually reserved for dot */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);
+        }
+
+        /* Restore icon styles */
+        .sub-menu-icon {
+            font-size: 0.8em;
+            opacity: 0.4;
+            transition: all 0.2s;
+        }
+
+        .sub-menu-link:hover .sub-menu-icon {
+            opacity: 1;
+            transform: translateX(3px);
+        }
+
+        /* Accessibility */
+        :focus-visible {
+            outline: 3px solid var(--primary-color);
+            outline-offset: 2px;
+            box-shadow: 0 0 0 4px rgba(74, 144, 226, 0.2);
+        }
+
+        .menu-main-action:focus-visible,
+        .menu-toggle-action:focus-visible,
+        .sub-menu-link:focus-visible {
+            outline: none;
+            box-shadow: 0 0 0 3px var(--primary-color), 0 0 0 6px rgba(74, 144, 226, 0.2);
+        }
+
+        /* Scrollbar */
+        .menu-container::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .menu-container::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        .menu-container::-webkit-scrollbar-thumb {
+            background-color: #cbd5e0;
+            border-radius: 20px;
+        }
+    </style>
+    <script>
+        const menuData = {
+            "baseUrl": "http://172.104.184.4/adt/",
+            "title": "📚 विषय सूची",
+            "items": [
+                {
+                    "url": "Unit1",
+                    "name": "पाठ १ : म र मेरो परिवार",
+                    "subItems": [
+                        { "url": "startPage=1", "name": "हाम्रो परिचय", "page": 1 },
+                        { "url": "startPage=2", "name": "हाम्रो परिवार", "page": 2 },
+                        { "url": "startPage=6", "name": "हाम्रो पहिचान", "page": 6 },
+                        { "url": "startPage=15", "name": "हाम्रो खेलकुद", "page": 15 },
+                        { "url": "startPage=18", "name": "हाम्रो खेलौना", "page": 18 },
+                        { "url": "startPage=21", "name": "हाम्रो काम", "page": 21 },
+                        { "url": "startPage=24", "name": "हाम्रो सामान", "page": 24 }
+                    ]
+                },
+                {
+                    "url": "Unit2",
+                    "name": "पाठ २ : हाम्रो दैनिकी",
+                    "subItems": [
+                        { "url": "startPage=29", "name": "हाम्रो शरीर", "page": 29 },
+                        { "url": "startPage=30", "name": "योग", "page": 30 },
+                        { "url": "startPage=35", "name": "हाम्रो बानी", "page": 35 },
+                        { "url": "startPage=42", "name": "बिद्युत", "page": 42 },
+                        { "url": "startPage=45", "name": "आवाज", "page": 45 },
+                        { "url": "startPage=51", "name": "उपभोग", "page": 51 },
+                        { "url": "startPage=56", "name": "शारीरिक क्रियाकलाप र खेल", "page": 56 }
+                    ]
+                },
+                {
+                    "url": "Unit3",
+                    "name": "पाठ ३ : हाम्रो समाज",
+                    "subItems": [
+                        { "url": "startPage=58", "name": "नेपालियत", "page": 58 },
+                        { "url": "startPage=60", "name": "नियमको पालना", "page": 60 },
+                        { "url": "startPage=64", "name": "सच्चो मित्रको", "page": 64 },
+                        { "url": "startPage=68", "name": "जनमत", "page": 68 },
+                        { "url": "startPage=75", "name": "छाप", "page": 75 },
+                        { "url": "startPage=78", "name": "खेल", "page": 78 },
+                        { "url": "startPage=82", "name": "अनियम गरौं", "page": 82 }
+                    ]
+                },
+                {
+                    "url": "Unit4",
+                    "name": "पाठ ४ : हाम्रो विद्यालय",
+                    "subItems": [
+                        { "url": "startPage=84", "name": "विद्यालयको दिनचर्या", "page": 84 },
+                        { "url": "startPage=88", "name": "शारीरिक कसरत", "page": 88 },
+                        { "url": "startPage=90", "name": "हाम्रो सुरक्षा", "page": 90 },
+                        { "url": "startPage=96", "name": "प्रकृतिबाट बनेका", "page": 96 },
+                        { "url": "startPage=102", "name": "बोटबिरुवाको हेरचाह", "page": 102 }
+                    ]
+                },
+                {
+                    "url": "Unit5",
+                    "name": "पाठ ५ : हाम्रो वरपरको जीवजन्तु",
+                    "subItems": [
+                        { "url": "startPage=111", "name": "जनजीव र निर्जीव", "page": 111 },
+                        { "url": "startPage=120", "name": "बिशेषता", "page": 120 },
+                        { "url": "startPage=122", "name": "बिशेषका भाग", "page": 122 }
+                    ]
+                },
+                {
+                    "url": "Unit6",
+                    "name": "पाठ ६ : हाम्रो वातावरण",
+                    "subItems": [
+                        { "url": "startPage=125", "name": "सरसफाइ", "page": 125 },
+                        { "url": "startPage=133", "name": "हाम्रो वरपरका वस्तु", "page": 133 },
+                        { "url": "startPage=138", "name": "वस्तुको गुण", "page": 138 }
+                    ]
+                },
+                {
+                    "url": "Unit7",
+                    "name": "पाठ ७ : हाम्रो सिर्जना",
+                    "subItems": [
+                        { "url": "startPage=145", "name": "रेखाचित्र", "page": 145 },
+                        { "url": "startPage=149", "name": "हाम्रो घर", "page": 149 },
+                        { "url": "startPage=151", "name": "माटाबाट सामान बनाऔं", "page": 151 },
+                        { "url": "startPage=153", "name": "खेल खेलौं", "page": 153 },
+                        { "url": "startPage=155", "name": "गाउने, बजाउने र नाच्ने", "page": 155 }
+                    ]
+                },
+                {
+                    "url": "Unit8",
+                    "name": "पाठ ८ : हाम्रो संस्कृति",
+                    "subItems": [
+                        { "url": "startPage=159", "name": "हाम्रो चाडपर्व", "page": 159 },
+                        { "url": "startPage=165", "name": "हाम्रो संस्कार", "page": 165 }
+                    ]
+                },
+                {
+                    "url": "Unit9",
+                    "name": "पाठ ९ : सञ्चार प्रविधि र बजार",
+                    "subItems": [
+                        { "url": "startPage=175", "name": "सूचना र जानकारी", "page": 175 },
+                        { "url": "startPage=178", "name": "यातायातका साधन", "page": 178 },
+                        { "url": "startPage=182", "name": "बजार", "page": 182 }
+                    ]
+                },
+                {
+                    "url": "Unit10",
+                    "name": "पाठ १० : हाम्रो वरपरको संसार",
+                    "subItems": [
+                        { "url": "startPage=194", "name": "मौसम", "page": 194 },
+                        { "url": "startPage=198", "name": "मौसमी बदलावका पहिचान", "page": 198 },
+                        { "url": "startPage=204", "name": "जमिन", "page": 204 },
+                        { "url": "startPage=221", "name": "पानी", "page": 221 },
+                        { "url": "startPage=225", "name": "हावा", "page": 225 }
+                    ]
+                }
+            ]
+        };
+    </script>
+</head>
+
+<body>
+    <div class="menu-container">
+        <h2 class="toc-head">📚 विषय सूची</h2>
+        <ul class="menu-list" id="menuList">
+            <li>Loading menu...</li>
+        </ul>
+    </div>
+    <script>
+        const menuList = document.getElementById('menuList');
+        menuList.innerHTML = '';
+
+        if (typeof menuData !== 'undefined') {
+            menuData.items.forEach((item, index) => {
+                const li = document.createElement('li');
+                li.className = 'menu-item';
+                li.style.animationDelay = `${index * 0.05}s`;
+
+                // Main Menu Link Container
+                const linkDiv = document.createElement('div');
+                linkDiv.className = 'menu-link';
+
+                // Determine logic based on subItems
+                const hasSubItems = item.subItems && item.subItems.length > 0;
+                const fullUrl = menuData.baseUrl + item.url;
+
+                if (hasSubItems) {
+                    // SPLIT LAYOUT: Toggle on LEFT, Navigation on RIGHT
+                    linkDiv.classList.add('split');
+
+                    const subMenuId = `submenu-${index}`;
+
+                    // 1. Toggle Action (Expand/Collapse)
+                    const toggleBtn = document.createElement('button');
+                    toggleBtn.className = 'menu-toggle-action';
+                    toggleBtn.setAttribute('aria-label', `Toggle sub-chapters for ${item.name}`);
+                    toggleBtn.setAttribute('aria-expanded', 'false');
+                    toggleBtn.setAttribute('aria-controls', subMenuId);
+                    toggleBtn.innerHTML = `<span class="toggle-icon" aria-hidden="true">▶</span>`;
+
+                    toggleBtn.onclick = function (e) {
+                        e.preventDefault();
+                        e.stopPropagation();
+
+                        const isExpanded = linkDiv.classList.toggle('expanded');
+                        toggleBtn.setAttribute('aria-expanded', isExpanded);
+
+                        const subList = linkDiv.nextElementSibling;
+                        if (subList) {
+                            subList.classList.toggle('open');
+                        }
+                    };
+
+                    // 2. Main Action (Navigation)
+                    const mainAction = document.createElement('a');
+                    mainAction.className = 'menu-main-action';
+                    mainAction.href = fullUrl;
+                    mainAction.innerHTML = `
+                        <div style="display:flex; align-items:center;">
+                            <span class="menu-text">${item.name}</span>
+                        </div>
+                        <span class="nav-icon" aria-hidden="true">↗</span>
+                    `;
+                    mainAction.onclick = function (e) {
+                        try {
+                            if (window.top && window.top.location) {
+                                window.top.location.href = fullUrl;
+                                e.preventDefault();
+                                return false;
+                            }
+                        } catch (err) { }
+                    };
+
+                    linkDiv.appendChild(toggleBtn);
+                    linkDiv.appendChild(mainAction);
+
+                } else {
+                    // REGULAR LAYOUT: Whole row is a link
+                    linkDiv.classList.add('split');
+
+                    const mainAction = document.createElement('a');
+                    mainAction.className = 'menu-main-action';
+                    mainAction.href = fullUrl;
+                    mainAction.innerHTML = `
+                        <div style="display:flex; align-items:center;">
+                            <span class="menu-text">${item.name}</span>
+                        </div>
+                        <span class="nav-icon" aria-hidden="true">↗</span>
+                    `;
+
+                    mainAction.onclick = function (e) {
+                        try {
+                            if (window.top && window.top.location) {
+                                window.top.location.href = fullUrl;
+                                e.preventDefault();
+                                return false;
+                            }
+                        } catch (err) { }
+                    };
+
+                    linkDiv.appendChild(mainAction);
+                }
+
+                li.appendChild(linkDiv);
+
+                // Render Sub Items if they exist
+                if (hasSubItems) {
+                    const subUl = document.createElement('ul');
+                    subUl.className = 'sub-menu-list';
+                    subUl.id = `submenu-${index}`;
+                    subUl.setAttribute('role', 'group');
+                    subUl.setAttribute('aria-label', `Sub-chapters for ${item.name}`);
+
+                    item.subItems.forEach(sub => {
+                        const subLi = document.createElement('li');
+                        subLi.className = 'sub-menu-item';
+
+                        const subFullUrl = menuData.baseUrl + item.url + "?" + sub.url;
+                        const subLink = document.createElement('a');
+                        subLink.href = subFullUrl;
+                        subLink.className = 'sub-menu-link';
+                        subLink.innerHTML = `
+                            <span>${sub.name}</span>
+                            <div style="display: flex; align-items: center; gap: 5px;">
+                                <span style="font-size: 0.85em; color: #7f8c8d; font-weight: 500;"> ${sub.page}</span>
+                                <span class="sub-menu-icon">↗</span>
+                            </div>
+                        `;
+
+                        subLink.onclick = function (e) {
+                            if (window.top && window.top.location) {
+                                e.preventDefault();
+                                window.top.location.href = subFullUrl;
+                            }
+                        };
+
+                        subLi.appendChild(subLink);
+                        subUl.appendChild(subLi);
+                    });
+
+                    li.appendChild(subUl);
+                }
+
+                menuList.appendChild(li);
+            });
+        }
+    </script>
+</body>
+
+</html>

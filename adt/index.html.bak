@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>हाम्रो सेरोफेरो - कक्षा १ </title>
+    <style>
+        :root {
+            --primary-color: #4a90e2;
+            --primary-dark: #357abd;
+            --text-color: #2c3e50;
+            --bg-gradient: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.1);
+            --radius-md: 12px;
+            --transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        body {
+            font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg-gradient);
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .app-container {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            max-width: 1024px;
+            margin: 0 auto;
+            background: white;
+            overflow: hidden;
+            box-shadow: none;
+        }
+
+        /* --- Page Transitions & Layout --- */
+        .page {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            background: white;
+            opacity: 0;
+            transform: translateX(100px);
+            pointer-events: none;
+            transition: var(--transition);
+            visibility: hidden;
+        }
+
+        .page.active {
+            opacity: 1;
+            transform: translateX(0);
+            pointer-events: auto;
+            visibility: visible;
+            z-index: 10;
+        }
+
+        .page.exit-left {
+            transform: translateX(-100px);
+            opacity: 0;
+        }
+
+        .page-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+        }
+
+        .center-content {
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        /* --- Cover Page Styling --- */
+        .main-title {
+            font-size: 2.5rem;
+            color: var(--text-color);
+            margin-bottom: 0.5rem;
+            line-height: 1.2;
+        }
+
+        .sub-title {
+            font-size: 1.5rem;
+            color: #7f8c8d;
+            margin-bottom: 2rem;
+            font-weight: 400;
+        }
+
+        .cover-image-wrapper {
+            width: 80%;
+            margin-bottom: 3rem;
+            position: relative;
+            border-radius: var(--radius-md);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+        }
+
+        .cover-image {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: var(--radius-md);
+        }
+
+        /* --- TOC Page Styling --- */
+        .toc-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .toc-header h1 {
+            flex: 1;
+            text-align: center;
+            font-size: 1.5rem;
+            color: var(--text-color);
+            margin-right: 40px;
+        }
+
+        .menu-wrapper {
+            flex: 1;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            background: #fff;
+        }
+
+        .toc-iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            display: block;
+        }
+
+        /* --- Buttons --- */
+        .btn {
+            border: none;
+            cursor: pointer;
+            font-family: inherit;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s ease;
+            gap: 10px;
+        }
+
+        .btn:active {
+            transform: scale(0.96);
+        }
+
+        .primary-btn {
+            background: var(--primary-color);
+            color: white;
+            padding: 16px 32px;
+            font-size: 1.2rem;
+            border-radius: 50px;
+            box-shadow: 0 8px 20px rgba(74, 144, 226, 0.3);
+            width: 100%;
+            max-width: 320px;
+            font-weight: 600;
+        }
+
+        .primary-btn:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 12px 25px rgba(74, 144, 226, 0.4);
+        }
+
+        .secondary-btn {
+            background: transparent;
+            color: var(--primary-color);
+            font-weight: 600;
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-size: 1rem;
+        }
+
+        .secondary-btn:hover {
+            background: rgba(74, 144, 226, 0.1);
+        }
+
+        .btn-icon {
+            font-size: 1.2em;
+        }
+
+        /* Accessibility Focus */
+        :focus-visible {
+            outline: 3px solid var(--primary-color);
+            outline-offset: 2px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="app-container">
+        <!-- Page 1: Cover Page -->
+        <div id="cover-page" class="page active">
+            <div class="page-content center-content">
+                <h1 class="main-title">हाम्रो सेरोफेरो</h1>
+                <h2 class="sub-title">कक्षा १</h2>
+
+                <div class="cover-image-wrapper">
+                    <img src="cover_image_enhanced.png" alt="Hamro Serofero Cover" class="cover-image">
+                </div>
+
+                <button id="openTocBtn" class="btn primary-btn">
+			<span> विषय सूची </span>
+                    <span class="btn-icon">→</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Page 2: Table of Contents Page -->
+        <div id="toc-page" class="page">
+            <div class="page-content">
+                <div class="toc-header">
+                    <button id="backBtn" class="btn secondary-btn">
+                        <span class="btn-icon">←</span>
+                        <span>पछाडी</span>
+                    </button>
+                </div>
+
+                <div class="menu-wrapper">
+                    <iframe src="toc.html" class="toc-iframe" title="Table of Contents"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Page Navigation Logic
+        const coverPage = document.getElementById('cover-page');
+        const tocPage = document.getElementById('toc-page');
+        const openTocBtn = document.getElementById('openTocBtn');
+        const backBtn = document.getElementById('backBtn');
+
+        function showToc() {
+            coverPage.classList.remove('active');
+            coverPage.classList.add('exit-left');
+            tocPage.classList.add('active');
+
+            // Accessibility: Move focus to the first interactive element on the new page
+            setTimeout(() => {
+                backBtn.focus();
+            }, 100);
+        }
+
+        function showCover() {
+            tocPage.classList.remove('active');
+            coverPage.classList.remove('exit-left');
+            coverPage.classList.add('active');
+
+            // Accessibility: Return focus to the trigger
+            setTimeout(() => {
+                openTocBtn.focus();
+            }, 100);
+        }
+
+        openTocBtn.addEventListener('click', showToc);
+        backBtn.addEventListener('click', showCover);
+
+        // Global Keyboard Support
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape' && tocPage.classList.contains('active')) {
+                showCover();
+            }
+        });
+    </script>
+</body>
+
+</html>

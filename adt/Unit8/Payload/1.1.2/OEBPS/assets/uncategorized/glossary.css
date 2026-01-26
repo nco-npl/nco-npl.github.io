@@ -1,0 +1,41 @@
+body{
+    padding:0px;
+    margin:0px;
+    font-family: Kokila, Arial, sans-serif;
+    font-size: 1.35em;
+}
+    #menu {
+        position: absolute;
+        bottom: 0px;
+        border: 1px solid black;
+        border-radius: 10px 10px 0px 0px;
+        background-color: #f0f0f0;
+        padding: 20px;
+        width:  87%;
+    }
+    
+    .glossary-item {
+        margin-bottom: 10px;
+        border: 1px solid transparent;
+    }
+    
+    #glossaryHeading {
+        margin-top: 0px;
+    }
+    
+    .glossary-item:focus-within {
+        border-color: #2196F3;
+        outline: none;
+        box-shadow: 0 0 3px 2px #2196F3;
+    }
+    
+    .glossary-term {
+        font-weight: bold;
+        color: #2196F3;
+        margin-bottom: 5px;
+    }
+
+    .glossary-description {
+        margin-left: 20px;
+    }
+   
