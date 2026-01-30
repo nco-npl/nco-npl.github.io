@@ -106,7 +106,6 @@ var obj8147_onTap_loopCount = 0;
 	 * 
 	 */
 	
-$("#obj2246-wdgt").SCWidget().init();  
     
  	/*
 	 * 
@@ -439,10 +438,10 @@ function switchImage_8189() {
 	var imgObjId = "#obj8185_img";
 	var fromImagePath = "../images/obj8185_image.png";
 	var toImagePath = "../images/switch50_to.png";
-	var switchHelperId = "switchHelper404"
-	var switchHelperRef = "#switchHelper404"
-	var switchId = "404";
-	var toSwitchId = "404";
+	var switchHelperId = "switchHelper382"
+	var switchHelperRef = "#switchHelper382"
+	var switchId = "382";
+	var toSwitchId = "382";
 	var fadeDuration = "0s";
 	var fromSoundObjectId = "#";
 	var toSoundObjectId = "#";
@@ -671,10 +670,10 @@ function switchImage_8195() {
 	var imgObjId = "#obj8185_img";
 	var fromImagePath = "../images/obj8185_image.png";
 	var toImagePath = "../images/obj8185_image.png";
-	var switchHelperId = "switchHelper405"
-	var switchHelperRef = "#switchHelper405"
-	var switchId = "405";
-	var toSwitchId = "405";
+	var switchHelperId = "switchHelper383"
+	var switchHelperRef = "#switchHelper383"
+	var switchId = "383";
+	var toSwitchId = "383";
 	var fadeDuration = "0s";
 	var fromSoundObjectId = "#";
 	var toSoundObjectId = "#";
@@ -1057,10 +1056,10 @@ function switchImage_8183() {
 	var imgObjId = "#obj8181_img";
 	var fromImagePath = "../images/obj8181_image.png";
 	var toImagePath = "../images/switch52_to.png";
-	var switchHelperId = "switchHelper406"
-	var switchHelperRef = "#switchHelper406"
-	var switchId = "406";
-	var toSwitchId = "406";
+	var switchHelperId = "switchHelper384"
+	var switchHelperRef = "#switchHelper384"
+	var switchId = "384";
+	var toSwitchId = "384";
 	var fadeDuration = "0s";
 	var fromSoundObjectId = "#";
 	var toSoundObjectId = "#";
@@ -1303,7 +1302,7 @@ obj8178_onTap_actionGroup0 = function(){
 goToPage_8180();
 function goToPage_8180() {
 	window.obj8178_onTap_runningActionsCount = obj8178_onTap_runningActionsCount + 1;
-	$("#anchor407")[0].click();
+	$("#anchor385")[0].click();
 	window.obj8178_onTap_runningActionsCount = window.obj8178_onTap_runningActionsCount - 1;
 if (window.obj8178_onTap_runningActionsCount < 0) {
 	window.obj8178_onTap_runningActionsCount = 0;
@@ -1398,7 +1397,7 @@ obj8163_onTap_actionGroup0 = function(){
 goToPage_8165();
 function goToPage_8165() {
 	window.obj8163_onTap_runningActionsCount = obj8163_onTap_runningActionsCount + 1;
-	$("#anchor408")[0].click();
+	$("#anchor386")[0].click();
 	window.obj8163_onTap_runningActionsCount = window.obj8163_onTap_runningActionsCount - 1;
 if (window.obj8163_onTap_runningActionsCount < 0) {
 	window.obj8163_onTap_runningActionsCount = 0;
@@ -1977,7 +1976,7 @@ $(window).on(pubcoder.events.pagePlay, function() {
 	
 $("#obj2263").trigger('SCEventShow');
 $("#obj2539").trigger('SCEventShow');
-$("#obj2246").trigger('SCEventShow');
+$("#obj8389").trigger('SCEventShow');
 $("#obj2260").trigger('SCEventShow');
 $("#obj2255").trigger('SCEventShow');
 $("#obj4522").trigger('SCEventShow');
@@ -2030,17 +2029,6 @@ const audio_imgs = document.querySelectorAll('.aimg');
         
 });
 
-document.querySelectorAll('[class*="t"]').forEach(el => {
-  el.classList.forEach(cls => {
-    const match = cls.match(/^t(\d{1,2})$/); // Match classes like "t1" to "t20"
-    if (match) {
-      const index = parseInt(match[1]);
-      if (index >= 1 && index <= 40) {
-        el.setAttribute('tabindex', index);
-      }
-    }
-  });
-});
 document.querySelectorAll('video').forEach(dragElement);
 function dragElement(elmnt) {
     
@@ -2135,4 +2123,15 @@ function dragElement(elmnt) {
         }
     });
 })();
+
+function escHandler(e) {
+  if (e.key === "Escape" || e.keyCode === 27) {
+    const xreader = window.parent.document.getElementById("xreaderUI");
+    xreader.style.display = "none";
+  }
+}
+if (window.parent && window.parent.document) {
+  window.parent.document.addEventListener("keydown", escHandler, true);
+}
+window.addEventListener("keydown", escHandler, true);
 });

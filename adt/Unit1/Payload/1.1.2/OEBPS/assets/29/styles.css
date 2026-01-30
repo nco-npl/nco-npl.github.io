@@ -278,7 +278,7 @@ left: 475px;
 width: 60px;
 height: 37px;
 opacity: 1;
-z-index: 6;
+z-index: 5;
 display:block;
 pointer-events: auto;
 user-select: text;  
@@ -371,7 +371,7 @@ left: 783px;
 width: 240px;
 height: 320px;
 opacity: 1;
-z-index: 5;
+z-index: 6;
 display:none;
 pointer-events: auto;
 

@@ -6648,8 +6648,8 @@ $("#obj9631").trigger('SCEventShow');
 $("#obj9637").trigger('SCEventShow');
 $("#obj9549").trigger('SCEventShow');
 $("#obj4452").trigger('SCEventShow');
-$("#obj4470").trigger('SCEventShow');
 $("#obj4478").trigger('SCEventShow');
+$("#obj4470").trigger('SCEventShow');
 $("#obj9617").trigger('SCEventShow');
 $("#obj9624").trigger('SCEventShow');
 $("#obj9563").trigger('SCEventShow');
@@ -6824,4 +6824,14 @@ function dragElement(elmnt) {
         }
     });
 })();
+function escHandler(e) {
+  if (e.key === "Escape" || e.keyCode === 27) {
+    const xreader = window.parent.document.getElementById("xreaderUI");
+    xreader.style.display = "none";
+  }
+}
+if (window.parent && window.parent.document) {
+  window.parent.document.addEventListener("keydown", escHandler, true);
+}
+window.addEventListener("keydown", escHandler, true);
 });

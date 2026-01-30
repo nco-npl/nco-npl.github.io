@@ -1982,7 +1982,19 @@ function dragElement(elmnt) {
             }
         }
     });
-})();
+})()
+
+
+function escHandler(e) {
+  if (e.key === "Escape" || e.keyCode === 27) {
+    const xreader = window.parent.document.getElementById("xreaderUI");
+    xreader.style.display = "none";
+  }
+}
+if (window.parent && window.parent.document) {
+  window.parent.document.addEventListener("keydown", escHandler, true);
+}
+window.addEventListener("keydown", escHandler, true);
 //   document.addEventListener("DOMContentLoaded", function () {
       console.log('Dom loaded ');
     Array.from(document.querySelectorAll(".check-btn")).forEach(btn => {

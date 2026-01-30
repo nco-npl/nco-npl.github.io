@@ -2641,17 +2641,6 @@ const audio_imgs = document.querySelectorAll('.aimg');
         
 });
 
-document.querySelectorAll('[class*="t"]').forEach(el => {
-  el.classList.forEach(cls => {
-    const match = cls.match(/^t(\d{1,2})$/); // Match classes like "t1" to "t20"
-    if (match) {
-      const index = parseInt(match[1]);
-      if (index >= 1 && index <= 40) {
-        el.setAttribute('tabindex', index);
-      }
-    }
-  });
-});
 document.querySelectorAll('video').forEach(dragElement);
 function dragElement(elmnt) {
     
@@ -2746,4 +2735,15 @@ function dragElement(elmnt) {
         }
     });
 })();
+
+function escHandler(e) {
+  if (e.key === "Escape" || e.keyCode === 27) {
+    const xreader = window.parent.document.getElementById("xreaderUI");
+    xreader.style.display = "none";
+  }
+}
+if (window.parent && window.parent.document) {
+  window.parent.document.addEventListener("keydown", escHandler, true);
+}
+window.addEventListener("keydown", escHandler, true);
 });

@@ -309,10 +309,10 @@ function switchImage_8189() {
 	var imgObjId = "#obj8185_img";
 	var fromImagePath = "../images/obj8185_image.png";
 	var toImagePath = "../images/switch50_to.png";
-	var switchHelperId = "switchHelper354"
-	var switchHelperRef = "#switchHelper354"
-	var switchId = "354";
-	var toSwitchId = "354";
+	var switchHelperId = "switchHelper333"
+	var switchHelperRef = "#switchHelper333"
+	var switchId = "333";
+	var toSwitchId = "333";
 	var fadeDuration = "0s";
 	var fromSoundObjectId = "#";
 	var toSoundObjectId = "#";
@@ -541,10 +541,10 @@ function switchImage_8195() {
 	var imgObjId = "#obj8185_img";
 	var fromImagePath = "../images/obj8185_image.png";
 	var toImagePath = "../images/obj8185_image.png";
-	var switchHelperId = "switchHelper355"
-	var switchHelperRef = "#switchHelper355"
-	var switchId = "355";
-	var toSwitchId = "355";
+	var switchHelperId = "switchHelper334"
+	var switchHelperRef = "#switchHelper334"
+	var switchId = "334";
+	var toSwitchId = "334";
 	var fadeDuration = "0s";
 	var fromSoundObjectId = "#";
 	var toSoundObjectId = "#";
@@ -927,10 +927,10 @@ function switchImage_8183() {
 	var imgObjId = "#obj8181_img";
 	var fromImagePath = "../images/obj8181_image.png";
 	var toImagePath = "../images/switch52_to.png";
-	var switchHelperId = "switchHelper356"
-	var switchHelperRef = "#switchHelper356"
-	var switchId = "356";
-	var toSwitchId = "356";
+	var switchHelperId = "switchHelper335"
+	var switchHelperRef = "#switchHelper335"
+	var switchId = "335";
+	var toSwitchId = "335";
 	var fadeDuration = "0s";
 	var fromSoundObjectId = "#";
 	var toSoundObjectId = "#";
@@ -1173,7 +1173,7 @@ obj8178_onTap_actionGroup0 = function(){
 goToPage_8180();
 function goToPage_8180() {
 	window.obj8178_onTap_runningActionsCount = obj8178_onTap_runningActionsCount + 1;
-	$("#anchor357")[0].click();
+	$("#anchor336")[0].click();
 	window.obj8178_onTap_runningActionsCount = window.obj8178_onTap_runningActionsCount - 1;
 if (window.obj8178_onTap_runningActionsCount < 0) {
 	window.obj8178_onTap_runningActionsCount = 0;
@@ -1268,7 +1268,7 @@ obj8163_onTap_actionGroup0 = function(){
 goToPage_8165();
 function goToPage_8165() {
 	window.obj8163_onTap_runningActionsCount = obj8163_onTap_runningActionsCount + 1;
-	$("#anchor358")[0].click();
+	$("#anchor337")[0].click();
 	window.obj8163_onTap_runningActionsCount = window.obj8163_onTap_runningActionsCount - 1;
 if (window.obj8163_onTap_runningActionsCount < 0) {
 	window.obj8163_onTap_runningActionsCount = 0;
@@ -1841,17 +1841,6 @@ const audio_imgs = document.querySelectorAll('.aimg');
         
 });
 
-document.querySelectorAll('[class*="t"]').forEach(el => {
-  el.classList.forEach(cls => {
-    const match = cls.match(/^t(\d{1,2})$/); // Match classes like "t1" to "t20"
-    if (match) {
-      const index = parseInt(match[1]);
-      if (index >= 1 && index <= 40) {
-        el.setAttribute('tabindex', index);
-      }
-    }
-  });
-});
 document.querySelectorAll('video').forEach(dragElement);
 function dragElement(elmnt) {
     
@@ -1946,4 +1935,15 @@ function dragElement(elmnt) {
         }
     });
 })();
+
+function escHandler(e) {
+  if (e.key === "Escape" || e.keyCode === 27) {
+    const xreader = window.parent.document.getElementById("xreaderUI");
+    xreader.style.display = "none";
+  }
+}
+if (window.parent && window.parent.document) {
+  window.parent.document.addEventListener("keydown", escHandler, true);
+}
+window.addEventListener("keydown", escHandler, true);
 });

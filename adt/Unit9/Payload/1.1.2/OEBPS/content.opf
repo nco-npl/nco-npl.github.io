@@ -6,7 +6,7 @@
 	<meta property="rendition:layout">pre-paginated</meta>	
 	<meta property="rendition:orientation">auto</meta>
 	<meta property="rendition:spread">none</meta>
-	<meta property="dcterms:modified">2026-01-19T16:06:29Z</meta>
+	<meta property="dcterms:modified">2026-01-30T05:05:15Z</meta>
 	<meta property="media:active-class">-epub-media-overlay-active</meta>
 	<meta property="media:duration">00:05:49</meta>
 	<meta property="media:duration" refines="#smil37">00:00:05</meta>
@@ -43,7 +43,7 @@
 	<dc:creator>Bishnu</dc:creator>
 	<dc:description>Powered by PubCoder</dc:description>
 	<dc:publisher>Bishnu</dc:publisher>
-	<dc:date>2026-01-19</dc:date>
+	<dc:date>2026-01-30</dc:date>
 	<dc:rights>© 2025 Bishnu</dc:rights>
 	<dc:language>ne</dc:language>
 	<dc:identifier id="BookID">12E58D21CC5A4AEEB6229895ABF2FF22</dc:identifier>
@@ -547,8 +547,8 @@
 <item id="obj4468_image" href="assets/images/obj4468_image.jpeg" media-type="image/jpeg" />
 <item id="obj4472_image" href="assets/images/obj4472_image.jpeg" media-type="image/jpeg" />
 <item id="obj9633_image" href="assets/images/obj9633_image.png" media-type="image/png" />
-<item id="obj4470_image" href="assets/images/obj4470_image.jpeg" media-type="image/jpeg" />
 <item id="obj4478_image" href="assets/images/obj4478_image.jpeg" media-type="image/jpeg" />
+<item id="obj4470_image" href="assets/images/obj4470_image.jpeg" media-type="image/jpeg" />
 <item id="video215" href="assets/video/1019-19.mp4" media-type="video/mp4" />
 <item id="obj4476_image" href="assets/images/obj4476_image.jpeg" media-type="image/jpeg" />
 <item id="obj4474_image" href="assets/images/obj4474_image.jpeg" media-type="image/jpeg" />

@@ -1954,20 +1954,20 @@ $("#obj4170").trigger('SCEventShow');
 $("#obj4172").trigger('SCEventShow');
 $("#obj9611").trigger('SCEventShow');
 $("#obj4192").trigger('SCEventShow');
-$("#obj10463").trigger('SCEventShow');
 $("#obj4174").trigger('SCEventShow');
+$("#obj10463").trigger('SCEventShow');
 $("#obj4200").trigger('SCEventShow');
 $("#obj4190").trigger('SCEventShow');
 $("#obj10465").trigger('SCEventShow');
+$("#obj4198").trigger('SCEventShow');
 $("#obj4188").trigger('SCEventShow');
 $("#obj10469").trigger('SCEventShow');
-$("#obj4198").trigger('SCEventShow');
-$("#obj10467").trigger('SCEventShow');
 $("#obj4196").trigger('SCEventShow');
 $("#obj4186").trigger('SCEventShow');
+$("#obj10467").trigger('SCEventShow');
+$("#obj4194").trigger('SCEventShow');
 $("#obj4184").trigger('SCEventShow');
 $("#obj10471").trigger('SCEventShow');
-$("#obj4194").trigger('SCEventShow');
 $("#obj3937").trigger('SCEventShow');
 $("#obj3939").trigger('SCEventShow');
 $("#obj13611").trigger('SCEventShow');
@@ -2122,4 +2122,15 @@ function dragElement(elmnt) {
         }
     });
 })();
+
+function escHandler(e) {
+  if (e.key === "Escape" || e.keyCode === 27) {
+    const xreader = window.parent.document.getElementById("xreaderUI");
+    xreader.style.display = "none";
+  }
+}
+if (window.parent && window.parent.document) {
+  window.parent.document.addEventListener("keydown", escHandler, true);
+}
+window.addEventListener("keydown", escHandler, true);
 });

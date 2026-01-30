@@ -66,7 +66,7 @@ left: 112px;
 width: 59px;
 height: 52px;
 opacity: 1;
-z-index: 10;
+z-index: 9;
 display:block;
 pointer-events: none;
 
@@ -138,7 +138,7 @@ left: 300px;
 width: 122px;
 height: 38px;
 opacity: 1;
-z-index: 13;
+z-index: 12;
 display:block;
 pointer-events: auto;
 
@@ -162,7 +162,7 @@ left: 90px;
 width: 116px;
 height: 38px;
 opacity: 1;
-z-index: 12;
+z-index: 11;
 display:block;
 pointer-events: auto;
 
@@ -186,7 +186,7 @@ left: 737px;
 width: 116px;
 height: 38px;
 opacity: 1;
-z-index: 18;
+z-index: 17;
 display:block;
 pointer-events: auto;
 
@@ -210,7 +210,7 @@ left: 521px;
 width: 116px;
 height: 38px;
 opacity: 1;
-z-index: 17;
+z-index: 16;
 display:block;
 pointer-events: auto;
 
@@ -236,7 +236,7 @@ height: 29px;
 opacity: 1;
 z-index: 3;
 display:none;
-pointer-events: auto;
+pointer-events: none;
 
 user-select: none;  
 -moz-user-select: none;
@@ -258,9 +258,9 @@ left: 862px;
 width: 62px;
 height: 29px;
 opacity: 1;
-z-index: 15;
+z-index: 14;
 display:none;
-pointer-events: auto;
+pointer-events: none;
 
 user-select: none;  
 -moz-user-select: none;
@@ -282,7 +282,7 @@ left: 215px;
 width: 70px;
 height: 28px;
 opacity: 1;
-z-index: 11;
+z-index: 10;
 display:none;
 pointer-events: none;
 
@@ -306,7 +306,7 @@ left: 646px;
 width: 70px;
 height: 32px;
 opacity: 1;
-z-index: 16;
+z-index: 15;
 display:none;
 pointer-events: none;
 
@@ -378,7 +378,7 @@ left: 300px;
 width: 122px;
 height: 38px;
 opacity: 1;
-z-index: 22;
+z-index: 21;
 display:block;
 pointer-events: auto;
 
@@ -402,7 +402,7 @@ left: 740px;
 width: 116px;
 height: 38px;
 opacity: 1;
-z-index: 26;
+z-index: 25;
 display:block;
 pointer-events: auto;
 
@@ -426,7 +426,7 @@ left: 533px;
 width: 116px;
 height: 38px;
 opacity: 1;
-z-index: 25;
+z-index: 24;
 display:block;
 pointer-events: auto;
 
@@ -450,7 +450,7 @@ left: 99px;
 width: 116px;
 height: 38px;
 opacity: 1;
-z-index: 21;
+z-index: 20;
 display:block;
 pointer-events: auto;
 
@@ -474,9 +474,9 @@ left: 423px;
 width: 62px;
 height: 29px;
 opacity: 1;
-z-index: 19;
+z-index: 18;
 display:none;
-pointer-events: auto;
+pointer-events: none;
 
 user-select: none;  
 -moz-user-select: none;
@@ -498,7 +498,7 @@ left: 215px;
 width: 70px;
 height: 28px;
 opacity: 1;
-z-index: 20;
+z-index: 19;
 display:none;
 pointer-events: none;
 
@@ -522,7 +522,7 @@ left: 646px;
 width: 70px;
 height: 28px;
 opacity: 1;
-z-index: 24;
+z-index: 23;
 display:none;
 pointer-events: none;
 
@@ -546,9 +546,9 @@ left: 863px;
 width: 62px;
 height: 29px;
 opacity: 1;
-z-index: 23;
+z-index: 22;
 display:none;
-pointer-events: auto;
+pointer-events: none;
 
 user-select: none;  
 -moz-user-select: none;
@@ -782,7 +782,7 @@ left: 238px;
 width: 448px;
 height: 39px;
 opacity: 1;
-z-index: 14;
+z-index: 13;
 display:block;
 pointer-events: auto;
 user-select: text;  
@@ -875,7 +875,7 @@ left: 783px;
 width: 240px;
 height: 320px;
 opacity: 1;
-z-index: 9;
+z-index: 26;
 display:none;
 pointer-events: auto;
 

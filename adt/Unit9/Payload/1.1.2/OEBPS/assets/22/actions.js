@@ -1895,7 +1895,7 @@ $("#obj4466").trigger('SCEventShow');
 $("#obj4480").trigger('SCEventShow');
 $("#obj9298").trigger('SCEventShow');
 $("#obj4490").trigger('SCEventShow');
-$("#obj4482").trigger('SCEventShow');
+$("#obj11723").trigger('SCEventShow');
 $("#obj4488").trigger('SCEventShow');
 $("#obj9300").trigger('SCEventShow');
 $("#obj4486").trigger('SCEventShow');
@@ -2057,4 +2057,14 @@ function dragElement(elmnt) {
         }
     });
 })();
+function escHandler(e) {
+  if (e.key === "Escape" || e.keyCode === 27) {
+    const xreader = window.parent.document.getElementById("xreaderUI");
+    xreader.style.display = "none";
+  }
+}
+if (window.parent && window.parent.document) {
+  window.parent.document.addEventListener("keydown", escHandler, true);
+}
+window.addEventListener("keydown", escHandler, true);
 });

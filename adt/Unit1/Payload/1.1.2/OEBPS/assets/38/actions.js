@@ -25,24 +25,12 @@ var obj2287_onTap_loopCount = 0;
 var obj2289_onTap_activeActionGroupIndex = -1;
 var obj2289_onTap_runningActionsCount = 0;
 var obj2289_onTap_loopCount = 0;
-var obj4709_onTap_activeActionGroupIndex = -1;
-var obj4709_onTap_runningActionsCount = 0;
-var obj4709_onTap_loopCount = 0;
-var obj4713_onTap_activeActionGroupIndex = -1;
-var obj4713_onTap_runningActionsCount = 0;
-var obj4713_onTap_loopCount = 0;
 var obj2291_onTap_activeActionGroupIndex = -1;
 var obj2291_onTap_runningActionsCount = 0;
 var obj2291_onTap_loopCount = 0;
 var obj2293_onTap_activeActionGroupIndex = -1;
 var obj2293_onTap_runningActionsCount = 0;
 var obj2293_onTap_loopCount = 0;
-var obj4721_onTap_activeActionGroupIndex = -1;
-var obj4721_onTap_runningActionsCount = 0;
-var obj4721_onTap_loopCount = 0;
-var obj4717_onTap_activeActionGroupIndex = -1;
-var obj4717_onTap_runningActionsCount = 0;
-var obj4717_onTap_loopCount = 0;
 var obj8166_onTap_activeActionGroupIndex = -1;
 var obj8166_onTap_runningActionsCount = 0;
 var obj8166_onTap_loopCount = 0;
@@ -206,11 +194,11 @@ function switchImage_7032() {
 	var allowBackAndForth = true;
 	var imgObjId = "#obj4709_img";
 	var fromImagePath = "../images/obj2287_image.png";
-	var toImagePath = "../images/switch306_to.png";
-	var switchHelperId = "switchHelper460"
-	var switchHelperRef = "#switchHelper460"
-	var switchId = "460";
-	var toSwitchId = "460";
+	var toImagePath = "../images/switch298_to.png";
+	var switchHelperId = "switchHelper438"
+	var switchHelperRef = "#switchHelper438"
+	var switchId = "438";
+	var toSwitchId = "438";
 	var fadeDuration = "0s";
 	var fromSoundObjectId = "#obj_audio_switchImage7032_from";
 	var toSoundObjectId = "#obj_audio_switchImage7032_to";
@@ -377,11 +365,11 @@ function switchImage_7033() {
 	var allowBackAndForth = true;
 	var imgObjId = "#obj4713_img";
 	var fromImagePath = "../images/obj2289_image.png";
-	var toImagePath = "../images/switch306_to.png";
-	var switchHelperId = "switchHelper463"
-	var switchHelperRef = "#switchHelper463"
-	var switchId = "463";
-	var toSwitchId = "463";
+	var toImagePath = "../images/switch298_to.png";
+	var switchHelperId = "switchHelper441"
+	var switchHelperRef = "#switchHelper441"
+	var switchId = "441";
+	var toSwitchId = "441";
 	var fadeDuration = "0s";
 	var fromSoundObjectId = "#obj_audio_switchImage7033_from";
 	var toSoundObjectId = "#obj_audio_switchImage7033_to";
@@ -515,566 +503,6 @@ obj2289_onTap_actionGroup1 = function(){
 
 
 };
-obj4709_onTap_actionGroup0 = function(){
-	isLastActionGroup = false;
-	if (isLastActionGroup) {
-		window.obj4709_onTap_activeActionGroupIndex = -1;
-		$("#obj4709").trigger("obj4709_onTap_ended");
-		
-		for (var i = 0; i < pubcoder.queuedEvents.length; i++) {
-			const evt = pubcoder.queuedEvents[i];
-			if (evt.senderObjectId == 4709) {
-				console.warn("de-queueing event obj4709." + evt.eventName);
-				pubcoder.queuedEvents.splice(i, 1);
-				$("#obj4709").trigger(evt.eventName);
-				return;
-			}
-		}
-		return;
-	}
-	window.obj4709_onTap_activeActionGroupIndex = 0;
-	
-
-
-
-//	action: switchImage 
-//	target: obj4709 
-switchImage_4711();
-function switchImage_4711() {
-	window.obj4709_onTap_runningActionsCount = obj4709_onTap_runningActionsCount + 1;
-
-	var targetObjectId = "#obj4709";
-	var targetObject = $(targetObjectId)[0];
-	var allowBackAndForth = true;
-	var imgObjId = "#obj4709_img";
-	var fromImagePath = "../images/obj2014_image.png";
-	var toImagePath = "../images/switch306_to.png";
-	var switchHelperId = "switchHelper467"
-	var switchHelperRef = "#switchHelper467"
-	var switchId = "467";
-	var toSwitchId = "467";
-	var fadeDuration = "0s";
-	var fromSoundObjectId = "#";
-	var toSoundObjectId = "#";
-	var audioFrom;
-	if (fromSoundObjectId != "#") audioFrom = $(fromSoundObjectId)[0];
-	var audioTo;
-	if (toSoundObjectId != "#") audioTo = $(toSoundObjectId)[0];
-	
-	var completionFunction = function () {
-		if ($(targetObjectId).attr("data-SCActionSwitchImage-applied") == toSwitchId) $(imgObjId).attr("src", toImagePath);
-		if (fadeDuration != "0s") {
-			setTimeout(function() {
-				$(imgObjId).show();
-				$(switchHelperRef).remove();
-				actionEndFunction();
-			}, 100);
-		} else {
-			actionEndFunction();
-		}
-	}
-	var actionEndFunction = function() {
-			setTimeout(function() {
-				window.obj4709_onTap_runningActionsCount = window.obj4709_onTap_runningActionsCount - 1;
-if (window.obj4709_onTap_runningActionsCount < 0) {
-	window.obj4709_onTap_runningActionsCount = 0;
-} else if (window.obj4709_onTap_runningActionsCount == 0) {
-	obj4709_onTap_actionGroup1();
-}
-			}, 1);
-	};
-	var originalImage = $(targetObjectId).attr("data-SCActionSwitchImage-originalImage");
-	if (!(typeof originalImage !== typeof undefined && originalImage !== false)) {
-		$(targetObjectId).attr("data-SCActionSwitchImage-originalImage", $(imgObjId).attr("src"));
-	}
-	var appliedSwitchImage = $(targetObjectId).attr("data-SCActionSwitchImage-applied");
-	if (!(typeof appliedSwitchImage !== typeof undefined && appliedSwitchImage !== false)) {
-		appliedSwitchImage = "";
-	}
-	if (appliedSwitchImage == switchId) {
-		if (allowBackAndForth) {
-			toImagePath = originalImage;
-			toSwitchId = "";
-			var audioSwapHelp = audioFrom;
-			audioFrom = audioTo;
-			audioTo = audioSwapHelp;
-		} else {
-			setTimeout(function() { actionEndFunction(); }, 1);
-			return;
-		}
-	}
-	setTimeout(function() {
-		$(targetObjectId).attr("data-SCActionSwitchImage-applied", toSwitchId);
-		if (audioFrom != null) { audioFrom.pause(); }
-		if (audioTo != null) { audioTo.currentTime = 0; audioTo.play(); }
-		if (fadeDuration == "0s") {
-			completionFunction()
-		} else {
-			if ($(targetObjectId + " .SCActionSwitchImageHelper").length == 0) {
-				$(targetObjectId).append('<img class="SCActionSwitchImageHelper" src="' + toImagePath + '" id="' + switchHelperId + '" style="height:' + $(targetObjectId).css('height') + '; width: ' + $(targetObjectId).css('width') + '; display: none; position: absolute; overflow:hidden; top: 0px; left: 0px; z-index: 999;"/>');
-			} else {
-				console.log("qui");
-				$(targetObjectId + " .SCActionSwitchImageHelper").each(function (i,o) {
-					console.log(o);
-					$(o).attr("id", switchHelperId);
-					$(o).attr("src", toImagePath);
-				});
-			}
-			$(imgObjId).fadeOut(parseFloat(fadeDuration)*1000);
-			$(switchHelperRef).fadeIn(parseFloat(fadeDuration)*1000, completionFunction);
-		}
-	}, 1);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-};
-obj4709_onTap_actionGroup1 = function(){
-	isLastActionGroup = false;
-	if (isLastActionGroup) {
-		window.obj4709_onTap_activeActionGroupIndex = -1;
-		$("#obj4709").trigger("obj4709_onTap_ended");
-		
-		for (var i = 0; i < pubcoder.queuedEvents.length; i++) {
-			const evt = pubcoder.queuedEvents[i];
-			if (evt.senderObjectId == 4709) {
-				console.warn("de-queueing event obj4709." + evt.eventName);
-				pubcoder.queuedEvents.splice(i, 1);
-				$("#obj4709").trigger(evt.eventName);
-				return;
-			}
-		}
-		return;
-	}
-	window.obj4709_onTap_activeActionGroupIndex = 1;
-	
-
-
-
-
-
-
-//	action: playAudioFile
-playAudioFile_4712();
-function playAudioFile_4712() {
-	window.obj4709_onTap_runningActionsCount = obj4709_onTap_runningActionsCount + 1;
-	var myAudio = $("#obj_audio_playSoundFile4712")[0];
-	var playFromBeginning = true;
-	var waitForCompletion = true;
-	var useReader = typeof(window.XPUB.readerPrefersToHandleAudio) !== "undefined" ?
-		window.XPUB.readerPrefersToHandleAudio : (/iphone|ipad|ipod/i.test(navigator.userAgent.toLowerCase()));
-	if (useReader) {
-		if (waitForCompletion) {
-			XPUB.playAudio(myAudio.src, playFromBeginning, "obj_audio_playSoundFile4712");
-			$("#obj_audio_playSoundFile4712").one('ended', function() {
-				// this.removeEventListener('ended',arguments.callee,false);
-				window.obj4709_onTap_runningActionsCount = window.obj4709_onTap_runningActionsCount - 1;
-if (window.obj4709_onTap_runningActionsCount < 0) {
-	window.obj4709_onTap_runningActionsCount = 0;
-} else if (window.obj4709_onTap_runningActionsCount == 0) {
-	obj4709_onTap_actionGroup2();
-}
-			});
-		} else {
-			XPUB.playAudio(myAudio.src, playFromBeginning, null);
-			window.obj4709_onTap_runningActionsCount = window.obj4709_onTap_runningActionsCount - 1;
-if (window.obj4709_onTap_runningActionsCount < 0) {
-	window.obj4709_onTap_runningActionsCount = 0;
-} else if (window.obj4709_onTap_runningActionsCount == 0) {
-	obj4709_onTap_actionGroup2();
-}
-		}
-		
-	} else {
-		if (playFromBeginning) {
-			try {
-				myAudio.currentTime = 0;
-			} catch (err) {
-				console.log(err);
-				myAudio.src = myAudio.src;
-			}
-		}
-		myAudio.play();
-		if (waitForCompletion) {
-			myAudio.addEventListener('ended', function() {
-				this.removeEventListener('ended',arguments.callee,false);
-				window.obj4709_onTap_runningActionsCount = window.obj4709_onTap_runningActionsCount - 1;
-if (window.obj4709_onTap_runningActionsCount < 0) {
-	window.obj4709_onTap_runningActionsCount = 0;
-} else if (window.obj4709_onTap_runningActionsCount == 0) {
-	obj4709_onTap_actionGroup2();
-}
-			}, false);
-		} else {
-			window.obj4709_onTap_runningActionsCount = window.obj4709_onTap_runningActionsCount - 1;
-if (window.obj4709_onTap_runningActionsCount < 0) {
-	window.obj4709_onTap_runningActionsCount = 0;
-} else if (window.obj4709_onTap_runningActionsCount == 0) {
-	obj4709_onTap_actionGroup2();
-}
-		}
-	}
-	
-	
-	
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-};
-obj4709_onTap_actionGroup2 = function(){
-	isLastActionGroup = true;
-	if (isLastActionGroup) {
-		window.obj4709_onTap_activeActionGroupIndex = -1;
-		$("#obj4709").trigger("obj4709_onTap_ended");
-		
-		for (var i = 0; i < pubcoder.queuedEvents.length; i++) {
-			const evt = pubcoder.queuedEvents[i];
-			if (evt.senderObjectId == 4709) {
-				console.warn("de-queueing event obj4709." + evt.eventName);
-				pubcoder.queuedEvents.splice(i, 1);
-				$("#obj4709").trigger(evt.eventName);
-				return;
-			}
-		}
-		return;
-	}
-	window.obj4709_onTap_activeActionGroupIndex = 2;
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-};
-obj4713_onTap_actionGroup0 = function(){
-	isLastActionGroup = false;
-	if (isLastActionGroup) {
-		window.obj4713_onTap_activeActionGroupIndex = -1;
-		$("#obj4713").trigger("obj4713_onTap_ended");
-		
-		for (var i = 0; i < pubcoder.queuedEvents.length; i++) {
-			const evt = pubcoder.queuedEvents[i];
-			if (evt.senderObjectId == 4713) {
-				console.warn("de-queueing event obj4713." + evt.eventName);
-				pubcoder.queuedEvents.splice(i, 1);
-				$("#obj4713").trigger(evt.eventName);
-				return;
-			}
-		}
-		return;
-	}
-	window.obj4713_onTap_activeActionGroupIndex = 0;
-	
-
-
-
-//	action: switchImage 
-//	target: obj4713 
-switchImage_4715();
-function switchImage_4715() {
-	window.obj4713_onTap_runningActionsCount = obj4713_onTap_runningActionsCount + 1;
-
-	var targetObjectId = "#obj4713";
-	var targetObject = $(targetObjectId)[0];
-	var allowBackAndForth = true;
-	var imgObjId = "#obj4713_img";
-	var fromImagePath = "../images/obj2014_image.png";
-	var toImagePath = "../images/switch306_to.png";
-	var switchHelperId = "switchHelper469"
-	var switchHelperRef = "#switchHelper469"
-	var switchId = "469";
-	var toSwitchId = "469";
-	var fadeDuration = "0s";
-	var fromSoundObjectId = "#";
-	var toSoundObjectId = "#";
-	var audioFrom;
-	if (fromSoundObjectId != "#") audioFrom = $(fromSoundObjectId)[0];
-	var audioTo;
-	if (toSoundObjectId != "#") audioTo = $(toSoundObjectId)[0];
-	
-	var completionFunction = function () {
-		if ($(targetObjectId).attr("data-SCActionSwitchImage-applied") == toSwitchId) $(imgObjId).attr("src", toImagePath);
-		if (fadeDuration != "0s") {
-			setTimeout(function() {
-				$(imgObjId).show();
-				$(switchHelperRef).remove();
-				actionEndFunction();
-			}, 100);
-		} else {
-			actionEndFunction();
-		}
-	}
-	var actionEndFunction = function() {
-			setTimeout(function() {
-				window.obj4713_onTap_runningActionsCount = window.obj4713_onTap_runningActionsCount - 1;
-if (window.obj4713_onTap_runningActionsCount < 0) {
-	window.obj4713_onTap_runningActionsCount = 0;
-} else if (window.obj4713_onTap_runningActionsCount == 0) {
-	obj4713_onTap_actionGroup1();
-}
-			}, 1);
-	};
-	var originalImage = $(targetObjectId).attr("data-SCActionSwitchImage-originalImage");
-	if (!(typeof originalImage !== typeof undefined && originalImage !== false)) {
-		$(targetObjectId).attr("data-SCActionSwitchImage-originalImage", $(imgObjId).attr("src"));
-	}
-	var appliedSwitchImage = $(targetObjectId).attr("data-SCActionSwitchImage-applied");
-	if (!(typeof appliedSwitchImage !== typeof undefined && appliedSwitchImage !== false)) {
-		appliedSwitchImage = "";
-	}
-	if (appliedSwitchImage == switchId) {
-		if (allowBackAndForth) {
-			toImagePath = originalImage;
-			toSwitchId = "";
-			var audioSwapHelp = audioFrom;
-			audioFrom = audioTo;
-			audioTo = audioSwapHelp;
-		} else {
-			setTimeout(function() { actionEndFunction(); }, 1);
-			return;
-		}
-	}
-	setTimeout(function() {
-		$(targetObjectId).attr("data-SCActionSwitchImage-applied", toSwitchId);
-		if (audioFrom != null) { audioFrom.pause(); }
-		if (audioTo != null) { audioTo.currentTime = 0; audioTo.play(); }
-		if (fadeDuration == "0s") {
-			completionFunction()
-		} else {
-			if ($(targetObjectId + " .SCActionSwitchImageHelper").length == 0) {
-				$(targetObjectId).append('<img class="SCActionSwitchImageHelper" src="' + toImagePath + '" id="' + switchHelperId + '" style="height:' + $(targetObjectId).css('height') + '; width: ' + $(targetObjectId).css('width') + '; display: none; position: absolute; overflow:hidden; top: 0px; left: 0px; z-index: 999;"/>');
-			} else {
-				console.log("qui");
-				$(targetObjectId + " .SCActionSwitchImageHelper").each(function (i,o) {
-					console.log(o);
-					$(o).attr("id", switchHelperId);
-					$(o).attr("src", toImagePath);
-				});
-			}
-			$(imgObjId).fadeOut(parseFloat(fadeDuration)*1000);
-			$(switchHelperRef).fadeIn(parseFloat(fadeDuration)*1000, completionFunction);
-		}
-	}, 1);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-};
-obj4713_onTap_actionGroup1 = function(){
-	isLastActionGroup = false;
-	if (isLastActionGroup) {
-		window.obj4713_onTap_activeActionGroupIndex = -1;
-		$("#obj4713").trigger("obj4713_onTap_ended");
-		
-		for (var i = 0; i < pubcoder.queuedEvents.length; i++) {
-			const evt = pubcoder.queuedEvents[i];
-			if (evt.senderObjectId == 4713) {
-				console.warn("de-queueing event obj4713." + evt.eventName);
-				pubcoder.queuedEvents.splice(i, 1);
-				$("#obj4713").trigger(evt.eventName);
-				return;
-			}
-		}
-		return;
-	}
-	window.obj4713_onTap_activeActionGroupIndex = 1;
-	
-
-
-
-
-
-
-//	action: playAudioFile
-playAudioFile_4716();
-function playAudioFile_4716() {
-	window.obj4713_onTap_runningActionsCount = obj4713_onTap_runningActionsCount + 1;
-	var myAudio = $("#obj_audio_playSoundFile4716")[0];
-	var playFromBeginning = true;
-	var waitForCompletion = true;
-	var useReader = typeof(window.XPUB.readerPrefersToHandleAudio) !== "undefined" ?
-		window.XPUB.readerPrefersToHandleAudio : (/iphone|ipad|ipod/i.test(navigator.userAgent.toLowerCase()));
-	if (useReader) {
-		if (waitForCompletion) {
-			XPUB.playAudio(myAudio.src, playFromBeginning, "obj_audio_playSoundFile4716");
-			$("#obj_audio_playSoundFile4716").one('ended', function() {
-				// this.removeEventListener('ended',arguments.callee,false);
-				window.obj4713_onTap_runningActionsCount = window.obj4713_onTap_runningActionsCount - 1;
-if (window.obj4713_onTap_runningActionsCount < 0) {
-	window.obj4713_onTap_runningActionsCount = 0;
-} else if (window.obj4713_onTap_runningActionsCount == 0) {
-	obj4713_onTap_actionGroup2();
-}
-			});
-		} else {
-			XPUB.playAudio(myAudio.src, playFromBeginning, null);
-			window.obj4713_onTap_runningActionsCount = window.obj4713_onTap_runningActionsCount - 1;
-if (window.obj4713_onTap_runningActionsCount < 0) {
-	window.obj4713_onTap_runningActionsCount = 0;
-} else if (window.obj4713_onTap_runningActionsCount == 0) {
-	obj4713_onTap_actionGroup2();
-}
-		}
-		
-	} else {
-		if (playFromBeginning) {
-			try {
-				myAudio.currentTime = 0;
-			} catch (err) {
-				console.log(err);
-				myAudio.src = myAudio.src;
-			}
-		}
-		myAudio.play();
-		if (waitForCompletion) {
-			myAudio.addEventListener('ended', function() {
-				this.removeEventListener('ended',arguments.callee,false);
-				window.obj4713_onTap_runningActionsCount = window.obj4713_onTap_runningActionsCount - 1;
-if (window.obj4713_onTap_runningActionsCount < 0) {
-	window.obj4713_onTap_runningActionsCount = 0;
-} else if (window.obj4713_onTap_runningActionsCount == 0) {
-	obj4713_onTap_actionGroup2();
-}
-			}, false);
-		} else {
-			window.obj4713_onTap_runningActionsCount = window.obj4713_onTap_runningActionsCount - 1;
-if (window.obj4713_onTap_runningActionsCount < 0) {
-	window.obj4713_onTap_runningActionsCount = 0;
-} else if (window.obj4713_onTap_runningActionsCount == 0) {
-	obj4713_onTap_actionGroup2();
-}
-		}
-	}
-	
-	
-	
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-};
-obj4713_onTap_actionGroup2 = function(){
-	isLastActionGroup = true;
-	if (isLastActionGroup) {
-		window.obj4713_onTap_activeActionGroupIndex = -1;
-		$("#obj4713").trigger("obj4713_onTap_ended");
-		
-		for (var i = 0; i < pubcoder.queuedEvents.length; i++) {
-			const evt = pubcoder.queuedEvents[i];
-			if (evt.senderObjectId == 4713) {
-				console.warn("de-queueing event obj4713." + evt.eventName);
-				pubcoder.queuedEvents.splice(i, 1);
-				$("#obj4713").trigger(evt.eventName);
-				return;
-			}
-		}
-		return;
-	}
-	window.obj4713_onTap_activeActionGroupIndex = 2;
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-};
 obj2291_onTap_actionGroup0 = function(){
 	isLastActionGroup = false;
 	if (isLastActionGroup) {
@@ -1108,11 +536,11 @@ function switchImage_7034() {
 	var allowBackAndForth = true;
 	var imgObjId = "#obj4717_img";
 	var fromImagePath = "../images/obj2291_image.png";
-	var toImagePath = "../images/switch306_to.png";
-	var switchHelperId = "switchHelper471"
-	var switchHelperRef = "#switchHelper471"
-	var switchId = "471";
-	var toSwitchId = "471";
+	var toImagePath = "../images/switch298_to.png";
+	var switchHelperId = "switchHelper445"
+	var switchHelperRef = "#switchHelper445"
+	var switchId = "445";
+	var toSwitchId = "445";
 	var fadeDuration = "0s";
 	var fromSoundObjectId = "#obj_audio_switchImage7034_from";
 	var toSoundObjectId = "#obj_audio_switchImage7034_to";
@@ -1279,11 +707,11 @@ function switchImage_7035() {
 	var allowBackAndForth = true;
 	var imgObjId = "#obj4721_img";
 	var fromImagePath = "../images/obj2293_image.png";
-	var toImagePath = "../images/switch306_to.png";
-	var switchHelperId = "switchHelper474"
-	var switchHelperRef = "#switchHelper474"
-	var switchId = "474";
-	var toSwitchId = "474";
+	var toImagePath = "../images/switch298_to.png";
+	var switchHelperId = "switchHelper448"
+	var switchHelperRef = "#switchHelper448"
+	var switchId = "448";
+	var toSwitchId = "448";
 	var fadeDuration = "0s";
 	var fromSoundObjectId = "#obj_audio_switchImage7035_from";
 	var toSoundObjectId = "#obj_audio_switchImage7035_to";
@@ -1393,566 +821,6 @@ obj2293_onTap_actionGroup1 = function(){
 		return;
 	}
 	window.obj2293_onTap_activeActionGroupIndex = 1;
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-};
-obj4721_onTap_actionGroup0 = function(){
-	isLastActionGroup = false;
-	if (isLastActionGroup) {
-		window.obj4721_onTap_activeActionGroupIndex = -1;
-		$("#obj4721").trigger("obj4721_onTap_ended");
-		
-		for (var i = 0; i < pubcoder.queuedEvents.length; i++) {
-			const evt = pubcoder.queuedEvents[i];
-			if (evt.senderObjectId == 4721) {
-				console.warn("de-queueing event obj4721." + evt.eventName);
-				pubcoder.queuedEvents.splice(i, 1);
-				$("#obj4721").trigger(evt.eventName);
-				return;
-			}
-		}
-		return;
-	}
-	window.obj4721_onTap_activeActionGroupIndex = 0;
-	
-
-
-
-//	action: switchImage 
-//	target: obj4721 
-switchImage_4723();
-function switchImage_4723() {
-	window.obj4721_onTap_runningActionsCount = obj4721_onTap_runningActionsCount + 1;
-
-	var targetObjectId = "#obj4721";
-	var targetObject = $(targetObjectId)[0];
-	var allowBackAndForth = true;
-	var imgObjId = "#obj4721_img";
-	var fromImagePath = "../images/obj2014_image.png";
-	var toImagePath = "../images/switch306_to.png";
-	var switchHelperId = "switchHelper477"
-	var switchHelperRef = "#switchHelper477"
-	var switchId = "477";
-	var toSwitchId = "477";
-	var fadeDuration = "0s";
-	var fromSoundObjectId = "#";
-	var toSoundObjectId = "#";
-	var audioFrom;
-	if (fromSoundObjectId != "#") audioFrom = $(fromSoundObjectId)[0];
-	var audioTo;
-	if (toSoundObjectId != "#") audioTo = $(toSoundObjectId)[0];
-	
-	var completionFunction = function () {
-		if ($(targetObjectId).attr("data-SCActionSwitchImage-applied") == toSwitchId) $(imgObjId).attr("src", toImagePath);
-		if (fadeDuration != "0s") {
-			setTimeout(function() {
-				$(imgObjId).show();
-				$(switchHelperRef).remove();
-				actionEndFunction();
-			}, 100);
-		} else {
-			actionEndFunction();
-		}
-	}
-	var actionEndFunction = function() {
-			setTimeout(function() {
-				window.obj4721_onTap_runningActionsCount = window.obj4721_onTap_runningActionsCount - 1;
-if (window.obj4721_onTap_runningActionsCount < 0) {
-	window.obj4721_onTap_runningActionsCount = 0;
-} else if (window.obj4721_onTap_runningActionsCount == 0) {
-	obj4721_onTap_actionGroup1();
-}
-			}, 1);
-	};
-	var originalImage = $(targetObjectId).attr("data-SCActionSwitchImage-originalImage");
-	if (!(typeof originalImage !== typeof undefined && originalImage !== false)) {
-		$(targetObjectId).attr("data-SCActionSwitchImage-originalImage", $(imgObjId).attr("src"));
-	}
-	var appliedSwitchImage = $(targetObjectId).attr("data-SCActionSwitchImage-applied");
-	if (!(typeof appliedSwitchImage !== typeof undefined && appliedSwitchImage !== false)) {
-		appliedSwitchImage = "";
-	}
-	if (appliedSwitchImage == switchId) {
-		if (allowBackAndForth) {
-			toImagePath = originalImage;
-			toSwitchId = "";
-			var audioSwapHelp = audioFrom;
-			audioFrom = audioTo;
-			audioTo = audioSwapHelp;
-		} else {
-			setTimeout(function() { actionEndFunction(); }, 1);
-			return;
-		}
-	}
-	setTimeout(function() {
-		$(targetObjectId).attr("data-SCActionSwitchImage-applied", toSwitchId);
-		if (audioFrom != null) { audioFrom.pause(); }
-		if (audioTo != null) { audioTo.currentTime = 0; audioTo.play(); }
-		if (fadeDuration == "0s") {
-			completionFunction()
-		} else {
-			if ($(targetObjectId + " .SCActionSwitchImageHelper").length == 0) {
-				$(targetObjectId).append('<img class="SCActionSwitchImageHelper" src="' + toImagePath + '" id="' + switchHelperId + '" style="height:' + $(targetObjectId).css('height') + '; width: ' + $(targetObjectId).css('width') + '; display: none; position: absolute; overflow:hidden; top: 0px; left: 0px; z-index: 999;"/>');
-			} else {
-				console.log("qui");
-				$(targetObjectId + " .SCActionSwitchImageHelper").each(function (i,o) {
-					console.log(o);
-					$(o).attr("id", switchHelperId);
-					$(o).attr("src", toImagePath);
-				});
-			}
-			$(imgObjId).fadeOut(parseFloat(fadeDuration)*1000);
-			$(switchHelperRef).fadeIn(parseFloat(fadeDuration)*1000, completionFunction);
-		}
-	}, 1);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-};
-obj4721_onTap_actionGroup1 = function(){
-	isLastActionGroup = false;
-	if (isLastActionGroup) {
-		window.obj4721_onTap_activeActionGroupIndex = -1;
-		$("#obj4721").trigger("obj4721_onTap_ended");
-		
-		for (var i = 0; i < pubcoder.queuedEvents.length; i++) {
-			const evt = pubcoder.queuedEvents[i];
-			if (evt.senderObjectId == 4721) {
-				console.warn("de-queueing event obj4721." + evt.eventName);
-				pubcoder.queuedEvents.splice(i, 1);
-				$("#obj4721").trigger(evt.eventName);
-				return;
-			}
-		}
-		return;
-	}
-	window.obj4721_onTap_activeActionGroupIndex = 1;
-	
-
-
-
-
-
-
-//	action: playAudioFile
-playAudioFile_4724();
-function playAudioFile_4724() {
-	window.obj4721_onTap_runningActionsCount = obj4721_onTap_runningActionsCount + 1;
-	var myAudio = $("#obj_audio_playSoundFile4724")[0];
-	var playFromBeginning = true;
-	var waitForCompletion = true;
-	var useReader = typeof(window.XPUB.readerPrefersToHandleAudio) !== "undefined" ?
-		window.XPUB.readerPrefersToHandleAudio : (/iphone|ipad|ipod/i.test(navigator.userAgent.toLowerCase()));
-	if (useReader) {
-		if (waitForCompletion) {
-			XPUB.playAudio(myAudio.src, playFromBeginning, "obj_audio_playSoundFile4724");
-			$("#obj_audio_playSoundFile4724").one('ended', function() {
-				// this.removeEventListener('ended',arguments.callee,false);
-				window.obj4721_onTap_runningActionsCount = window.obj4721_onTap_runningActionsCount - 1;
-if (window.obj4721_onTap_runningActionsCount < 0) {
-	window.obj4721_onTap_runningActionsCount = 0;
-} else if (window.obj4721_onTap_runningActionsCount == 0) {
-	obj4721_onTap_actionGroup2();
-}
-			});
-		} else {
-			XPUB.playAudio(myAudio.src, playFromBeginning, null);
-			window.obj4721_onTap_runningActionsCount = window.obj4721_onTap_runningActionsCount - 1;
-if (window.obj4721_onTap_runningActionsCount < 0) {
-	window.obj4721_onTap_runningActionsCount = 0;
-} else if (window.obj4721_onTap_runningActionsCount == 0) {
-	obj4721_onTap_actionGroup2();
-}
-		}
-		
-	} else {
-		if (playFromBeginning) {
-			try {
-				myAudio.currentTime = 0;
-			} catch (err) {
-				console.log(err);
-				myAudio.src = myAudio.src;
-			}
-		}
-		myAudio.play();
-		if (waitForCompletion) {
-			myAudio.addEventListener('ended', function() {
-				this.removeEventListener('ended',arguments.callee,false);
-				window.obj4721_onTap_runningActionsCount = window.obj4721_onTap_runningActionsCount - 1;
-if (window.obj4721_onTap_runningActionsCount < 0) {
-	window.obj4721_onTap_runningActionsCount = 0;
-} else if (window.obj4721_onTap_runningActionsCount == 0) {
-	obj4721_onTap_actionGroup2();
-}
-			}, false);
-		} else {
-			window.obj4721_onTap_runningActionsCount = window.obj4721_onTap_runningActionsCount - 1;
-if (window.obj4721_onTap_runningActionsCount < 0) {
-	window.obj4721_onTap_runningActionsCount = 0;
-} else if (window.obj4721_onTap_runningActionsCount == 0) {
-	obj4721_onTap_actionGroup2();
-}
-		}
-	}
-	
-	
-	
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-};
-obj4721_onTap_actionGroup2 = function(){
-	isLastActionGroup = true;
-	if (isLastActionGroup) {
-		window.obj4721_onTap_activeActionGroupIndex = -1;
-		$("#obj4721").trigger("obj4721_onTap_ended");
-		
-		for (var i = 0; i < pubcoder.queuedEvents.length; i++) {
-			const evt = pubcoder.queuedEvents[i];
-			if (evt.senderObjectId == 4721) {
-				console.warn("de-queueing event obj4721." + evt.eventName);
-				pubcoder.queuedEvents.splice(i, 1);
-				$("#obj4721").trigger(evt.eventName);
-				return;
-			}
-		}
-		return;
-	}
-	window.obj4721_onTap_activeActionGroupIndex = 2;
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-};
-obj4717_onTap_actionGroup0 = function(){
-	isLastActionGroup = false;
-	if (isLastActionGroup) {
-		window.obj4717_onTap_activeActionGroupIndex = -1;
-		$("#obj4717").trigger("obj4717_onTap_ended");
-		
-		for (var i = 0; i < pubcoder.queuedEvents.length; i++) {
-			const evt = pubcoder.queuedEvents[i];
-			if (evt.senderObjectId == 4717) {
-				console.warn("de-queueing event obj4717." + evt.eventName);
-				pubcoder.queuedEvents.splice(i, 1);
-				$("#obj4717").trigger(evt.eventName);
-				return;
-			}
-		}
-		return;
-	}
-	window.obj4717_onTap_activeActionGroupIndex = 0;
-	
-
-
-
-//	action: switchImage 
-//	target: obj4717 
-switchImage_4719();
-function switchImage_4719() {
-	window.obj4717_onTap_runningActionsCount = obj4717_onTap_runningActionsCount + 1;
-
-	var targetObjectId = "#obj4717";
-	var targetObject = $(targetObjectId)[0];
-	var allowBackAndForth = true;
-	var imgObjId = "#obj4717_img";
-	var fromImagePath = "../images/obj2014_image.png";
-	var toImagePath = "../images/switch306_to.png";
-	var switchHelperId = "switchHelper479"
-	var switchHelperRef = "#switchHelper479"
-	var switchId = "479";
-	var toSwitchId = "479";
-	var fadeDuration = "0s";
-	var fromSoundObjectId = "#";
-	var toSoundObjectId = "#";
-	var audioFrom;
-	if (fromSoundObjectId != "#") audioFrom = $(fromSoundObjectId)[0];
-	var audioTo;
-	if (toSoundObjectId != "#") audioTo = $(toSoundObjectId)[0];
-	
-	var completionFunction = function () {
-		if ($(targetObjectId).attr("data-SCActionSwitchImage-applied") == toSwitchId) $(imgObjId).attr("src", toImagePath);
-		if (fadeDuration != "0s") {
-			setTimeout(function() {
-				$(imgObjId).show();
-				$(switchHelperRef).remove();
-				actionEndFunction();
-			}, 100);
-		} else {
-			actionEndFunction();
-		}
-	}
-	var actionEndFunction = function() {
-			setTimeout(function() {
-				window.obj4717_onTap_runningActionsCount = window.obj4717_onTap_runningActionsCount - 1;
-if (window.obj4717_onTap_runningActionsCount < 0) {
-	window.obj4717_onTap_runningActionsCount = 0;
-} else if (window.obj4717_onTap_runningActionsCount == 0) {
-	obj4717_onTap_actionGroup1();
-}
-			}, 1);
-	};
-	var originalImage = $(targetObjectId).attr("data-SCActionSwitchImage-originalImage");
-	if (!(typeof originalImage !== typeof undefined && originalImage !== false)) {
-		$(targetObjectId).attr("data-SCActionSwitchImage-originalImage", $(imgObjId).attr("src"));
-	}
-	var appliedSwitchImage = $(targetObjectId).attr("data-SCActionSwitchImage-applied");
-	if (!(typeof appliedSwitchImage !== typeof undefined && appliedSwitchImage !== false)) {
-		appliedSwitchImage = "";
-	}
-	if (appliedSwitchImage == switchId) {
-		if (allowBackAndForth) {
-			toImagePath = originalImage;
-			toSwitchId = "";
-			var audioSwapHelp = audioFrom;
-			audioFrom = audioTo;
-			audioTo = audioSwapHelp;
-		} else {
-			setTimeout(function() { actionEndFunction(); }, 1);
-			return;
-		}
-	}
-	setTimeout(function() {
-		$(targetObjectId).attr("data-SCActionSwitchImage-applied", toSwitchId);
-		if (audioFrom != null) { audioFrom.pause(); }
-		if (audioTo != null) { audioTo.currentTime = 0; audioTo.play(); }
-		if (fadeDuration == "0s") {
-			completionFunction()
-		} else {
-			if ($(targetObjectId + " .SCActionSwitchImageHelper").length == 0) {
-				$(targetObjectId).append('<img class="SCActionSwitchImageHelper" src="' + toImagePath + '" id="' + switchHelperId + '" style="height:' + $(targetObjectId).css('height') + '; width: ' + $(targetObjectId).css('width') + '; display: none; position: absolute; overflow:hidden; top: 0px; left: 0px; z-index: 999;"/>');
-			} else {
-				console.log("qui");
-				$(targetObjectId + " .SCActionSwitchImageHelper").each(function (i,o) {
-					console.log(o);
-					$(o).attr("id", switchHelperId);
-					$(o).attr("src", toImagePath);
-				});
-			}
-			$(imgObjId).fadeOut(parseFloat(fadeDuration)*1000);
-			$(switchHelperRef).fadeIn(parseFloat(fadeDuration)*1000, completionFunction);
-		}
-	}, 1);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-};
-obj4717_onTap_actionGroup1 = function(){
-	isLastActionGroup = false;
-	if (isLastActionGroup) {
-		window.obj4717_onTap_activeActionGroupIndex = -1;
-		$("#obj4717").trigger("obj4717_onTap_ended");
-		
-		for (var i = 0; i < pubcoder.queuedEvents.length; i++) {
-			const evt = pubcoder.queuedEvents[i];
-			if (evt.senderObjectId == 4717) {
-				console.warn("de-queueing event obj4717." + evt.eventName);
-				pubcoder.queuedEvents.splice(i, 1);
-				$("#obj4717").trigger(evt.eventName);
-				return;
-			}
-		}
-		return;
-	}
-	window.obj4717_onTap_activeActionGroupIndex = 1;
-	
-
-
-
-
-
-
-//	action: playAudioFile
-playAudioFile_4720();
-function playAudioFile_4720() {
-	window.obj4717_onTap_runningActionsCount = obj4717_onTap_runningActionsCount + 1;
-	var myAudio = $("#obj_audio_playSoundFile4720")[0];
-	var playFromBeginning = true;
-	var waitForCompletion = true;
-	var useReader = typeof(window.XPUB.readerPrefersToHandleAudio) !== "undefined" ?
-		window.XPUB.readerPrefersToHandleAudio : (/iphone|ipad|ipod/i.test(navigator.userAgent.toLowerCase()));
-	if (useReader) {
-		if (waitForCompletion) {
-			XPUB.playAudio(myAudio.src, playFromBeginning, "obj_audio_playSoundFile4720");
-			$("#obj_audio_playSoundFile4720").one('ended', function() {
-				// this.removeEventListener('ended',arguments.callee,false);
-				window.obj4717_onTap_runningActionsCount = window.obj4717_onTap_runningActionsCount - 1;
-if (window.obj4717_onTap_runningActionsCount < 0) {
-	window.obj4717_onTap_runningActionsCount = 0;
-} else if (window.obj4717_onTap_runningActionsCount == 0) {
-	obj4717_onTap_actionGroup2();
-}
-			});
-		} else {
-			XPUB.playAudio(myAudio.src, playFromBeginning, null);
-			window.obj4717_onTap_runningActionsCount = window.obj4717_onTap_runningActionsCount - 1;
-if (window.obj4717_onTap_runningActionsCount < 0) {
-	window.obj4717_onTap_runningActionsCount = 0;
-} else if (window.obj4717_onTap_runningActionsCount == 0) {
-	obj4717_onTap_actionGroup2();
-}
-		}
-		
-	} else {
-		if (playFromBeginning) {
-			try {
-				myAudio.currentTime = 0;
-			} catch (err) {
-				console.log(err);
-				myAudio.src = myAudio.src;
-			}
-		}
-		myAudio.play();
-		if (waitForCompletion) {
-			myAudio.addEventListener('ended', function() {
-				this.removeEventListener('ended',arguments.callee,false);
-				window.obj4717_onTap_runningActionsCount = window.obj4717_onTap_runningActionsCount - 1;
-if (window.obj4717_onTap_runningActionsCount < 0) {
-	window.obj4717_onTap_runningActionsCount = 0;
-} else if (window.obj4717_onTap_runningActionsCount == 0) {
-	obj4717_onTap_actionGroup2();
-}
-			}, false);
-		} else {
-			window.obj4717_onTap_runningActionsCount = window.obj4717_onTap_runningActionsCount - 1;
-if (window.obj4717_onTap_runningActionsCount < 0) {
-	window.obj4717_onTap_runningActionsCount = 0;
-} else if (window.obj4717_onTap_runningActionsCount == 0) {
-	obj4717_onTap_actionGroup2();
-}
-		}
-	}
-	
-	
-	
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-};
-obj4717_onTap_actionGroup2 = function(){
-	isLastActionGroup = true;
-	if (isLastActionGroup) {
-		window.obj4717_onTap_activeActionGroupIndex = -1;
-		$("#obj4717").trigger("obj4717_onTap_ended");
-		
-		for (var i = 0; i < pubcoder.queuedEvents.length; i++) {
-			const evt = pubcoder.queuedEvents[i];
-			if (evt.senderObjectId == 4717) {
-				console.warn("de-queueing event obj4717." + evt.eventName);
-				pubcoder.queuedEvents.splice(i, 1);
-				$("#obj4717").trigger(evt.eventName);
-				return;
-			}
-		}
-		return;
-	}
-	window.obj4717_onTap_activeActionGroupIndex = 2;
 	
 
 
@@ -2137,10 +1005,10 @@ function switchImage_8189() {
 	var imgObjId = "#obj8185_img";
 	var fromImagePath = "../images/obj8185_image.png";
 	var toImagePath = "../images/switch50_to.png";
-	var switchHelperId = "switchHelper481"
-	var switchHelperRef = "#switchHelper481"
-	var switchId = "481";
-	var toSwitchId = "481";
+	var switchHelperId = "switchHelper451"
+	var switchHelperRef = "#switchHelper451"
+	var switchId = "451";
+	var toSwitchId = "451";
 	var fadeDuration = "0s";
 	var fromSoundObjectId = "#";
 	var toSoundObjectId = "#";
@@ -2369,10 +1237,10 @@ function switchImage_8195() {
 	var imgObjId = "#obj8185_img";
 	var fromImagePath = "../images/obj8185_image.png";
 	var toImagePath = "../images/obj8185_image.png";
-	var switchHelperId = "switchHelper482"
-	var switchHelperRef = "#switchHelper482"
-	var switchId = "482";
-	var toSwitchId = "482";
+	var switchHelperId = "switchHelper452"
+	var switchHelperRef = "#switchHelper452"
+	var switchId = "452";
+	var toSwitchId = "452";
 	var fadeDuration = "0s";
 	var fromSoundObjectId = "#";
 	var toSoundObjectId = "#";
@@ -2755,10 +1623,10 @@ function switchImage_8183() {
 	var imgObjId = "#obj8181_img";
 	var fromImagePath = "../images/obj8181_image.png";
 	var toImagePath = "../images/switch52_to.png";
-	var switchHelperId = "switchHelper483"
-	var switchHelperRef = "#switchHelper483"
-	var switchId = "483";
-	var toSwitchId = "483";
+	var switchHelperId = "switchHelper453"
+	var switchHelperRef = "#switchHelper453"
+	var switchId = "453";
+	var toSwitchId = "453";
 	var fadeDuration = "0s";
 	var fromSoundObjectId = "#";
 	var toSoundObjectId = "#";
@@ -3001,7 +1869,7 @@ obj8178_onTap_actionGroup0 = function(){
 goToPage_8180();
 function goToPage_8180() {
 	window.obj8178_onTap_runningActionsCount = obj8178_onTap_runningActionsCount + 1;
-	$("#anchor484")[0].click();
+	$("#anchor454")[0].click();
 	window.obj8178_onTap_runningActionsCount = window.obj8178_onTap_runningActionsCount - 1;
 if (window.obj8178_onTap_runningActionsCount < 0) {
 	window.obj8178_onTap_runningActionsCount = 0;
@@ -3096,7 +1964,7 @@ obj8163_onTap_actionGroup0 = function(){
 goToPage_8165();
 function goToPage_8165() {
 	window.obj8163_onTap_runningActionsCount = obj8163_onTap_runningActionsCount + 1;
-	$("#anchor485")[0].click();
+	$("#anchor455")[0].click();
 	window.obj8163_onTap_runningActionsCount = window.obj8163_onTap_runningActionsCount - 1;
 if (window.obj8163_onTap_runningActionsCount < 0) {
 	window.obj8163_onTap_runningActionsCount = 0;
@@ -3388,22 +2256,6 @@ obj2289_onTap_actionGroup0();
 
 
 
-/*
- *
- *   obj4709: Event Touch Down
- *
- */
-$("#obj4709").bind(PubCoder.Events.Tap + " keydown", function(event) {
-	if (event.type === "keydown" && event.key !== "Enter") return;
-	event.preventDefault();
-	if (window.obj4709_onTap_activeActionGroupIndex != -1) {
-	console.warn("action list window.obj4709_onTap is still running");
-	return;
-}
-var obj4709_onTap_runningActionsCount = 0;
-var obj4709_onTap_loopCount = 0;
-obj4709_onTap_actionGroup0();
-});
 
 
 
@@ -3414,22 +2266,6 @@ obj4709_onTap_actionGroup0();
 
 
 
-/*
- *
- *   obj4713: Event Touch Down
- *
- */
-$("#obj4713").bind(PubCoder.Events.Tap + " keydown", function(event) {
-	if (event.type === "keydown" && event.key !== "Enter") return;
-	event.preventDefault();
-	if (window.obj4713_onTap_activeActionGroupIndex != -1) {
-	console.warn("action list window.obj4713_onTap is still running");
-	return;
-}
-var obj4713_onTap_runningActionsCount = 0;
-var obj4713_onTap_loopCount = 0;
-obj4713_onTap_actionGroup0();
-});
 
 
 
@@ -3492,22 +2328,6 @@ obj2293_onTap_actionGroup0();
 
 
 
-/*
- *
- *   obj4721: Event Touch Down
- *
- */
-$("#obj4721").bind(PubCoder.Events.Tap + " keydown", function(event) {
-	if (event.type === "keydown" && event.key !== "Enter") return;
-	event.preventDefault();
-	if (window.obj4721_onTap_activeActionGroupIndex != -1) {
-	console.warn("action list window.obj4721_onTap is still running");
-	return;
-}
-var obj4721_onTap_runningActionsCount = 0;
-var obj4721_onTap_loopCount = 0;
-obj4721_onTap_actionGroup0();
-});
 
 
 
@@ -3518,22 +2338,6 @@ obj4721_onTap_actionGroup0();
 
 
 
-/*
- *
- *   obj4717: Event Touch Down
- *
- */
-$("#obj4717").bind(PubCoder.Events.Tap + " keydown", function(event) {
-	if (event.type === "keydown" && event.key !== "Enter") return;
-	event.preventDefault();
-	if (window.obj4717_onTap_activeActionGroupIndex != -1) {
-	console.warn("action list window.obj4717_onTap is still running");
-	return;
-}
-var obj4717_onTap_runningActionsCount = 0;
-var obj4717_onTap_loopCount = 0;
-obj4717_onTap_actionGroup0();
-});
 
 
 
@@ -3874,17 +2678,6 @@ const audio_imgs = document.querySelectorAll('.aimg');
         
 });
 
-document.querySelectorAll('[class*="t"]').forEach(el => {
-  el.classList.forEach(cls => {
-    const match = cls.match(/^t(\d{1,2})$/); // Match classes like "t1" to "t20"
-    if (match) {
-      const index = parseInt(match[1]);
-      if (index >= 1 && index <= 40) {
-        el.setAttribute('tabindex', index);
-      }
-    }
-  });
-});
 document.querySelectorAll('video').forEach(dragElement);
 function dragElement(elmnt) {
     
@@ -3979,4 +2772,15 @@ function dragElement(elmnt) {
         }
     });
 })();
+
+function escHandler(e) {
+  if (e.key === "Escape" || e.keyCode === 27) {
+    const xreader = window.parent.document.getElementById("xreaderUI");
+    xreader.style.display = "none";
+  }
+}
+if (window.parent && window.parent.document) {
+  window.parent.document.addEventListener("keydown", escHandler, true);
+}
+window.addEventListener("keydown", escHandler, true);
 });
