@@ -1,1 +1,1 @@
-PubViewer.Document.Settings = {"appIdentifier":"95116C05CA734718B85C004B2C570BF8","appName":"Hamro Serofero - Unit 7","backgroundColor":"#EFEEE8","facingPagesInLandscape":false,"lockOrientation":false,"restoreLatestPage":true};
+PubViewer.Document.Settings = {"appIdentifier":"270A9496633F438199699049C34FB403","appName":"हाम्रो सेरोफेरो - विषयक्षेत्र ७","backgroundColor":"#EFEEE8","facingPagesInLandscape":false,"lockOrientation":false,"restoreLatestPage":true};

@@ -6,7 +6,7 @@
 	<meta property="rendition:layout">pre-paginated</meta>	
 	<meta property="rendition:orientation">auto</meta>
 	<meta property="rendition:spread">none</meta>
-	<meta property="dcterms:modified">2026-01-30T04:57:50Z</meta>
+	<meta property="dcterms:modified">2026-05-06T05:53:22Z</meta>
 	<meta property="media:active-class">-epub-media-overlay-active</meta>
 	<meta property="media:duration">00:07:04</meta>
 	<meta property="media:duration" refines="#smil37">00:00:05</meta>
@@ -41,11 +41,11 @@
 <meta property="media:duration" refines="#smil324">00:00:09</meta>
 <meta property="media:duration" refines="#smil332">00:00:04</meta>
 <meta property="media:duration" refines="#smil340">00:00:08</meta>
-	<dc:title>Hamro Serofero - Unit 6</dc:title>
+	<dc:title>हाम्रो सेरोफेरो - विषयक्षेत्र ६</dc:title>
 	<dc:creator>CDC</dc:creator>
 	<dc:description>Powered by PubCoder</dc:description>
 	<dc:publisher>CDC</dc:publisher>
-	<dc:date>2026-01-30</dc:date>
+	<dc:date>2026-05-06</dc:date>
 	<dc:rights>© 2025 CDC</dc:rights>
 	<dc:language>ne</dc:language>
 	<dc:identifier id="BookID">12E58D21CC5A4AEEB6229895ABF2FF22</dc:identifier>
@@ -206,8 +206,8 @@
 <item id="obj14024_image" href="assets/images/obj14024_image.png" media-type="image/png" />
 <item id="obj14049_image" href="assets/images/obj14049_image.png" media-type="image/png" />
 <item id="switch34_to" href="assets/images/switch34_to.png" media-type="image/png" />
-<item id="obj14046_image" href="assets/images/obj14046_image.png" media-type="image/png" />
-<item id="obj14031_image" href="assets/images/obj14031_image.png" media-type="image/png" />
+<item id="obj14422_image" href="assets/images/obj14422_image.png" media-type="image/png" />
+<item id="obj14425_image" href="assets/images/obj14425_image.png" media-type="image/png" />
 <item id="obj14015_image" href="assets/images/obj14015_image.png" media-type="image/png" />
 <item id="thumbnail1" href="assets/1/thumbnail.png" media-type="image/png" />
 <item id="loading1" href="assets/1/loading.jpg" media-type="image/jpeg" />

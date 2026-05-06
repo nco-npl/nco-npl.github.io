@@ -52,8 +52,36 @@
 			//
 		</script>
 <script src="actions.js" type="text/javascript"/>
-</head>
-<body class="SCNoStage">
+<style>
+	.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.skip-link {
+position: absolute;
+top: -100px; 
+z-index:-100;
+left: 0;
+background: #159BD6;
+color: white;
+padding: 10px 20px;
+font-size: 18px;
+text-decoration: none;
+}
+
+.skip-link:focus {
+top: 0; /* Tab थिच्दा देखाउनुहोस् */
+z-index:100;
+}
+</style></head>
+<body class="SCNoStage"><a class="skip-link" href="#main-content" onclick="document.getElementById('main-content').focus();">मुख्य सामग्रीमा जानुहोस्</a>
 <div aria-describedby="SCDefaultAlertMsg" aria-labelledby="SCDefaultAlertTitle" class="remodal" data-remodal-id="SCDefaultAlert" role="dialog">
 <button aria-label="Close" class="remodal-close" data-remodal-action="close"/>
 <div>
@@ -80,21 +108,21 @@
 <div id="SCFirstFakeReadAloudDiv">
 <span id="SCFirstFakeReadAloud"/>
 </div>
-<div class="SCOverlay SCOverlay32"><div aria-label="Voice Over" class="SCPageObject SCView SCImage focusable t1 o-1 vo-btn SCEvent SCPointerEvent SCEvent-onTap SCEvent-SCEventReadAloudStarted SCEvent-SCEventReadAloudStopped" id="obj8185" onclick="XPUB.startStopReadAloud(event);" onkeydown="if (event.key === 'Enter') XPUB.startStopReadAloud(event);" role="button" tabindex="0">
+<div class="SCOverlay SCOverlay32"><div aria-label="रिड अलाउड" class="SCPageObject SCView SCImage focusable t1 o-1 vo-btn SCEvent SCPointerEvent SCEvent-onTap SCEvent-SCEventReadAloudStarted SCEvent-SCEventReadAloudStopped" id="obj8185" onclick="XPUB.startStopReadAloud(event);" onkeydown="if (event.key === 'Enter') XPUB.startStopReadAloud(event);" role="button" tabindex="0">
 <img alt="" id="obj8185_img" src="../images/obj8185_image.png"/>
-</div><div aria-label="Sign Language Video" class="SCPageObject SCView SCImage focusable t2  o-2 nsl-btn SCEvent SCPointerEvent SCEvent-onTap" id="obj8156" role="button" tabindex="0">
+</div><div aria-label="साङ्केतिक भाषा" class="SCPageObject SCView SCImage focusable t2  o-2 nsl-btn SCEvent SCPointerEvent SCEvent-onTap" id="obj8156" role="button" tabindex="0">
 <img alt="" id="obj8156_img" src="../images/obj8156_image.png"/>
 </div><div aria-label="Readaloud Image" class="SCPageObject SCView SCImage t3 o-3 SCEvent SCPointerEvent SCEvent-onTap" id="obj8181" role="button" tabindex="0">
 <img alt="" id="obj8181_img" src="../images/obj8181_image.png"/>
-</div><div aria-label="Previous Page" class="SCPageObject SCView SCImage focusable t4 o-4 SCEvent SCPointerEvent SCEvent-onTap" id="obj8178" role="button" tabindex="0">
+</div><div aria-label="पछिल्लो पेज" class="SCPageObject SCView SCImage focusable t4 o-4 prev-page-btn SCEvent SCPointerEvent SCEvent-onTap" id="obj8178" role="button" tabindex="0">
 <img alt="" id="obj8178_img" src="../images/obj8178_image.png"/>
-</div><div aria-label="Next Page" class="SCPageObject SCView SCImage focusable t5 o-5 SCEvent SCPointerEvent SCEvent-onTap" id="obj8163" role="button" tabindex="0">
+</div><div aria-label="अगिल्लो पेज" class="SCPageObject SCView SCImage focusable t5 o-5 next-page-btn  SCEvent SCPointerEvent SCEvent-onTap" id="obj8163" role="button" tabindex="0">
 <img alt="" id="obj8163_img" src="../images/obj8163_image.png"/>
 </div><div class="SCPageObject SCView SCImage focusable t6 o-6" id="obj8171">
 <img alt="Information" id="obj8171_img" src="../images/obj8171_image.png"/>
 </div><div aria-label="शब्दार्थ" class="SCPageObject SCView SCImage focusable t7 o-7 SCEvent SCPointerEvent SCEvent-onTap" id="obj8166" role="button" tabindex="0">
 <img alt="" id="obj8166_img" src="../images/obj7144_image.png"/>
-</div><div aria-label="Table of Content" class="SCPageObject SCView SCImage focusable t8  o-8 toc-btn SCEvent SCPointerEvent SCEvent-onTap" id="obj8147" role="button" tabindex="0">
+</div><div aria-label="विषयसूची" class="SCPageObject SCView SCImage focusable t8  o-8 toc-btn SCEvent SCPointerEvent SCEvent-onTap" id="obj8147" role="button" tabindex="0">
 <img alt="" id="obj8147_img" src="../images/obj8147_image.png"/>
 </div>
 <div class="SCPageObject SCView SCSmartObject tocmenu" id="obj8145">
@@ -112,7 +140,7 @@
 </div>
 <div class="SCContentOverlay">
 </div>
-<div class="SCContent"><div class="SCPageObject SCView SCText page-no o-0" id="obj1818">
+<div id="main-content" tabindex="-1"><span class="sr-only">पेज नम्बर १९ भाग १</span></div><div class="SCContent"><div aria-hidden="true" class="SCPageObject SCView SCText page-no o-0" id="obj1818">
 <div class="SCTextContainer SCTextVAlignTop" id="obj1818_content">
 <p style="text-align: center;"><span style="font-size: 28px;"><span class="SCReadaloudBlock" id="obj703"><strong>१९-१</strong></span></span></p>
 </div>

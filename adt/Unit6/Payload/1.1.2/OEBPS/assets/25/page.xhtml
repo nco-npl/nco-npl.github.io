@@ -52,8 +52,36 @@
 			//
 		</script>
 <script src="actions.js" type="text/javascript"/>
-</head>
-<body class="SCNoStage">
+<style>
+	.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.skip-link {
+position: absolute;
+top: -100px; 
+z-index:-100;
+left: 0;
+background: #159BD6;
+color: white;
+padding: 10px 20px;
+font-size: 18px;
+text-decoration: none;
+}
+
+.skip-link:focus {
+top: 0; /* Tab थिच्दा देखाउनुहोस् */
+z-index:100;
+}
+</style></head>
+<body class="SCNoStage"><a class="skip-link" href="#main-content" onclick="document.getElementById('main-content').focus();">मुख्य सामग्रीमा जानुहोस्</a>
 <div aria-describedby="SCDefaultAlertMsg" aria-labelledby="SCDefaultAlertTitle" class="remodal" data-remodal-id="SCDefaultAlert" role="dialog">
 <button aria-label="Close" class="remodal-close" data-remodal-action="close"/>
 <div>
@@ -86,10 +114,10 @@
 <img alt="" id="obj14024_img" src="../images/obj14024_image.png"/>
 </div><div aria-label="Readaloud Image" class="SCPageObject SCView SCImage t3 o-3 SCEvent SCPointerEvent SCEvent-onTap" id="obj14049" role="button" tabindex="0">
 <img alt="" id="obj14049_img" src="../images/obj14049_image.png"/>
-</div><div aria-label="Previous Page" class="SCPageObject SCView SCImage focusable t4 o-4 SCEvent SCPointerEvent SCEvent-onTap" id="obj14046" role="button" tabindex="0">
-<img alt="" id="obj14046_img" src="../images/obj14046_image.png"/>
-</div><div aria-label="Next Page" class="SCPageObject SCView SCImage focusable t5 o-5 SCEvent SCPointerEvent SCEvent-onTap" id="obj14031" role="button" tabindex="0">
-<img alt="" id="obj14031_img" src="../images/obj14031_image.png"/>
+</div><div aria-label="पछिल्लो पेज" class="SCPageObject SCView SCImage focusable t4 o-4 prev-page-btn SCEvent SCPointerEvent SCEvent-onTap" id="obj14422" role="button" tabindex="0">
+<img alt="" id="obj14422_img" src="../images/obj14422_image.png"/>
+</div><div aria-label="अगिल्लो पेज" class="SCPageObject SCView SCImage focusable t5 o-5 next-page-btn  SCEvent SCPointerEvent SCEvent-onTap" id="obj14425" role="button" tabindex="0">
+<img alt="" id="obj14425_img" src="../images/obj14425_image.png"/>
 </div><div class="SCPageObject SCView SCImage focusable t6 o-6" id="obj14039">
 <img alt="Information" id="obj14039_img" src="../images/obj14039_image.png"/>
 </div><div aria-label="शब्दार्थ" class="SCPageObject SCView SCImage focusable t7 o-7 SCEvent SCPointerEvent SCEvent-onTap" id="obj14034" role="button" tabindex="0">
@@ -112,7 +140,7 @@
 </div>
 <div class="SCContentOverlay">
 </div>
-<div class="SCContent"><div class="SCPageObject SCView SCText page-no o-0" id="obj4312">
+<div id="main-content" tabindex="-1"><span class="sr-only">पेज नम्बर १४० भाग १</span></div><div class="SCContent"><div aria-hidden="true" class="SCPageObject SCView SCText page-no o-0" id="obj4312">
 <div class="SCTextContainer SCTextVAlignTop" id="obj4312_content">
 <p style="text-align: center;"><strong><span style="font-size: 28px;">१४०-१</span></strong></p>
 </div>
@@ -131,7 +159,7 @@
 </div>
 </div>
 <div class="SCPageObject SCView SCSmartObject" id="obj10556">
-<iframe srcdoc='&lt;html style="min-height: 100%"&gt;&lt;head&gt;&lt;/head&gt;&lt;body style="min-height: 100%; margin: 0; padding: 0;" style="overflow:hidden;" &gt;&lt;!DOCTYPE html&gt; &lt;html lang="en"&gt; &lt;head&gt;   &lt;meta charset="UTF-8"&gt;   &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;   &lt;title&gt;Matching Game&lt;/title&gt;   &lt;script&gt;     const gameConfig = {   pairs: [     {       "left": {         "id": "bear",         "image": "../images/140-8.43.png",         "alt": "खुर्सानी"       },       "right": {         "id": "bear_cub",         "text": "खुर्सानी"       }     },     {       "left": {         "id": "deer",         "image": "../images/140-8.48.png",         "alt": "तितेकरेला"       },       "right": {         "id": "deer_cub",         "text": "तितेकरेला"       }     },     {       "left": {         "id": "fox",         "image": "../images/140-8.56.png",         "alt": "कागती"       },       "right": {         "id": "fox_cub",         "text": "कागती"       }     },     {       "left": {         "id": "lion",         "image": "../images/140-9.01.png",         "alt": "केरा"       },       "right": {         "id": "lion_cub",         "text": "केरा"       }     }   ] };   &lt;/script&gt;   &lt;link rel="stylesheet" href="../uncategorized/match-style.css" /&gt; &lt;/head&gt; &lt;body&gt; &lt;div role="main"&gt;   &lt;div class="instructions" style="display:none;"&gt;     &lt;h2&gt;Matching Game&lt;/h2&gt;     &lt;p id="game-description"&gt;Match the items on the left with their related items on the right.&lt;/p&gt;     &lt;p&gt;Click to select an item, then click another item to match them.&lt;/p&gt;   &lt;/div&gt;   &lt;div class="game-container" role="application" aria-labelledby="game-description"&gt;     &lt;div class="column" id="left-items" role="list" aria-label="Source items"&gt;     &lt;/div&gt;     &lt;div class="column" id="right-items" role="list" aria-label="Target items"&gt;     &lt;/div&gt;   &lt;/div&gt; &lt;/div&gt; &lt;div aria-live="polite" class="sr-only" id="game-announcer"&gt;&lt;/div&gt; &lt;script src="../uncategorized/leader-line.min.js"&gt;&lt;/script&gt; &lt;script src="../uncategorized/match-logic.js"&gt;&lt;/script&gt; &lt;/body&gt; &lt;/html&gt; &lt;/body&gt;&lt;/html&gt;' style="border: 0; width: 100%; height: 100%;"/>
+<iframe srcdoc='&lt;html style="min-height: 100%"&gt;&lt;head&gt;&lt;/head&gt;&lt;body style="min-height: 100%; margin: 0; padding: 0;" style="overflow:hidden;" &gt;&lt;!DOCTYPE html&gt; &lt;html lang="en"&gt; &lt;head&gt;   &lt;meta charset="UTF-8"&gt;   &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;   &lt;title&gt;Matching Game&lt;/title&gt;   &lt;script&gt;     const gameConfig = {   pairs: [     {       "left": {         "id": "bear",         "image": "../images/140-8.43.png",         "alt": "खुर्सानी"       },       "right": {         "id": "bear_cub",         "text": "खुर्सानी"       }     },     {       "left": {         "id": "deer",         "image": "../images/140-8.48.png",         "alt": "तितेकरेला"       },       "right": {         "id": "deer_cub",         "text": "तितेकरेला"       }     },     {       "left": {         "id": "fox",         "image": "../images/140-8.56.png",         "alt": "कागती"       },       "right": {         "id": "fox_cub",         "text": "कागती"       }     },     {       "left": {         "id": "lion",         "image": "../images/140-9.01.png",         "alt": "केरा"       },       "right": {         "id": "lion_cub",         "text": "केरा"       }     }   ] };     const feedbackConfig = {         correct: {             toastText: "✓ सही",             sound: "../audio/correct.mp3"         },         wrong: {             toastText: "✗ गलत",             sound: "../audio/incorrect.mp3"         }     };   &lt;/script&gt;   &lt;link rel="stylesheet" href="../uncategorized/match-style.css" /&gt; &lt;/head&gt; &lt;body&gt; &lt;div id="toast" style="     position: fixed;     bottom: 20px;     left: 50%;     transform: translateX(-50%);     background: rgba(0,0,0,0.8);     color: #fff;     padding: 10px 20px;     border-radius: 8px;     font-size: 16px;     opacity: 0;     transition: opacity 0.3s ease;     z-index: 2000; "&gt;&lt;/div&gt; &lt;audio id="correctSound" src="" preload="auto"&gt;&lt;/audio&gt; &lt;audio id="wrongSound" src="" preload="auto"&gt;&lt;/audio&gt; &lt;div role="main"&gt;   &lt;div class="instructions" style="display:none;"&gt;     &lt;h2&gt;Matching Game&lt;/h2&gt;     &lt;p id="game-description"&gt;Match the items on the left with their related items on the right.&lt;/p&gt;     &lt;p&gt;Click to select an item, then click another item to match them.&lt;/p&gt;   &lt;/div&gt;   &lt;div class="game-container" role="application" aria-labelledby="game-description"&gt;     &lt;div class="column" id="left-items" role="list" aria-label="Source items"&gt;     &lt;/div&gt;     &lt;div class="column" id="right-items" role="list" aria-label="Target items"&gt;     &lt;/div&gt;   &lt;/div&gt; &lt;/div&gt; &lt;div aria-live="polite" class="sr-only" id="game-announcer"&gt;&lt;/div&gt; &lt;script src="../uncategorized/leader-line.min.js"&gt;&lt;/script&gt; &lt;script src="../uncategorized/match-logic.js"&gt;&lt;/script&gt; &lt;/body&gt; &lt;/html&gt; &lt;/body&gt;&lt;/html&gt;' style="border: 0; width: 100%; height: 100%;"/>
 </div>
 <video autoplay="autoplay" class="SCPageObject SCView SCMovie" id="obj4849" muted="muted" playsinline="playsinline">
 <source src="../video/1010-23.1-1.mp4" type="video/mp4"/>

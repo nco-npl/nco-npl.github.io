@@ -1,6 +1,6 @@
 pubcoder.projectID = pubcoder.projectID || "12E58D21CC5A4AEEB6229895ABF2FF22";
 pubcoder.project.id = pubcoder.project.id || "12E58D21CC5A4AEEB6229895ABF2FF22";
-pubcoder.project.title = pubcoder.project.title || "Hamro Serofero : Unit 1";
+pubcoder.project.title = pubcoder.project.title || "हाम्रो सेरोफेरो - विषयक्षेत्र १";
 pubcoder.page.id = pubcoder.page.id || 1510;
 pubcoder.page.title = pubcoder.page.title || "46";
 pubcoder.page.number = pubcoder.page.number || 46;
@@ -2056,4 +2056,36 @@ if (window.parent && window.parent.document) {
   window.parent.document.addEventListener("keydown", escHandler, true);
 }
 window.addEventListener("keydown", escHandler, true);
+
+const nextPageBtn = document.querySelector('.next-page-btn');
+const prevPageBtn = document.querySelector('.prev-page-btn');
+const isLastPage =
+  pubcoder.page.number === Object.keys(pubcoder.pages).length;
+if (isLastPage) {
+  console.log('Last page');
+  nextPageBtn.classList.add('disabled');
+  nextPageBtn.setAttribute('aria-disabled', 'true');
+  nextPageBtn.setAttribute('aria-label', 'Next Page : End of Chapter');
+  nextPageBtn.style.pointerEvents = 'none';
+} else {
+  console.log('not last page');
+  nextPageBtn.classList.remove('disabled');
+  nextPageBtn.removeAttribute('aria-disabled');
+  nextPageBtn.setAttribute('aria-label', 'Next Page');
+  nextPageBtn.style.pointerEvents = '';
+}
+if(pubcoder.page.number==1){
+console.log('First page');
+  prevPageBtn.classList.add('disabled');
+  prevPageBtn.setAttribute('aria-disabled', 'true');
+  prevPageBtn.setAttribute('aria-label', 'Previous Page : First page');
+  prevPageBtn.style.pointerEvents = 'none';
+} else {
+  console.log('not last page');
+  prevPageBtn.classList.remove('disabled');
+  prevPageBtn.removeAttribute('aria-disabled');
+  prevPageBtn.setAttribute('aria-label', 'Previous Page');
+  prevPageBtn.style.pointerEvents = '';
+}
+
 });

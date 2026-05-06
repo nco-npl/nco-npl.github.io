@@ -230,12 +230,16 @@ function createItem(itemData, isLeftSide) {
       sourceItem.classList.add('matched');
       targetItem.classList.add('matched');
       clearSelection();
+      showToast(feedbackConfig.correct.toastText);
+      playSound('correct');
       const allItems = document.querySelectorAll('.item');
       const matchedCount = document.querySelectorAll('.item.matched').length;
       if (matchedCount === allItems.length) {
         announce('Congratulations! All items have been matched successfully!');
       }
     } else {
+      showToast(feedbackConfig.wrong.toastText);
+      playSound('wrong');
       announce('Not a match. Try again.');
     }
     
@@ -377,12 +381,16 @@ function createItem(itemData, isLeftSide) {
         if (isMatch) {
           dragged.classList.add('matched');
           item.classList.add('matched');
+          showToast(feedbackConfig.correct.toastText);
+          playSound('correct');
           const allItems = document.querySelectorAll('.item');
           const matchedCount = document.querySelectorAll('.item.matched').length;
           if (matchedCount === allItems.length) {
             announce('Congratulations! All items have been matched successfully!');
           }
         } else {
+          showToast(feedbackConfig.wrong.toastText);
+          playSound('wrong');
           announce('Not a match. Try again.');
         }
       }

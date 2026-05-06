@@ -6,7 +6,7 @@
 	<meta property="rendition:layout">pre-paginated</meta>	
 	<meta property="rendition:orientation">auto</meta>
 	<meta property="rendition:spread">none</meta>
-	<meta property="dcterms:modified">2026-01-30T04:36:32Z</meta>
+	<meta property="dcterms:modified">2026-05-06T05:46:28Z</meta>
 	<meta property="media:active-class">-epub-media-overlay-active</meta>
 	<meta property="media:duration">00:11:06</meta>
 	<meta property="media:duration" refines="#smil26">00:00:04</meta>
@@ -62,11 +62,11 @@
 <meta property="media:duration" refines="#smil493">00:00:05</meta>
 <meta property="media:duration" refines="#smil501">00:00:05</meta>
 <meta property="media:duration" refines="#smil509">00:00:05</meta>
-	<dc:title>Hamro Serofero : Unit2</dc:title>
+	<dc:title>हाम्रो सेरोफेरो - विषयक्षेत्र २</dc:title>
 	<dc:creator>CDC</dc:creator>
 	<dc:description>Powered by PubCoder</dc:description>
 	<dc:publisher>CDC</dc:publisher>
-	<dc:date>2026-01-30</dc:date>
+	<dc:date>2026-05-06</dc:date>
 	<dc:rights>© 2025 CDC</dc:rights>
 	<dc:language>ne</dc:language>
 	<dc:identifier id="BookID">12E58D21CC5A4AEEB6229895ABF2FF22</dc:identifier>
@@ -218,8 +218,8 @@
 <item id="obj7801_image" href="assets/images/obj7801_image.png" media-type="image/png" />
 <item id="obj7826_image" href="assets/images/obj7826_image.png" media-type="image/png" />
 <item id="switch23_to" href="assets/images/switch23_to.png" media-type="image/png" />
-<item id="obj7823_image" href="assets/images/obj7823_image.png" media-type="image/png" />
-<item id="obj7808_image" href="assets/images/obj7808_image.png" media-type="image/png" />
+<item id="obj7853_image" href="assets/images/obj7853_image.png" media-type="image/png" />
+<item id="obj7856_image" href="assets/images/obj7856_image.png" media-type="image/png" />
 <item id="obj7792_image" href="assets/images/obj7792_image.png" media-type="image/png" />
 <item id="thumbnail1" href="assets/1/thumbnail.png" media-type="image/png" />
 <item id="loading1" href="assets/1/loading.jpg" media-type="image/jpeg" />

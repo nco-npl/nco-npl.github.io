@@ -1,6 +1,6 @@
 pubcoder.projectID = pubcoder.projectID || "12E58D21CC5A4AEEB6229895ABF2FF22";
 pubcoder.project.id = pubcoder.project.id || "12E58D21CC5A4AEEB6229895ABF2FF22";
-pubcoder.project.title = pubcoder.project.title || "Hamro Serofero : Unit2";
+pubcoder.project.title = pubcoder.project.title || "हाम्रो सेरोफेरो - विषयक्षेत्र २";
 pubcoder.page.id = pubcoder.page.id || 2944;
 pubcoder.page.title = pubcoder.page.title || "48";
 pubcoder.page.number = pubcoder.page.number || 48;
@@ -34,12 +34,12 @@ var obj7801_onTap_loopCount = 0;
 var obj7826_onTap_activeActionGroupIndex = -1;
 var obj7826_onTap_runningActionsCount = 0;
 var obj7826_onTap_loopCount = 0;
-var obj7823_onTap_activeActionGroupIndex = -1;
-var obj7823_onTap_runningActionsCount = 0;
-var obj7823_onTap_loopCount = 0;
-var obj7808_onTap_activeActionGroupIndex = -1;
-var obj7808_onTap_runningActionsCount = 0;
-var obj7808_onTap_loopCount = 0;
+var obj7853_onTap_activeActionGroupIndex = -1;
+var obj7853_onTap_runningActionsCount = 0;
+var obj7853_onTap_loopCount = 0;
+var obj7856_onTap_activeActionGroupIndex = -1;
+var obj7856_onTap_runningActionsCount = 0;
+var obj7856_onTap_loopCount = 0;
 var obj7792_onTap_activeActionGroupIndex = -1;
 var obj7792_onTap_runningActionsCount = 0;
 var obj7792_onTap_loopCount = 0;
@@ -1150,35 +1150,35 @@ obj7826_onTap_actionGroup2 = function(){
 
 
 };
-obj7823_onTap_actionGroup0 = function(){
+obj7853_onTap_actionGroup0 = function(){
 	isLastActionGroup = false;
 	if (isLastActionGroup) {
-		window.obj7823_onTap_activeActionGroupIndex = -1;
-		$("#obj7823").trigger("obj7823_onTap_ended");
+		window.obj7853_onTap_activeActionGroupIndex = -1;
+		$("#obj7853").trigger("obj7853_onTap_ended");
 		
 		for (var i = 0; i < pubcoder.queuedEvents.length; i++) {
 			const evt = pubcoder.queuedEvents[i];
-			if (evt.senderObjectId == 7823) {
-				console.warn("de-queueing event obj7823." + evt.eventName);
+			if (evt.senderObjectId == 7853) {
+				console.warn("de-queueing event obj7853." + evt.eventName);
 				pubcoder.queuedEvents.splice(i, 1);
-				$("#obj7823").trigger(evt.eventName);
+				$("#obj7853").trigger(evt.eventName);
 				return;
 			}
 		}
 		return;
 	}
-	window.obj7823_onTap_activeActionGroupIndex = 0;
+	window.obj7853_onTap_activeActionGroupIndex = 0;
 	
 //	action: goToPage
-goToPage_7825();
-function goToPage_7825() {
-	window.obj7823_onTap_runningActionsCount = obj7823_onTap_runningActionsCount + 1;
+goToPage_7855();
+function goToPage_7855() {
+	window.obj7853_onTap_runningActionsCount = obj7853_onTap_runningActionsCount + 1;
 	$("#anchor426")[0].click();
-	window.obj7823_onTap_runningActionsCount = window.obj7823_onTap_runningActionsCount - 1;
-if (window.obj7823_onTap_runningActionsCount < 0) {
-	window.obj7823_onTap_runningActionsCount = 0;
-} else if (window.obj7823_onTap_runningActionsCount == 0) {
-	obj7823_onTap_actionGroup1();
+	window.obj7853_onTap_runningActionsCount = window.obj7853_onTap_runningActionsCount - 1;
+if (window.obj7853_onTap_runningActionsCount < 0) {
+	window.obj7853_onTap_runningActionsCount = 0;
+} else if (window.obj7853_onTap_runningActionsCount == 0) {
+	obj7853_onTap_actionGroup1();
 }
 }
 
@@ -1203,24 +1203,24 @@ if (window.obj7823_onTap_runningActionsCount < 0) {
 
 
 };
-obj7823_onTap_actionGroup1 = function(){
+obj7853_onTap_actionGroup1 = function(){
 	isLastActionGroup = true;
 	if (isLastActionGroup) {
-		window.obj7823_onTap_activeActionGroupIndex = -1;
-		$("#obj7823").trigger("obj7823_onTap_ended");
+		window.obj7853_onTap_activeActionGroupIndex = -1;
+		$("#obj7853").trigger("obj7853_onTap_ended");
 		
 		for (var i = 0; i < pubcoder.queuedEvents.length; i++) {
 			const evt = pubcoder.queuedEvents[i];
-			if (evt.senderObjectId == 7823) {
-				console.warn("de-queueing event obj7823." + evt.eventName);
+			if (evt.senderObjectId == 7853) {
+				console.warn("de-queueing event obj7853." + evt.eventName);
 				pubcoder.queuedEvents.splice(i, 1);
-				$("#obj7823").trigger(evt.eventName);
+				$("#obj7853").trigger(evt.eventName);
 				return;
 			}
 		}
 		return;
 	}
-	window.obj7823_onTap_activeActionGroupIndex = 1;
+	window.obj7853_onTap_activeActionGroupIndex = 1;
 	
 
 
@@ -1245,35 +1245,35 @@ obj7823_onTap_actionGroup1 = function(){
 
 
 };
-obj7808_onTap_actionGroup0 = function(){
+obj7856_onTap_actionGroup0 = function(){
 	isLastActionGroup = false;
 	if (isLastActionGroup) {
-		window.obj7808_onTap_activeActionGroupIndex = -1;
-		$("#obj7808").trigger("obj7808_onTap_ended");
+		window.obj7856_onTap_activeActionGroupIndex = -1;
+		$("#obj7856").trigger("obj7856_onTap_ended");
 		
 		for (var i = 0; i < pubcoder.queuedEvents.length; i++) {
 			const evt = pubcoder.queuedEvents[i];
-			if (evt.senderObjectId == 7808) {
-				console.warn("de-queueing event obj7808." + evt.eventName);
+			if (evt.senderObjectId == 7856) {
+				console.warn("de-queueing event obj7856." + evt.eventName);
 				pubcoder.queuedEvents.splice(i, 1);
-				$("#obj7808").trigger(evt.eventName);
+				$("#obj7856").trigger(evt.eventName);
 				return;
 			}
 		}
 		return;
 	}
-	window.obj7808_onTap_activeActionGroupIndex = 0;
+	window.obj7856_onTap_activeActionGroupIndex = 0;
 	
 //	action: goToPage
-goToPage_7810();
-function goToPage_7810() {
-	window.obj7808_onTap_runningActionsCount = obj7808_onTap_runningActionsCount + 1;
+goToPage_7858();
+function goToPage_7858() {
+	window.obj7856_onTap_runningActionsCount = obj7856_onTap_runningActionsCount + 1;
 	$("#anchor427")[0].click();
-	window.obj7808_onTap_runningActionsCount = window.obj7808_onTap_runningActionsCount - 1;
-if (window.obj7808_onTap_runningActionsCount < 0) {
-	window.obj7808_onTap_runningActionsCount = 0;
-} else if (window.obj7808_onTap_runningActionsCount == 0) {
-	obj7808_onTap_actionGroup1();
+	window.obj7856_onTap_runningActionsCount = window.obj7856_onTap_runningActionsCount - 1;
+if (window.obj7856_onTap_runningActionsCount < 0) {
+	window.obj7856_onTap_runningActionsCount = 0;
+} else if (window.obj7856_onTap_runningActionsCount == 0) {
+	obj7856_onTap_actionGroup1();
 }
 }
 
@@ -1298,24 +1298,24 @@ if (window.obj7808_onTap_runningActionsCount < 0) {
 
 
 };
-obj7808_onTap_actionGroup1 = function(){
+obj7856_onTap_actionGroup1 = function(){
 	isLastActionGroup = true;
 	if (isLastActionGroup) {
-		window.obj7808_onTap_activeActionGroupIndex = -1;
-		$("#obj7808").trigger("obj7808_onTap_ended");
+		window.obj7856_onTap_activeActionGroupIndex = -1;
+		$("#obj7856").trigger("obj7856_onTap_ended");
 		
 		for (var i = 0; i < pubcoder.queuedEvents.length; i++) {
 			const evt = pubcoder.queuedEvents[i];
-			if (evt.senderObjectId == 7808) {
-				console.warn("de-queueing event obj7808." + evt.eventName);
+			if (evt.senderObjectId == 7856) {
+				console.warn("de-queueing event obj7856." + evt.eventName);
 				pubcoder.queuedEvents.splice(i, 1);
-				$("#obj7808").trigger(evt.eventName);
+				$("#obj7856").trigger(evt.eventName);
 				return;
 			}
 		}
 		return;
 	}
-	window.obj7808_onTap_activeActionGroupIndex = 1;
+	window.obj7856_onTap_activeActionGroupIndex = 1;
 	
 
 
@@ -1735,19 +1735,19 @@ obj7826_onTap_actionGroup0();
 
 /*
  *
- *   obj7823: Event Touch Down
+ *   obj7853: Event Touch Down
  *
  */
-$("#obj7823").bind(PubCoder.Events.Tap + " keydown", function(event) {
+$("#obj7853").bind(PubCoder.Events.Tap + " keydown", function(event) {
 	if (event.type === "keydown" && event.key !== "Enter") return;
 	event.preventDefault();
-	if (window.obj7823_onTap_activeActionGroupIndex != -1) {
-	console.warn("action list window.obj7823_onTap is still running");
+	if (window.obj7853_onTap_activeActionGroupIndex != -1) {
+	console.warn("action list window.obj7853_onTap is still running");
 	return;
 }
-var obj7823_onTap_runningActionsCount = 0;
-var obj7823_onTap_loopCount = 0;
-obj7823_onTap_actionGroup0();
+var obj7853_onTap_runningActionsCount = 0;
+var obj7853_onTap_loopCount = 0;
+obj7853_onTap_actionGroup0();
 });
 
 
@@ -1761,19 +1761,19 @@ obj7823_onTap_actionGroup0();
 
 /*
  *
- *   obj7808: Event Touch Down
+ *   obj7856: Event Touch Down
  *
  */
-$("#obj7808").bind(PubCoder.Events.Tap + " keydown", function(event) {
+$("#obj7856").bind(PubCoder.Events.Tap + " keydown", function(event) {
 	if (event.type === "keydown" && event.key !== "Enter") return;
 	event.preventDefault();
-	if (window.obj7808_onTap_activeActionGroupIndex != -1) {
-	console.warn("action list window.obj7808_onTap is still running");
+	if (window.obj7856_onTap_activeActionGroupIndex != -1) {
+	console.warn("action list window.obj7856_onTap is still running");
 	return;
 }
-var obj7808_onTap_runningActionsCount = 0;
-var obj7808_onTap_loopCount = 0;
-obj7808_onTap_actionGroup0();
+var obj7856_onTap_runningActionsCount = 0;
+var obj7856_onTap_loopCount = 0;
+obj7856_onTap_actionGroup0();
 });
 
 
@@ -1851,8 +1851,8 @@ $("#obj4078").trigger('SCEventShow');
 $("#obj4186").trigger('SCEventShow');
 $("#obj7830").trigger('SCEventShow');
 $("#obj7801").trigger('SCEventShow');
-$("#obj7823").trigger('SCEventShow');
-$("#obj7808").trigger('SCEventShow');
+$("#obj7853").trigger('SCEventShow');
+$("#obj7856").trigger('SCEventShow');
 $("#obj7792").trigger('SCEventShow');
 	const divs = document.querySelectorAll('.focusable');
     divs.forEach(div => {
@@ -2013,5 +2013,35 @@ if (window.parent && window.parent.document) {
   window.parent.document.addEventListener("keydown", escHandler, true);
 }
 window.addEventListener("keydown", escHandler, true);
+const nextPageBtn = document.querySelector('.next-page-btn');
+const prevPageBtn = document.querySelector('.prev-page-btn');
+const isLastPage =
+  pubcoder.page.number === Object.keys(pubcoder.pages).length;
+if (isLastPage) {
+  console.log('Last page');
+  nextPageBtn.classList.add('disabled');
+  nextPageBtn.setAttribute('aria-disabled', 'true');
+  nextPageBtn.setAttribute('aria-label', 'Next Page : End of Chapter');
+  nextPageBtn.style.pointerEvents = 'none';
+} else {
+  console.log('not last page');
+  nextPageBtn.classList.remove('disabled');
+  nextPageBtn.removeAttribute('aria-disabled');
+  nextPageBtn.setAttribute('aria-label', 'Next Page');
+  nextPageBtn.style.pointerEvents = '';
+}
+if(pubcoder.page.number==1){
+console.log('First page');
+  prevPageBtn.classList.add('disabled');
+  prevPageBtn.setAttribute('aria-disabled', 'true');
+  prevPageBtn.setAttribute('aria-label', 'Previous Page : First page');
+  prevPageBtn.style.pointerEvents = 'none';
+} else {
+  console.log('not last page');
+  prevPageBtn.classList.remove('disabled');
+  prevPageBtn.removeAttribute('aria-disabled');
+  prevPageBtn.setAttribute('aria-label', 'Previous Page');
+  prevPageBtn.style.pointerEvents = '';
+}
     
 });

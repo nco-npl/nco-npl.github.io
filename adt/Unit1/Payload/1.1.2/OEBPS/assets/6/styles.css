@@ -498,6 +498,19 @@ video {
   opacity: 1;
 }
 
+.next-page-btn.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  background: #a19f9f;
+  border-radius: 50%;
+}
+.prev-page-btn.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  background: #a19f9f;
+  border-radius: 50%;
+}
+
 .SCPage {
 background-color: #FFFFFF
 }

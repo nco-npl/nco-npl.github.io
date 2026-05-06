@@ -275,7 +275,7 @@ left: 894px;
 width: 40px;
 height: 40px;
 opacity: 1;
-z-index: 7;
+z-index: 6;
 display:none;
 pointer-events: auto;
 
@@ -299,7 +299,7 @@ left: 839px;
 width: 40px;
 height: 40px;
 opacity: 1;
-z-index: 6;
+z-index: 5;
 display:none;
 pointer-events: none;
 
@@ -347,7 +347,7 @@ left: 86px;
 width: 40px;
 height: 40px;
 opacity: 1;
-z-index: 9;
+z-index: 7;
 display:block;
 pointer-events: auto;
 
@@ -387,7 +387,7 @@ img#obj7826_img {
 	width: 40px;
 	height: 40px;
 }
-div#obj7823 {
+div#obj7853 {
 position: absolute;
 overflow: hidden;
 top: 530px;
@@ -395,7 +395,7 @@ left: 417px;
 width: 40px;
 height: 40px;
 opacity: 1;
-z-index: 5;
+z-index: 9;
 display:block;
 pointer-events: auto;
 
@@ -404,14 +404,14 @@ user-select: none;
 -webkit-user-select: none;
 -ms-user-select: none;
 }
-img#obj7823_img {
+img#obj7853_img {
 	position: absolute;
 	left: 0px;
 	top: 0px;
 	width: 40px;
 	height: 40px;
 }
-div#obj7808 {
+div#obj7856 {
 position: absolute;
 overflow: hidden;
 top: 530px;
@@ -419,7 +419,7 @@ left: 569px;
 width: 40px;
 height: 40px;
 opacity: 1;
-z-index: 8;
+z-index: 10;
 display:block;
 pointer-events: auto;
 
@@ -428,7 +428,7 @@ user-select: none;
 -webkit-user-select: none;
 -ms-user-select: none;
 }
-img#obj7808_img {
+img#obj7856_img {
 	position: absolute;
 	left: 0px;
 	top: 0px;
@@ -443,7 +443,7 @@ left: 949px;
 width: 40px;
 height: 40px;
 opacity: 1;
-z-index: 10;
+z-index: 8;
 display:block;
 pointer-events: auto;
 
@@ -679,6 +679,19 @@ video {
 .toast.show {
   visibility: visible;
   opacity: 1;
+}
+
+.next-page-btn.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  background: #a19f9f;
+  border-radius: 50%;
+}
+.prev-page-btn.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  background: #a19f9f;
+  border-radius: 50%;
 }
 
 .SCPage {

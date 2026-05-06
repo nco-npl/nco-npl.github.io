@@ -1,3 +1,22 @@
+
+function showToast(message) {
+  const toast = document.getElementById('toast');
+  toast.textContent = message;
+  toast.style.opacity = 1;
+
+  setTimeout(() => {
+      toast.style.opacity = 0;
+  }, 1500);
+}
+
+function playSound(type) {
+  const audio = document.getElementById(type === 'correct' ? 'correctSound' : 'wrongSound');
+  audio.src = feedbackConfig[type].sound;
+  audio.currentTime = 0;
+  audio.play().catch(() => {});
+}
+
+
 function createItem(itemData, isLeftSide) {
     const div = document.createElement('div');
     div.className = 'item';
@@ -230,12 +249,17 @@ function createItem(itemData, isLeftSide) {
       sourceItem.classList.add('matched');
       targetItem.classList.add('matched');
       clearSelection();
+
+ showToast(feedbackConfig.correct.toastText);
+ playSound('correct');
       const allItems = document.querySelectorAll('.item');
       const matchedCount = document.querySelectorAll('.item.matched').length;
       if (matchedCount === allItems.length) {
         announce('Congratulations! All items have been matched successfully!');
       }
     } else {
+      showToast(feedbackConfig.wrong.toastText);
+      playSound('wrong');
       announce('Not a match. Try again.');
     }
     
@@ -377,12 +401,17 @@ function createItem(itemData, isLeftSide) {
         if (isMatch) {
           dragged.classList.add('matched');
           item.classList.add('matched');
+
+ showToast(feedbackConfig.correct.toastText);
+ playSound('correct');
           const allItems = document.querySelectorAll('.item');
           const matchedCount = document.querySelectorAll('.item.matched').length;
           if (matchedCount === allItems.length) {
             announce('Congratulations! All items have been matched successfully!');
           }
         } else {
+          showToast(feedbackConfig.wrong.toastText);
+          playSound('wrong');
           announce('Not a match. Try again.');
         }
       }

@@ -6,7 +6,7 @@
 	<meta property="rendition:layout">pre-paginated</meta>	
 	<meta property="rendition:orientation">auto</meta>
 	<meta property="rendition:spread">none</meta>
-	<meta property="dcterms:modified">2026-01-30T04:30:18Z</meta>
+	<meta property="dcterms:modified">2026-05-06T05:44:45Z</meta>
 	<meta property="media:active-class">-epub-media-overlay-active</meta>
 	<meta property="media:duration">00:07:04</meta>
 	<meta property="media:duration" refines="#smil55">00:00:02</meta>
@@ -56,11 +56,11 @@
 <meta property="media:duration" refines="#smil538">00:00:06</meta>
 <meta property="media:duration" refines="#smil546">00:00:05</meta>
 <meta property="media:duration" refines="#smil554">00:00:07</meta>
-	<dc:title>Hamro Serofero : Unit 1</dc:title>
+	<dc:title>हाम्रो सेरोफेरो - विषयक्षेत्र १</dc:title>
 	<dc:creator>CDC</dc:creator>
 	<dc:description>Powered by PubCoder</dc:description>
 	<dc:publisher>CDC</dc:publisher>
-	<dc:date>2026-01-30</dc:date>
+	<dc:date>2026-05-06</dc:date>
 	<dc:rights>© 2025 CDC</dc:rights>
 	<dc:language>ne</dc:language>
 	<dc:identifier id="BookID">12E58D21CC5A4AEEB6229895ABF2FF22</dc:identifier>
@@ -255,7 +255,7 @@
       
       />
 <item id="obj7192_image" href="assets/images/obj7192_image.jpeg" media-type="image/jpeg" />
-<item id="video57" href="assets/video/Unit-1.2.mp4" media-type="video/mp4" />
+<item id="video57" href="assets/video/clip1b.mp4" media-type="video/mp4" />
 <item id="obj7200_image" href="assets/images/obj7200_image.png" media-type="image/png" />
 <item id="thumbnail2" href="assets/2/thumbnail.png" media-type="image/png" />
 <item id="loading2" href="assets/2/loading.jpg" media-type="image/jpeg" />
@@ -271,7 +271,7 @@
       />
 <item id="obj7239_image" href="assets/images/obj7239_image.jpeg" media-type="image/jpeg" />
 <item id="obj7245_image" href="assets/images/obj7245_image.png" media-type="image/png" />
-<item id="video65" href="assets/video/Unit-1.3.mp4" media-type="video/mp4" />
+<item id="video65" href="assets/video/clip2b.mp4" media-type="video/mp4" />
 <item id="thumbnail3" href="assets/3/thumbnail.png" media-type="image/png" />
 <item id="loading3" href="assets/3/loading.jpg" media-type="image/jpeg" />
 <item id="audio72" href="assets/3/audio/spe.mp3" media-type="audio/mpeg" />
