@@ -6,7 +6,7 @@
 	<meta property="rendition:layout">pre-paginated</meta>	
 	<meta property="rendition:orientation">auto</meta>
 	<meta property="rendition:spread">none</meta>
-	<meta property="dcterms:modified">2026-05-07T07:50:26Z</meta>
+	<meta property="dcterms:modified">2026-05-07T08:28:52Z</meta>
 	<meta property="media:active-class">-epub-media-overlay-active</meta>
 	<meta property="media:duration">00:05:49</meta>
 	<meta property="media:duration" refines="#smil39">00:00:05</meta>
@@ -300,9 +300,9 @@
       
       />
 <item id="obj4329_image" href="assets/images/obj4329_image.jpeg" media-type="image/jpeg" />
-<item id="obj9502_image" href="assets/images/obj9502_image.png" media-type="image/png" />
-<item id="video81" href="assets/video/1019-5.mp4" media-type="video/mp4" />
 <item id="obj9500_image" href="assets/images/obj9500_image.png" media-type="image/png" />
+<item id="video81" href="assets/video/1019-5.mp4" media-type="video/mp4" />
+<item id="obj9502_image" href="assets/images/obj9502_image.png" media-type="image/png" />
 <item id="thumbnail7" href="assets/7/thumbnail.png" media-type="image/png" />
 <item id="loading7" href="assets/7/loading.jpg" media-type="image/jpeg" />
 <item id="audio88" href="assets/7/audio/spe.mp3" media-type="audio/mpeg" />

@@ -8,7 +8,6 @@
     <script>
 
         const menuData = {
-            //"baseUrl": "http://172.104.184.4/adt/",
             "baseUrl": "",
             "items": [
                 {
@@ -355,7 +354,7 @@
 
 <body>
     <div class="menu-container">
-        <h2 class="toc-head">📚 विषयसूची</h2>
+        <h2 class="toc-head"><span aria-hidden="true">📚</span> विषयसूची</h2>
         <ul class="menu-list" id="menuList">
             <li>Loading menu...</li>
         </ul>
@@ -477,7 +476,7 @@
                             <span>${sub.name}</span>
                             <div style="display: flex; align-items: center; gap: 5px;">
                                 <span style="font-size: 0.85em; color: #7f8c8d; font-weight: 500;"> ${sub.page}</span>
-                                <span class="sub-menu-icon">↗</span>
+                                <span class="sub-menu-icon" aria-hidden="true">↗</span>
                             </div>
                         `;
 
