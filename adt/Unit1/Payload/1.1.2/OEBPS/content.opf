@@ -6,7 +6,7 @@
 	<meta property="rendition:layout">pre-paginated</meta>	
 	<meta property="rendition:orientation">auto</meta>
 	<meta property="rendition:spread">none</meta>
-	<meta property="dcterms:modified">2026-05-07T08:05:37Z</meta>
+	<meta property="dcterms:modified">2026-05-14T05:59:57Z</meta>
 	<meta property="media:active-class">-epub-media-overlay-active</meta>
 	<meta property="media:duration">00:07:04</meta>
 	<meta property="media:duration" refines="#smil55">00:00:02</meta>
@@ -60,7 +60,7 @@
 	<dc:creator>CDC</dc:creator>
 	<dc:description>Powered by PubCoder</dc:description>
 	<dc:publisher>CDC</dc:publisher>
-	<dc:date>2026-05-07</dc:date>
+	<dc:date>2026-05-14</dc:date>
 	<dc:rights>© 2025 CDC</dc:rights>
 	<dc:language>ne</dc:language>
 	<dc:identifier id="BookID">12E58D21CC5A4AEEB6229895ABF2FF22</dc:identifier>
@@ -231,7 +231,7 @@
       
       />
 <item id="obj7142_image" href="assets/images/obj7142_image.jpeg" media-type="image/jpeg" />
-<item id="video49" href="assets/video/Unit-1-NSL-1.mp4" media-type="video/mp4" />
+<item id="video49" href="assets/video/Unit-1-NSL-1-update.mp4" media-type="video/mp4" />
 <item id="obj7144_image" href="assets/images/obj7144_image.png" media-type="image/png" />
 <item id="obj8171_image" href="assets/images/obj8171_image.png" media-type="image/png" />
 <item id="obj8185_image" href="assets/images/obj8185_image.png" media-type="image/png" />
