@@ -1,1 +1,1 @@
-PubViewer.Document.Settings = {"appIdentifier":"C038BE4FE8F547CA925543561C8C594A","appName":"हाम्रो सेरोफेरो - विषयक्षेत्र १","backgroundColor":"#EFEEE8","facingPagesInLandscape":false,"lockOrientation":false,"restoreLatestPage":true};
+PubViewer.Document.Settings = {"appIdentifier":"A8D5A6462FE245AF8A03215BA07FA6C5","appName":"हाम्रो सेरोफेरो - विषयक्षेत्र १","backgroundColor":"#EFEEE8","facingPagesInLandscape":false,"lockOrientation":false,"restoreLatestPage":true};
