@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Resources</title>
+    <script>
+        const resources = [
+            {
+                title: "Akelius Language",
+                url: "https://languages.akelius.education/",
+                icon: "img/akelius.png",
+                description: "Interactive language learning platform."
+            },
+            {
+                title: "LearnEnglish Kids",
+                url: "https://learnenglishkids.britishcouncil.org/",
+                icon: "img/british_council.png",
+                description: "British Council resources, vocabulary games, and stories."
+            },
+            {
+                title: "Learning Passport Nepal",
+                url: "https://nepal.learningpassport.org/",
+                icon: "img/nepal_lp.png",
+                description: "Learning Passport Nepal."
+            }
+        ];
+    </script>
+    <style>
+        :root {
+            --bg-color: #f8f9fa;
+            --item-bg: #ffffff;
+            --text-main: #333333;
+            --text-muted: #666666;
+            --border-color: #e5e7eb;
+            --hover-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 2rem;
+            line-height: 1.5;
+        }
+
+        .container {
+            max-width: 768px; /* Slightly narrower for a better reading experience in a list */
+            margin: 0 auto;
+        }
+
+        header {
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid var(--border-color);
+        }
+
+        h1 {
+            font-weight: 600;
+            margin: 0 0 0.5rem 0;
+        }
+
+        .resource-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem; /* Spacing between rows */
+        }
+
+        .resource-item {
+            background-color: var(--item-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.25rem;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: inherit;
+            transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+        }
+
+        .resource-item:hover {
+            transform: translateX(4px); /* Subtle slide to the right on hover */
+            box-shadow: var(--hover-shadow);
+            border-color: #d1d5db;
+        }
+
+        .resource-icon {
+            width: 48px;
+            height: 48px;
+            object-fit: contain;
+            margin-right: 1.5rem;
+            flex-shrink: 0;
+            border-radius: 6px;
+        }
+
+        .resource-info {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .resource-title {
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin: 0 0 0.25rem 0;
+            color: #111827;
+        }
+
+        .resource-desc {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            margin: 0;
+        }
+
+        /* Fallback styling if image fails to load */
+        .icon-fallback {
+            background-color: #eef2ff;
+            color: #4f46e5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Digital Learning Resources</h1>
+            <p style="color: var(--text-muted); margin: 0;">Access educational portals and interactive contents</p>
+        </header>
+
+        <div id="resource-list" class="resource-list">
+            <!-- Resource list items will be injected here by JavaScript -->
+        </div>
+    </div>
+<script>
+        /**
+         * ==========================================
+         * RENDERING LOGIC
+         * ==========================================
+         */
+        function renderResources() {
+            const listContainer = document.getElementById('resource-list');
+            
+            resources.forEach(item => {
+                // Create list item container
+                const listItem = document.createElement('a');
+                listItem.href = item.url;
+                listItem.className = 'resource-item';
+                listItem.target = '_blank';
+                listItem.rel = 'noopener noreferrer';
+
+                // Handle icon (with fallback if image is missing)
+                const img = document.createElement('img');
+                img.src = item.icon;
+                img.alt = `${item.title} icon`;
+                img.className = 'resource-icon';
+                
+                // Fallback if image isn't found in the img/ folder
+                img.onerror = function() {
+                    this.onerror = null;
+                    this.outerHTML = `<div class="resource-icon icon-fallback">${item.title.charAt(0)}</div>`;
+                };
+
+                // Create text info container
+                const info = document.createElement('div');
+                info.className = 'resource-info';
+
+                const title = document.createElement('h2');
+                title.className = 'resource-title';
+                title.textContent = item.title;
+
+                const desc = document.createElement('p');
+                desc.className = 'resource-desc';
+                desc.textContent = item.description;
+
+                // Assemble the list item
+                info.appendChild(title);
+                info.appendChild(desc);
+                listItem.appendChild(img);
+                listItem.appendChild(info);
+
+                // Add to the main list
+                listContainer.appendChild(listItem);
+            });
+        }
+
+        // Initialize rendering on load
+        document.addEventListener('DOMContentLoaded', renderResources);
+    </script>
+</body>
+</html>
