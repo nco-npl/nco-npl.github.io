@@ -6,6 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-5C2E4G68KK"></script>
+<script>
+  const urlParams = new URLSearchParams(window.location.search);
+  if (!urlParams.has('utm_source')) {
+    const newUrl = new URL(window.location.href);
+    newUrl.searchParams.set('utm_source', 'technical_support');
+    newUrl.searchParams.set('utm_medium', 'bookmark');
+    newUrl.searchParams.set('utm_campaign', 'LumbiniCLC');
+    window.location.replace(newUrl.href);
+  }
+</script>
 <script type="text/javascript">
     (function(c,l,a,r,i,t,y){
         c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
