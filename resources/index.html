@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-5C2E4G68KK"></script>
-<script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "yp7eypvakd");
-</script>
+    <script type="text/javascript">
+        (function (c, l, a, r, i, t, y) {
+            c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+            t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+            y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+        })(window, document, "clarity", "script", "yp7eypvakd");
+    </script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
@@ -22,6 +22,10 @@
     </script>
     <title>Learning Resources</title>
     <script>
+        const centerCampaignMapping = {
+            "khadwa_bangai": "Khadwa Bangai CLC"
+        };
+
         const resources = [
             {
                 title: "Akelius Language",
@@ -42,6 +46,12 @@
                 description: "Learning Passport Nepal."
             },
             {
+                title: "Rupantaran",
+                url: "https://rupantaran.learningpassport.org/",
+                icon: "img/nepal_rup.png",
+                description: "Digital Learning platform Rupantaran."
+            },
+            {
                 title: "Let's Read",
                 url: "https://www.letsreadasia.org/",
                 icon: "img/letsread.png",
@@ -58,6 +68,18 @@
                 url: "https://katha.olenepal.org/",
                 icon: "img/olenepal.png",
                 description: "Children's stories by OLE Nepal."
+            },
+            {
+                title: "E-Pustakalaya",
+                url: "https://pustakalaya.org/",
+                icon: "img/pustakalaya.png",
+                description: "Free and open digital library developed by OLE Nepal."
+            },
+            {
+                title: "PhET Interactive Simulations",
+                url: "https://phet.colorado.edu/",
+                icon: "img/phet.png",
+                description: "Interactive science and mathematics simulations by University of Colorado Boulder."
             }
         ];
     </script>
@@ -183,22 +205,53 @@
          */
         function renderResources() {
             const listContainer = document.getElementById('resource-list');
+            const urlParams = new URLSearchParams(window.location.search);
+            const centerParam = urlParams.get('center') ? urlParams.get('center').trim() : '';
+
+            // Set Microsoft Clarity custom tags if center parameter is present
+            if (centerParam && typeof clarity === 'function') {
+                const campaign = centerCampaignMapping[centerParam] || centerParam;
+                clarity("set", "center", centerParam);
+                clarity("set", "campaign", campaign);
+            }
+
+            // Helper to append UTM parameters when center parameter is present
+            function getResourceUrl(rawUrl) {
+                if (!centerParam) {
+                    return rawUrl;
+                }
+                try {
+                    const parsedUrl = new URL(rawUrl);
+                    const campaign = centerCampaignMapping[centerParam] || centerParam;
+                    parsedUrl.searchParams.set('utm_source', 'technical_support');
+                    parsedUrl.searchParams.set('utm_medium', 'bookmark');
+                    parsedUrl.searchParams.set('utm_campaign', campaign);
+                    return parsedUrl.toString();
+                } catch (e) {
+                    return rawUrl;
+                }
+            }
 
             resources.forEach(item => {
+                const finalUrl = getResourceUrl(item.url);
+
                 // Create list item container
                 const listItem = document.createElement('a');
-                listItem.href = item.url;
+                listItem.href = finalUrl;
                 listItem.className = 'resource-item';
                 listItem.target = '_blank';
                 listItem.rel = 'noopener noreferrer';
 
-                // Send a Google Analytics event when the resource is clicked
+                // Send analytics events when the resource is clicked
                 listItem.addEventListener('click', () => {
                     if (typeof gtag === 'function') {
                         gtag('event', 'resource_click', {
                             'resource_title': item.title,
-                            'resource_url': item.url
+                            'resource_url': finalUrl
                         });
+                    }
+                    if (typeof clarity === 'function') {
+                        clarity('event', 'resource_click');
                     }
                 });
 
