@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Online Resources For CLC</title>
+
+<script type="application/json" id="resource-data">
+{
+  "categories": [
+    {
+      "name": "CLC",
+      "groups": [
+        {
+          "org": "CEHRD / UNICEF",
+          "links": [
+            {
+              "title": "डिजिटल उपकरणहरू सञ्चालन, अनुगमन र क्षति रिपोर्टिङ मार्गदर्शन (SOP)",
+              "pdf": "docs/clc_digital_device_sop.pdf"
+            },
+            {
+              "title": "CLC Mandate",
+              "pdf": "docs/clc_mandate.pdf"
+            },
+            {
+              "title": "CLC Management Capacity Building Resource Book 2078",
+              "pdf": "docs/clc_management_capacity_building_resource_book_2078.pdf"
+            },
+            {
+              "title": "CLC Facilitator Training Guide 2079",
+              "pdf": "docs/clc_facilitator_training_guide_2079.pdf"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Online Safety",
+      "groups": [
+        {
+          "org": "LP Global",
+          "links": [
+            {
+              "title": "Online Safety, Educatory Toolkit",
+              "url": "https://library.learningpassport.org/#/course/2551/item/29825"
+            },
+            {
+              "title": "Online Safety",
+              "url": "https://library.learningpassport.org/#/course/2552/item/29879"
+            }
+          ]
+        },
+        {
+          "org": "Hamropalo",
+          "links": [
+            {
+              "title": "Online Safety Toolkit",
+              "pdf": "docs/Online_Safety_Toolkit_Nepali.pdf"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Office Tools / Digital Skills",
+      "groups": [
+        {
+          "org": "LP Global",
+          "links": [
+            {
+              "title": "Computer / Operating System",
+              "url": "https://library.learningpassport.org/#/course/2562"
+            },
+            {
+              "title": "Word, Excel, Powerpoint",
+              "url": "https://library.learningpassport.org/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Life Skills",
+      "groups": [
+        {
+          "org": "UNICEF",
+          "links": [
+            {
+              "title": "Rupantaran",
+              "url": "https://rupantaran.learningpassport.org/"
+            },
+            {
+              "title": "Stress management",
+              "url": "https://library.learningpassport.org/#/course/2817/item/32273"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Educational",
+      "groups": [
+        {
+          "org": "CEHRD",
+          "links": [
+            {
+              "title": "Sikai Chautari",
+              "url": "https://learning.cehrd.gov.np/"
+            },
+            {
+              "title": "ALP learning cards",
+              "url": "https://learning.cehrd.gov.np/course/view.php?id=17#section-0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Foundational Literacy and Numeracy",
+      "groups": [
+        {
+          "org": "Akelius",
+          "links": [
+            {
+              "title": "Akelius Language Website",
+              "url": "https://language.akelius.com/"
+            },
+            {
+              "title": "Android App",
+              "url": "https://play.google.com/store/apps/details?id=de.akelius.university.mobile.languageapplication"
+            },
+            {
+              "title": "iOS App",
+              "url": "https://apps.apple.com/gb/app/akelius-languages/id6478694443"
+            }
+          ],
+          "inline": true
+        },
+        {
+          "org": "Learn English Kids",
+          "links": [
+            {
+              "title": "Learn English Kids Website",
+              "url": "https://learnenglishkids.britishcouncil.org/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+<style>
+  :root {
+    --bg: #ffffff; --fg: #1f2328; --muted: #656d76; --link: #0b5cad;
+    --line: #d8dce1; --head: #f3f5f7; --scrim: rgba(20, 23, 26, .6); --page: #8a9199;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #14171a; --fg: #e6e8ea; --muted: #9aa3ab; --link: #7db4f0; --line: #2f353b; --head: #1d2125; --scrim: rgba(0, 0, 0, .7); --page: #3a4046; }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0; background: var(--bg); color: var(--fg);
+    font: 17px/1.7 system-ui, -apple-system, "Segoe UI", "Noto Sans Devanagari", "Mukta", sans-serif;
+  }
+  body.locked { overflow: hidden; }
+  main { max-width: 56rem; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
+  h1 { font-size: 1.6rem; line-height: 1.35; margin: 0 0 1rem; }
+  .intro { color: var(--muted); margin: 0 0 2rem; max-width: 44rem; }
+  table { width: 100%; border-collapse: collapse; border: 1px solid var(--line); }
+  th, td { text-align: left; vertical-align: top; padding: .6rem .85rem; border: 1px solid var(--line); overflow-wrap: anywhere; }
+  thead th { background: var(--head); font-size: .9rem; }
+  .cat { font-weight: 600; width: 22%; }
+  .org { color: var(--muted); width: 22%; }
+  a, button.link { color: var(--link); text-underline-offset: 3px; }
+  a:focus-visible, button:focus-visible { outline: 2px solid var(--link); outline-offset: 2px; border-radius: 2px; }
+  .sep { color: var(--muted); margin: 0 .35rem; }
+  .pdf-tag { color: var(--muted); font-size: .8rem; margin-left: .4rem; }
+  noscript p { color: var(--muted); }
+
+  /* PDF viewer */
+  #viewer { position: fixed; inset: 0; z-index: 10; display: none; flex-direction: column; background: var(--scrim); }
+  #viewer.open { display: flex; }
+  .v-bar {
+    display: flex; align-items: center; gap: .75rem; padding: .6rem 1rem;
+    background: var(--bg); border-bottom: 1px solid var(--line);
+  }
+  .v-title { flex: 1; min-width: 0; font-weight: 600; font-size: .95rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .v-bar a, .v-bar button { font: inherit; font-size: .9rem; }
+  .v-bar button {
+    background: none; border: 1px solid var(--line); border-radius: 6px; color: var(--fg);
+    padding: .3rem .75rem; cursor: pointer;
+  }
+  #v-scroll { flex: 1; overflow: auto; padding: 1rem; -webkit-overflow-scrolling: touch; }
+  #v-pages { max-width: 60rem; margin: 0 auto; display: flex; flex-direction: column; gap: .75rem; }
+  #v-pages canvas { display: block; width: 100%; height: auto; background: #fff; box-shadow: 0 0 0 1px var(--line); }
+  .v-page { background: #fff; width: 100%; }
+  #v-status { color: #fff; text-align: center; padding: 2rem 1rem; }
+  #v-status a { color: #fff; }
+
+  @media (max-width: 40rem) {
+    main { padding-top: 1.75rem; }
+    table, tbody, tr, th, td { display: block; width: 100%; }
+    thead { position: absolute; left: -9999px; }
+    table { border: 0; }
+    th, td { border: 0; padding: .25rem 0; }
+    .cat { width: 100%; margin-top: 1.5rem; padding: .5rem .75rem; background: var(--head); border-top: 1px solid var(--line); }
+    .org { width: 100%; margin-top: .5rem; font-size: .9rem; }
+    tr td:last-child { padding-left: .75rem; }
+    #v-scroll { padding: .5rem 0; }
+  }
+  @media (min-width: 40.01rem) {
+    main { padding-top: 4rem; }
+    h1 { font-size: 2rem; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>सामुदायिक सिकाई केन्द्र (CLC) का लागि अनलाइन स्रोतहरू</h1>
+    <p class="intro">सामुदायिक सिकाई केन्द्र (Community Learning Centers - CLC) ले साक्षरता, जीवनपर्यन्त सिकाइ, आयआर्जनका सिप विकास जस्ता कार्यक्रम मार्फत सामुदायिक विकासमा महत्त्वपूर्ण भूमिका खेल्दछ। सामुदायिक सिकाई केन्द्रमा स्थापना हुने डिजिटल ल्याबमा सहजकर्ता र बालबालिका तथा किशोर किशोरीहरूलाई सहयोग पुर्‍याउनका लागि विभिन्न अनलाइन स्रोतहरू उपलब्ध छन्, जसले उनीहरूका लागि डिजिटल उपकरण तथा अनलाइन सामाग्रीको प्रयोग गरी सिक्ने, आयआर्जनका सीप विकास र सुरक्षित अनलाइन व्यवहारहरू सिक्न सहयोग पुर्‍याउँछ। यो दस्ताबेजमा विभिन्न विषयगत श्रेणीहरूमा आधारित विश्वसनीय अनलाइन स्रोतहरूको सूची समावेश गरिएको छ, जसले CLC का गतिविधि र तालिमहरूमा सहयोग पुर्‍याउँछ।</p>
+  </header>
+  <table>
+    <thead>
+      <tr><th scope="col">Category</th><th scope="col">Organization</th><th scope="col">Course Title/Desc</th></tr>
+    </thead>
+    <tbody id="rows"></tbody>
+  </table>
+  <noscript><p>This page needs JavaScript to list the resources.</p></noscript>
+</main>
+
+<div id="viewer" role="dialog" aria-modal="true" aria-labelledby="v-title" hidden>
+  <div class="v-bar">
+    <span class="v-title" id="v-title"></span>
+    <a id="v-open" target="_blank" rel="noopener">Open in new tab</a>
+    <button type="button" id="v-close">Close</button>
+  </div>
+  <div id="v-scroll"><div id="v-pages"></div><div id="v-status" role="status"></div></div>
+</div>
+
+<script>
+(function () {
+  var data = JSON.parse(document.getElementById('resource-data').textContent);
+  var tbody = document.getElementById('rows');
+
+  function el(tag, props, text) {
+    var n = document.createElement(tag);
+    if (props) Object.keys(props).forEach(function (k) { n.setAttribute(k, props[k]); });
+    if (text) n.textContent = text;
+    return n;
+  }
+
+  function linkNode(l) {
+    var frag = document.createDocumentFragment();
+    if (l.pdf) {
+      var a = el('a', { href: l.pdf }, l.title);
+      a.addEventListener('click', function (e) { e.preventDefault(); openPdf(l.pdf, l.title, a); });
+      frag.appendChild(a);
+      frag.appendChild(el('span', { 'class': 'pdf-tag' }, 'PDF'));
+    } else {
+      frag.appendChild(el('a', { href: l.url, target: '_blank', rel: 'noopener' }, l.title));
+    }
+    return frag;
+  }
+
+  data.categories.forEach(function (cat) {
+    var catRows = 0;
+    cat.groups.forEach(function (g) { catRows += g.inline ? 1 : g.links.length; });
+    var firstInCat = true;
+    cat.groups.forEach(function (g) {
+      var cells = g.inline ? [g.links] : g.links.map(function (l) { return [l]; });
+      var firstInGroup = true;
+      cells.forEach(function (items) {
+        var tr = el('tr');
+        if (firstInCat) {
+          tr.appendChild(el('th', { scope: 'rowgroup', 'class': 'cat', rowspan: catRows }, cat.name));
+          firstInCat = false;
+        }
+        if (firstInGroup) {
+          tr.appendChild(el('td', { 'class': 'org', rowspan: cells.length }, g.org));
+          firstInGroup = false;
+        }
+        var td = el('td');
+        items.forEach(function (l, i) {
+          if (i) td.appendChild(el('span', { 'class': 'sep' }, '|'));
+          td.appendChild(linkNode(l));
+        });
+        tr.appendChild(td);
+        tbody.appendChild(tr);
+      });
+    });
+  });
+
+  /* ---------- In-page PDF viewer (PDF.js, loaded on first use) ---------- */
+  var PDFJS = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/';
+  var viewer = document.getElementById('viewer');
+  var pagesBox = document.getElementById('v-pages');
+  var statusBox = document.getElementById('v-status');
+  var scroller = document.getElementById('v-scroll');
+  var closeBtn = document.getElementById('v-close');
+  var libPromise = null, current = null, token = 0, opener = null, observer = null;
+
+  function loadLib() {
+    if (!libPromise) {
+      libPromise = new Promise(function (resolve, reject) {
+        var s = document.createElement('script');
+        s.src = PDFJS + 'pdf.min.js';
+        s.onload = function () {
+          window.pdfjsLib.GlobalWorkerOptions.workerSrc = PDFJS + 'pdf.worker.min.js';
+          resolve(window.pdfjsLib);
+        };
+        s.onerror = function () { libPromise = null; reject(new Error('lib')); };
+        document.head.appendChild(s);
+      });
+    }
+    return libPromise;
+  }
+
+  function setStatus(msg, url) {
+    statusBox.textContent = msg || '';
+    if (msg && url) {
+      statusBox.appendChild(document.createTextNode(' '));
+      var a = el('a', { href: url, target: '_blank', rel: 'noopener' }, 'Open the PDF directly');
+      statusBox.appendChild(a);
+    }
+  }
+
+  function renderPages(pdf, myToken) {
+    pagesBox.textContent = '';
+    if (observer) observer.disconnect();
+    var width = pagesBox.clientWidth || 600;
+    var dpr = Math.min(window.devicePixelRatio || 1, 2);
+    observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (!en.isIntersecting) return;
+        var box = en.target; observer.unobserve(box);
+        pdf.getPage(+box.dataset.n).then(function (page) {
+          if (myToken !== token) return;
+          var base = page.getViewport({ scale: 1 });
+          var vp = page.getViewport({ scale: (width / base.width) * dpr });
+          var c = el('canvas');
+          c.width = vp.width; c.height = vp.height;
+          c.setAttribute('aria-label', 'Page ' + box.dataset.n);
+          box.textContent = ''; box.style.aspectRatio = ''; box.appendChild(c);
+          page.render({ canvasContext: c.getContext('2d'), viewport: vp });
+        });
+      });
+    }, { root: scroller, rootMargin: '600px 0px' });
+
+    for (var i = 1; i <= pdf.numPages; i++) {
+      (function (n) {
+        pdf.getPage(n).then(function (page) {
+          if (myToken !== token) return;
+          var v = page.getViewport({ scale: 1 });
+          var box = el('div', { 'class': 'v-page', 'data-n': n });
+          box.style.aspectRatio = v.width + ' / ' + v.height;
+          // keep page order even though pages resolve asynchronously
+          var placed = false, kids = pagesBox.children;
+          for (var k = 0; k < kids.length; k++) {
+            if (+kids[k].dataset.n > n) { pagesBox.insertBefore(box, kids[k]); placed = true; break; }
+          }
+          if (!placed) pagesBox.appendChild(box);
+          observer.observe(box);
+        });
+      })(i);
+    }
+  }
+
+  function openPdf(path, title, trigger) {
+    opener = trigger || null;
+    var myToken = ++token;
+    document.getElementById('v-title').textContent = title;
+    document.getElementById('v-open').href = path;
+    pagesBox.textContent = '';
+    setStatus('Loading…');
+    viewer.hidden = false; viewer.classList.add('open');
+    document.body.classList.add('locked');
+    scroller.scrollTop = 0;
+    closeBtn.focus();
+
+    loadLib().then(function (lib) {
+      return lib.getDocument(path).promise;
+    }).then(function (pdf) {
+      if (myToken !== token) return;
+      current = pdf; setStatus('');
+      renderPages(pdf, myToken);
+    }).catch(function () {
+      if (myToken !== token) return;
+      setStatus('Could not load this PDF in the page.', path);
+    });
+  }
+
+  function closeViewer() {
+    token++; current = null;
+    if (observer) observer.disconnect();
+    pagesBox.textContent = '';
+    viewer.classList.remove('open'); viewer.hidden = true;
+    document.body.classList.remove('locked');
+    if (opener) opener.focus();
+  }
+
+  closeBtn.addEventListener('click', closeViewer);
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && viewer.classList.contains('open')) closeViewer();
+  });
+
+  var rz;
+  window.addEventListener('resize', function () {
+    if (!current) return;
+    clearTimeout(rz);
+    rz = setTimeout(function () { renderPages(current, ++token); }, 250);
+  });
+})();
+</script>
+</body>
+</html>
